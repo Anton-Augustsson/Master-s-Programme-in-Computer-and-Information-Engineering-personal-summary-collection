@@ -1,0 +1,708 @@
+\chapter{PKD Samanfatning}
+
+\section{Förord}
+PKD is a 20hp curse focusing on functional programming in Haskell and data structures.
+
+Inför tentan del 1 kom ihåg att PRE är omm en vis data som tillhör värde mängden inte fungerar på functionen altså ger error (runtime-error). 
+
+Inför tenta del 2 är det en fråga som är altid litte jobbig om den hadlar om
+binomial heaps. När det står bara inserting då ska man inte merga om det står brobing merging
+eller något anat då ska man göra det.
+
+In topology sort go with indegre 0 then 1 then 2 it dosent mater how they are connecten only the ordering.
+
+\newpage
+
+\section{Coding convension}
+\noindent\textbf{VARIANT} \newline
+A (recursive) function terminates if it has a variant.
+The variant need to follow all of the flowing rules
+
+\begin{itemize}
+\item Needs to decrease every recursive call
+\item All ways positive
+\end{itemize} 
+
+\noindent\textbf{Side effects} \newline
+All IO functions have side effects in order to separate pure Haskell function with impure functions
+that changes the state with is commonly the case with imperative and object oriented programming.
+Every IO function has a side effects.
+
+\noindent\textbf{INVARIANT} \newline
+A data types invariant is what value are allowed for the data type to work. Similar to preconditions for
+a function. An example is integer data type that can only use positive integers therefor the
+invariant is positive integers.
+
+
+
+\section{Design approach}
+\begin{itemize}
+\item top-down design (Cheating): Is to break down a complex system in to subsystems to solve the problem.
+  Most often is to write everything by scratch.
+\item bottom-up design (Stacking): Is to pies existing system together to create a more complex system.
+  little is programmed, most is copied.
+\item dodging: Get some code working more quickly, make progess with some part of the system
+  and back-paddle to the dodged part later. The reason is to develop insight that will help solve
+  the larger problem.
+\end{itemize}
+
+
+\subsection{Process}
+\begin{enumerate}
+\item  Data Description
+\item  Data Examples
+\item  Function Description
+\item  Function Examples
+\item  Function Template
+\item  Code
+\item  Tests
+\item  Review and Refactor
+\end{enumerate}
+
+\textbf{Programming to an Interface}
+More dynamic, can change models, less code to write and a layer of abstraction. ADT 
+
+\newpage
+
+\section{Recursion}
+\subsection{Recursion types}
+\begin{enumerate}
+\item Simple recursion: There is at most one recursive call (in each branch)
+  and the argument is decremented by one.
+\item Complete recursion: Some argument becomes smaller in the recursive call, but not necessarily.
+\item Multiple recursion: There are multiple recursive calls (in the same branch).
+\item Mutual recursion: Two or more functions are defined in terms of each other.
+\item Nested recursion: An argument to a recursive call is computed by a recursive call.
+\item Recursion on a generalized problem: Sometimes, no suitable recursion scheme is obvious.
+\end{enumerate}
+
+
+
+\section{Complexity}
+\subsection{Growth}
+\begin{enumerate}
+\item Big $ \theta $ Notation: estimate of growth in intervals determine by constants
+  Definition
+  For non-negative functions f and g, $f (n) = \theta (g (n))$ if and only if there
+  exist $ n_0 \geq 0 and c_1 , c_2 > 0 $ such that for all $ n > n_0 $
+  $ c_1 \cdot g (n) \leq f (n) \leq c_2 \cdot g (n) $.
+  $ \theta (g (n)) $ is the set of all functions $ f(n) $ that are bounded below and above
+\item Big $ \Omega $ Notation: estimate of growth Lower bound
+\item Big $ O $: Notation: estimate of growth upper bound
+\end{enumerate}
+
+
+\subsubsection{Relation}
+$O(g(n)) \cap \omega (g(n)) = \theta (g(n))$
+
+
+
+\section{Recurrences}
+\noindent\textbf{Example:} \newline
+sumList $[]$ = 0 \newline
+sumList (x:xs) = x + sumList xs
+
+\begin{enumerate}
+\item pattern matching $[]$ takes $t_0$ time
+\item pattern matching $(x:xs)$ takes $t_1$ time
+\item Adding x with recursive call takes $t_{add}$
+\item Then the recursive call takes $T(n-1)$
+\end{enumerate}
+
+\[ T(n) =
+  \begin{cases}
+    t_0                   & \quad \text{if } n = 0 \\
+    T(n-1)+t_{add} +t_{1}  & \quad \text{if } n > 0 
+  \end{cases}
+\]
+
+\newpage
+
+\subsection{Closed Form}
+\noindent\textbf{1. Use the substitution method to obtain a closed form for the following recurrence:}
+\begin{align*}
+  &\quad  f(0) = 5 \\
+  &\quad  f(n) = f(n -1) + n + 2, n> 0 \\
+\end{align*}
+\textbf{Hint: $1 + 2 + 3 + · · · + n = \frac{n(n+1)}{2}$ — you do not need to prove this fact.}
+
+
+\subsubsection{Expansion Method}
+\begin{flalign*}
+  & f(0) = 5 \\
+  & f(1) = f(0) +n +2 = n +5 +2 \\
+  & f(2) = f(1) +n +2 = 2n +5 +2 +2 \\
+  & f(3) = f(2) +n +2 = 3n +5 +2 +2 +2 \\
+  & f(n) = +n^2 +5 +n \cdot 2 \\
+\end{flalign*}
+
+\noindent\textbf{Induction proof}
+\begin{align*}
+  &\quad  \text{Step1: test with base case sense the base case is predefine for 0 we do } n=1  \\
+  &\quad  {f(1)}_{VL} = 1^2 +5 +1 \cdot 2 = 8, \\
+  &\quad  {f(1)}_{HL} = f(0) +1 +2 = 5 +3 = 8 \\
+  &\quad  {f(1)}_{VL} = {f(1)}_{HL} \\
+  &\quad  \\
+  &\quad  \text{Step2: assumption for p } f(p) = p^2 +5 +p \cdot 2 \\
+  &\quad  {f(p+1)}_{VL} = f(p) +(p+1) +2 = (p^2 +5 +p \cdot 2) +(p+1) +2 = \\
+  &\quad  = (p^2 +(p+1)) +5 +(p+1) \cdot 2 = (p^2+2p+1) +5 +(p+1) \cdot 2 \\
+  &\quad  {f(p+1)}_{HL} = (p+1)^2 +5 +(p+1) \cdot 2 = (p^2+2p+1) +5 +(p+1) \cdot 2 \\
+  &\quad  {f(p+1)}_{VL} = {f(p+1)}_{HL} \\
+  &\quad  \\
+  &\quad  \text{Conclusion: according to induction hypothesis the recurrence of the function is equal to } \\
+  &\quad  2n + 5 + \frac{n(1+n)}{2} 
+\end{align*}
+
+
+\subsubsection{Substitution Method}
+\begin{align*}
+  f(n) &\quad = f(n-1) + n + 2  \\
+  &\quad = (f(n-2) + (n-1) + 2) +1n +2 \\               &\quad = f(n-2) + (n-1) + n +2 \cdot 2 \\
+  &\quad = (f(n-3) + (n-2) + 2) (n-1) + n +2 \cdot 2 \\ &\quad = f(n-3) +(n-2) + (n-1) + n +3 \cdot 2 \\
+  &\quad . \\
+  &\quad = f(n-k) + (n -(k-1)) + (n -(k-2)) + (n -(k-3)) + \ldots + n +k \cdot 2  \\
+  &\quad . \\
+  &\quad = f(n-n) + (n -(n-1)) + (n -(n-2)) + (n -(n-3)) + \ldots + n +n \cdot 2 \\
+  &\quad = f(0) +1 +2 +3 + \ldots + n +n \cdot 2 = 5 +1 +2 +3 + \ldots + n +n \cdot 2\\
+\end{align*}
+
+We can see the following patterns
+\begin{align*}
+  &\quad 2n + 5 + \displaystyle\sum_{k=1}^{n}(k) = 2n + 5 + \frac{n(1+n)}{2} \\
+\end{align*}
+
+\noindent\textbf{Induction proof}
+\begin{align*}
+  &\quad  \text{Step1: test with base case sense the base case is predefine for 0 we do } n=1  \\
+  &\quad  {f(1)}_{VL} = 2 \cdot 1 + 5 + \frac{1(1+1)}{2} = 2 +5 +1 = 8, \\
+  &\quad  {f(1)}_{HL} = f(0) + 1 +2 = 5 +3 = 8 \\
+  &\quad  {f(1)}_{VL} = {f(1)}_{HL} \\
+  &\quad  \\
+  &\quad  \text{Step2: assumption for p } f(p) = 2p + 5 + \frac{p(1+p)}{2} \\
+  &\quad  {f(p+1)}_{HL} = f(p) +(p+1) +2 = (2p +5 +\frac{p(1+p)}{2}) + (p+1) + 2 = \\
+  &\quad  = 2(p+1) +5 +\frac{p(1+p)}{2} +p = 2(p+1) +5 +\frac{2(p+1)+p(1+p)}{2} = \\
+  &\quad  = 2(p+1) +5 +\frac{p^2 +2p +p +2}{2} = \\
+  &\quad  {f(p+1)}_{HL} = 2(p+1) + 5 + \frac{(p+1)(p+2)}{2} = 2(p+1) + 5 + \frac{p^2 +2p +p +2}{2}  \\
+  &\quad  {f(p+1)}_{VL} = {f(p+1)}_{HL} \\
+  &\quad  \\
+  &\quad  \text{Conclusion: according to induction hypothesis the recurrence of the function is equal to } \\
+  &\quad  2n + 5 + \frac{n(1+n)}{2} 
+\end{align*}
+
+
+\newpage
+
+\section{Higher-Order Function}
+\subsection{Higher-Order Functions on Lists}
+\begin{lstlisting}[language=Haskell]
+map :: (a -> b) -> [a] -> [b]
+filter :: (a -> Bool) -> [a] -> [a]
+foldl :: (a -> b -> a) -> a -> [b] -> a
+foldr :: (a -> b -> b) -> b -> [a] -> b  
+\end{lstlisting}
+
+\subsubsection{map}
+maps a function to each element in list.
+
+\subsubsection{filter}
+filters elements with a condision
+
+\begin{lstlisting}[language=Haskell]
+filter :: (a -> Bool) -> [a] -> [a]
+filter (<6) [6,3,0,1,8,5,9,3] == [3,0,1,5,3]
+\end{lstlisting}
+
+\subsubsection{foldl}
+foldl recurses over a list “from the left,” i.e., it initially applies the
+given operation to the first list element and the given start value.
+starts from the left (first element) and apply the function to with each element.
+Similar to an accumulator. No one uses it since it is some what useless.
+\begin{lstlisting}[language=Haskell]
+foldl :: (a -> b -> a) -> a -> [b] -> a
+foldl (*) 1 [1,2,3,4] == 24
+\end{lstlisting}
+
+\subsubsection{foldr}
+foldr recurses over a list “from the right,” i.e., it initially applies the
+given operation to the last list element and the given start value.
+starts from the right (last element) and apply the function to with each element.
+Similar to an accumulator.
+
+\begin{lstlisting}[language=Haskell]
+foldr :: (a -> b -> b) -> b -> [a] -> b
+foldr (*) 1 [1,2,3,4] == 24
+\end{lstlisting}
+
+
+\newpage
+
+\section{Data types}
+%To prevent making simple mistakes by forsing spesific types.
+
+\subsection{Basic}
+\begin{verbatim}
+String :: ['char'] --list of charecters
+List :: []         --undefine element types and elements
+Tuple :: ()        --Predefine elements
+Char :: ''         --single carecter
+Int :: 1           --Hole number with define size 
+Integear :: 1      --Hole number with undefine size
+Float :: 1.1       --Real number with double-precision  
+Double :: 1.1      --Real number with single-precision 
+\end{verbatim}
+
+
+\subsection{Maybe Type}
+If the return is maybe ``nothing'' then the ``Maybe type'' is used, since it dose not have to return
+the a specific value. It is not polymorphic since you have to specify the type, however
+``Just'' is at of it self polymorphic function. If a operation that requires a specific type one needs to
+remove ``Just'', for instance by a let function.
+
+
+\subsection{New types and enumeration types}
+New types: One create more relevant names and format of existing enumeration types.
+Overload is a problem with the use of the same operations that can not be used for the same data types.
+One needs to create new operations if it is not from the same type class.
+
+Enumeration types: Instead of new types \emph{type} enumeration types uses the operation call \emph{data}.
+The difference is that enumeration types is independent from existing types therefor
+one becomes more flexible and precise.
+
+\textbf{example}
+\begin{lstlisting}[language=Haskell]
+data newTypeOfDataDerection = North | South | East | West
+   deriving (Show)  -- inorder to print
+
+:t North 
+North :: newTypeOfDataDerection 
+
+-- We can use new types in pattern matching 
+oposit :: newTypeOfDataDerection -> newTypeOfDataDerection 
+oposit North = South
+\end{lstlisting}
+
+\subsubsection{Type classes}
+A type class is a set of types that support certain related operations.
+
+No function is applied by default to the new type, therefor
+you can write ``deriving'' the following functions are good to have
+
+\noindent\textbf{type classes to deriving for new data types}
+\begin{lstlisting}[language=Haskell]
+  deriving (Show)  -- in order to print in ghci and print normal
+  deriving (Eq)  -- To test equality
+  deriving (Ord)  -- the first one has the smallest value, order matter for comparison
+\end{lstlisting}
+\vspace{5mm}
+
+\noindent\textbf{New type classes}
+\begin{lstlisting}[language=Haskell]
+class Eq a where
+   (==) :: a -> a -> Bool
+\end{lstlisting}
+\vspace{5mm}
+
+\noindent\textbf{New type classes Instances}
+\begin{lstlisting}[language=Haskell]
+instance Eq Colour where
+  (==) = eqColour
+\end{lstlisting}
+
+\newpage
+\begin{figure}[h]
+    \vspace{10mm}
+    \centering
+    \includegraphics[width=15cm, height=15cm]{image/type-class.png} 
+    \caption{Type class}
+\end{figure}
+\newpage
+
+
+\subsection{Inductive Data Types}
+Uses a base case then the inductive step as cases of. Multiple arguments. Type constructure
+
+\begin{lstlisting}[language=Haskell]
+data AExp = Atom Int
+   | Plus AExp AExp
+   | Times AExp AExp
+
+eval (Atom i)    = i
+eval (Plus a b)  = eval a + eval b
+eval (Times a b) = eval a * eval b
+\end{lstlisting}
+
+\newpage
+
+\subsection{Trees}
+\noindent\textbf{Terminology}
+\begin{enumerate}
+\item Search tree: All nodes on the left side is less then the parent and opposite on the right side    
+\item Out-degree: is how many children it has. Binary trees has out-degree $0-2$
+\item root Node: is a parent to any number of children at the top of the hierarchy
+\item sub Node: is a parent to any number of children
+\item Leaf: is a nod that has no children
+\item Node: every element
+\item Height: most steps from the root node to a leaf  
+\end{enumerate}
+
+\noindent\textbf{Representation}
+% https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/
+\begin{enumerate}
+\item Inorder: (Left, Root, Right)
+\item Pre-order: (Root, Left, Right)
+\item Post-order: (Left, Right, Root)
+\end{enumerate}
+
+\begin{lstlisting}[language=Haskell]
+data FBTree a = Leaf a
+   | Node (FBTree a) a (FBTree a)
+   deriving (Show)
+   
+Node (Leaf 1) 5 (Leaf 21)
+rootValue :: FBTree a -> a
+rootValue (Node _ a _) = a
+rootValue (Node x) = x
+
+height :: FBTree a -> Int
+height (Leaf _) = 0
+height (Node b a c) = 1 + max (height b) (height c)
+\end{lstlisting}
+
+
+\subsubsection{Binary tree}
+Insertion: $O(1)$  ($O(h)$ if search tree) \newline 
+Delition: $O(n)$   ($O(h)$ if search tree) \newline
+Search: $O(n)$  ($O(h)$ if search tree)    \newline
+Height: $O(n)$ (n nodes)                   \newline
+
+
+\begin{enumerate}
+\item  Full binary tree: has node out-degree either 2 or 0
+  worst-case complexity of $O(\log{n})$.
+\item  Binary tree: each node has up to an out-degree of 2
+\end{enumerate}
+
+\subsubsection{Binary search tree}
+Insertion: $O(h)$  ($O(n)$ if search tree) \newline 
+Delition: $O(h)$                           \newline
+Search: $O(n)$                             \newline
+Height: $O(n)$ (n nodes)                   \newline
+
+
+\newpage
+
+\subsubsection{Red and black trees}
+Insertion: $O(\log{n})$                    \newline % (couldent i be O(n))
+Deletion: $O(\log{n})$                     \newline
+Search: $O(\log{n})$                       \newline % (couldent i be O(n)), wrong is for BHTree
+Element: $O(2^r)$  (rank r)                \newline % look it up not shore
+Height: $O(2\cdot\log_{2}(n+1))$ (n nodes) \newline
+
+Better then a normal binary tree since it balance the tree,
+therefor it becomes smaller and more efficient to search in.
+One should use red and black tree when there is a large number of nodes, say 50.
+
+Definition: A red-black tree is a binary search tree where every node is
+colored either red or black, with the following balancing invariants: 
+
+\begin{enumerate}
+\item  No red node has a red parent.
+\item  Every path from the root to an empty subtree contains the same.
+\item  A red-black tree with n nodes has height at most $2\cdot\log{2}(n+1)$.
+\item  there are 4 cases to rebalance (1;4) is similar so is (2;3).
+\end{enumerate}
+\vspace{2mm}
+
+\noindent\textbf{Algorithm}
+\begin{enumerate}
+\item  Perform a standard binary-search-tree insertion.
+\item  Color the new node red.
+\item  Rebalance the tree, if there is a red node with a red parent.
+\end{enumerate}
+\vspace{2mm}
+
+\subsubsection{Binomial Trees and heaps}
+Insertion: $O(\log{n})$                   \newline
+Search: $O(\log{n})$  (number of trees n) \newline
+Element: $2^r$  (rank r, n=1 then r=0)    \newline
+
+A heap can be used to implement a priority queue, where elements are
+added to a pool and assigned a priority. In a min-priority queue,
+extraction of an element yields an element with minimum priority.
+The smallest node is the root and every child is equal or larger then
+its parent.
+
+Binomial Trees is a data structure by linking trees of rank $r-1$ together.
+A binomial heap (Vuillemin, 1978) is a list of binomial trees such that
+each tree satisfies the min-heap property (hence the root of each tree contains its minimum key);
+and the trees have strictly increasing ranks. \newline
+
+\noindent\textbf{Terminology}
+\begin{enumerate}
+\item  Link: putting together two trees.
+\item  Merge: putting together two heaps
+\item  Binomial Heap: a list (forest!) of Binomial Trees
+\item  Binomial Trees have the largest subtree to the left, while Binomial
+\end{enumerate}
+\newpage
+
+\noindent\textbf{Binomial heaps}
+% https://www.youtube.com/watch?v=hbf_h8Ytv04
+\begin{enumerate}
+\item  Heaps, extracting minimum element in worst case $O(\log{|h|})$
+\item  Binomial Trees, The height (here: number of edges on the longest branch) is $r$.
+\item  Binomial Trees, There are $2^r$ nodes in the tree.
+\item  Binomial Trees, There are $\left(\begin{array}{l}{r}\\{k}\end{array}\right)$ nodes at level k.
+  (Hence its name!)
+\item  Binomial Trees, The root has r subtrees of ranks $r-1,r-2,\ldots,1,0$.
+\item  A binomial heap h has at most $[\lg|h|]+1$ binomial trees.
+\item  Inserting a binomial tree into a binomial heap is like addition with base 2.
+\item  merging is made with too cases either (case 1) when one is smaller or (case 2) when they are equal
+\end{enumerate}
+
+\begin{lstlisting}[language=Haskell]
+  BinoTree = Node Int Int [BinoTree] -- Node rank key (subtrees with decreasing rank)
+\end{lstlisting}
+
+\subsection{Other data types}
+\subsubsection{Tables, Stacking and queuing}
+\begin{enumerate}
+\item  Table: a list of key-value pairs
+\item  Stacks: elements accessed in Last-In First-Out (LIFO) order
+\item  Queues: elements accessed in First-In First-Out (FIFO) order
+\end{enumerate}
+
+\noindent\textbf{Table operations}
+\begin{lstlisting}[language=Haskell]
+empty :: Table k v
+insert :: Eq k => Table k v -> k -> v -> Table k v
+exists :: Eq k => Table k v -> k -> Bool
+lookup :: Eq k => Table k v -> k -> Maybe v  -- value from key
+delete :: Eq k => Table k v -> k -> Table k v
+iterate :: Table k v -> (b -> (k, v) -> b) -> b -> b  -- Foldr
+keys :: Table k v -> (b -> k -> b) -> b -> b  -- all keys
+values :: Table k v -> (b -> v -> b) -> b -> b  -- all values
+\end{lstlisting}
+ 
+
+\noindent\textbf{Stack operations}
+\begin{lstlisting}[language=Haskell]
+-- interface
+newtype Stack a = StackImpl [a] -- opaque!
+
+empty :: Stack a
+isEmpty :: Stack a -> Bool
+push :: a -> Stack a -> Stack a  -- insert
+top :: Stack a -> a   -- the first value
+pop :: Stack a -> (a,Stack a)  -- take out
+\end{lstlisting}
+\newpage
+
+\noindent\textbf{Queue operations}
+\begin{lstlisting}[language=Haskell]
+-- interface
+newtype Queue a = Q [a] -- opaque
+
+empty :: Queue a  
+isEmpty :: Queue a -> Bool
+head :: Queue a -> a 
+enqueue :: Queue a -> a -> Queue a  -- take out element
+dequeue :: Queue a -> Queue a  -- insert element
+toList :: Queue a -> [a] 
+\end{lstlisting}
+
+
+\subsubsection{Hastables}
+\begin{itemize}
+\item  Key value lookup (an index) 
+\item  Array is only define for small index, hash has no limit on avalible keys.
+\item  Typically we have n possible keys from set U for a hashtable (which is an array)
+  with m slots, where n $\geq$ m.
+\item  since there is infinitely many elements and limited amount of key there will be element with
+  the  same key, therefor a coalition is created.
+\item  Worst-Case Retrieval: time complexity of retrieving a element.
+\item  Load Factor: How much data is in the table $\frac{elements}{slots}$
+\item  Rehashing: make the hastable more balanced. 
+\end{itemize}
+
+\noindent\textbf{Collision Resolution by Chaining}
+\begin{itemize}
+\item Most commonly used collision resolution
+\item Let each array slot (also called a bin) hold a list of elements (called a chain).
+\item In other words, When collision then add it to a list in that element
+\end{itemize}
+
+
+\noindent\textbf{Collision Resolution by Open Addressing}
+\begin{itemize}
+\item Start with a table with each element is $\perp$ previously used $\Delta$.  
+\item Probing: is a function to insert items in a hastable therefore resolves collations
+\item Types of probing: \newline
+  Linear probing: $f (i)=i$. \newline
+  Quadratic probing: $f (i)=c_2\cdot i^2+c_1\cdot i, \; where \; c_2 \neq{0}$. \newline
+  Double hashing: $f (i)=i\cdot h'' (i)$, where $h''$ is another hash function. \newline
+\item Inserting with Linear Probing: Insert it to the next avalible key 
+\item Deleting with Linear Probing: Ignores  $\perp$ and $\Delta$ idex will change.  
+\end{itemize}
+
+
+\newpage
+
+\subsection{Graphs}
+\subsubsection{Types of graphs}
+\begin{itemize}
+\item list
+\item tree
+\item forest
+\item Directed Acyclic Graph (DAG)  
+\end{itemize}
+
+\subsubsection{Treminolage}
+\begin{itemize}
+\item Node, vertex (plural: vertices)
+\item Edge connects two nodes.
+\item Self-loop edge from node to itself
+\item Adjacent nodes connected by an edge
+\item Degree number of edges from or to a node
+\item In-degree number of edges to a node
+\item Out-degree number of edges from a node
+\end{itemize}
+
+\subsubsection{Representation}
+\begin{itemize}
+\item \textbf{Adjacency Matrix} — a 2-dimensional array A of $0/1$ values, with $A[i, j]$
+  containing the number of edges between nodes i and j (undirected graph),
+  or from node i to node j \newline
+  $+$ edge existence testing in $\theta(1)$ time \newline
+  $-$ finding next outgoing edge in $O|V|$ time \newline 
+  $+$ compact representation for dense graphs (when $|E|$ is close to $|V|^2$)
+\item \textbf{Adjacency List} — a 1-dimensional array Adj of adjacency lists, with 
+  Adj[i] containing a list of the nodes adjacent to node i. \newline
+  $+$ finding next outgoing edge in $\theta(1)$ time \newline
+  $-$ edge existence testing in $O (|V|)$ time \newline
+  $+$ compact representation for sparse graphs (when $|E|$ is much smaller than $|V|^2$)
+\item \textbf{Edge List} — a list of tuples, (i, j), for each edge (i, j) (plus a list of the nodes). \newline
+  $-$ edge existence test in $\theta(|E|)$. \newline
+  $-$ finding next outgoing edge in $O (|E|)$ (unless appropriately sorted). \newline
+  $+$ compact representation for sparse graphs (when $|E|$ is much smaller than $|V|^2$)
+\end{itemize}
+
+
+\newpage
+
+\subsubsection{topological sort}
+A topological sort is a linear ordering of all the nodes in a directed acyclic. \newline
+
+\noindent\textbf{Algorithm}
+\begin{enumerate}
+\item Select a node with in-degree 0.
+\item Output it.
+\item Remove it.
+\item Repeat (from 1) until no nodes are left.
+\end{enumerate}
+Total running time is $\theta(|V|+|E|)$.
+
+\subsubsection{Graph Traversals}
+\begin{itemize}
+\item Breadth-first search (BFS). Uses a queue for eatch grey node. \newline
+  Time complexity: $\theta(|V|+|E|)$  — linear in the size of the graph.
+\item Depth-first search (DFS). Uses a stack for eatch (grey) node and has a rest of nodes (white). \newline
+  Time complexity: $\theta(|V|+|E|)$  — linear in the size of the graph.
+\end{itemize}
+\vspace{2mm}
+
+\noindent\textbf{Breadth-First Search: Algorithm} \newline
+Input: Some node A.
+\begin{enumerate}
+\item Paint A gray. Paint other nodes white. Add A to an initially empty FIFO queue of gray nodes.
+  All grey nodes is in the queue. It is a queue not a stack so first in first out. 
+\item Dequeue head node, X. Paint its undiscovered (white) adjacent nodes gray and enqueue them.
+  Paint X black. Repeat until queue is empty. For every black node add it to BFS order (black)
+\end{enumerate}
+\vspace{2mm}
+
+\noindent\textbf{Depth-First Search: Algorithm} \newline
+Input: Some node A. \newline
+
+\noindent\textbf{DFS(G)}
+\begin{enumerate}
+\item Paint all nodes white.
+\item For each node v in G: if v is (still) white, DFS-Visit(G,v).
+  Each subsequent call to DFS-Visit in line 2 is called a restart.
+\end{enumerate}
+\vspace{2mm}
+
+\noindent\textbf{DFS(G)}
+\begin{enumerate}
+\item Colour v gray.
+\item For each node u adjacent to v: if u is white, DFS-Visit(G,u).
+\end{enumerate}
+
+\newpage
+
+\subsubsection{Strongly-Connected Components}
+\begin{itemize}
+\item Strongly connected component (SCC): maximal set of nodes
+  where there is a path from each node to each other node.
+\item Many algorithms first divide a digraph into its SCCs, then process
+  these SCCs separately, and finally combine the sub-solutions.
+  (This is not divide \& conquer, since a different algorithm is run on each SCC!)
+\item An undirected graph can be decomposed into its connected
+\end{itemize}
+
+\begin{enumerate}
+\item Enumerate the nodes of G in DFS finish order, starting from any node
+\item Compute the transpose G T (that is, reverse all edges)
+\item Make a DFS in G T, considering nodes in reverse finish order from
+  original DFS
+\item Each tree in this depth-first forest is a strongly connected component
+\end{enumerate}
+
+
+\newpage
+
+\section{Important syntax}
+\subsection{Let}
+\begin{lstlisting}[language=Haskell]
+  let x = 1 in x * 2 == 2
+  case x of
+  1 -> "Hello"
+  2 -> "H"
+  3 -> "Hel"
+
+  input: 3 == "Hel"
+  
+  # other examples
+  let f x y = x + 3 >= y + 3.1 in f 1 1 == False
+
+  f x = let g z = z+1 in g (g x)
+  f 1 == 3
+  
+\end{lstlisting}
+\begin{lstlisting}[language=Haskell]
+:t div
+div :: Integral a => a -> a -> a
+  
+:t (/)
+(/) :: Fractional a => a -> a -> a
+\end{lstlisting}
+
+
+\subsection{IO}
+\textbf{monads}
+Is used to return an IO and uses a operation \emph(>>=) that replaces \emph{do-notation}
+\begin{lstlisting}[language=Haskell]
+class Monad m where
+  (>>=) :: m a -> (a -> m b) -> m b
+  return :: a -> m a
+\end{lstlisting}
+
+
+
+\section{Sorting Algorithms}
+\begin{enumerate}
+\item Insertion Sort: One at a time
+\item Bubble Sort: sort in order two a time starting from left and work to the right side.
+\item Merge Sort: Divide and Conquer, split into even pies and sort them and then merge/sort again. 
+\item Quicksort: Divide and Conquer, takes a pivot to spit smaller and larger.
+\end{enumerate}

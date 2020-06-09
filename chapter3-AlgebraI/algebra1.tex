@@ -1,0 +1,673 @@
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage{mathtools}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{polynom}
+\usepackage{gensymb}
+\usepackage{pgfplots} 
+\usepackage{tikz}
+\usepackage[top=1in,bottom=1in,right=1in,left=1in]{geometry}
+\pgfplotsset{width=10cm,compat=1.9}
+
+\title{Algebra 1 - Formel Samling}
+\author{Anton Augustsson}
+\date{September 2019}
+
+
+
+\begin{document}
+
+
+\maketitle
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Förord}
+Formel samlingen omfatar kursmatrialet från baskursen i matematik. Utöver formlerna, lyfts tillvägagonsätt för övertekande exempel. Syftet med formelsamlingen är att lyfta fram det viktigaste delarna så att det påmineren. Med att skriva en fusk papper lär ens sig oftas det man lätt glömer. Teori är en del i kursen en annan del som är lik så viktigt är utförandet av uppgifterna, i förods paragraphen så näms viktiga tips för att lyckas med upgifterna på tentamen.
+
+
+\newpage
+
+\section{logik}
+\begin{align*}
+  &\quad \text{Utsaga: ett påstående som erhåller antigen värderna sann(S) eller falsk(F) vilket ge en stluten utsaga} \\
+  &\quad \text{eller ej ett sannings värde vilket kallas för öpna utsagor} \\
+  &\quad \text{Kombinerade utsagor:} \\
+  &\quad \text{Kunjuktion utsagor: består av två utsagor som vi kallar A och B} \\
+  &\quad \text{där and: } \land  (A \land B) \\
+  &\quad \text{Dissjuntion utsagor: består av två utsagor som vi kallar A eller B} \\
+  &\quad \text{or: } \lor  (A \lor B) \\
+  &\quad \text{icke utsaga A (motsatsen): } \neg A \\
+  &\quad \text{Alla: } \forall \\
+  &\quad \text{Minst en: } \exists \\
+  &\quad \neg(\forall x : A) \Leftrightarrow \exists x : \neg A \\
+  &\quad \neg(\exists x : A) \Leftrightarrow \forall x : \neg A \\
+\end{align*}
+
+\textbf{Exempel:}\par
+\begin{align*}
+  &\quad A \text{: Alla reala tal x gäller att } (x+1)^2 = 0 \\
+  &\quad \forall x : (x+1)^2 = 0 \\
+  &\quad \neg(\forall x : (x+1)^2 = 0) = \exists x : (x+1)^2 \not = 0 \\
+  &\quad \neg A \text{: Det finns reala tal x gäller att } (x+1)^2 \not 0 \\
+\end{align*}
+
+
+
+\subsection{värde tabeller}
+\textbf{Kunjuktions värdetabel:}\par
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+ A  & B  & \(A \land B\) \\ 
+ S  & S  & S          \\ 
+ S  & F  & F          \\  
+ F  & S  & F          \\ 
+ F  & F  & F          \\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\textbf{Dissjuktions värdetabel:}\par
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+ A  & B  & \(A \lor B\) \\ 
+ S  & S  & S          \\ 
+ S  & F  & S          \\  
+ F  & S  & S          \\ 
+ F  & F  & F          \\ 
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+\subsection{Implikationer}
+\begin{align*}
+  &\quad \text{A medför B: } A \Rightarrow B \text{ (implikaiton)} \\
+  &\quad \text{A och B medför varandra: } A \Leftrightarrow B \text{ (ekvivalens)} \\
+\end{align*}
+
+\newpage
+\textbf{Implication värdetabell:}\par
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+ A  & B  & \(A \Rightarrow B\) \\ 
+ S  & S  & S          \\ 
+ S  & F  & F          \\  
+ F  & S  & S          \\ 
+ F  & F  & S          \\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\textbf{Ekvivalens värdetabel:}\par
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+ A  & B  & \(A \Leftrightarrow B\) \\ 
+ S  & S  & S          \\ 
+ S  & F  & F          \\  
+ F  & S  & F          \\ 
+ F  & F  & S          \\ 
+ \hline
+\end{tabular}
+\end{center}
+
+
+\textbf{Exempel1:}\par
+\begin{equation}
+  x = \sqrt{6 - x}
+\end{equation}
+
+\begin{align*}
+  &\quad  x = \sqrt{6 - x} \Rightarrow x^2 = 6 - x \Leftrightarrow x^2 + x - 6 = 0 \\
+  &\quad  \text{pq-formeln: } x = -\frac{1}{2} \pm \sqrt{\frac{1}{4} + \frac{24}{4}} \Leftrightarrow (x=-3) \lor (x=2) \\
+  &\quad \text{Eftersom det är en implikation år höger och inte ekvivalens så behöver inte rötterna vara sanna }
+  &\quad \\
+  &\quad \text{Testar för falska rötter: } \\
+  &\quad 2 = \sqrt{6-2} \text{ Sann} \\
+  &\quad 2 = \sqrt{6-(-3)} \text{ Falsk } 2 \ne \sqrt{6-(-3)} \\
+\end{align*}
+
+
+\textbf{Exempel2:}\par
+\begin{equation}
+  (x+2)(x+1) = 2x(x+1)
+\end{equation}
+
+\begin{align*}
+  &\quad (x+2)(x+1) = 2x(x+1) \text{ is not } \Rightarrow (x+2) = 2x \text{ (x=0 is not allowed)} \\
+  &\quad \text{Insted do ass following: } \\
+  &\quad (x+2)(x+1) = 2x(x+1) \Leftrightarrow (x+2)(x+1) - 2x(x+1) = 0 \Leftrightarrow (x+1)(x+2-2x) = 0 \Leftrightarrow \\
+  &\quad \Leftrightarrow (x+1=0)\lor(2-x=0) \\
+  &\quad \text{svar ej: x=1 och x=2} \\
+  &\quad \text{svar: x=1 eller x=2} \\
+  &\quad \text{svar: } x=1 \lor x=2 \\
+\end{align*}
+
+
+\newpage
+
+\section{Mängder}
+\begin{align*}
+  &\quad \text{Naturliga tal: } \mathbb{N} = \{0, 1, 2 , 3 ..  \} \\
+  &\quad \text{Heltal: }\mathbb{Z} = \{.. -2, 1, 0, 1, 2 ..  \} \\
+  &\quad \text{Rationella tal: }\mathbb{Q} = \{ \frac{a}{b} | a,b \in \mathbb{Z}, b \\
+  &\quad \text{Irrationella tal: }\mathbb{P} = \frac{\mathbb{R}}{\mathbb{Q}}eller \{ x | x \in \mathbb{R}, x \notin \mathbb{Q} \} \\
+  &\quad \text{Reella tal: }\mathbb{R} =  \mathbb{P} \cup \mathbb{Q} \\
+\end{align*}
+
+\begin{align*}
+  &\quad A \cup B = \{ x:(x \in A) \lor (x \in B)\} \\
+  &\quad A \cap B = \{ x:(x \in A) \land (x \in B)\} \\
+  &\quad A \setminus B = \{ x:(x \in A) \land (x \notin B)\} \\
+  &\quad A^{\text{\#}} = \{ x:(x \in X) \land (x \notin A)\} \\
+\end{align*}
+
+\textbf{Exempel:}\par
+\begin{equation}
+  \text{Bevisa: } X \setminus (A \cup B) = (X \setminus A) \land (X \setminus B) 
+\end{equation}
+
+\begin{align*}
+  &\quad x \in (X \setminus (A \cup B)) \Rightarrow (x \in X) \land (x \notin (A \cup B)) \Rightarrow \\
+  &\quad \Rightarrow (x \in X) \land (x \notin A) \land (x \notin B) \Rightarrow \\
+  &\quad \Rightarrow (x \in X \setminus A) \land (x \in X \setminus B) \Rightarrow \\
+  &\quad \Rightarrow x \in (X \setminus A) \land (X \setminus B) \Rightarrow \\
+  &\quad \Rightarrow X \setminus (A \cup B) \subseteq (X \setminus A) \land (X \setminus B) \\
+\end{align*}
+
+
+\newpage
+
+\section{Bevis}
+\subsection{Induktions bevis}
+steg 1: bevisa att det gäller för basfallet
+
+Steg 2: bevvisar att p => p
+a. Antar att det stämmer för pp
+b. Vissar att med att stopa in antagandet i pp+1 så blir hl = vl
+Tips: Förenkla hl först och sedan vl på klad papper fram och tillbacka
+\textbf{Exempel Recursion:}\par
+\begin{align*}
+  &\quad  a_1 = 2, a_{n+1} = \frac{7a_n}{7-a_n}, n \in \mathbb{N} \\
+  &\quad  \text{Vissa med induktion att } a_{n+1} = \frac{14}{7-2n} \\ 
+  &\quad  \text{Bevis med induktions} \\
+  &\quad  \text{steg 1: visar att påståendet som vi kallar p gäller för basfallet (n=1)} \\
+  &\quad  VL_1: a_{1+1}=a_2=\frac{7 \cdot 2}{7-2}=\frac{14}{5}, HL_1: a_{1+1}=a_2=\frac{14}{7-2}=\frac{14}{5} \\
+  &\quad  \\
+  &\quad  \text{steg 2: visar att } p_m \Rightarrow p_{m+1} \\
+  &\quad  \text{steg 2a: antar att } p_m \text{ gäller} \\
+  &\quad  a_{m+1}=\frac{14}{7-2m}\\
+  &\quad  \text{steg 2b: bevisar attt } p_m \Rightarrow p_{m+1} \text{ genom att andvända antagandet} \\
+  &\quad  VL_{m+1}a_{m+2}=\frac{7a_{m+1}}{7-a_{m+1}} = \frac{7 \frac{14}{7-2m}}{7-\frac{14}{7-2m}} = \frac{\frac{7 \cdot14}{7-2m}}{\frac{7(7-2m) - 14}{7-2m}} = \\
+  &\quad  = \frac{7 \cdot 14}{7(7-2m+2)} = \frac{14}{7-2(m+1)} \\
+  &\quad  HL_{m+1}: \frac{14}{7-2(m+1)} \\
+  &\quad  \text{Enlight induktionsprincipen är $ p_m $ sann för alla } n = 1,2,3 \ldots \text{ VSB}  \\
+\end{align*}
+
+\subsection{Motsägelse bevis}
+Steg 1: Formulera utsagan och icke utsagan
+Steg 2: Hitta en motsägelse med utsagan
+Tips: Förenka båda led, tänk på teorin vi har, bättre att gå vaga moteveringar en inga alls
+\begin{align*}
+  &\quad  \\
+  &\quad  \text{Bevis med motsägelse } \\
+  &\quad  \text{Antar att motsatsen är sann  } \\
+  &\quad  \\
+\end{align*}
+% Contradiction https://www.youtube.com/watch?v=sRDwsfNDXak
+% https://www.youtube.com/watch?v=huGWXh4l1M0
+
+
+\newpage
+
+\section{Delbarhet}
+\begin{equation}
+  \text{a är delbar med b, altså kvoten ger ingen rest. Vi följand: } a \mid b
+\end{equation}
+
+
+\textbf{Divitions algoritmen:}\par
+\begin{align*}
+  &\quad a, b \in \mathbb{Z}  \\
+  &\quad a  \geq 0 \land b  \geq  0 \\
+  &\quad a \mid b \Rightarrow (q \in \mathbb{Z} : q \geq 0) \land (r \in \mathbb{Z} : 0 \leq r \leq a) \text{ Sådant att} \\
+  &\quad b = q a + r\\
+  &\quad q = \text{ kvoten, } r = \text{ resten} \\
+\end{align*}
+
+
+
+\subsection{Största Gemensama Delaren (SGD)}
+\begin{align*}
+  &\quad SGD(a,b) \\
+  &\quad a = bq + r \\
+  &\quad 0 \leq r \leq b \\
+\end{align*}
+
+\textbf{Euklides algoritm:}\par
+\begin{align*}
+  &\quad SGD(a,b) \\
+  &\quad a = bq_1 + r_1 \\
+  &\quad b = r_1q_2 + r_2 \\
+  &\quad r_1 = r_2q_3 + r_3 \\
+  &\quad r_2 = r_3q_4 + r_4 \\
+  &\quad . \\
+  &\quad . \\
+  &\quad . \\
+  &\quad r_{k-3} = r_{k-2}q_{k-1} + r_{k} \\
+  &\quad r_{k-2} = r_{k-1}q_k + 0 \\
+  &\quad SGD(a,b) = r_{k} \\
+  &\quad \text{Om } r_{k} = 1 \Rightarrow a \in \text{primtal} \lor b \in \text{primtal} \\
+\end{align*}
+
+\newpage
+\textbf{Exempel:}\par
+\begin{align*}
+  &\quad \text{Förenkla } \frac{114}{96} \\
+  &\quad \\
+  &\quad SGD(114,96):    \\
+  &\quad 114 = 1*96 + 18 \\
+  &\quad 96  = 5*18 + 6  \\
+  &\quad 18  = 3*6  + 0  \\
+  &\quad \frac{114}{6} = 19 \\
+  &\quad \frac{96}{6}  = 16 \\
+  &\quad \frac{19}{16} \\
+\end{align*}
+
+
+\textbf{Lemma:}\par
+\begin{align*}
+  &\quad  a, b \in \mathbb{Z} \\
+  &\quad  x, y \in \mathbb{Z} \\
+  &\quad  SGD(a,b) = ax + by  \\
+\end{align*}
+
+
+\textbf{Aritmetiska fundamentalsatsen:}\par
+\begin{align*}
+  &\quad  a \in \mathbb{Z} \land a \geq 2 \Rightarrow  \\
+  &\quad  \Rightarrow a \text{ kan endast primtalsfaktoriseras på ETT SÄTT} \\
+\end{align*}
+
+\textbf{Lemma 2.7:}\par
+\begin{align*}
+  &\quad  a \geq 2 \land a \notin \text{ Primatal} \Rightarrow \\
+  &\quad  \Rightarrow q \in \text{ Primatal} \land q \mid a \land \text{ a går att primtals faktoriera}\\
+\end{align*}
+
+
+\newpage
+
+\subsection{Primtal}
+
+\textbf{Sats:}\par
+För att bestäma om tal a är ett primtal
+\begin{align*}
+  &\quad  a \geq 1 \land a \in \text{ Primatal} \\
+  &\quad  \text{om ett tall p finns som dellar a gäller följande} \\
+  &\quad  2 \leq p \leq \sqrt{a} \leq a \\
+\end{align*}
+
+
+\textbf{Exemple:}\par
+\begin{equation}
+  \text{Bestäm om 211 är ett primtal }
+\end{equation}
+
+\begin{align*}
+  &\quad  \text{Om 211 är ett primtal så finns det inte en äkta delare a} \\
+  &\quad  2 \leq a \leq \sqrt{211}  \\
+  &\quad  \sqrt{211} \approx 16 \\
+  &\quad  a: \{ \not 2, \not 3, \not 5, \not 7, \not 11, \not{13} \} \\
+  &\quad  \text{a kan inte vara en äktadelare} \\
+\end{align*}
+
+
+\textbf{Euklides algoritm:}\par
+\begin{align*}
+  &\quad  \text{Det finns oändligt många primtal} \\
+\end{align*}
+
+\textbf{Bevis:}\par
+Motsägelsebevis  
+\begin{align*}
+  &\quad  \text{Antar att det finns ändligt många primtal} \\
+  &\quad  p_1,p_2,P_3,..,p_n \\
+  &\quad  M = \displaystyle\prod_{k=1}{n} + 1 \Rightarrow M > p_j, j = 1,2,3,..,n \\
+  &\quad  \text{Vissar att M är ett primtal} \\
+  &\quad  1 < b < M \land b \mid M \text{ Där b är minsta äkta delaren av M} \Rightarrow \\
+  &\quad  \Rightarrow M = p_1 * b \Rightarrow p_1 \mid 1 \land p \geq 2 \\
+  &\quad  \text{Detta är falskt eftersom båda utsågorna kan inte vara samtidigt} \\
+  &\quad  \text{Eftersom motsatsen inte fungerar resulterar det i att satsen är sann} \\
+\end{align*}
+
+
+\newpage
+
+\section{Diofantiska ekvationer} 
+\textbf{Sats:}\par
+\begin{align*}
+  &\quad  ax + by = c \land a,b,c \in \mathbb{Z} \and a \ne 0, b \ne b \\
+  &\quad  \Rightarrow \\
+  &\quad  ax + by = c \text{ Där } SGD(a,b) = 1 \\
+  &\quad  \text{Har den anmäla lösningen:} \\
+  &\quad  x = C x_0 - n b \land y = C y_0 + n a \\
+\end{align*}
+
+\textbf{Exempel:}\par
+\begin{equation}
+  \text{En lastbil lastas med 12kg packet och 20kg paket. Totalt väger lasten 296, hur många av varge packet?}
+\end{equation}
+
+\begin{align*}
+  &\quad  ax + by = C \Leftrightarrow 12x + 20y = 296 \\
+  &\quad  \text{steg1: Testar om } SGD(a,b) \mid c \\
+  &\quad  SGD(20,12) = 4 \Rightarrow 4 \mid 269 \\
+  &\quad  \text{steg2: delar SGD med HL och VL} \\
+  &\quad  \frac{12x - 20y}{4} = \frac{269}{4} \Leftrightarrow 3x - 5y = 74 \\
+  &\quad  SGD(5,3): \\
+  &\quad  5 = 1 \cdot 3 + 2 \\
+  &\quad  3 = 1 \cdot 2 + 1 \\
+  &\quad  2 = 2 \cdot 1 + 0 \\
+  &\quad  \text{steg3: Hjälp ekvation för att hitta} x_0, y_0 \\
+  &\quad  3x_0 - 5y_0 = 1 \\
+  &\quad  1 = 3 - 1 * 2 \\
+  &\quad  1 = 3 - (5 - 3) \\
+  &\quad  1 = 2 \cdot 3 - 1 \cdot 5 \\
+  &\quad  x_0 = 2, y_0 = -1 \\
+  &\quad  \text{steg4: almäna lösningen } x = Cx_0 - bn, y = Cy_0 + an \\
+  &\quad  x = 74 \cdot 2 - 5n = 148 - 5n \\
+  &\quad  y = 74 \cdot (-1) + 3n = -74 + 3n \\
+  &\quad  \text{steg5: hittar godtyckliga lösningar} \\
+  &\quad  \text{Intervallet som n ligger i för x-termen:} \\
+  &\quad  n = {\not 29, 28, 27, \ldots }, x = 148 - 5 \cdot 28 = 148 - 140 = 8 \\ 
+  &\quad  \text{Intervallet som n ligger i för y-termen:} \\
+  &\quad  n = {\not 27, 28, 29, \ldots }, x = -74 + 3 \cdot 28 = 74 - 84 = 10 \\
+  &\quad  n = 28, x=8, y=10 \\
+  &\quad  12 \cdot 8 + 20 \cdot 10 = 296 \\
+\end{align*}
+
+
+\newpage
+
+\section{Talbaser}
+\subsection{konvertera från decimal bass till annan bas}
+\begin{align*}
+  &\quad  175_8 = 1 \cdot 8^2 + 7 \cdot 8^1 + 5 \cdot 8^0 \\
+\end{align*}
+
+\subsection{konvertera från annan bas till decimal bas}
+\begin{align*}
+  &\quad  1609_{10} = (3 \cdot 8^3 + 1 \cdot 8^2 + 1 \cdot 8^1 + 1 \cdot 8^0) = 3111_8 \\
+\end{align*}
+
+eller så kan man andvända euklides algoritm 
+\begin{align*}
+  &\quad  \text{skriv 517 i talbas 3} \\
+  &\quad  517 = 172 \cdot 3 + 1 \\
+  &\quad  172 =  57 \cdot 3 + 1 \\
+  &\quad   57 =  20 \cdot 3 + 0 \\
+  &\quad   20 =   6 \cdot 3 + 2 \\
+  &\quad    6 =   2 \cdot 3 + 0 \\
+  &\quad    2 =   0 \cdot 3 + 2 \\
+  &\quad  \text{Svar: } 517_{tio} = 202011_{tre} \\
+\end{align*}
+
+\subsection{Andra exempel}
+\textbf{Exempel: Skriv $137_{nio}$  i bass tre}\par
+\begin{align*}
+  &\quad  137_{nio} = 1 \cdot 9^2 + 3 \cdot 9^1 + 7 \cdot 9^0 = 1 \cdot 3^4 + 3 \cdot 3^2 + 7 \cdot 3^0 =  \\
+  &\quad  = 1 \cdot 3^4 + 1 \cdot 3^3 + 0 \cdot 3^2 + 2 \cdot 3^1 + 1 \cdot 3^0 = 11021_{tre}
+\end{align*}
+
+
+\newpage
+
+\section{Functioner}
+\textbf{Typer av funktioner:}\par 
+\begin{align*}
+  &\quad  \text{Injektion: alla element x har olika värden y } f: A \to B, \{{\forall x \in A: x_1 \neq x_2, f(x_1) \neq f(x_2)}\} \\
+  &\quad  \text{Surjektion: mängd D är definitions mängden } \{g: C \to D, g(x)=y, (\forall y \in D \land \exists x \in C)\} \\
+  &\quad  \text{Bijektion: } \text{Injektion} \land \text{Surjektion}  \\
+\end{align*}
+ 
+\textbf{Kareskaprodukten:}\par
+\begin{align*}
+  &\quad  A \times B = \{ (a,b): a \in A \land b \in B \} \\
+  &\quad  \text{Låt } A = \{ 1,2,3 \} \land B = \{ x,y,z,w \} \\
+  &\quad  A x B : \\
+  &\quad  \{ (1,x), (1,y), (1,z), (1,w) \\
+  &\quad  (2,x), (2,y), (2,z), (2,w) \\
+  &\quad  (3,x), (3,y), (3,z), (3,w) \} \\
+\end{align*}
+
+\subsection{Inversen}
+En funktions invers kan enda
+\begin{align*}
+  &\quad  f: A \to B \land Bijektiv \Rightarrow f^{-1}(x) \text{ Finns, där}  \\
+  &\quad \text{(1) }  x = f^{-1}(y) \Leftrightarrow y = f(x) \\
+  &\quad \text{(2) }  D_{f^-1} = V_f \Leftrightarrow D_f = V_{f^-1} \\
+  &\quad \text{(3) }  x = f^{-1}(f(x)), x \in D_f = V_{f^-1} \\ 
+  &\quad \text{(3) }  y = f^{-1}(f(y)), y \in D_f = V_{f^-1} \\ 
+\end{align*}
+
+\subsection{Relatioiner}
+\begin{align*}
+  &\quad  \text{Relation: } xRy \\
+  &\quad  \text{Reflexiv: } \forall x \in X: xRx \\
+  &\quad  \text{Symetrisk: } xRy \Rightarrow yRx, x \in X \land y \in X \\
+  &\quad  \text{Transitiv: } (xRy) \land (yRz) \Rightarrow xRz, \forall x,y,z \in X  \\
+  &\quad  \text{Ekvivalnsrelation: Reflexiv och Symetrisk Transitiv} \\
+\end{align*}
+
+
+\newpage
+
+\section{Summor}
+\subsection{Aritmetiska summor}
+\begin{equation}
+s _ { n } = a _ { 1 } + a _ { 2 } + a _ { 3 } + \ldots + a _ { n } = \frac { n \left( a _ { 1 } + a _ { n } \right) } { 2 }
+\end{equation}
+
+
+\subsection{Geometriska summor}
+Börjar altid med exponenten 0 och gör om summan så att den passar i följade talföljd:
+\begin{equation}
+s _ { n } = a + a k + a k ^ { 2 } + \ldots + a k ^ { n - 1 } = \frac { a \left( k ^ { n } - 1 \right) } { k - 1 }
+\end{equation}
+
+
+\textbf{Exempel:}\par
+\begin{equation}
+\displaystyle\sum _ { k = n } ^ { 2n } (2^{k} - k)
+\end{equation}
+
+\begin{align*}
+  &\quad \text{sätter f = 0 = k -n} \\
+  &\quad \displaystyle\sum _ { f = 0 } ^ { n } (2^{f+n} - (f+n)) = 2^{n} * \displaystyle\sum _ { f = 0 } ^ { n } (2^{f}) - \displaystyle\sum _ { f = 0 } ^ { n } (f+n) \\
+  &\quad \frac{2^{n} (2^{n+1} -1)}{2-1} - \frac{3n(n+1)}{2} = 2^{2n+1} - 2^{n} - \frac{3n(n+1)}{2}\\
+  &\quad  \\
+\end{align*}
+
+
+\newpage
+
+\section{Kongruensräkning}
+\textbf{Räkneregler:}\par
+\begin{align*}
+  &\quad a+b \pmod{n} \equiv a \pmod{n} + b \pmod{n} \\
+  &\quad a \cdot b \pmod{n} \equiv a \pmod{n} \cdot  b(modn) \\
+  &\quad a^b \pmod{n} \equiv (a \pmod{n})^b \\
+\end{align*}
+
+\textbf{Exempel: Vilket är det minsta positiva rest som kan erhållas vid division av $19^{18}$ med $17$? }\par
+\begin{align*}
+  &\quad  19^{18} \equiv 2^{18} \pmod{17} \equiv 2^4 \cdot 2^4 \cdot 2^4 \cdot 2^4 \cdot 2^2 \pmod{17}
+  \equiv {(-1)}^4 \cdot {(-1)}^4 \cdot {(-1)}^4 \cdot {(-1)}^4 \cdot 2^2 \pmod{17} \\
+  &\quad \text{svar: resten blir } 4 \\
+\end{align*}
+
+
+\newpage
+
+\section{Kardinalitet}
+Kardinalitet eller ``mäktighet'' är ett sett att räkna med mängders sorlek och alla
+oändliga mängder har samma kardinalitet fast det är en delmängd. Naturliga tall har samma
+kardinalitet som reala tal trots att naturliga tal är en del mängd av reala talen
+
+\begin{align*}
+  &\quad \text{Låt A och B vara mängder. Vi sägger att A och B har samma kardinalitet då det finns en bijektion} \\
+  &\quad \exists f: A \to B, A \sim B \\
+  &\quad \text{Vi säger att A står i relation med B omm A och B har samma kardinalitet} ARB \\
+\end{align*}
+
+\subsection{Uppräkneligamängder}
+\begin{align*}
+  &\quad \text{En mängd X sägs vara upräknerlig omm X har samma kardinalitet som } \mathbb{N}  \\
+  &\quad \exists g: \mathbb{N} \to X \text{ där g är bijektiv} \\
+  &\quad \text{Exempel på upräknerliga mängder är } \mathbb{N}, \mathbb{Z}, \mathbb{Q}, \{ 1,5,78 \} \\
+  &\quad \text{Exempel på ej upräknerliga mängder } \mathbb{R}, (0,1) \\ 
+\end{align*}
+
+
+\newpage
+
+\section{Polynom}
+\subsection{Polynom division}
+\begin{align*}
+  &\quad  \text{Triviala delare: ej heltals kvot med delaren, har en kostant sådant } \lambda \cdot f, \lambda \notin \mathbb{Z}  \\
+  &\quad  \text{Äkta delare: heltals kvot med delaren } f(x), \exists a \in polynom: a \mid f(x) \\
+  &\quad  \text{Irreducible: om polynomet endast har triviala delare det finns lösningar heltaslösningar } f(x)=0 \\
+  &\quad  \text{Reducible: om polynomet har äkta delare} \\
+  &\quad  \text{Multiplisitet: vilken grad polynomet har}
+\end{align*}
+
+
+\textbf{Exempel:}\par
+\begin{equation}
+   \text{Man vet att ekvationen } z^4 - 2z^3 - 7z^2 + 26z - 20 = 0 \text{ har roten } z = 2 + i \text{. Lös ekvationen fullständigt.}
+\end{equation}
+\begin{align*}
+  &\quad z = 2 + i \text{ Är en lösning är också konjugatet en lösning enligt faktorsatsen } \overline{\rm z}= a - b i \\
+  &\quad z = 2 \pm i \\
+  &\quad \text{Vilket betyder att följande går att factorisera ut polynomet} \\
+  &\quad (z -(2 + i))(z -(2 - i)) = z^2 - 4z + 5 \\
+\end{align*}
+
+\textbf{Långdivition (liggande stolen):}\par
+\polylongdiv[style=A]{x^{4}-2x^{3}-7x^{2}+26x-20}{x^{2}-4x+5}
+\begin{align*}
+  &\quad z^2 + 2z - 4 = 0 \text{ Är också en läsning som tilslut ger följande} \\
+  &\quad z = -1 \pm \sqrt{5} \\
+  &\quad z = 2 \pm i \\
+  &\quad \text{Varge n grads polynom har altid n stycken komplexa lösningar} \\
+\end{align*}
+
+\newpage
+
+\subsection{Faktorsatsen}
+\begin{align*} 
+  &\quad  f(x) = (x - \alpha)p(x) \\
+\end{align*}
+
+\textbf{Exempel, Gemensam root hos två polynom:}\par
+\begin{align*}
+  &\quad  p(x)=x^4-x^3+x^2+2=0,\; g(x)=x^3+4x^2+4x+3=0 \text{ har en Gemensam root} \\
+  &\quad  \text{Eftersom polynomen har en Gemensam root vet vi att det finns en gemensam} (x-\alpha) \\
+  &\quad  \\
+  &\quad  f(x)=(x-\alpha)p_1(x) \\  
+  &\quad  g(x)=(x-\alpha)p_2(x) \\  
+  &\quad  \text{euklides algoritm:} \\
+  &\quad  f(x)=(x-5)g(x)+17(x^2+x+1) \\
+  &\quad  g(x)=(\frac{1}{17}(x+3))(17(x^2+x+1))+17(x^2+x+1) + 0 \\
+  &\quad  \\
+  &\quad  h(x)=x^2+x+1 \\
+  &\quad  f(x)= (x-5)(x+3)h(x)+17h(x) = h(x)((x-5)(x+3)+17) = h(x)(x^2-2x+2) \\
+  &\quad  g(x)= (x+3)h(x) \\ 
+  &\quad  \\
+  &\quad  f(x)=0 \Leftrightarrow (h(x)=0 \lor x^2-2x+2=0) \\
+  &\quad  h(x)=0 \Rightarrow x=-\frac{1}{2} \pm \frac{\sqrt{3}}{2}i \\
+  &\quad  x^2+2x+2=0 \Rightarrow x=1 \pm \sqrt{1-2}=1 \pm i \\
+\end{align*}
+
+
+\textbf{Exempel, Heltalslösning med okänd konstant:}\par
+\begin{align*}
+  &\quad  x^3 + bx^2 - 7x -7 = 0 \text{ har en heltals lösning} \\
+  &\quad  \text{Eftersom ekvationen har en heltals lösning vet vi att } \alpha \mid 7\\
+  &\quad  \text{Kandidaterna är } \{1,-1,7,-7 \} \\
+  &\quad  I   (x= 1) \;  1 + b\cdot  1 - 7 -7 = 0 \Rightarrow b=13 \in \mathbb{Z} \\
+  &\quad  II  (x=-1) \; -1 + b\cdot -1 + 7 -7 = 0 \Rightarrow b= 1 \in \mathbb{Z} \\
+  &\quad  III (x= 7) \;  7 + b\cdot  7 -49 -7 = 0 \Rightarrow b=\_ \notin \mathbb{Z} \\
+  &\quad  IV  (x=-7) \;  7 + b\cdot -7 +49 -7 = 0 \Rightarrow b=\_ \notin \mathbb{Z} \\
+  &\quad  \text{svar: b=13, b=1}
+\end{align*}
+
+\newpage
+\textbf{Exempel, Rationell root:}\par
+\begin{align*}
+  &\quad  g(x)= 2x^3 +2x^2 +2x +3 = 0 \text{ har en rationell root} \\
+  &\quad  \text{Eftersom ploynomet har en rattionel root vet vi att: } \\
+  &\quad  \frac{p}{q} \; p,q \in \mathbb{Z}, \; SGD(p,q) = 1, \; p \mid 3 \land q \mid 2 \; (a_0) \\
+  &\quad  \text{Det möjliga delarna är } p=\pm 1,\pm 3, \; q=\pm 1,\pm 2 \\
+  &\quad  x=-\frac{3}{2} \text{ är den enda av kandidaterna som ger en sann root} \\
+  &\quad  \text{Vilket vi löser genom polynom divition}
+\end{align*}
+
+
+\textbf{Exempel, Renimaginär root:}\par
+\begin{align*}
+  &\quad  z^4 + 4z^3 + 8z^2 + 12z +15 = 0 \text{ har en renimachinär root} \\
+  &\quad  \text{Eftersom ploynomet har en rentimaghinär root vet vi att } z=bi, b \in \mathbb{R}, b \neq 0 \\
+  &\quad  0= b^4i^4 +4b^3i^3 +8b^2i^2 +12bi +15 = b^4 -4b^3i -8b^2 +12bi +15 = (b^4-8b^2+15) + (12b-4b^3)i = \\
+  &\quad  0= b^4-8b^2+15 \\
+  &\quad  0= 12b-4b^3 = 4b(3-b^2) \Rightarrow b=0, b=\sqrt{3}, b=-\sqrt{3} \\
+  &\quad  b=0 \text{ är ej en giltig lösning. Enlight faktorsatsen får vi följande} \\
+  &\quad  p(z)=(z-\sqrt{3}i)(z+\sqrt{3}i)Q(x) = (z^2+3)Q(z) \\
+  &\quad  \text{Vilket vi löser genom polynom divition}
+\end{align*}
+
+\textbf{Exempel, Dubel root:}\par
+\begin{align*}
+  &\quad  p(t)= t^3 -5t^2 +3t +9 = 0 \text{ har en dubbel root} \\
+  &\quad  \text{Eftersom ploynomet har en dubbel root vet vi att derivatan ger os en root} p'(t)=0  \\
+  &\quad  \text{Att räkna ut derivatan gör man genm formeln } ax^b \Rightarrow b\cdot ax^{b-1} \\
+  &\quad  p'(t) = 3t^2 -10t +3 = 0 \Rightarrow t_1=3,t_2=\frac{1}{3} \text{ dock är sista en falsk root} \\
+  &\quad  p(t) = {x-3}^2Q(t) \\ 
+  &\quad  \text{Vilket vi löser genom polynom divition}
+\end{align*}
+
+\newpage
+\textbf{Exempel, SGD polynom:}\par
+\begin{align*}
+  &\quad  \text{Förenkla} \frac{x^4+x^3+2x-4}{x^4-x^3-2x-4} \\
+  &\quad  SGD(x^4+x^3+2x-4, x^4-x^3-2x-4):  \\
+  &\quad  x^4+x^3+2x-4 = 1 \cdot x^4-x^3-2x-4 + (2x^3 +4x) \\
+  &\quad  x^4-x^3-2x-4 = \frac{x}{2}-\frac{1}{2} \cdot (2x^3 +4x) + (-2x^2-4) \text{ med polynom divition} \\
+  &\quad      2x^3 +4x = -x \cdot (-2x^2-4) +0 \\
+  &\quad  \text{Med SGD så kan vi ta ett polynom som är hjämt delbart ex:} -2(x^2+x) \\
+  &\quad  \text{polynom divition: } \frac{x^4+x^3+2x-4}{x^2+x} = x^2+x-2 \\
+  &\quad  \text{polynom divition: } \frac{x^4-x^3-2x-4}{x^2+x} = x^2-x-2 \\
+  &\quad  \frac{x^4+x^3+2x-4}{x^4-x^3-2x-4} = \frac{x^2+x-2}{x^2-x-2} \\  
+\end{align*}
+
+
+\newpage
+
+
+\end{document}

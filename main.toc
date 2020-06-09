@@ -1,0 +1,83 @@
+\babel@toc {swedish}{}
+\contentsline {chapter}{\numberline {1}basic-course-in-mathematics - Formel Samling}{5}% 
+\contentsline {section}{\numberline {1.1}Förord}{5}% 
+\contentsline {section}{\numberline {1.2}Basic}{6}% 
+\contentsline {subsection}{\numberline {1.2.1}Mängder}{6}% 
+\contentsline {subsection}{\numberline {1.2.2}Potenslagar}{6}% 
+\contentsline {subsection}{\numberline {1.2.3}Logaritmer}{6}% 
+\contentsline {subsection}{\numberline {1.2.4}Tillvägagångs sätt}{6}% 
+\contentsline {subsubsection}{Lösning}{7}% 
+\contentsline {subsection}{\numberline {1.2.5}Intervall}{7}% 
+\contentsline {subsection}{\numberline {1.2.6}Tillvägagångs sätt}{7}% 
+\contentsline {subsubsection}{Lösning}{7}% 
+\contentsline {section}{\numberline {1.3}Komplexa tal}{8}% 
+\contentsline {subsection}{\numberline {1.3.1}Polärform}{8}% 
+\contentsline {subsubsection}{Binomisk ekvation}{9}% 
+\contentsline {subsubsection}{Tillvägagångs sätt}{9}% 
+\contentsline {section}{\numberline {1.4}Absolut Belopp}{10}% 
+\contentsline {subsection}{\numberline {1.4.1}Tillvägagångs sätt}{10}% 
+\contentsline {subsubsection}{lösning}{10}% 
+\contentsline {section}{\numberline {1.5}Summor}{11}% 
+\contentsline {subsection}{\numberline {1.5.1}Aritmetiska summor}{11}% 
+\contentsline {subsection}{\numberline {1.5.2}Geometriska summor}{11}% 
+\contentsline {subsection}{\numberline {1.5.3}Tillvägagångs sätt}{11}% 
+\contentsline {subsubsection}{Lösning}{11}% 
+\contentsline {section}{\numberline {1.6}Kombinatorik}{12}% 
+\contentsline {subsection}{\numberline {1.6.1}Multiplikations principen}{12}% 
+\contentsline {subsection}{\numberline {1.6.2}Kombinationer}{12}% 
+\contentsline {subsubsection}{Pascal triangel}{12}% 
+\contentsline {subsection}{\numberline {1.6.3}Binomial satsen}{12}% 
+\contentsline {section}{\numberline {1.7}Funktioner och kordinatsystem}{13}% 
+\contentsline {subsection}{\numberline {1.7.1}Avståndsformeln}{13}% 
+\contentsline {subsection}{\numberline {1.7.2}Elipser}{13}% 
+\contentsline {subsubsection}{Hyperbol}{13}% 
+\contentsline {subsubsection}{Circkel}{13}% 
+\contentsline {section}{\numberline {1.8}Polynom division}{14}% 
+\contentsline {subsection}{\numberline {1.8.1}Tillvägagångs sätt}{14}% 
+\contentsline {section}{\numberline {1.9}Trigonometri}{15}% 
+\contentsline {subsection}{\numberline {1.9.1}Tillvägagångs sätt}{16}% 
+\contentsline {chapter}{\numberline {2}PKD Samanfatning}{17}% 
+\contentsline {section}{\numberline {2.1}Förord}{17}% 
+\contentsline {section}{\numberline {2.2}Coding convension}{18}% 
+\contentsline {section}{\numberline {2.3}Design approach}{18}% 
+\contentsline {subsection}{\numberline {2.3.1}Process}{18}% 
+\contentsline {section}{\numberline {2.4}Recursion}{19}% 
+\contentsline {subsection}{\numberline {2.4.1}Recursion types}{19}% 
+\contentsline {section}{\numberline {2.5}Complexity}{19}% 
+\contentsline {subsection}{\numberline {2.5.1}Growth}{19}% 
+\contentsline {subsubsection}{Relation}{19}% 
+\contentsline {section}{\numberline {2.6}Recurrences}{19}% 
+\contentsline {subsection}{\numberline {2.6.1}Closed Form}{20}% 
+\contentsline {subsubsection}{Expansion Method}{20}% 
+\contentsline {subsubsection}{Substitution Method}{21}% 
+\contentsline {section}{\numberline {2.7}Higher-Order Function}{22}% 
+\contentsline {subsection}{\numberline {2.7.1}Higher-Order Functions on Lists}{22}% 
+\contentsline {subsubsection}{map}{22}% 
+\contentsline {subsubsection}{filter}{22}% 
+\contentsline {subsubsection}{foldl}{22}% 
+\contentsline {subsubsection}{foldr}{22}% 
+\contentsline {section}{\numberline {2.8}Data types}{23}% 
+\contentsline {subsection}{\numberline {2.8.1}Basic}{23}% 
+\contentsline {subsection}{\numberline {2.8.2}Maybe Type}{23}% 
+\contentsline {subsection}{\numberline {2.8.3}New types and enumeration types}{23}% 
+\contentsline {subsubsection}{Type classes}{23}% 
+\contentsline {subsection}{\numberline {2.8.4}Inductive Data Types}{26}% 
+\contentsline {subsection}{\numberline {2.8.5}Trees}{27}% 
+\contentsline {subsubsection}{Binary tree}{27}% 
+\contentsline {subsubsection}{Binary search tree}{27}% 
+\contentsline {subsubsection}{Red and black trees}{28}% 
+\contentsline {subsubsection}{Binomial Trees and heaps}{28}% 
+\contentsline {subsection}{\numberline {2.8.6}Other data types}{29}% 
+\contentsline {subsubsection}{Tables, Stacking and queuing}{29}% 
+\contentsline {subsubsection}{Hastables}{30}% 
+\contentsline {subsection}{\numberline {2.8.7}Graphs}{31}% 
+\contentsline {subsubsection}{Types of graphs}{31}% 
+\contentsline {subsubsection}{Treminolage}{31}% 
+\contentsline {subsubsection}{Representation}{31}% 
+\contentsline {subsubsection}{topological sort}{32}% 
+\contentsline {subsubsection}{Graph Traversals}{32}% 
+\contentsline {subsubsection}{Strongly-Connected Components}{33}% 
+\contentsline {section}{\numberline {2.9}Important syntax}{34}% 
+\contentsline {subsection}{\numberline {2.9.1}Let}{34}% 
+\contentsline {subsection}{\numberline {2.9.2}IO}{34}% 
+\contentsline {section}{\numberline {2.10}Sorting Algorithms}{34}% 
