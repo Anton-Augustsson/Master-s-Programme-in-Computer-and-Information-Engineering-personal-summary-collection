@@ -1,69 +1,4 @@
-\documentclass{article}
-\usepackage[utf8]{inputenc}
-\usepackage[swedish]{babel}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{array}
-\usepackage{mathtools}
-\usepackage{natbib}
-\usepackage{graphicx}
-\usepackage{amsfonts}
-\usepackage{amsmath}
-\usepackage{polynom}
-\usepackage{gensymb}
-\usepackage{pgfplots} 
-\usepackage{tikz}
-\usepackage{listings}
-\usepackage[top=1in,bottom=1in,right=1in,left=1in]{geometry}
-\pgfplotsset{width=10cm,compat=1.9}
-
-\title{Computer Architecture Cheat Sheet}
-\author{Anton Augustsson}
-\date{September 2019}
-
-
-\begin{document}
-
-\maketitle
-\newpage
-\tableofcontents
-\newpage
-
-\section{Förord}
-The exam problems is often write a program, probebly about arrays.
-The second problem is about som sort of memory, probably about caches and virtual memory.
-The third problem is about pipline with diffrent types of piplines.
-
-
-generaly memory have tags index offset, offset is where in the line it is, index is witch line it is and the tag is what the line address.
-This can easy be calculated by log the size (base 2)
-
-ISA1: will be the most importent there will be a probably a array coding problem
-ISA2: calling convension
-Aretmetic: Floting point function
-Logic: Latches and clocks
-Prossesor control Datapat:
-Pipline: fastes stages with latancy or thruput
-Pipline Hazards: probably what is the fastest and with nops with papline stages assume blabla.
-Predicting Branches and exeptions: 
-IO: Memmory mapped
-Cache: Address entry in diff type of cache (If data then we dont know where it is stored)
-Virtual Memory: Comparison of page setup
-Paralalisem: Locks
-
-
-There will most likly be 1 problem for eatch moduel
-sum may have sub problems. They shouldent be large approximently 10 min per problem with is 3h extra time.
-! ISA1 will be the most importent there will be a probably a array coding problem.
-ISA2 calling convension.
-! Data path how it works and how it is connected what the control dose.
-! Pipline probably what is the fastest and with nops with papline stages assume blabla.
-Branch predictors. BTB write in summary
-! Caches calculate address
-IO is not as importent but probebly will be in the exam
-! VM  VIPT
-
-
+\chapter{Computer Architecture Cheat Sheet}
 
 \newpage
 
@@ -922,6 +857,3 @@ done:
 \item  Treads: each proscess has it own thread se it can be more easaly run in parralel
 \item  SMT: allowes threads when stalled swith to another thread an run it instead  
 \end{itemize}
-
-
-\end{document}
