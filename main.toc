@@ -1,5 +1,5 @@
-\babel@toc {swedish}{}
-\contentsline {chapter}{\numberline {1}basic-course-in-mathematics - Formel Samling}{7}%
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}Basic Course in Mathematics}{7}%
 \contentsline {section}{\numberline {1.1}Basic}{8}%
 \contentsline {subsection}{\numberline {1.1.1}Mängder}{8}%
 \contentsline {subsection}{\numberline {1.1.2}Potenslagar}{8}%
@@ -35,7 +35,7 @@
 \contentsline {subsection}{\numberline {1.7.1}Tillvägagångs sätt}{16}%
 \contentsline {section}{\numberline {1.8}Trigonometri}{17}%
 \contentsline {subsection}{\numberline {1.8.1}Tillvägagångs sätt}{18}%
-\contentsline {chapter}{\numberline {2}PKD Samanfatning}{19}%
+\contentsline {chapter}{\numberline {2}Program Design and Data Structures}{19}%
 \contentsline {section}{\numberline {2.1}Coding convension}{20}%
 \contentsline {section}{\numberline {2.2}Design approach}{20}%
 \contentsline {subsection}{\numberline {2.2.1}Process}{20}%
@@ -79,7 +79,7 @@
 \contentsline {subsection}{\numberline {2.8.1}Let}{36}%
 \contentsline {subsection}{\numberline {2.8.2}IO}{36}%
 \contentsline {section}{\numberline {2.9}Sorting Algorithms}{36}%
-\contentsline {chapter}{\numberline {3}Algebra 1 - Formel Samling}{37}%
+\contentsline {chapter}{\numberline {3}Algebra 1}{37}%
 \contentsline {section}{\numberline {3.1}logik}{38}%
 \contentsline {subsection}{\numberline {3.1.1}värde tabeller}{38}%
 \contentsline {subsection}{\numberline {3.1.2}Implikationer}{38}%
@@ -107,7 +107,7 @@
 \contentsline {section}{\numberline {3.11}Polynom}{51}%
 \contentsline {subsection}{\numberline {3.11.1}Polynom division}{51}%
 \contentsline {subsection}{\numberline {3.11.2}Faktorsatsen}{52}%
-\contentsline {chapter}{\numberline {4}Single Variable Calculus 1 - Formel Samling}{55}%
+\contentsline {chapter}{\numberline {4}Single Variable Calculus 1}{55}%
 \contentsline {section}{\numberline {4.1}Basic}{56}%
 \contentsline {subsection}{\numberline {4.1.1}Mängder}{56}%
 \contentsline {subsection}{\numberline {4.1.2}Intervall}{57}%
@@ -154,7 +154,7 @@
 \contentsline {subsubsection}{Partikulär lösning}{91}%
 \contentsline {subsubsection}{Resonans}{93}%
 \contentsline {subsubsection}{Serielösningar (ej på tenta)}{93}%
-\contentsline {chapter}{\numberline {5}Computer Architecture Cheat Sheet}{95}%
+\contentsline {chapter}{\numberline {5}Computer Architecture}{95}%
 \contentsline {section}{\numberline {5.1}ISA1}{96}%
 \contentsline {subsection}{\numberline {5.1.1}MIPS instructions}{96}%
 \contentsline {subsection}{\numberline {5.1.2}Sequencing}{98}%
