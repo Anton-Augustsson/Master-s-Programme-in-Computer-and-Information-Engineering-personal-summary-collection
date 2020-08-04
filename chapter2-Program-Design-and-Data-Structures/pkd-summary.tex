@@ -28,9 +28,9 @@ invariant is positive integers.
 \begin{itemize}
 \item top-down design (Cheating): Is to break down a complex system in to subsystems to solve the problem.
   Most often is to write everything by scratch.
-\item bottom-up design (Stacking): Is to pies existing system together to create a more complex system.
+\item bottom-up design (Stacking): Is to piece existing system together to create a more complex system.
   little is programmed, most is copied.
-\item dodging: Get some code working more quickly, make progess with some part of the system
+\item dodging: Get some code working more quickly, make progress with some part of the system
   and back-paddle to the dodged part later. The reason is to develop insight that will help solve
   the larger problem.
 \end{itemize}
@@ -48,7 +48,7 @@ invariant is positive integers.
 \item  Review and Refactor
 \end{enumerate}
 
-\textbf{Programming to an Interface}
+\noindent\textbf{Programming to an Interface}
 More dynamic, can change models, less code to write and a layer of abstraction. ADT 
 
 \newpage
@@ -162,7 +162,7 @@ We can see the following patterns
 
 \noindent\textbf{Induction proof}
 \begin{align*}
-  &\quad  \text{Step1: test with base case sense the base case is predefine for 0 we do } n=1  \\
+  &\quad  \text{Step1: test with base case since the base case is predefine for 0 we do } n=1  \\
   &\quad  {f(1)}_{VL} = 2 \cdot 1 + 5 + \frac{1(1+1)}{2} = 2 +5 +1 = 8, \\
   &\quad  {f(1)}_{HL} = f(0) + 1 +2 = 5 +3 = 8 \\
   &\quad  {f(1)}_{VL} = {f(1)}_{HL} \\
@@ -303,6 +303,7 @@ instance Eq Colour where
     \centering
     \includegraphics[width=15cm, height=15cm]{image/type-class.png} 
     \caption{Type class}
+    \label{Type-class}
 \end{figure}
 \newpage
 
@@ -695,3 +696,6 @@ class Monad m where
 \item Merge Sort: Divide and Conquer, split into even pies and sort them and then merge/sort again. 
 \item Quicksort: Divide and Conquer, takes a pivot to spit smaller and larger.
 \end{enumerate}
+
+
+\end{document}
