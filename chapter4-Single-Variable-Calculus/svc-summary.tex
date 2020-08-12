@@ -1,4 +1,4 @@
-\chapter{Single Variable Calculus 1}
+\chapter{Single Variable Calculus}
 
 \newpage
 
@@ -84,7 +84,7 @@ Värde tabell:
   &\quad  \text{Begränsat uppåt: functionenn är endast begrensad uppåt} \\
   &\quad  \text{Jämn function: altså är den symetrisk, ex: } x^2, \; f(-x)=f(x) \\
   &\quad  \text{Udda function: altså är den spefelvänt symetrisk, ex: } x^3, \; f(-x)=-f(x) \\
-  &\quad  \text{Polynom} p(x)=a_nx^n +a_{n-1}x^{n-1}+ \ldots +a_1x +a_0
+  &\quad  \text{Polynom } p(x)=a_nx^n +a_{n-1}x^{n-1}+ \ldots +a_1x +a_0
   = \displaystyle\sum _ { i=0 } ^ { n } (a_i x^{i}) \\
   &\quad  \text{Rationell funktion:} R(x)=\frac{P(x)}{Q(x)} \text{, ex: } x^{-1}
   =\frac{1}{x} \text{ ej polynom men rationell funktion} \\
@@ -1317,7 +1317,7 @@ Om det är integraler med två funktioner så hjälper oftast partiell integrati
 \begin{align*}
   &\quad  \text{Lös} (1+t^2)y' + ty = \frac{1}{\sqrt{1+t^2}} \\
   &\quad  \\
-  &\quad  y'+\frac{t}{(1+t^2)y} = \frac{1}{(1+t^2)\sqrt{1+t^2}} \text{ Linjör ode, ordning 1} \\
+  &\quad  y'+\frac{t}{(1+t^2)y} = \frac{1}{(1+t^2)\sqrt{1+t^2}} \text{ Linjär ode, ordning 1} \\
   &\quad  p(t)=\frac{t}{(1+t^2)y}, \; q(t)=\frac{1}{(1+t^2)\sqrt{1+t^2}} \\
   &\quad  M(t) = \int \frac{t}{(1+t^2)y}dt, \text{ Låt } u=1+t^2 \Rightarrow dt = du/2t \\
   &\quad  \Rightarrow M(t)=\int\frac{1}{2u}du = \frac{1}{2}\ln{|u|} = \frac{1}{2}\ln{t^2+1} \\
@@ -1334,8 +1334,8 @@ Om det är integraler med två funktioner så hjälper oftast partiell integrati
 \subsection{Linjära differentialekvationer av ordning 2}
 \textbf{Methodology}  
 \begin{align*}
-  &\quad  \text{Det finns 3 metoder frör att lösa Linjära differentialekvationer av ordning 2} \\
-  &\quad  ay'' + by' +cy = 0 \text{ vilket är den skäneräla formeln. Antag att lösningen är på formen} \\
+  &\quad  \text{Det finns 3 metoder för att lösa Linjära differentialekvationer av ordning 2} \\
+  &\quad  ay'' + by' +cy = 0 \text{ vilket är den generella formeln. Antag att lösningen är på formen} \\
   &\quad  y=e^{rx}, \; y'=re^{rx}, \; y''=r^2e^{rx} \Rightarrow ar^2e^{rx} + bre^{rx} + ce^{rx} = 0 \\
   &\quad  (ar^2+br+c)e^{rx}=0 \Rightarrow ar^2+br+c=0 \text{ andvänder pq-formeln och får följande } \\
   &\quad  r= \frac{-b\pm\sqrt{b^2-4ac}}{2a} \\
@@ -1377,7 +1377,7 @@ Om det är integraler med två funktioner så hjälper oftast partiell integrati
 
 \textbf{Exempel koplex kvot}
 \begin{align*}
-  &\quad  \text{Lös} y''(t) + 25y(t) = 0 \\
+  &\quad  \text{Lös } y''(t) + 25y(t) = 0 \\
   &\quad  r^2 + 25 = 0 \Rightarrow r^2 = -25 \Rightarrow r=\pm5i \\
   &\quad  y(t) = c_1\cos(5t)+c_2\sin{5t}, \; c_1,c_2 \in\mathbb{R} \\
 \end{align*}
@@ -1464,7 +1464,7 @@ Om det är integraler med två funktioner så hjälper oftast partiell integrati
 \end{align*}
 
 
-\subsubsection{Serielösningar (ej på tenta)}
+\subsubsection{Serielösningar} %(ej på tenta)
 \begin{align*}
   &\quad  \text{Antag att serien } \displaystyle\sum_{n=0}^{\infty} c_n{(x-x_0)}^n \text{ konvergerar för alla }
   n=0 \\

@@ -79,3 +79,118 @@
 \contentsline {subsection}{\numberline {2.8.1}Let}{36}%
 \contentsline {subsection}{\numberline {2.8.2}IO}{36}%
 \contentsline {section}{\numberline {2.9}Sorting Algorithms}{36}%
+\contentsline {chapter}{\numberline {3}Algebra 1}{37}%
+\contentsline {section}{\numberline {3.1}logik}{38}%
+\contentsline {subsection}{\numberline {3.1.1}värde tabeller}{38}%
+\contentsline {subsection}{\numberline {3.1.2}Implikationer}{38}%
+\contentsline {section}{\numberline {3.2}Mängder}{40}%
+\contentsline {section}{\numberline {3.3}Bevis}{41}%
+\contentsline {subsection}{\numberline {3.3.1}Induktions bevis}{41}%
+\contentsline {subsection}{\numberline {3.3.2}Motsägelse bevis}{41}%
+\contentsline {section}{\numberline {3.4}Delbarhet}{42}%
+\contentsline {subsection}{\numberline {3.4.1}Största Gemensama Delaren (SGD)}{42}%
+\contentsline {subsection}{\numberline {3.4.2}Primtal}{44}%
+\contentsline {section}{\numberline {3.5}Diofantiska ekvationer}{45}%
+\contentsline {section}{\numberline {3.6}Talbaser}{46}%
+\contentsline {subsection}{\numberline {3.6.1}konvertera från decimal bass till annan bas}{46}%
+\contentsline {subsection}{\numberline {3.6.2}konvertera från annan bas till decimal bas}{46}%
+\contentsline {subsection}{\numberline {3.6.3}Andra exempel}{46}%
+\contentsline {section}{\numberline {3.7}Functioner}{47}%
+\contentsline {subsection}{\numberline {3.7.1}Inversen}{47}%
+\contentsline {subsection}{\numberline {3.7.2}Relatioiner}{47}%
+\contentsline {section}{\numberline {3.8}Summor}{48}%
+\contentsline {subsection}{\numberline {3.8.1}Aritmetiska summor}{48}%
+\contentsline {subsection}{\numberline {3.8.2}Geometriska summor}{48}%
+\contentsline {section}{\numberline {3.9}Kongruensräkning}{49}%
+\contentsline {section}{\numberline {3.10}Kardinalitet}{50}%
+\contentsline {subsection}{\numberline {3.10.1}Uppräkneligamängder}{50}%
+\contentsline {section}{\numberline {3.11}Polynom}{51}%
+\contentsline {subsection}{\numberline {3.11.1}Polynom division}{51}%
+\contentsline {subsection}{\numberline {3.11.2}Faktorsatsen}{52}%
+\contentsline {chapter}{\numberline {4}Single Variable Calculus}{55}%
+\contentsline {section}{\numberline {4.1}Basic}{56}%
+\contentsline {subsection}{\numberline {4.1.1}Mängder}{56}%
+\contentsline {subsection}{\numberline {4.1.2}Intervall}{57}%
+\contentsline {subsection}{\numberline {4.1.3}Funktion}{58}%
+\contentsline {subsection}{\numberline {4.1.4}Trigonometri}{59}%
+\contentsline {subsection}{\numberline {4.1.5}Exempel: Trigonometri}{60}%
+\contentsline {section}{\numberline {4.2}Gränsvärden}{61}%
+\contentsline {subsection}{\numberline {4.2.1}Kontinuitet}{62}%
+\contentsline {section}{\numberline {4.3}Derivator}{63}%
+\contentsline {subsection}{\numberline {4.3.1}Kjedje regeln}{63}%
+\contentsline {subsection}{\numberline {4.3.2}L'Hôpital's rule}{64}%
+\contentsline {subsection}{\numberline {4.3.3}Medelvärdessatsen}{64}%
+\contentsline {subsection}{\numberline {4.3.4}Rolle}{64}%
+\contentsline {subsection}{\numberline {4.3.5}växande funktioner}{65}%
+\contentsline {subsection}{\numberline {4.3.6}Högreordnings devivator}{65}%
+\contentsline {subsection}{\numberline {4.3.7}Impericit derivering}{65}%
+\contentsline {subsection}{\numberline {4.3.8}invers funktioner}{65}%
+\contentsline {subsection}{\numberline {4.3.9}exponetial och logaritm}{66}%
+\contentsline {subsection}{\numberline {4.3.10}odefinerad form}{66}%
+\contentsline {subsection}{\numberline {4.3.11}inversa trigometriska funktioner}{67}%
+\contentsline {subsubsection}{arcsin}{67}%
+\contentsline {subsubsection}{arccos}{67}%
+\contentsline {subsubsection}{arctan}{67}%
+\contentsline {subsubsection}{exempel}{68}%
+\contentsline {section}{\numberline {4.4}Grafritning}{68}%
+\contentsline {section}{\numberline {4.5}Optemering}{70}%
+\contentsline {section}{\numberline {4.6}Talfölder och serier}{71}%
+\contentsline {subsection}{\numberline {4.6.1}Serier med varierande tecken}{73}%
+\contentsline {subsection}{\numberline {4.6.2}Potensserier}{73}%
+\contentsline {subsection}{\numberline {4.6.3}Taylor serier}{75}%
+\contentsline {section}{\numberline {4.7}Integraler}{77}%
+\contentsline {subsection}{\numberline {4.7.1}variabelsubstition}{79}%
+\contentsline {subsubsection}{Integraller som följer mönster}{79}%
+\contentsline {subsection}{\numberline {4.7.2}Integration av rationella funktioner}{80}%
+\contentsline {subsection}{\numberline {4.7.3}Partiell integration}{82}%
+\contentsline {subsection}{\numberline {4.7.4}Generaliserande integraler}{83}%
+\contentsline {subsection}{\numberline {4.7.5}Volymberäkningar}{85}%
+\contentsline {subsubsection}{Kurvlängd}{85}%
+\contentsline {subsubsection}{Rotationsarea}{86}%
+\contentsline {section}{\numberline {4.8}Differential ekvationer}{87}%
+\contentsline {subsection}{\numberline {4.8.1}superabla ekvationer}{88}%
+\contentsline {subsection}{\numberline {4.8.2}Linjära differentialekvationer av ordning 1}{89}%
+\contentsline {subsection}{\numberline {4.8.3}Linjära differentialekvationer av ordning 2}{90}%
+\contentsline {subsubsection}{Partikulär lösning}{91}%
+\contentsline {subsubsection}{Resonans}{93}%
+\contentsline {subsubsection}{Serielösningar}{93}%
+\contentsline {chapter}{\numberline {5}Computer Architecture}{95}%
+\contentsline {section}{\numberline {5.1}ISA1}{96}%
+\contentsline {subsection}{\numberline {5.1.1}MIPS instructions}{96}%
+\contentsline {subsection}{\numberline {5.1.2}Sequencing}{98}%
+\contentsline {subsection}{\numberline {5.1.3}Converge to Assambly code}{99}%
+\contentsline {section}{\numberline {5.2}ISA2}{99}%
+\contentsline {subsection}{\numberline {5.2.1}MIPS type format}{99}%
+\contentsline {subsection}{\numberline {5.2.2}Procedure}{99}%
+\contentsline {subsubsection}{Stacking}{100}%
+\contentsline {subsection}{\numberline {5.2.3}Other ISA}{101}%
+\contentsline {section}{\numberline {5.3}Arithetic}{102}%
+\contentsline {subsection}{\numberline {5.3.1}Binary numbers}{102}%
+\contentsline {subsection}{\numberline {5.3.2}Negative integes}{102}%
+\contentsline {subsection}{\numberline {5.3.3}Oporations}{102}%
+\contentsline {subsection}{\numberline {5.3.4}Non integer numbers (Floating and fixed point)}{102}%
+\contentsline {subsection}{\numberline {5.3.5}Overflow}{103}%
+\contentsline {section}{\numberline {5.4}Logic}{104}%
+\contentsline {section}{\numberline {5.5}processor control and datapath}{106}%
+\contentsline {subsection}{\numberline {5.5.1}Clock}{108}%
+\contentsline {subsection}{\numberline {5.5.2}Critical path}{108}%
+\contentsline {section}{\numberline {5.6}pipline}{109}%
+\contentsline {section}{\numberline {5.7}Pipline hazards}{111}%
+\contentsline {subsection}{\numberline {5.7.1}Data hazards}{111}%
+\contentsline {subsection}{\numberline {5.7.2}Control hazards}{111}%
+\contentsline {subsection}{\numberline {5.7.3}Structural hazards}{112}%
+\contentsline {section}{\numberline {5.8}Predicting Branches and Exceptions}{113}%
+\contentsline {subsection}{\numberline {5.8.1}Static pridictors}{113}%
+\contentsline {subsection}{\numberline {5.8.2}Dynamic pridictors}{114}%
+\contentsline {subsection}{\numberline {5.8.3}Exceptions}{116}%
+\contentsline {section}{\numberline {5.9}Input/Output}{117}%
+\contentsline {section}{\numberline {5.10}Cache}{119}%
+\contentsline {subsection}{\numberline {5.10.1}Memory hierarchy}{119}%
+\contentsline {subsection}{\numberline {5.10.2}Cache misses $3C's$}{120}%
+\contentsline {section}{\numberline {5.11}Virtual Memory}{121}%
+\contentsline {section}{\numberline {5.12}Parallism}{124}%
+\contentsline {subsection}{\numberline {5.12.1}Multicore}{124}%
+\contentsline {subsection}{\numberline {5.12.2}Paralel programing}{124}%
+\contentsline {subsection}{\numberline {5.12.3}Syncronaziation}{124}%
+\contentsline {subsection}{\numberline {5.12.4}Cache coherency}{125}%
+\contentsline {subsection}{\numberline {5.12.5}ILP}{126}%
