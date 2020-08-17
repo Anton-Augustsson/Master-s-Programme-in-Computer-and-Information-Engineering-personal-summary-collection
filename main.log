@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.8.4)  12 AUG 2020 13:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2020.8.4)  17 AUG 2020 12:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -914,273 +914,259 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 <image/mips-tabel.png, id=339, 1181.41376pt x 908.39375pt>
 File: image/mips-tabel.png Graphic file (type png)
 <use image/mips-tabel.png>
-Package pdftex.def Info: image/mips-tabel.png  used on input line 32.
+Package pdftex.def Info: image/mips-tabel.png  used on input line 30.
 (pdftex.def)             Requested size: 455.23328pt x 369.87958pt.
  [97 <./image/mips-tabel.png>]
 <image/sequencing.png, id=344, 1283.79625pt x 676.5275pt>
 File: image/sequencing.png Graphic file (type png)
 <use image/sequencing.png>
-Package pdftex.def Info: image/sequencing.png  used on input line 42.
+Package pdftex.def Info: image/sequencing.png  used on input line 44.
 (pdftex.def)             Requested size: 455.23175pt x 284.53188pt.
  [98 <./image/sequencing.png>]
 <image/assambly-exampel.png, id=348, 721.69624pt x 285.065pt>
 File: image/assambly-exampel.png Graphic file (type png)
 <use image/assambly-exampel.png>
-Package pdftex.def Info: image/assambly-exampel.png  used on input line 52.
+Package pdftex.def Info: image/assambly-exampel.png  used on input line 55.
 (pdftex.def)             Requested size: 284.52179pt x 142.26247pt.
 <image/mips-types.png, id=349, 770.88pt x 184.69pt>
 File: image/mips-types.png Graphic file (type png)
 <use image/mips-types.png>
-Package pdftex.def Info: image/mips-types.png  used on input line 80.
+Package pdftex.def Info: image/mips-types.png  used on input line 72.
 (pdftex.def)             Requested size: 483.69261pt x 170.7172pt.
 
-Overfull \hbox (13.93759pt too wide) in paragraph at lines 80--81
+Overfull \hbox (13.93759pt too wide) in paragraph at lines 72--73
  [][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[99 <./image/assambly-exampel.png>]
-<image/code-ex.png, id=353, 671.50874pt x 539.01375pt>
+[99 <./image/assambly-exampel.png> <./image/mips-types.png>] [100]
+<image/code-ex.png, id=357, 671.50874pt x 539.01375pt>
 File: image/code-ex.png Graphic file (type png)
 <use image/code-ex.png>
-Package pdftex.def Info: image/code-ex.png  used on input line 109.
+Package pdftex.def Info: image/code-ex.png  used on input line 103.
 (pdftex.def)             Requested size: 455.24689pt x 341.43922pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<image/mips-register.png, id=354, 1276.77pt x 668.4975pt>
+<image/mips-register.png, id=358, 1276.77pt x 668.4975pt>
 File: image/mips-register.png Graphic file (type png)
 <use image/mips-register.png>
-Package pdftex.def Info: image/mips-register.png  used on input line 116.
+Package pdftex.def Info: image/mips-register.png  used on input line 110.
 (pdftex.def)             Requested size: 455.23393pt x 227.62276pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[100 <./image/mips-types.png>]
-<image/other-isa.png, id=359, 1142.2675pt x 429.605pt>
+[101 <./image/code-ex.png>]
+<image/other-isa.png, id=362, 1142.2675pt x 429.605pt>
 File: image/other-isa.png Graphic file (type png)
 <use image/other-isa.png>
-Package pdftex.def Info: image/other-isa.png  used on input line 127.
+Package pdftex.def Info: image/other-isa.png  used on input line 121.
 (pdftex.def)             Requested size: 455.2431pt x 170.718pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<image/other-isa-instructions.png, id=360, 942.52126pt x 431.6125pt>
+[102 <./image/mips-register.png>]
+<image/other-isa-instructions.png, id=366, 942.52126pt x 431.6125pt>
 File: image/other-isa-instructions.png Graphic file (type png)
 <use image/other-isa-instructions.png>
 Package pdftex.def Info: image/other-isa-instructions.png  used on input line 1
-34.
+30.
 (pdftex.def)             Requested size: 455.25264pt x 170.71228pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[101 <./image/code-ex.png>] [102 <./image/mips-register.png>]
-<image/floating-point.png, id=367, 977.6525pt x 292.09125pt>
+ [103 <./image/other-isa.png> <./image/other-isa-instructions.png>]
+<image/floating-point.png, id=371, 977.6525pt x 292.09125pt>
 File: image/floating-point.png Graphic file (type png)
 <use image/floating-point.png>
-Package pdftex.def Info: image/floating-point.png  used on input line 186.
+Package pdftex.def Info: image/floating-point.png  used on input line 180.
 (pdftex.def)             Requested size: 455.24518pt x 142.26576pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[103 <./image/other-isa.png>]
-<image/logic-gates.jpeg, id=372, 1204.5pt x 571.13374pt>
+ [104 <./image/floating-point.png>] [105]
+<image/logic-gates.jpeg, id=378, 1204.5pt x 571.13374pt>
 File: image/logic-gates.jpeg Graphic file (type jpg)
 <use image/logic-gates.jpeg>
-Package pdftex.def Info: image/logic-gates.jpeg  used on input line 209.
+Package pdftex.def Info: image/logic-gates.jpeg  used on input line 203.
 (pdftex.def)             Requested size: 455.25195pt x 227.62154pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[104 <./image/other-isa-instructions.png> <./image/floating-point.png>]
-<image/important-logic-blocks.png, id=376, 1853.92625pt x 968.61874pt>
+<image/important-logic-blocks.png, id=379, 1853.92625pt x 968.61874pt>
 File: image/important-logic-blocks.png Graphic file (type png)
 <use image/important-logic-blocks.png>
 Package pdftex.def Info: image/important-logic-blocks.png  used on input line 2
-48.
+42.
 (pdftex.def)             Requested size: 455.22015pt x 227.61066pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<image/latche.png, id=377, 1631.09375pt x 962.59625pt>
+[106 <./image/logic-gates.jpeg>]
+<image/latche.png, id=383, 1631.09375pt x 962.59625pt>
 File: image/latche.png Graphic file (type png)
 <use image/latche.png>
-Package pdftex.def Info: image/latche.png  used on input line 263.
+Package pdftex.def Info: image/latche.png  used on input line 257.
 (pdftex.def)             Requested size: 455.23473pt x 227.6202pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[105 <./image/logic-gates.jpeg>]
-<image/mips-datapath-3parts.png, id=381, 825.0825pt x 945.5325pt>
+[107 <./image/important-logic-blocks.png>]
+<image/mips-datapath-3parts.png, id=387, 825.0825pt x 945.5325pt>
 File: image/mips-datapath-3parts.png Graphic file (type png)
 <use image/mips-datapath-3parts.png>
-Package pdftex.def Info: image/mips-datapath-3parts.png  used on input line 285
+Package pdftex.def Info: image/mips-datapath-3parts.png  used on input line 279
 .
 (pdftex.def)             Requested size: 341.43344pt x 398.34729pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[106 <./image/important-logic-blocks.png>]
-<image/mips-datapath.png, id=385, 1222.5675pt x 951.555pt>
+[108 <./image/latche.png>]
+<image/mips-datapath.png, id=391, 1222.5675pt x 951.555pt>
 File: image/mips-datapath.png Graphic file (type png)
 <use image/mips-datapath.png>
-Package pdftex.def Info: image/mips-datapath.png  used on input line 296.
+Package pdftex.def Info: image/mips-datapath.png  used on input line 290.
 (pdftex.def)             Requested size: 455.23439pt x 341.42702pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[107 <./image/latche.png>] [108 <./image/mips-datapath-3parts.png>]
-<image/pipline.png, id=392, 1707.37875pt x 934.49126pt>
+[109 <./image/mips-datapath-3parts.png>] [110 <./image/mips-datapath.png>]
+<image/pipline.png, id=399, 1707.37875pt x 934.49126pt>
 File: image/pipline.png Graphic file (type png)
 <use image/pipline.png>
-Package pdftex.def Info: image/pipline.png  used on input line 340.
+Package pdftex.def Info: image/pipline.png  used on input line 334.
 (pdftex.def)             Requested size: 455.24083pt x 227.61913pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[109 <./image/mips-datapath.png>] [110 <./image/pipline.png>]
-<image/dubble-pump.png, id=400, 1632.0975pt x 848.16875pt>
+[111 <./image/pipline.png>] [112]
+<image/dubble-pump.png, id=406, 1632.0975pt x 848.16875pt>
 File: image/dubble-pump.png Graphic file (type png)
 <use image/dubble-pump.png>
-Package pdftex.def Info: image/dubble-pump.png  used on input line 387.
+Package pdftex.def Info: image/dubble-pump.png  used on input line 381.
 (pdftex.def)             Requested size: 455.24092pt x 227.62383pt.
- [111 <./image/dubble-pump.png>] [112] [113]
-<image/branch-predictor.png, id=410, 1761.58125pt x 561.09625pt>
+ [113 <./image/dubble-pump.png>] [114]
+[115]
+<image/branch-predictor.png, id=417, 1761.58125pt x 561.09625pt>
 File: image/branch-predictor.png Graphic file (type png)
 <use image/branch-predictor.png>
-Package pdftex.def Info: image/branch-predictor.png  used on input line 457.
+Package pdftex.def Info: image/branch-predictor.png  used on input line 447.
 (pdftex.def)             Requested size: 455.23174pt x 142.26001pt.
-<image/2-bit-predict.png, id=411, 1729.46124pt x 961.5925pt>
+<image/2-bit-predict.png, id=418, 1729.46124pt x 961.5925pt>
 File: image/2-bit-predict.png Graphic file (type png)
 <use image/2-bit-predict.png>
-Package pdftex.def Info: image/2-bit-predict.png  used on input line 465.
+Package pdftex.def Info: image/2-bit-predict.png  used on input line 455.
 (pdftex.def)             Requested size: 455.24388pt x 284.53302pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[114 <./image/branch-predictor.png>]
-<image/btb.png, id=415, 1818.795pt x 545.03625pt>
+[116 <./image/branch-predictor.png>]
+<image/btb.png, id=422, 1818.795pt x 545.03625pt>
 File: image/btb.png Graphic file (type png)
 <use image/btb.png>
-Package pdftex.def Info: image/btb.png  used on input line 480.
+Package pdftex.def Info: image/btb.png  used on input line 470.
 (pdftex.def)             Requested size: 455.22495pt x 142.26329pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[115 <./image/2-bit-predict.png>]
-<image/exceptions.png, id=420, 1809.76125pt x 879.285pt>
+[117 <./image/2-bit-predict.png>]
+<image/exceptions.png, id=426, 1809.76125pt x 879.285pt>
 File: image/exceptions.png Graphic file (type png)
 <use image/exceptions.png>
-Package pdftex.def Info: image/exceptions.png  used on input line 501.
+Package pdftex.def Info: image/exceptions.png  used on input line 491.
 (pdftex.def)             Requested size: 455.22829pt x 256.07288pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[116 <./image/btb.png>] [117 <./image/exceptions.png>]
+[118 <./image/btb.png>] [119 <./image/exceptions.png>]
 
-Package Listings Warning: Text dropped after begin of listing on input line 549
+Package Listings Warning: Text dropped after begin of listing on input line 539
 .
 
 
-Package Listings Warning: Text dropped after begin of listing on input line 562
+Package Listings Warning: Text dropped after begin of listing on input line 552
 .
 
-[118]
-<image/memory-hierarchy.png, id=430, 1832.8475pt x 694.595pt>
+[120]
+<image/memory-hierarchy.png, id=436, 1832.8475pt x 694.595pt>
 File: image/memory-hierarchy.png Graphic file (type png)
 <use image/memory-hierarchy.png>
-Package pdftex.def Info: image/memory-hierarchy.png  used on input line 584.
+Package pdftex.def Info: image/memory-hierarchy.png  used on input line 574.
 (pdftex.def)             Requested size: 455.24626pt x 199.16988pt.
- [119 <./image/memory-hierarchy.png>]
-<image/cache-format.png, id=434, 1652.1725pt x 779.91376pt>
+ [121 <./image/memory-hierarchy.png>]
+<image/cache-format.png, id=441, 1652.1725pt x 779.91376pt>
 File: image/cache-format.png Graphic file (type png)
 <use image/cache-format.png>
-Package pdftex.def Info: image/cache-format.png  used on input line 656.
+Package pdftex.def Info: image/cache-format.png  used on input line 646.
 (pdftex.def)             Requested size: 455.2438pt x 199.16693pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[120] [121 <./image/cache-format.png>]
-<image/tlb.png, id=445, 1703.36375pt x 804.00375pt>
+[122] [123 <./image/cache-format.png>]
+<image/tlb.png, id=451, 1703.36375pt x 804.00375pt>
 File: image/tlb.png Graphic file (type png)
 <use image/tlb.png>
-Package pdftex.def Info: image/tlb.png  used on input line 726.
+Package pdftex.def Info: image/tlb.png  used on input line 710.
 (pdftex.def)             Requested size: 455.23595pt x 199.16023pt.
- [122 <./image/tlb.png>]
-<image/conversion.png, id=449, 1737.49126pt x 791.95876pt>
+ [124 <./image/tlb.png>]
+<image/conversion.png, id=455, 1737.49126pt x 791.95876pt>
 File: image/conversion.png Graphic file (type png)
 <use image/conversion.png>
-Package pdftex.def Info: image/conversion.png  used on input line 736.
+Package pdftex.def Info: image/conversion.png  used on input line 720.
 (pdftex.def)             Requested size: 455.23665pt x 199.16138pt.
- [123 <./image/conversion.png>] [124]
-<image/locks.png, id=456, 1900.09875pt x 704.6325pt>
+ [125 <./image/conversion.png>] [126]
+<image/locks.png, id=462, 1900.09875pt x 704.6325pt>
 File: image/locks.png Graphic file (type png)
 <use image/locks.png>
-Package pdftex.def Info: image/locks.png  used on input line 815.
+Package pdftex.def Info: image/locks.png  used on input line 799.
 (pdftex.def)             Requested size: 455.2212pt x 199.16656pt.
-<image/snooping.png, id=457, 1880.02374pt x 448.67625pt>
+<image/snooping.png, id=463, 1880.02374pt x 448.67625pt>
 File: image/snooping.png Graphic file (type png)
 <use image/snooping.png>
-Package pdftex.def Info: image/snooping.png  used on input line 832.
+Package pdftex.def Info: image/snooping.png  used on input line 816.
 (pdftex.def)             Requested size: 455.23108pt x 142.25801pt.
- [125 <./image/locks.png> <./image/snooping.png>]
-<image/dual-issue-pipline.png, id=461, 1866.975pt x 925.4575pt>
+ [127 <./image/locks.png> <./image/snooping.png>]
+<image/dual-issue-pipline.png, id=468, 1866.975pt x 925.4575pt>
 File: image/dual-issue-pipline.png Graphic file (type png)
 <use image/dual-issue-pipline.png>
-Package pdftex.def Info: image/dual-issue-pipline.png  used on input line 851.
+Package pdftex.def Info: image/dual-issue-pipline.png  used on input line 835.
 (pdftex.def)             Requested size: 455.23358pt x 199.16718pt.
-) [126 <./image/dual-issue-pipline.png>] (./main.aux) ) 
+) [128 <./image/dual-issue-pipline.png>] (./main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 27370 strings out of 480478
- 651263 string characters out of 5905960
+ 27374 strings out of 480478
+ 651317 string characters out of 5905960
  1184163 words of memory out of 5000000
- 42895 multiletter control sequences out of 15000+600000
+ 42899 multiletter control sequences out of 15000+600000
  554987 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,18n,98p,717b,1655s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/f
-onts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/
-cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
-usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
-pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/sh
-are/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/
-fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
-per/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pf
-b></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/t
-exmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts
-/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/c
-m-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm120
-0.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf-dist/f
-onts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/publ
-ic/cm-super/sftt1000.pfb>
-Output written on main.pdf (126 pages, 5271839 bytes).
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/t
+exmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><
+/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
+fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/
+share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dis
+t/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
+sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></
+usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf
+-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
+per/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pf
+b></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/t
+exmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on main.pdf (128 pages, 5271416 bytes).
 PDF statistics:
- 558 PDF objects out of 1000 (max. 8388607)
- 370 compressed objects within 4 object streams
+ 565 PDF objects out of 1000 (max. 8388607)
+ 375 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  153 words of extra memory for PDF output out of 10000 (max. 10000000)
 

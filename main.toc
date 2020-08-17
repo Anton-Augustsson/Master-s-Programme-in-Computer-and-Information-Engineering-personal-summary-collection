@@ -161,36 +161,36 @@
 \contentsline {subsection}{\numberline {5.1.3}Converge to Assambly code}{99}%
 \contentsline {section}{\numberline {5.2}ISA2}{99}%
 \contentsline {subsection}{\numberline {5.2.1}MIPS type format}{99}%
-\contentsline {subsection}{\numberline {5.2.2}Procedure}{99}%
-\contentsline {subsubsection}{Stacking}{100}%
-\contentsline {subsection}{\numberline {5.2.3}Other ISA}{101}%
-\contentsline {section}{\numberline {5.3}Arithetic}{102}%
-\contentsline {subsection}{\numberline {5.3.1}Binary numbers}{102}%
-\contentsline {subsection}{\numberline {5.3.2}Negative integes}{102}%
-\contentsline {subsection}{\numberline {5.3.3}Oporations}{102}%
-\contentsline {subsection}{\numberline {5.3.4}Non integer numbers (Floating and fixed point)}{102}%
-\contentsline {subsection}{\numberline {5.3.5}Overflow}{103}%
-\contentsline {section}{\numberline {5.4}Logic}{104}%
-\contentsline {section}{\numberline {5.5}processor control and datapath}{106}%
-\contentsline {subsection}{\numberline {5.5.1}Clock}{108}%
-\contentsline {subsection}{\numberline {5.5.2}Critical path}{108}%
-\contentsline {section}{\numberline {5.6}pipline}{109}%
-\contentsline {section}{\numberline {5.7}Pipline hazards}{111}%
-\contentsline {subsection}{\numberline {5.7.1}Data hazards}{111}%
-\contentsline {subsection}{\numberline {5.7.2}Control hazards}{111}%
-\contentsline {subsection}{\numberline {5.7.3}Structural hazards}{112}%
-\contentsline {section}{\numberline {5.8}Predicting Branches and Exceptions}{113}%
-\contentsline {subsection}{\numberline {5.8.1}Static pridictors}{113}%
-\contentsline {subsection}{\numberline {5.8.2}Dynamic pridictors}{114}%
-\contentsline {subsection}{\numberline {5.8.3}Exceptions}{116}%
-\contentsline {section}{\numberline {5.9}Input/Output}{117}%
-\contentsline {section}{\numberline {5.10}Cache}{119}%
-\contentsline {subsection}{\numberline {5.10.1}Memory hierarchy}{119}%
-\contentsline {subsection}{\numberline {5.10.2}Cache misses $3C's$}{120}%
-\contentsline {section}{\numberline {5.11}Virtual Memory}{121}%
-\contentsline {section}{\numberline {5.12}Parallism}{124}%
-\contentsline {subsection}{\numberline {5.12.1}Multicore}{124}%
-\contentsline {subsection}{\numberline {5.12.2}Paralel programing}{124}%
-\contentsline {subsection}{\numberline {5.12.3}Syncronaziation}{124}%
-\contentsline {subsection}{\numberline {5.12.4}Cache coherency}{125}%
-\contentsline {subsection}{\numberline {5.12.5}ILP}{126}%
+\contentsline {subsection}{\numberline {5.2.2}Procedure}{100}%
+\contentsline {subsubsection}{Stacking}{101}%
+\contentsline {subsection}{\numberline {5.2.3}Other ISA}{102}%
+\contentsline {section}{\numberline {5.3}Arithetic}{104}%
+\contentsline {subsection}{\numberline {5.3.1}Binary numbers}{104}%
+\contentsline {subsection}{\numberline {5.3.2}Negative integes}{104}%
+\contentsline {subsection}{\numberline {5.3.3}Oporations}{104}%
+\contentsline {subsection}{\numberline {5.3.4}Non integer numbers (Floating and fixed point)}{104}%
+\contentsline {subsection}{\numberline {5.3.5}Overflow}{105}%
+\contentsline {section}{\numberline {5.4}Logic}{106}%
+\contentsline {section}{\numberline {5.5}processor control and datapath}{108}%
+\contentsline {subsection}{\numberline {5.5.1}Clock}{110}%
+\contentsline {subsection}{\numberline {5.5.2}Critical path}{110}%
+\contentsline {section}{\numberline {5.6}pipline}{111}%
+\contentsline {section}{\numberline {5.7}Pipline hazards}{113}%
+\contentsline {subsection}{\numberline {5.7.1}Data hazards}{113}%
+\contentsline {subsection}{\numberline {5.7.2}Control hazards}{113}%
+\contentsline {subsection}{\numberline {5.7.3}Structural hazards}{114}%
+\contentsline {section}{\numberline {5.8}Predicting Branches and Exceptions}{115}%
+\contentsline {subsection}{\numberline {5.8.1}Static pridictors}{115}%
+\contentsline {subsection}{\numberline {5.8.2}Dynamic pridictors}{116}%
+\contentsline {subsection}{\numberline {5.8.3}Exceptions}{118}%
+\contentsline {section}{\numberline {5.9}Input/Output}{119}%
+\contentsline {section}{\numberline {5.10}Cache}{121}%
+\contentsline {subsection}{\numberline {5.10.1}Memory hierarchy}{121}%
+\contentsline {subsection}{\numberline {5.10.2}Cache misses $3C's$}{122}%
+\contentsline {section}{\numberline {5.11}Virtual Memory}{123}%
+\contentsline {section}{\numberline {5.12}Parallism}{126}%
+\contentsline {subsection}{\numberline {5.12.1}Multicore}{126}%
+\contentsline {subsection}{\numberline {5.12.2}Paralel programming}{126}%
+\contentsline {subsection}{\numberline {5.12.3}Synchronization}{126}%
+\contentsline {subsection}{\numberline {5.12.4}Cache coherency}{127}%
+\contentsline {subsection}{\numberline {5.12.5}ILP}{128}%

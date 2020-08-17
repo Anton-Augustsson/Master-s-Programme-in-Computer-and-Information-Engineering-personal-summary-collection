@@ -22,8 +22,6 @@ The instructions that a assembly languge use for the MIPS proses.
 \end{itemize}
 
 \newpage
-\emph{note:} memory operations like (sw R1, 0(R2)) stores the word in poison R2+0 where 0 is the increment
-since if it is a loop it is needed. The value at that position is R1. 
 
 \noindent\textbf{The operations most used} \newline
 \begin{figure}[h]
@@ -31,7 +29,11 @@ since if it is a loop it is needed. The value at that position is R1.
     \centering
     \includegraphics[width=16cm, height=13cm]{image/mips-tabel.png} 
     \caption{MIPS oporation tabel}
+    \label{mips-tabel}
 \end{figure}
+
+\emph{note:} memory operations like (sw R1, 0(R2)) stores the word in poison R2+0 where 0 is the increment
+since if it is a loop it is needed. The value at that position is R1. 
 
 \newpage
 
@@ -41,6 +43,7 @@ since if it is a loop it is needed. The value at that position is R1.
     \centering
     \includegraphics[width=16cm, height=10cm]{image/sequencing.png} 
     \caption{Sequencing}
+    \label{sequencing}
 \end{figure}
 \newpage
 
@@ -51,27 +54,16 @@ since if it is a loop it is needed. The value at that position is R1.
     \centering
     \includegraphics[width=10cm, height=5cm]{image/assambly-exampel.png} 
     \caption{Assambly exampel}
+    \label{Assambly-exampel}
 \end{figure}
 
 \section{ISA2}
 %https://inst.eecs.berkeley.edu/~cs61c/resources/MIPS_help.html
 \subsection{MIPS type format}
 \begin{itemize}
-\item  R-format, Aretmetic and lodgical \newline
-  op: ex add \newline
-  rs: first register \newline
-  rt: second register \newline
-  rd: destination register \newline
-  shmt: shift amount \newline
-  funct: Function selector (add = 32, sub =34)
-\item  I-format, Load/store, branch and intemidiats \newline 
-  op: ex addi, beq \newline
-  rs: first register \newline
-  rt: second register \newline
-  rd: inttediate value 
-\item  J-format, Jump 
-  op: ex j skipelse \newline
-  rd: address   
+\item  R-format, Aretmetic and lodgical (add)
+\item  I-format, Load/store, branch and intemidiats (addi, beq)
+\item  J-format, Jump (j skipelse) 
 \end{itemize}
 
 \begin{figure}[h]
@@ -79,6 +71,7 @@ since if it is a loop it is needed. The value at that position is R1.
     \centering
     \includegraphics[width=17cm, height=6cm]{image/mips-types.png} 
     \caption{MIPS Types}
+    \label{MIPS-Types}
 \end{figure}
 
 A instruction allwas ends with 00 it means that when a instruction is done we update the program couner
@@ -94,6 +87,7 @@ Where (ra = register address (updates automatically))
 (R31 = value).
 jr \$ra returns the value.
 
+\newpage
 \subsubsection{Stacking}
 To avoid conflicts with writing over the callers register files, one uses staking in predefined
 ranges to allow store data independent from the callers. 
@@ -128,14 +122,14 @@ Notice that the register files for the callee save is \$sx and for the caller \$
     \caption{Other ISA}
 \end{figure}
 
+\newpage
+
 \begin{figure}[h]
     \vspace{10mm}
     \centering
     \includegraphics[width=16cm, height=6cm]{image/other-isa-instructions.png} 
     \caption{Other ISA instructions}
-    \label{other-isa-instructions}
 \end{figure}
-
 
 
 \newpage
@@ -219,7 +213,7 @@ Notice that the register files for the callee save is \$sx and for the caller \$
 \item  De Morgan’s Law $!(A+B)=!A \cdot !B$ $+$ and $\cdot$ works the same way but are different.
 \item  karno map is used to easily determine the schematics. It is a matrix. It is possible to use
   more inputs then two. In the matrix one locks at when output is one.
-\item  a cabal with 4 wires can take 4 bits. Overflow needs one extra wire on output
+\item  A cabal with 4 wires can take 4 bits. Overflow needs one extra wire on output
 \end{itemize}
 
 
@@ -237,8 +231,8 @@ Notice that the register files for the callee save is \$sx and for the caller \$
   2-bit decision for input 4-bit selection. Starts from position 0.
 \item  DEMUXes (Demulitplexrs): oposit, take on signal and decides where it want to be sent to
   Buss is a multi-bit signal ``wire''
-\item  Decoder: binary to hot, (adds a zero or one)? in arrays it can shose position
-\item  Encoder: hot to binary, (reomve a zero or one)?
+\item  Decoder: binary to hot, can choose position in array. %(adds a zero or one)? in arrays it can shose position
+\item  Encoder: hot to binary. %(reomve a zero or one)?
 \item  Adders: adds carrys on extra bit to handel overflow
 \end{itemize}
 
@@ -252,9 +246,9 @@ Notice that the register files for the callee save is \$sx and for the caller \$
 \textbf{Latches}
 \begin{itemize}
 \item  One use is for counters with a clock statest trigers the count.
-  So when input is one the ouput is 0 and when the clock cliks it is one then when the input is
+  So when input is one the output is 0 and when the clock clicks it is one then when the input is
   0 the output is still 1.
-\item flip flop: is a edge trigerd latche has a clock triger to open or close lathce and then can save it to SRAM cell
+\item flip flop: is a edge trigerd latche has a clock trigger to open or close lathce and then can save it to SRAM cell
 \end{itemize}
 
 \begin{figure}[h]
@@ -266,7 +260,7 @@ Notice that the register files for the callee save is \$sx and for the caller \$
 
 \textbf{Memory}
 \begin{itemize}
-\item  SRAM (Static Random Access Memmory) Big, fast and expensive. Loops thou value in order to store it.
+\item  SRAM (Static Random Access Memory) Big, fast and expensive. Loops thou value in order to store it.
   To write to memory one uses a switch to update value.
 \item  DRAM (Dynamic Random Access Memory) Smaller, Slower and cheaper. Uses a transistor to store value
   and a capacitor to store the charge so the data dose not disappear.
@@ -298,30 +292,30 @@ An overview of the mips datapath with j-format instruction:
     \label{mips-datapath}
 \end{figure}
 
-Think about the controler like a decoder that decodes the opt code from the diffrent formats.
+Think about the controller like a decoder that decodes the opt code from the different formats.
 
 \newpage
 
 \subsection{Clock}
-A clock is used to update the state and continu with the other instructions. Every state element uses
-a clock. In mips prosesor clock gose to memory, pc, rf and dm. The clock unit is in (MHz) converting
+A clock is used to update the state and continue with the other instructions. Every state element uses
+a clock. In mips prossesor clock goes to memory, pc, rf and dm. The clock unit is in (MHz) converting
 from (ns) is simple. Ex 10ns: 1/10ns=0.1MHz.
 
 \subsection{Critical path}
 The longest path of the datapath is the critical path. Often PC is the fastest so one then calculates the
-amount of time it takes for the instruciton has traveld the data path and reternd to know what the
-critical path is. The longest part is data memory sinze it is big and slow. One often say read and write
-takes constant time regardless of the amout of diffrent read and write.
+amount of time it takes for the instruction has travel the data path and reternd to know what the
+critical path is. The longest part is data memory size it is big and slow. One often say read and write
+takes constant time regardless of the amount of different read and write.
 
 
 \newpage
 
 
 \section{pipline}
-The perpus is to split a instruction cycle into multipe stages to run instructions in peralel to
-improve preformans. Itch stage has its own pipline registerfile for storing the nessasary registers.
-Pipline registers has a preforment reduction since it takes time, therfore more pipleine stages dose
-not eqal greater proformens over a serten abount. One issue of preformans is balance the stages
+The purpose is to split a instruction cycle into multiple stages to run instructions in peralel to
+improve preformans. Itch stage has its own pipline register file for storing the nessasary registers.
+Pipline registers has a preferment reduction since it takes time, therfore more pipeline stages dose
+not equal greater preformans over a certain amount. One issue of preformans is balance the stages
 inorder to get a good clock frequency. 
 Not all stages are needed for eatch operation or instruction
 
@@ -342,10 +336,11 @@ Not all stages are needed for eatch operation or instruction
     \label{pipline}
 \end{figure}
 
+\newpage
 
 \textbf{Terminology}
 \begin{itemize}
-\item  Bubbles= Is detected by the harwere where ther is no instuctions
+\item  Bubbles= Is detected by the hardware where there is no instuctions
 \item  Nop= Is a sudo instruction for a stall type instruction (do not do anything)
 \item  Delay slots= a stall type for branches. Try to fill in those slots with usful instructions.
 \item  Interference= Can not read and write at the same time.
@@ -353,13 +348,12 @@ Not all stages are needed for eatch operation or instruction
 \item  Forwarding= Getting data from a different pipeline stage from a register file.
 \end{itemize}
 
+
 \textbf{Calculating time coplexity}
 \begin{itemize}
-\item  overhead: (instructions time (ex 100ns)) / (stages (ex 1000)) + (regester overhead (1ns)) = 1.1ns \newline
-    Total time: 1.1*1000
-\item  Latancy: (stages* (penalty per stage) + original) \newline
-  Latancy: (Time per instruction (ex 100ns)) + (pipline register's (ex 100-1))* (penalty per stage (ex 2ns)) = 300ns (3x slower)
-\item  Trouput: (Time per instruction (ex 100ns))/ (Stages (ex 100-1)) + (Time pipline registes (ex 2ns)) = 3ns (every instuction is 33x faster) 
+\item  Latency: (stages*(penalty per stage)) \newline
+  overhead: (instructions time (ex 100ns)) / (stages (ex 1000)) + (register overhead (1ns)) = 1.1ns
+  Total time: 1.1*1000
 \end{itemize}
 
 
@@ -385,7 +379,7 @@ Not all stages are needed for eatch operation or instruction
     \vspace{10mm}
     \centering
     \includegraphics[width=16cm, height=8cm]{image/dubble-pump.png} 
-    \caption{Dubble pump}
+    \caption{Bubble pump}
 \end{figure}
 
 
@@ -411,20 +405,16 @@ Not all stages are needed for eatch operation or instruction
 \textbf{Fixing the issue}
 \begin{itemize}
 \item  Build more hardware (double-pumped register file).
-  Double-pumped write at the first hafe cycle and read at the other half
+  Double-pumped write at the first half cycle and read at the other half
 \end{itemize}
 
 \textbf{Calculating time coplexity}
 \begin{itemize}
-\item  Branshe delay \newline
-  (How many branches (ex 20\%)) / (How maney usful instuctions can be filled in (ex 50\%))
+\item  Branch delay \newline
+  (How many branches (ex 20\%)) / (How many usful instuctions can be filled in (ex 50\%))
   = 20\%/0.5 = 10\%
-\item  Cycles per instructions (CPI): (total cycles (with nop)) / (usful work (without nop))
-  % https://www.youtube.com/watch?v=GAUppsLpjvg
+\item  Instructions per cycle  
 \end{itemize}
-%The amount of instructions that requires a NOP is 50% of 20% = 10% => 10% of instructions will take 2 cycles 
-%This gives us a CPI of 10%*2+90%*1 = 0.1*2+0.9*1 = 1.1 CPI 
-%Therefore, the slowdown due to the load delay-slots is 10%.
 
 
 \newpage
@@ -450,7 +440,7 @@ When the prediction is wrong, clean up is needed.
 
 \subsection{Dynamic pridictors}
 
-The implementation of branch preditors look somthing like this:
+The implementation of branch predictors look something like this:
 \begin{figure}[h]
     \vspace{10mm}
     \centering
@@ -471,7 +461,7 @@ The implementation of branch preditors look somthing like this:
 \textbf{BTB}
 \begin{itemize}
 \item  Branch Target Buffer (BTB)
-\item  Save a table with PC onorder to have history that we can predict on
+\item  Save a table with PC in order to have history that we can predict on
 \end{itemize}
 
 \begin{figure}[h]
@@ -510,7 +500,7 @@ Interrupts are external events that interrupt the normal flow of
 
 \textbf{Terminology}
 \begin{itemize}
-\item  nvram (flash): Simmiler to ram but it saves data when there is no power
+\item  nvram (flash): Similar to ram but it saves data when there is no power
 \item  Busses:
   Parallel: many bits at once (e.g., 32 bits together in one clock)
   Used to be used everywhere
@@ -520,21 +510,21 @@ Interrupts are external events that interrupt the normal flow of
   Used to be used only where distances were long (e.g., networks)
   Now used for most off-chip communications
 \item  memory-mapped I/O:
-  Manual handeling of I/O devices
+  Manual handling of I/O devices
   Map portions of the address space to I/O devices
   Read and write to those addresses to access the 
 \item  direct memory access (DMA):
-  Hardware who mange I/O devices (dynamicly)
+  Hardware who manage I/O devices (dynamically)
 \item  Polling:
   The device puts its status somewhere
   The OS repeatedly checks for it to change
 \item  Interrupt:
   When the device is ready, it gets the processor’s attention by signaling an interrupt
   The OS then jumps to an interrupt handler to handle the event
-\item  Througput: x/s
+\item  Throughput: x/s
   The read and write speed
-\item  Lateny: s/x
-  Accesing time.
+\item  Latency: s/x
+  Accessing time.
 \item  Overhead:
   any combination of excess or 
   indirect computation time, memory, bandwidth,
@@ -590,7 +580,7 @@ done:
 \item  Fully-associative: Have to search all blocks, but very flexible 
 \item  Direct-mapped: Only one place for each block, no flexibility
 \item  Set-associative: Only have to search one set for each block,
-  flexible because each set can store muliple blocks in its ways 
+  flexible because each set can store multiple blocks in its ways 
 \end{itemize}
 
 \textbf{Write policies}
@@ -599,7 +589,7 @@ done:
 \item  Write-back: fast (keeps the data just in the cache), more complex
 \end{itemize}
 
-\textbf{Termenology}
+\textbf{Terminology}
 \begin{itemize}
 \item  Data: What is being stored
 \item  Tag: What address the data has
@@ -608,7 +598,7 @@ done:
 \item  Valid bit: If the data is correct
 \item  Dirty bit: The data has been change and we need to write it to memory
 \item  Type of cache: Fully-associative (FA), Set-associative (SA), Direct-mapped (DM)
-\item  Replasment policy: Write-through, Write-back  
+\item  Replacement policy: Write-through, Write-back  
 \end{itemize}
 
 
@@ -616,11 +606,11 @@ done:
 \begin{itemize}
 \item tag has 30bits and the 2 other bits is to determen what data
   63 bits for eatch entry 32bit data 30bit tag 1bit valid-bit 
-\item larger block of data -> fewer tags -> more effeciant storage
+\item larger block of data -> fewer tags -> more efficient storage
 \item 1 word cache block we have 1 32bit data
 \item 2 word cache block we have 2 32bit data 
 \item 4 word cache block we have 4 32bit data
-\item we loade more data when we have space for it
+\item we load more data when we have space for it
   we will then have spatial locality
 \item Last 2: determine the byte within the word   
 \item Next N: determine which word in the cache block 
@@ -663,18 +653,12 @@ done:
 \item  Avrage-cycles= CacheL1*Cycles + CacheL2*Cycles + Dram*Cycles
 \end{itemize}
 
-\textbf{Mimimum assositivity}
-\begin{itemize}
-\item  (page size)/  ((Cache size)/ (bytes per line)) \newline
-  ex: 8kB page size 64KB cache and 32bytes per line. log $(2^{13}/ (2^{10}/32)) = 8$  therfore 8-way
-\end{itemize}
-
 \subsection{Cache misses $3C's$}
 % https://www.youtube.com/watch?v=OBp7rpdg_IQ
 \begin{itemize}
-\item  cold/compulsory miss: When the program first begin it dosent have enything in the cache
-\item  conflicts miss: to small to store the nessesary data
-\item  capasity miss: mapes at the same block an then overite unessesarly 
+\item  cold/compulsory miss: When the program first begin it doesn't have anything in the cache
+\item  conflicts miss: to small to store the necessary data
+\item  capacity miss: map's at the same block an then overwrite unnecessarily 
 \end{itemize}
 
 
@@ -689,12 +673,12 @@ done:
 \item  Fill holes in the RAM address space (efficiency)
 \end{itemize}
 
-\textbf{Termonology}
+\textbf{Terminology}
 \begin{itemize}
 \item  Translation= map address
 \item  Page tables= for each program keep track of all translations
 \item  Fine grain= page table with spesific address
-\item  Coarse grain= page table with adress maped ranges
+\item  Coarse grain= page table with address mapped ranges
 \item  Page Table Entries (PTEs)= number of translation  
 \item  Translation Lookaside Buffer TLB= All of the pages, fast translation via hardware
 \item  VA= Virtual program addresses
@@ -714,7 +698,7 @@ done:
   also known as Virtual-Index, Virtual-Tagged (VIVT):
 \item  Virtual-Index, Phisically-Tagged (\textbf{VIPT}): VA for index PA for tags, fast dose translation and
   fetch from cache at the same time, most commonly used.
-  We need a comperitor to se if the PA tags from cache matches the TLB PA onlny then we can say if we had a hit or a miss.
+  We need a comperitor to se if the PA tags from cache matches the TLB PA only then we can say if we had a hit or a miss.
   The VA offset is what the PA tag is selected and the VA tag (number of virtual pages) is what the TLB uses.
   Mostly used for L1 cache not L2.
 \end{itemize}
@@ -738,9 +722,9 @@ done:
 \end{figure}
 
 
-\textbf{Calculating Page sizeing VIPT}
+\textbf{Calculating Page sizing}
 \begin{itemize}
-\item  Number-of-Virtual-Pages= $2^{32}/(pages)$  (in a 32bit address)
+\item  Number-of-Virtual-Pages= $2^{32}$/pages
 \item  Bits-used-for-Page-Offset= $\log$(pages)
 \item  Bits-used-for-VPN= 32(bit prossessor)- Bits-used-for-Page-Offset
 \end{itemize}
@@ -761,18 +745,18 @@ done:
 \begin{align*}
   &\quad P=CV^2f \\
   &\quad C= \text{ capasiter, smaller transistors smaller capasiters} \\
-  &\quad V= \text{ voltage, decressing makes it slower} \\
-  &\quad f= \text{ frequancy, redusing clockspeed} \\
+  &\quad V= \text{ voltage, decreasing makes it slower} \\
+  &\quad f= \text{ frequency, reducing clock speed} \\
 \end{align*}
 
-\subsection{Paralel programing}
+\subsection{Paralel programming}
 
 
-\textbf{Avrage prosessors}
+\textbf{Avrage processors}
 \begin{align*}
   &\quad  \text{Calculate how many cores are used in avrage we need to know } \\
   &\quad  \text{how chunks (work) there is in total } \\
-  &\quad  \text{how many time units (cycles think of a reverste peramid)} \\
+  &\quad  \text{how many time units (cycles think of a reverse pyramid)} \\
   &\quad  \\
   &\quad  \text{there is 16 input data and we have 8-cores, we want to calculate the total sum} \\
   &\quad  \text{what is the avrage prossesor being used} \\
@@ -781,16 +765,16 @@ done:
 
 \textbf{parallel issues}
 \begin{itemize}
-\item  Most programs can not utalise parellelism, need to devid the program to diffrent exicutions.
-\item  We also need to share cache and therefore have proformanshe issue since we cant use the entire cache.
+\item  Most programs can not utilize parallelism, need to devid the program to diffrent executions.
+\item  We also need to share cache and therefore have performance issue since we cant use the entire cache.
 \end{itemize}
 
 
-\textbf{How mutch faster}
+\textbf{How much faster}
 \begin{align*}
-  &\quad  75\% parallel, \; 25\% non parallel \text{ we have hundred thousend cores } \\
+  &\quad  75\% parallel, \; 25\% non parallel \text{ we have hundred thousand cores } \\
   &\quad  \Rightarrow  \text{Parallaism takes } (0.75/100000 + 0.25*1) \\
-  &\quad  \text{Singuler takes } (0.75*1 + 0.25*1)  \Rightarrow 4* \text{ faster} \\
+  &\quad  \text{Singular takes } (0.75*1 + 0.25*1)  \Rightarrow 4* \text{ faster} \\
   &\quad  \\
   &\quad  \text{Speedup with Amdahl's law } Speedup=\frac{1}{(1-P)+P/S} \\
   &\quad  P= \text{ Parallel aktion} \\
@@ -800,9 +784,9 @@ done:
 %\subsection{Multicore issues}
 
 
-\subsection{Syncronaziation}
+\subsection{Synchronization}
 \begin{itemize}
-\item  Fix the issue with 2 prosessors accesing the same value att the same time.
+\item  Fix the issue with 2 processors accessing the same value at the same time.
 \item  We can use atomic swap to first set lock to 1 then check the data.
 \end{itemize}
 
@@ -820,7 +804,7 @@ done:
 \subsection{Cache coherency}
 \begin{itemize}
 \item  How we use caches to save memory
-\item  Locks: if the data has been accesed. (not a garanty of protection)
+\item  Locks: if the data has been acceded. (not a guaranty of protection)
 \item  Snooping: Look what the other processors are storing in there private cache   
 \end{itemize}
   
@@ -835,25 +819,19 @@ done:
 
 \subsection{ILP}
 \begin{itemize}
-\item  Instruction level parallalism (ILP)
-\item  better to have out-of-oder exicution sice we can find independent instruciions
+\item  Instruction level parallelism (ILP)
+\item  better to have out-of-oder execution since we can find independent instructions
 \item  We use Dual-issue pipline so we can have one for memory instructions and
   one for non memory instruction
-\item  It mrakes ISA promis with inorder exicution
-\item  Issue with data hazards, more komplexity
+\item  It makes ISA promise with in order execution
+\item  Issue with data hazards, more complexity
 \end{itemize}
 
 
-\textbf{dual issue pipline}
+\textbf{dual issue pipeline}
 \begin{figure}[h]
     \vspace{10mm}
     \centering
     \includegraphics[width=16cm, height=7cm]{image/dual-issue-pipline.png}
     \caption{dual-issue-pipline}
 \end{figure}
-
-\textbf{Simulataneos Multithreading (SMT)}
-\begin{itemize}
-\item  Treads: each proscess has it own thread se it can be more easaly run in parralel
-\item  SMT: allowes threads when stalled swith to another thread an run it instead  
-\end{itemize}
