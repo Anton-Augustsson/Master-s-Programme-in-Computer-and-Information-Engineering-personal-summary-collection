@@ -1,0 +1,1181 @@
+\chapter{Linear Algebra II}
+
+\newpage
+
+% Gamla tentor
+% https://www.studocu.com/sv/document/uppsala-universitet/linjaer-algebra-ii/gamla-tentor/tenta-oktober-2018-fragor/6649302/view
+% https://www.studocu.com/sv/document/uppsala-universitet/linjaer-algebra-ii/gamla-tentor/tenta-mars-2016-fragor/3544944/view
+
+
+\section{Grudläggande teori} % grunden
+\subsection{Ekvationssystem och matris räkning}
+\begin{align*}
+  &\quad \left\{\begin{array}{rr}
+  x+2 y+ & z=-1 \\
+  2 x+(a+3) y+ & 3 z=-4 \\
+  x+(3-a) y+(a-2) z & =a-1
+  \end{array}\right. \\
+  &\quad \left(\begin{array}{ccc|c}
+    1 & 2 & 1 & -1 \\
+    2 & a+3 & 3 & -4 \\
+    1 & 3-a & a-2 & a-1
+  \end{array}\right) \\
+  &\quad (-1 \text{ rad1 till rad2}), (-2 \text{ rad1 till rad3}) \\
+  &\quad \left(\begin{array}{ccc|c}
+    1 & 2 & 1 & -1 \\
+    2 & a-1 & 1 & -2 \\
+    0 & 1-a & a-3 & a
+  \end{array}\right) \\
+  &\quad \left(\begin{array}{ccc|c}
+    1 & 2 & 1 & -1 \\
+    0 & a-1 & 1 & -2 \\
+    0 & 0 & a-2 & a-2
+  \end{array}\right) \\
+  &\quad a \neq 1 \land a \neq 2 \\
+  &\quad (\frac{1}{a-2} \text{rad 3}) \\
+  &\quad \left(\begin{array}{ccc|c}
+    1 & 2 & 1 & -1 \\
+    0 & a-1 & 1 & -2 \\
+    0 & 0 & 1 & 1
+  \end{array}\right) \\
+  &\quad (-1 \text{rad 3 till rad 2}), (-1 \text{rad 3 till rad 1}) \\
+  &\quad \left(\begin{array}{ccc|c}
+    1 & 2 & 0 & -2 \\
+    0 & a-1 & 0 & -3 \\
+    0 & 0 & 1 & 1
+  \end{array}\right) \\
+  &\quad (\frac{1}{a-1} \text{rad 2}) \\
+  &\quad \left(\begin{array}{ccc|c}
+    1 & 2 & 0 & -2 \\
+    0 & a-1 & 0 & -3 \\
+    0 & 0 & 1 & 1
+  \end{array}\right) \\
+  &\quad \left(\begin{array}{ccc|c}
+    1 & 2 & 0 & -2 \\
+    0 & 1 & 0 & \frac{3}{1-a} \\
+    0 & 0 & 1 & 1
+  \end{array}\right) \\  
+  &\quad (-2 \text{rad 2 till rad 3}) \\
+  &\quad \left(\begin{array}{ccc|c}
+    1 & 0 & 0 & -2 - \frac{6}{1-a} \\
+    0 & 1 & 0 & \frac{3}{1-a} \\
+    0 & 0 & 1 & 1
+  \end{array}\right) \\  
+  &\quad \left\{\begin{array}{rr}
+  x & = -2 - \frac{6}{1-a} \\
+  y & = \frac{3}{1-a} \\
+  z & = 1
+  \end{array}\right. \\
+  &\quad \\
+  &\quad \text{\textbf{Kontroll:} stoppar in x,y,z i ekvationerna} \\
+  &\quad \left\{\begin{array}{r}
+  \left(\frac{2 a-8}{1-a}\right)+\quad 2 \cdot\left(\frac{3}{1-a}\right)+\quad 1=-1 \\
+  2 \cdot\left(\frac{2 a-8}{1-a}\right)+(a+3) \cdot\left(\frac{3}{1-a}\right)+\quad 3 \cdot 1=-4 \\
+  \left(\frac{2 a-8}{1-a}\right)+(3-a) \cdot\left(\frac{3}{1-a}\right)+(a-2) \cdot 1=a-1
+  \end{array}\right.
+\end{align*}
+
+
+\subsection{determinanter}
+\begin{align*}
+  &\quad  
+  \left(\begin{array}{cccc}
+    1   & x   & x^2 & x^3  \\
+    1   & x^2 & x^3 & x^4  \\
+    x   & x^2 & x^4 & x^5  \\
+    x^2 & x^3 & x^4 & x^6  \\
+  \end{array}\right) \\
+  &\quad  \\
+  &\quad  x
+  \left(\begin{array}{cccc}
+    1   & x   & x^2 & x^3  \\
+    1   & x^2 & x^3 & x^4  \\
+    1   & x   & x^3 & x^4  \\
+    x^2 & x^3 & x^4 & x^6  \\
+  \end{array}\right) = \text{rad 4 -rad 1} x^3  
+  \left(\begin{array}{cccc}
+    1   & x   & x^2 & x^3  \\
+    1   & x^2 & x^3 & x^4  \\
+    1   & x   & x^3 & x^4  \\
+    1   & x   & x^2 & x^4  \\
+  \end{array}\right) =  x^3
+  \left(\begin{array}{cccc}
+    1   & x   & x^2 & x^3  \\
+    1   & x^2 & x^3 & x^4  \\
+    1   & x   & x^3 & x^4  \\
+    0   & 0   & 0 & x     \\
+  \end{array}\right)^{R4} = \\
+  &\quad  \text{rad 3 -rad 1} x^3(x^4-x^3)
+  \left(\begin{array}{ccc}
+    1   & x   & x^2  \\
+    1   & x^2 & x^3  \\
+    1   & x   & x^3  \\
+  \end{array}\right) = x^6(x-1)^2
+  \left(\begin{array}{ccc}
+    1   & x   & x^2  \\
+    1   & x^2 & x^3  \\
+    0   & 0   & x  \\
+  \end{array}\right) = \\
+  &\quad x^6(x-1)(x^3-x^2)  
+  \left(\begin{array}{cc}
+    1   & x    \\
+    1   & x^2  \\
+  \end{array}\right) = x^9(x-1)^3=0
+\end{align*}
+
+\subsection{flerdimisionel dvs $R^n$}
+räkneregler
+
+\subsection{Funktioner}
+polynom functioner vid en viss grad också
+
+\subsection{Linjer}
+\begin{align*}
+  &\quad  l: \begin{pmatrix} x \\ y \\ z \end{pmatrix} =
+  \begin{pmatrix} 3 \\ 2 \\ 5 \end{pmatrix} + t\begin{pmatrix} 1 \\ 2 \\ 2 \end{pmatrix} \\
+  &\quad  \text{Då är riktnings vektorn } \begin{pmatrix} 1 \\ 2 \\ 2 \end{pmatrix} \\
+  &\quad  \text{Och går genom } \begin{pmatrix} 3 \\ 2 \\ 5 \end{pmatrix} \\
+\end{align*}
+
+
+\newpage
+
+\section{Vektorrum}
+\textbf{Definition: vektor rum}
+\begin{align*}
+  &\quad  \text{En mängd $\mathbb{V}$ kallas för en \underline{reellt vektorrum} om } \\
+  &\quad  \text{1. Det finns en operator på  $\mathbb{V}$ som kallas addition och} \\
+  &\quad  \text{beräknas med $+$, sådant att om } \vec{u},\vec{v} \in \mathbb{V} \text{ så gäller}  \\
+  &\quad  \vec{u}+\vec{v}\in\mathbb{V} \\
+  &\quad  \text{2. Det finns en poeration på  $\mathbb{V}$ som kallas skalning eller } \\
+  &\quad  \text{multipliseras med reella tal, som beteknas med $\cdot$, sådan } \\
+  &\quad  \text{att om } \lambda\in\mathbb{R} \land \vec{v}\in\mathbb{V} \text{ så gäller }
+  \lambda\cdot\vec{v}\in\mathbb{V}
+\end{align*}
+räknereglerna gäller som i la1
+%kommutitiva lag, assositiv lag ..
+
+\textbf{Axiomen: vektor rum}
+\begin{align*}
+  &\quad  \text{1. } \vec{u}+\vec{v} = \vec{v}+\vec{u} \text{ (Kommutativ lag)} \\
+  &\quad  \text{2. } \vec{u}(\vec{v}+\vec{w}) = (\vec{u}+\vec{v})+\vec{w} \text{ (Associativ lag)} \\
+  &\quad  \text{3. } \text{Det finns ett nollement } \vec{0} \text{ så att }
+  \vec{v}+\vec{0}=\vec{v} \\
+  &\quad  \text{4. } \text{Till varge } \vec{v}\in\mathbb{V} \text{ finns ett element }
+  -\vec{v} \text{ så att} \\
+  &\quad  \vec{v}+(-\vec{v}) = 0 \\
+  &\quad  \text{5. } 1\cdot\vec{v} = \vec{v} \\
+  &\quad  \text{6. } \lambda\cdot(\mu\cdot\vec{v}) = (\lambda\cdot\mu)\cdot\vec{v}
+  \text{ (Associativ lag)} \\
+  &\quad  \text{7. } (\lambda+\mu)\cdot\vec{v} = \lambda\cdot\vec{v} + \mu\cdot\vec{v}
+  \text{ (Distributiv lag)} \\
+  &\quad  \text{8. } \lambda\cdot(\vec{u}+\vec{v}) = \lambda\cdot\vec{u} + \lambda\cdot\vec{v}
+  \text{ (Distributiv lag)} \\
+  &\quad  \forall\lambda,\mu\in\mathbb{R}\land\vec{u},\vec{v},\vec{w}\in\mathbb{V} \\
+\end{align*}
+
+
+\newpage
+
+\section{Underrum och linjära höljet}
+Ett underrum är en delmängd $u$ ej $0$ som är sluten under addition och skalning
+
+\textbf{Definition: Underrum}
+\begin{align*}
+  &\quad  \text{En delmängd $\mathbb{U}$ av ett vektorrum $\mathbb{V}$ kallas för } \\
+  &\quad  \text{ett underrum eller delrum av $\mathbb{V}$ om $\mathbb{U}$ är ett vektorrum} \\
+  &\quad  \text{med den additionoch den multiplikation med reella tal som definierats i
+    $\mathbb{V}$.} \\
+\end{align*}
+
+\textbf{Sats: Underrum}
+\begin{align*}
+  &\quad  \text{En icketom mängd $\mathbb{U}$ av ett vektorrum $\mathbb{V}$ är ett} \\
+  &\quad  \text{underrum om och endast om följande gäller} \\
+  &\quad  \text{1. Om } \vec{u}\in\mathbb{U} \text{ och } \vec{v}\in\mathbb{U},
+  \text{ Så är } \vec{u}+\vec{v} \in\mathbb{U} \\
+  &\quad  \text{2. Om } \vec{u}\in\mathbb{U} \text{ och } \lambda\in\mathbb{R},
+  \text{ Så är } \lambda\vec{u} \in\mathbb{U} \\
+\end{align*}
+
+\textbf{Regler: Underrum}
+\begin{align*}
+  &\quad  \text{1. Det snabbaste sättet att testa om det gäller är om nollvektorn finns} \\
+  &\quad  \text{om den inte gör det så bryter det mot 2-lagen} \\
+  &\quad  \text{2. Homogena ekvationer och linjer/plan genonom origo gäller det alltid för} \\
+  &\quad  \text{3. Kontunerligt deriverbara, så gäller det att det är ett underrum} \\
+\end{align*}
+
+\textbf{Exempel: Underrum (Ex 1)}
+\begin{align*}
+  &\quad  \text{är } \Big\{ \begin{pmatrix} x \\ y \\ z \end{pmatrix} | x+y+z=5 \Big\}
+  \text{ ett underrum?} \\
+  &\quad  \\
+  &\quad  \text{Nej, då: } 0+0+0\neq5 \\
+\end{align*} %exotisa exempel x=x^2 är ej sant då 2(1 1)^t = (2 2)^t, 2^2\neq2
+
+
+\newpage
+
+\textbf{Definition: linjära höljet}
+\begin{align*}
+  &\quad  \text{En delmängd $\mathbb{U}$ av ett vektorrum $\mathbb{V}$ kallas för } \\
+  &\quad  \text{ett underrum eller delrum av $\mathbb{V}$ om $\mathbb{U}$ är ett vektorrum} \\
+  &\quad  \text{med den additionoch den multiplikation med reella tal som definierats i
+    $\mathbb{V}$.} \\
+\end{align*}
+
+\textbf{Exempel: Underrum (Ex 4)}
+\begin{align*}
+  &\quad  \text{Vilka vektrorer i $\mathbb{P}$ tillhör } u=[1, 1+x, 1+x+x^2] \\
+  &\quad  \\
+  &\quad  \text{Svar: } u=P_2 \text{ (eftersom) } 1\in{u}, x\in{u}, \text{ och } x^2\in{u} \\
+  &\quad  \text{Då alla } a\cdot{1} + b\cdot{x} + c\cdot{x^2} \in{u} \\
+  &\quad  \text{Inga plynom av grad $>2$ tillhör $u$.} \\
+  &\quad  \text{Vi för kombinera det olika elementen i u med addition och multiplication} \\
+\end{align*}
+% exemepl 5.3.7
+
+\newpage
+
+\section{Linjärt \(o\)beroende}
+\textbf{Ide: linjärt beronde}
+\begin{align*}
+  &\quad  \text{Om vektorerna kan skrivas om en linjär kombination av det andra vektorerna} \\
+  &\quad  \text{så är vektorn linjärt beroende då det inte behöver vektorn} \\
+  &\quad  \text{ vi får reda på beoende genom att ställa upp ekv} \\
+  &\quad  x_1\vec{v_1}+x_2\vec{v_2} + \ldots{} + x_n\vec{v_n} = \vec{0} \\
+  &\quad  \text{Om denna ekvation har icke triviala lösningar (ej noll) då är den beroende} \\
+\end{align*}
+
+
+\textbf{Exempel: om linjärt oberonde}
+\begin{align*}
+  &\quad  \text{Är mängden }  \Big\{
+  \begin{pmatrix} 1 \\ 2  \end{pmatrix}
+  \begin{pmatrix} 2 \\ 1  \end{pmatrix} \Big\}
+  \text{i $\mathbb{R}^2$ linjärt oberoende}  \\
+  &\quad
+  x_1\begin{pmatrix} 1 \\ 2  \end{pmatrix} +
+  x_2\begin{pmatrix} 2 \\ 1  \end{pmatrix} = \vec{0} 
+  \Leftrightarrow
+  \left(\begin{array}{cc|c}
+    1   & 2  & 0  \\
+    2   & 1  & 0  \\
+  \end{array}\right) \\
+  &\quad  x_1=0, x_2=0 \text{Endast triviala lösningar } \\
+\end{align*}
+
+% beviset är att kom av vektor är nollvektorn så flyttar vi över så vn är komb av det andra
+% linjär kobinateion kan skrivas på säät med skalär multiplication och addition av elementen/vektorerna
+
+
+\newpage
+
+\section{Bas}
+\textbf{Ide: Bas och Dimention}
+\begin{align*}
+  &\quad  \text{Bas omm om vektorerna spanner upp hella spannet och det linjärt oberonde} \\
+  &\quad  \text{Standard basen } \underline{e} \\
+  &\quad  \text{Vi behöver tree vektorer för att utgöra en bas i } \mathbb{R}^3 \text{ är }
+  \vec{v_1}, \vec{v_2}, \vec{v_3} \in\mathbb{R}^3 \\
+  &\quad  \\
+  &\quad  \text{Dimentioner är antallet oberonde vektorer som spänner up ``rummet''} \\
+  &\quad  \text{``dimentioner blir då samma som antallet element som en bas av polynom''} \\
+  &\quad  \mathbb{P}_3 = a + bx^1 + cx^2 + dx^3 \text{ har 4 dimentioner} \\
+  &\quad  \mathbb{R}^3 \text{ har 3 dimentioner} \\
+  &\quad  \text{Dimentioner för matriser är } n\times m (2\times{2}-matris = dim 4) \\
+  &\quad  \text{En bas med tre vektorer där vektorerna $\mathbb{R}^4$ ger 3 dim} \\
+\end{align*}
+
+\textbf{Exempel: Ta fram bas från plan}
+\begin{align*}
+  &\quad  \text{låt } 2x -y z = 0 \\
+  &\quad  \\
+  &\quad  \text{Lösning: }  x=y/2 -z/2 \\
+  &\quad  \text{Låt } y=s, \, z=t \text{ vi får då lösningen på parameter form} \\
+  &\quad  \begin{pmatrix} x \\ y \\ z \end{pmatrix} =
+  \begin{pmatrix} s/2 -t/2 \\ s \\ t \end{pmatrix} =
+  s/2\begin{pmatrix} 1 \\ 2 \\ 0 \end{pmatrix} +
+  t/2\begin{pmatrix} -1 \\ 0 \\ 2 \end{pmatrix} \\
+  &\quad  \text{Basen blir då }
+  \Big( \begin{pmatrix} 1 \\ 2 \\ 0 \end{pmatrix} \begin{pmatrix} -1 \\ 0 \\ 2 \end{pmatrix} \Big) \\
+\end{align*}
+
+
+\newpage
+
+\section{Basomvandling}
+Vi kan ta inversen av matrisen av vektorerna som utger en bas och få
+matrisen som kan multipliseras med vektor för att få omvandlingen.
+
+\textbf{Sats: basbyte}
+\begin{align*}
+  &\quad  \vec{v}_{\underline{e}} = Tv_{f} \text{ Där T är en matris} \\
+  &\quad  T^{\underline{f}}_{\underline{e}} = {(T^{\underline{e}}_{\underline{f}})}^{-1} \\
+  &\quad  \vec{v}_{\underline{f}} = T^{\underline{e}}_{\underline{f}} \, \vec{v}_{\underline{e}} \\
+\end{align*}
+
+\textbf{Exempel: Från standar till annan bas}
+\begin{align*}
+  &\quad  \text{Låt } \underline{f}=(f_1 \, f_2) =
+  \Big( \begin{pmatrix} 2 \\ 1 \\ 1 \end{pmatrix} \begin{pmatrix} 1 \\ 2 \\ 1 \end{pmatrix} \Big), \,
+  \vec{v} = \begin{pmatrix} -2 \\ 5 \\ 1 \end{pmatrix} \\
+  &\quad  \text{Utryck $\vec{v}$ i basen $\underline{f}$} \\
+  &\quad  \\
+  &\quad  \vec{v}_{\underline{e}} = \begin{pmatrix} -2 \\ 5 \\ 1 \end{pmatrix} =
+  x_1 \begin{pmatrix} 2 \\ 1 \\ 1 \end{pmatrix}  + x_2 \begin{pmatrix} 1 \\ 2 \\ 1 \end{pmatrix} \\
+  &\quad \left\{\begin{array}{rr}
+  2x_1 + x_2 = -2 \\
+  x_1 + 2x_2 = 5  \\
+  x_1 + x_2 = 1   \\
+  \end{array}\right. \Rightarrow{}
+  \left(\begin{array}{cc|c}
+    2 & 1 & -2   \\
+    1 & 2 &  5  \\
+    1 & 1 &  1  \\
+  \end{array}\right) \sim{}
+  \left(\begin{array}{cc|c}
+    2 & 1 & -2   \\
+    0 & 1 &  4  \\
+    0 & 0 &  0  \\
+  \end{array}\right)  \\
+  &\quad  x_2 = 4, \, x_1 = 1/2(-2 -4) = -3 \Rightarrow{} 
+  v_{\underline{f}} = \begin{pmatrix} -3 \\ 4 \end{pmatrix} \\
+\end{align*}
+
+\textbf{Exempel: Finn matrisen för bas byte vektorer} % polynom och vektorer
+\begin{align*}
+  &\quad  \text{Låt } \underline{f} =
+  \Big( \begin{pmatrix} 1 \\ 1 \end{pmatrix} \begin{pmatrix} 2 \\ 1 \end{pmatrix} \Big)
+  \text{Bestäm bas omvandling matrisen }   \\
+  &\quad  \\
+  &\quad  \text{Lös } T^{\underline{e}}_{\underline{f}} = 
+  \left(\begin{array}{cc|cc}
+    1 & 2 & 1 & 0  \\
+    1 & 1 & 0 & 1  \\
+  \end{array}\right) \sim
+    \left(\begin{array}{cc|cc}
+    1 & 0 & -1 &  2  \\
+    0 & 1 &  1 & -1  \\
+  \end{array}\right) \\
+\end{align*}
+
+\textbf{Exempel: Finn matrisen för bas byte polynom}
+\begin{align*}
+  &\quad  \text{Låt } \underline{e}=(1 \, x) \text{ och } \underline{f}=(1 \, 1-x) \\
+  &\quad  \\
+  &\quad  \vec{f}_1 = 1 = \vec{e}_1 \Rightarrow \vec{f_1}_e = \begin{pmatrix} 1 \\ 0 \end{pmatrix} \\
+  &\quad  \vec{f}_2 = 1-x = \vec{e}_1 - \vec{e}_2 \Rightarrow \vec{f_2}_e = \begin{pmatrix} 1 \\ -1 \end{pmatrix} \\
+  &\quad  T^{\underline{f}}_{\underline{e}} =
+  \left(\begin{array}{cc}
+    1 &  1  \\
+    0 & -1  \\
+  \end{array}\right) \Rightarrow{} {(T^{\underline{f}}_{\underline{e}})}^{-1} T^{\underline{e}}_{\underline{f}} = \\
+  &\quad \left(\begin{array}{cc}
+    1 &  1  \\
+    0 & -1  \\
+  \end{array}\right) \text{} \\
+\end{align*}
+
+\textbf{Exempel: Finn matrisen för bas byte mellan olika matriser} 
+\begin{align*}
+  &\quad  \text{Basbyte mellan } \underline{f} =
+  \Big( \begin{pmatrix} 1 \\ 1 \end{pmatrix} \begin{pmatrix} 2 \\ 1 \end{pmatrix} \Big)
+  \text{ och }
+  \Big( \begin{pmatrix} -1 \\ 1 \end{pmatrix} \begin{pmatrix} 3 \\ 2 \end{pmatrix} \Big)
+  &\quad  \\
+  &\quad  \text{Lös } T^{\underline{g}}_{\underline{f}}: \,
+  \left(\begin{array}{cc|cc}
+    1 & 2 & -1 & 3  \\
+    1 & 1 &  1 & 2  \\
+  \end{array}\right) \sim{} \\
+  &\quad
+  \left(\begin{array}{cc|cc}
+    1 & 0 &   3 & 1  \\
+    0 & 1 &  -2 & 1  \\
+  \end{array}\right) \Rightarrow{}
+  \left(\begin{array}{cc}
+    3 & 1  \\
+   -2 & 1  \\
+  \end{array}\right)  \\
+\end{align*}
+
+
+\textbf{Definition: Nollrum, Kolonrum, radrum.} 
+\begin{align*}
+  &\quad  \text{låt A vara en $m\times n-matris$} \\
+  &\quad  \text{1. dim(A:s kolonrum) = dim(A:s radrum) = rangA} \\
+  &\quad  \text{2. dim(A:s kolonrum) + dim(A:s nollrum) = n} \\
+\end{align*}
+
+\textbf{Exempel: Finn Nollrum, Kolonrum, radrum.} 
+\begin{align*}
+  &\quad  \text{Hitta en bas för kolonrummet, radrummet och nollrumet} \\
+  &\quad  \text{till följande matris. Bestäm även rummens dimensioner} \\
+  &\quad  A = 
+  \left(\begin{array}{cccc}
+    1 & 2 &  3 & 3  \\
+    1 & 3 &  4 & 5  \\
+   -1 & 0 & -1 & 1  \\
+  \end{array}\right)  \\
+  &\quad  \\
+  &\quad  \text{Låt kolonernana vara vektorer, då får vi följande gäller }  \\
+  &\quad  x_1v_1 + x_2v_2 + x_4v_3 + x_4v_4 = 0 \Leftrightarrow{} (v_1 \, v_2 \, v_3 \, v_4)
+  \begin{pmatrix} x_1 \\ x_2 \\ x_3 \\ x_4 \end{pmatrix} = 0 \Leftrightarrow{} Ax=0 \\
+  &\quad  \text{Gausselimination ger oss } A \sim{}
+  \left(\begin{array}{cccc}
+    1 & 0 & 1 & -1  \\
+    0 & 1 & 1 &  2  \\
+    0 & 0 & 0 &  0  \\
+  \end{array}\right)  \\
+  &\quad
+  \begin{pmatrix} x_1 \\ x_2 \\ x_3 \\ x_4 \end{pmatrix} =
+  \begin{pmatrix} -s+t \\ -s-2t \\ s \\ t \end{pmatrix} =
+  s\begin{pmatrix} -1 \\ -1 \\ 1 \\ 0 \end{pmatrix} +
+  t\begin{pmatrix} 1 \\ -2 \\ 0 \\ 1 \end{pmatrix} \\
+  &\quad  \text{Basen för nollrumet blir då }
+  \Big( \begin{pmatrix} -1 \\ -1 \\ 1 \\ 0 \end{pmatrix} \, \begin{pmatrix} 1 \\ -2 \\ 0 \\ 1 \end{pmatrix} \Big)  \\
+  &\quad  \text{Basen för kolonrumet blir då det vektorer i A som har Pivot element dvs } v_1, v_2 \\
+  &\quad
+  \Big( \begin{pmatrix} 1 \\ 1 \\ -1 \end{pmatrix} \begin{pmatrix} 2 \\ 3 \\ 0 \end{pmatrix} \Big) \\
+  &\quad  \text{Basen för radrumet blir }
+  \Big( \begin{pmatrix} 1 \\ 0 \\ 1 \\ -1 \end{pmatrix} \begin{pmatrix} 0 \\ 1 \\ 1 \\ 2 \end{pmatrix} \Big) \\
+\end{align*}
+
+
+\newpage
+
+\section{Linjär avbildning}
+\textbf{Definition: Linjär avbilding}
+\begin{align*}
+  &\quad  \text{låt $\mathbb{V}$ och $\mathbb{W}$ vara vektorrum. En funktion } F:\mathbb{V}\to\mathbb{W} \\
+  &\quad  \text{kallas för linjär avbildning omm} \\
+  &\quad  \text{1. } F(\vec{v}+\vec{w}) = F(\vec{v}) + F(\vec{w}) \\
+  &\quad  \text{2. } F(\lambda\cdot\vec{v}) = \lambda\cdot F(\vec{v}) \\
+\end{align*}
+
+\textbf{Exempel: Derivatan av polynom}
+\begin{align*}
+  &\quad  \text{Är följande en linjär avbildning } \\
+  &\quad  F:C^1(a,b)\to{C}(a,b) \text{ definerad genom } F(f)=\frac{df}{dx}  \\
+  &\quad  \\
+  &\quad  \big( \frac{d}{dx}(af(x) + bg(x)) \big) = a\frac{df}{dx} + b\frac{dg}{dx} \\
+  &\quad  ( \frac{d}{dx}(\lambda af(x)) ) = \lambda  ( \frac{d}{dx}(af(x)) ) \\
+  &\quad  \text{Svar: ja $F$ är en linjär avbilding} \\
+\end{align*}
+
+
+\newpage
+
+\section{Matrisen av en linjär avbilding}
+\begin{figure}[h]
+    \vspace{10mm}
+    \centering
+    \includegraphics[width=10cm, height=5cm]{image/matris_lin_avb.png} 
+    \caption{Matris av en linjär avbildning}
+\end{figure}
+
+\textbf{Exempel: Rotations matrisen}
+\begin{align*}
+  &\quad
+  \left(\begin{array}{cc}
+    \cos(\alpha) & -\sin(\alpha)   \\
+    \sin(\alpha) &  \cos(\alpha)   \\
+  \end{array}\right)  \\
+  &\quad
+  \left(\begin{array}{ccc}
+    1 & 0            & 0               \\
+    0 & \cos(\alpha) & -\sin(\alpha)   \\
+    0 & \sin(\alpha) &  \cos(\alpha)   \\
+  \end{array}\right)  \\
+\end{align*}
+
+
+%\textbf{Exempel: Derivatan av polynom}
+%\begin{align*}
+%  &\quad  \text{Bestäm matrisen för } \frac{d}{dx}\circ{G}:\mathbb{P}_2\to\mathbb{P}_2
+%  \text{och } G\circ\frac{d}{dx}:\mathbb{P}_3\to\mathbb{P}_3 \\
+%  &\quad \text{ där } \frac{d}{dx} \\
+%  &\quad  G:\mathbb{P}_2\to\mathbb{P}_3 \text{ ges av } F(p(x))=(x+1)p(x) \\
+%  &\quad  \frac{d}{dx}\circ{G}(a_0+a_1x+a_2x^2) = \frac{d}{dx}(x+1)(a_0+a_1x+a_2x^2) = \\
+%  &\quad  \frac{d}{dx}(a_0 + (a_0+a_1)x + (a_1+a_2)x^2 + a_2x^3) =
+%  a_0+a_1 + 2(a_1+a_2)x + 3a_2x^2 \\
+%  &\quad  \text{Matrisn ska sltså sicka }
+%  \begin{pmatrix} a_0 \\ a_1 \\ a_2 \end{pmatrix} \text{ på }
+%  \begin{pmatrix} a_0+a_1 \\ 2a_1+2a_2 \\ 3a_2 \end{pmatrix} \text{ så }
+%  {\big( \frac{d}{dx}\circ{G} \big)}^{w}_{w} =
+%  \left(\begin{array}{ccc}
+%    1 & 1 & 0  \\
+%    0 & 2 & 2  \\
+%    0 & 0 & 3  \\
+%  \end{array}\right)  \\
+%  &\quad
+%  \left(\begin{array}{cccc}
+%    0 & 1 & 0 & 0 \\
+%    0 & 0 & 2 & 0 \\
+%    0 & 0 & 0 & 3 \\
+%  \end{array}\right) 
+%  \left(\begin{array}{ccc}
+%    1 & 0 & 0  \\
+%    1 & 1 & 0  \\
+%    0 & 1 & 1  \\
+%    0 & 0 & 1  \\
+%  \end{array}\right) =
+%  \left(\begin{array}{ccc}
+%    1 & 1 & 0  \\
+%    0 & 2 & 2  \\
+%    0 & 0 & 3  \\
+%  \end{array}\right) 
+%\end{align*}
+
+\textbf{Exempel: Hitta matrisen}
+\begin{align*}
+  &\quad  \text{Linjär avbildning} F:\mathbb{P}_3\to\mathbb{P}_3, \, F= p+ p'+ p''+ p'''
+  \text{Ange $F$:s matris i standarbasen.} \\
+  &\quad  \\
+  &\quad  \text{Avbildar varge ellement i standardbasen } (1 \, x \, x^2 \, x^3) \\
+  &\quad  F(1) = 1 + 1' + 1'' + 1''' = 1 \\
+  &\quad  F(x) = x + x' + x'' + x''' = x+1 \\
+  &\quad  F(x^2) = {x^2} + {x^2}' + {x^2}'' + {x^2}''' = x^2 + 2x + 2\cdot1 \\
+  &\quad  F(x^3) = {x^3} + {x^3}' + {x^3}'' + {x^3}''' = x^3 + 3x^2 + 6x + 6\cdot1 \\
+  &\quad
+  \left(\begin{array}{cccc}
+    1 & 1 & 2 & 6 \\
+    0 & 1 & 2 & 6 \\
+    0 & 0 & 1 & 3 \\
+    0 & 0 & 0 & 1 \\
+  \end{array}\right)   
+\end{align*}
+
+
+\newpage
+
+\section{Basbyte av linjära avbildningar}
+\textbf{Definition: Basbyte av linjära avblidningar}
+\begin{align*}
+  &\quad  \text{låt $F: \mathbb{V}\to\mathbb{W}$ vara linjär. Låt $\underline{e}$ och
+    $\underline{v}$ vara baser i $\mathbb{V}$ och låt $\underline{f}$} \\
+  &\quad  \text{och $\underline{w}$ vara baser av $\mathbb{W}$. Då gäller}  \\
+  &\quad   {(F)}^{\underline{e}}_{\underline{f}} =
+  T^{\underline{w}}_{\underline{f}}{(F)}^{\underline{v}}_{\underline{w}}T^{\underline{e}}_{\underline{v}} \\
+  &\quad   \text{Där vektorn kommer från höger (viktigt vid vilken
+    ording transfomations matriserna står)} \\
+  &\quad   \\
+  &\quad  \text{Ide: Vi omvandlar från en bas (ex standard bas) till en bas som
+    är mer anpasat för uträkningen} \\
+  &\quad  \text{Sedan omvandlar vi igen för att få svaret i den bas vi vill ha
+    den i (ex standard bas)} \\
+\end{align*}
+
+\textbf{Exempel: Basbyte av linjär avbildning vektor}
+\begin{align*} % q9 fråga 1
+  &\quad  \text{} \\
+\end{align*}
+
+\textbf{Exempel: Basbyte av linjär avbildning polynom}
+\begin{align*}
+  &\quad  \text{Vad är matrisen av derivatan } \mathbb{P}_3\to\mathbb{P}_2
+  \text{ med avseende på } \\
+  &\quad  \text{basen } \underline{u} = (x^3 \, x^2 \, x \, 1) av \mathbb{P}_3 \text{ och }
+  \underline{v} = (x^2 \, x \, 1)  \text{ av $\mathbb{P}_2$?}\\
+  &\quad  \\
+  &\quad  {(H)}^{\underline{e}}_{\underline{f}} =
+  \left(\begin{array}{cccc}
+    0 & 1 & 0 & 0 \\
+    0 & 0 & 2 & 0 \\
+    0 & 0 & 0 & 3 \\
+  \end{array}\right)  \\
+  &\quad  \\
+  &\quad  T^{\underline{f}}_{\underline{v}}: \\
+  &\quad  \vec{f}_1 = 1   = 0\vec{v}_1 + 0\vec{v}_2 + 1\vec{v}_3 \\
+  &\quad  \vec{f}_2 = x   = 0\vec{v}_1 + 1\vec{v}_2 + 0\vec{v}_3 \\
+  &\quad  \vec{f}_3 = x^2 = 1\vec{v}_1 + 0\vec{v}_2 + 0\vec{v}_3 \\
+  &\quad  \\
+  &\quad  T^{\underline{u}}_{\underline{e}}: \\
+  &\quad  \vec{u}_1 = x^3 = 0\vec{e}_1 + 0\vec{e}_2 + 0\vec{e}_3 + 1\vec{e}_4 \\
+  &\quad  \vec{u}_2 = x^2 = 0\vec{e}_1 + 0\vec{e}_2 + 1\vec{e}_3 + 0\vec{e}_4 \\
+  &\quad  \vec{u}_3 = x   = 0\vec{e}_1 + 1\vec{e}_2 + 0\vec{e}_3 + 0\vec{e}_4 \\
+  &\quad  \vec{u}_4 = 1   = 1\vec{e}_1 + 0\vec{e}_2 + 0\vec{e}_3 + 0\vec{e}_4 \\
+  &\quad  \\
+  &\quad  {(H)}^{\underline{u}}_{\underline{v}} =
+  T^{\underline{f}}_{\underline{v}} {(H)}^{\underline{e}}_{\underline{f}} T^{\underline{u}}_{\underline{e}} =
+  \left(\begin{array}{ccc}
+    0 & 0 & 1  \\
+    0 & 1 & 0  \\
+    1 & 0 & 0  \\
+  \end{array}\right) 
+  \left(\begin{array}{cccc}
+    0 & 1 & 0 & 0 \\
+    0 & 0 & 2 & 0 \\
+    0 & 0 & 0 & 3 \\
+  \end{array}\right) 
+  \left(\begin{array}{cccc}
+    0 & 0 & 0 & 1 \\
+    0 & 0 & 1 & 0 \\
+    0 & 1 & 0 & 0 \\
+    1 & 0 & 0 & 0 \\
+  \end{array}\right)  
+\end{align*}
+
+
+
+% normalisera
+
+% avmilding matrisen är f^v_w om f:v \to w
+% det är avbildingns matrisen om är i mitten av bassbyte formeln?
+
+\section{Kärna och bild av en linjär avbildning}
+
+\textbf{Definition: Kärna och bild}
+\begin{align*}
+  &\quad  \text{Låt $F:\mathbb{V}\to\mathbb{W}$ vara en linjär avbilding} \\
+  &\quad  \\
+  &\quad  \text{\textbf{Kärnan} eller \textbf{nollrummet} av den linjära avbildingen F} \\
+  &\quad  \ker(F) = N(F) = \{\vec{v}\in\mathbb{V} | F(\vec{v} = \vec{0})\} \\
+  &\quad  \\
+  &\quad  \text{\textbf{Bilden} eller \text{värderummet} av den linjära avbildingen F} \\
+  &\quad  \Ima(F) = V(F) = \{\vec{w}\in\mathbb{W} | \exists\vec{v}:F(\vec{v})=\vec{w}\} \\
+\end{align*}
+
+\textbf{Definition: Isomorfism, injektiv, surjektiv }
+\begin{align*}
+  &\quad  F:X\to{y} \text{ kallas} \\
+  &\quad  \text{\textbf{injektiv} om } F(x) = F(x') \Rightarrow x = x' \\
+  &\quad  \text{\textbf{surjektiv} om } \forall{y}\in Y\exists{x}\in{X}:f(x)=y \\
+  &\quad  \text{\textbf{bijektiv} om det är både injektiv och surjektiv} 
+\end{align*}
+
+\textbf{Sats:}
+\begin{align*}
+  &\quad  \text{Låt $F:\mathbb{V}\to\mathbb{W}$ vara linjär} \\
+  &\quad  F \text{ är injektiv omm } \ker{F} = \{\vec{0}\} \\
+  &\quad  F \text{ är surjektiv omm } \Ima{F} = \mathbb{W} \text{ omm }
+  \Rang ({(F)}^{\underline{u}}_{\underline{w}}) = \dim{\mathbb{W}} \\
+\end{align*}
+
+
+\textbf{Sats: Dimensionssatsen}
+\begin{align*}
+  &\quad  \text{För varje linjär avbilding $F:\mathbb{V}\to\mathbb{W}$ gäller} \\
+  &\quad  \dim{\mathbb{V}} = \dim{\ker(F)} + \dim{\Ima(F)}  \\
+\end{align*}
+
+\textbf{Sats: Isomorfism}
+\begin{align*}
+  &\quad  \text{Låt $F:\mathbb{V}\to\mathbb{W}$ vara en linjär avbilding. De följande är ekvivalenta} \\
+  &\quad  F \text{ är en isomorf} \\
+  &\quad  \dim{\mathbb{V}} = \dim{\mathbb{W}} \text{ och $F$ är injektiva} \\
+  &\quad  \dim{\mathbb{V}} = \dim{\mathbb{W}} \text{ och $F$ är surjektiva} \\
+  &\quad  \det({(F)}^{\underline{v}}_{\underline{w}}) \neq 0 \\
+  &\quad  {(F)}^{\underline{v}}_{\underline{w}} \text{ är en kvadratisk matris av rang }
+  \dim{\mathbb{V}} = \dim{\mathbb{W}} \\
+\end{align*}
+
+
+% körna är att det finns en vektor som ablidast till noll vektorn
+% dim ker(f) = antal fria variabler
+% dim im(f) = antal priof elementen
+
+
+\newpage
+
+\section{Egenvärden och egenvektorer}
+% definition
+\textbf{Definition: Egenvärde och egenvektor}
+\begin{align*}
+  &\quad  \text{Låt $F:\mathbb{V}\to\mathbb{W}$ vara en linjär avbilding. En vektor} \vec{v}\neq\vec{0} \\
+  &\quad  \text{kallas en \textbf{egenvektor} till $F$ om det finns $\lambda\in\mathbb{R}$ så att }
+  F(\vec{v}) = \lambda\vec{v} \\
+  &\quad  \text{I detta fall kallas $\lambda$ en \textbf{egenvärde} till $F$} \\
+  &\quad  \mathbb{V}_{F,\lambda} = \{ \vec{v}\in\mathbb{V} | F(\vec{v}) = \lambda\vec{v} \}
+  \text{kallas \textbf{egenrummet} av $F$ till egenvärdet $\lambda$} \\
+\end{align*}
+
+% seculärpolynomet
+\textbf{Definition: Sekularpolynomet}
+\begin{align*}
+  &\quad  \text{För en matris $A$ kallas polynomet } \chi_A(\lambda) = \det(A-\lambda I_n) \\
+  &\quad  \text{\textbf{sekularpolynomet} till $A$ } \\
+  &\quad  \text{Om } A= {(F)}^{\underline{e}}_{\underline{e}}, \text{ så kallas $\chi_A$ också
+  sekularpolunomet till $F$} \\
+\end{align*}
+
+% ett huvud exempel står i notes
+\textbf{Exempel:}
+\begin{align*}
+  &\quad  F:\mathbb{R}^3\to\mathbb{R}^3 \text{ matrisen i standardbasen är }
+  \left(\begin{array}{ccc}
+    1 & 2 & 2  \\
+    0 & 2 & 1  \\
+   -1 & 2 & 2  \\
+  \end{array}\right) \\
+  &\quad  \\
+  &\quad  \text{1. Hittar egenvärderna} \\
+  &\quad  F (\vec{x}) = \lambda\vec{x} \Leftrightarrow{} A\vec{x}=\lambda\vec{x} \\
+  &\quad  A\vec{x}-\lambda\vec{x} = \vec{0} \Leftrightarrow{} (A-\lambda{I})\vec{x} = 0 \\
+  &\quad  \text{Där $\lambda$ är egenvärdet, och $\vec{x}$ är egenvektorn} \\
+  &\quad  A-\lambda{I} =
+  \left(\begin{array}{ccc}
+    1-\lambda & 2         & 2          \\
+    0         & 2-\lambda & 1          \\
+   -1         & 2         & 2-\lambda  \\
+  \end{array}\right) \\
+  &\quad  \det(A-\lambda{I}) = 4 -2\lambda{} -(2 -\lambda)(4 -3\lambda+\lambda^2)
+  = (2-\lambda)(-2 +3\lambda -\lambda^2) \\
+  &\quad  \det(A-\lambda{I}) = 0 \Leftrightarrow{} \lambda=2 \lor{} \lambda=1 \\
+  &\quad  \\
+  &\quad  \text{2. Hittar egenvektorerna} \\
+  &\quad  \lambda=2: \\
+  &\quad  (A-2I)\vec{x} \Leftrightarrow{}
+  \left(\begin{array}{ccc|c}
+    1-2 & 2   & 2   & 0 \\
+    0   & 2-2 & 1   & 0 \\
+   -1   & 2   & 2-2 & 0 \\
+  \end{array}\right) \sim{}
+  \left(\begin{array}{ccc|c}
+    1 & -2 & 0 & 0 \\
+    0 &  0 & 1 & 0 \\
+    0 &  0 & 0 & 0 \\
+  \end{array}\right) \\
+  &\quad \Leftrightarrow{}
+  \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix} =
+  \begin{pmatrix} 2t \\ t \\ 0 \end{pmatrix} =
+  t\begin{pmatrix} 2 \\ 1 \\ 0 \end{pmatrix}, \, t\in\mathbb{R} \\
+  &\quad \text{Så egenrummet till $\lambda=2$ är linjära höljet: }
+  \Big[ \begin{pmatrix} 2 \\ 1 \\ 0 \end{pmatrix} \Big]  \\
+  &\quad  \\
+  &\quad  \lambda=1: \\
+  &\quad  (A-1I)\vec{x} \Leftrightarrow{}
+  \left(\begin{array}{ccc|c}
+    1-1 & 2   & 2   & 0 \\
+    0   & 2-1 & 1   & 0 \\
+   -1   & 2   & 2-1 & 0 \\
+  \end{array}\right) \sim{}
+  \left(\begin{array}{ccc|c}
+    1 &  0 & 1 & 0 \\
+    0 &  1 & 1 & 0 \\
+    0 &  0 & 0 & 0 \\
+  \end{array}\right) \\
+  &\quad \Leftrightarrow{}
+  \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix} =
+  \begin{pmatrix} -t \\ -t \\ t \end{pmatrix} =
+  t\begin{pmatrix} -1 \\ -1 \\ 1 \end{pmatrix}, \, t\in\mathbb{R} \\
+  &\quad \text{Så egenrummet till $\lambda=1$ är linjära höljet: }
+  \Big[ \begin{pmatrix} -1 \\ -1 \\ 1 \end{pmatrix} \Big]  \\
+\end{align*}
+
+
+\newpage
+
+\section{Diagonalisering}
+\textbf{Definition: Diagonalisering}
+\begin{align*}
+  &\quad  \text{Låt $F:\mathbb{V}\to\mathbb{V}$ vara en linjär avbildning. Då kallas $F$} \\
+  &\quad  \text{\textbf{diagonaliserbar} om det finns en bas $\underline{v}$ som består av} \\
+  &\quad  \text{egenvektorer till $F$. (Det betyder att ${(F)}^{\underline{v}}_{\underline{v}}$
+    är en diagonalmatris)}  \\
+\end{align*}
+
+% algebraisk och gemotrisk multiplicitet
+\textbf{Definition: Algebraisk och Geometrisk multiplicitet}
+\begin{align*}
+  &\quad  \text{\textbf{Algebraisk multiplicitetet} av en egenvärde $\lambda_0$ till en} \\
+  &\quad  \text{matris $A$ är det maximala talet $m$, så att}  \\
+  &\quad  \chi_A(\lambda) = {(\lambda-\lambda_0)}^m p(\lambda) \text{ för någon polunom $p$.} \\
+  &\quad  \\
+  &\quad  \text{\textbf{Algebraisk multiplicitetet} av en egenvärde $\lambda_0$ till en} \\
+  &\quad  \text{matris $A$ är $\dim{\mathbb{V}_{A,\lambda_0}}$} \\
+\end{align*}
+
+\textbf{Exempel: }
+\begin{align*}
+  &\quad  \text{Avför om matrisen är diagoniserbar och isåfal vad är den matrisen} \\
+  &\quad  M = 
+  \left(\begin{array}{ccc}
+   -2 & 4 & 4  \\
+    0 & 2 & 4  \\
+    0 & 0 & -2 \\
+  \end{array}\right) \\
+  &\quad  \\
+  &\quad  \text{1. Hittar egenvärden: (se i kaptlet om enhetsvektorer) } \\
+  &\quad  (-2-\lambda)(2-\lambda)(-2-\lambda)=0 \\
+  &\quad  \lambda=2 \text{ (alg mult 1) } \lor{} \lambda=-2 \text{ (alg mult 2) } \\
+  &\quad  \\
+  &\quad  \text{2. Hittar egenvekorer: (se i kaptlet om enhetsvektorer) } \\
+  &\quad  \lambda=2 \Leftrightarrow{}
+  \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix} =
+  \begin{pmatrix} t \\ t \\ 0 \end{pmatrix} =
+  t\begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}, \, t\in\mathbb{R} \\
+  &\quad  \text{geo mult 1 därmed så är den hittils diagonaliserbar } \\
+  &\quad  \\
+  &\quad  \lambda=-2 \Leftrightarrow{}
+  \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix} =
+  \begin{pmatrix} s \\ -t \\ t \end{pmatrix} =
+  s\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix} +
+  t\begin{pmatrix} 0 \\ -1 \\ 1 \end{pmatrix}, \, s,t\in\mathbb{R} \\
+  &\quad  \text{geo mult 2 därmed diagonaliserbar } \\
+  &\quad  \\
+  &\quad  \text{3. Sätter upp diagonala matrisen} \\
+  &\quad  {F}^{\underline{e}}_{\underline{e}} =
+  {T}^{\underline{v}}_{\underline{e}} {F}^{\underline{v}}_{\underline{v}} {T}^{\underline{e}}_{\underline{v}}
+  \Leftrightarrow{} \\
+  &\quad
+  \left(\begin{array}{ccc}
+   -2 & 4 & 4  \\
+    0 & 2 & 4  \\
+    0 & 0 & -2 \\
+  \end{array}\right) =
+  \left(\begin{array}{ccc}
+    1 & 1 &  0  \\
+    1 & 0 & -1  \\
+    0 & 0 &  1  \\
+  \end{array}\right)
+  \left(\begin{array}{ccc}
+    2 &  0 &  0  \\
+    0 & -2 &  0  \\
+    0 &  0 & -2 \\
+  \end{array}\right)
+  \left(\begin{array}{ccc}
+    1 & 1 &  0 \\
+    1 & 0 & -1 \\
+    0 & 0 &  1 \\
+  \end{array}\right)^{-1} \\
+\end{align*}
+
+
+
+\newpage
+
+\section{Inre produkrum}
+% egenskaper för skalär produkt
+\textbf{Definition: Skalärprodukt}
+\begin{align*}
+  &\quad  \text{Låt $\mathbb{V}$ vara ett vektorrum. En \textbf{skalärprodukt} på $\mathbb{V}$ är} \\
+  &\quad  \text{en operation som tillordnar varge par av vketorer $\vec{u},\vec{v}\in\mathbb{V}$ en skalär} \\
+  &\quad  \text{$(\vec{u}|\vec{v})\in\mathbb{R}$ så att följade vilkor gäller:} \\
+  &\quad  \text{bilinjär} \\
+  &\quad  \text{1. }  (\vec{u} + \vec{v}|\vec{w}) = (\vec{u}|\vec{w}) + (\vec{v}|\vec{w}) \\
+  &\quad  \text{2. }  (\lambda\vec{u}|\vec{v}) = \lambda(\vec{u}|\vec{v}) = (\vec{u}|\lambda\vec{v}) \\
+  &\quad  \text{Symetrisk} \\
+  &\quad  \text{3. }  (\vec{u}|\vec{v}) = (\vec{v}|\vec{u}) \\
+  &\quad  \text{Positiv definit} \\
+  &\quad  \text{4. Om } \vec{u}\neq\vec{0} \text{ så } (\vec{u}|\vec{u}) > 0 \\
+\end{align*}
+
+\textbf{Definition: Avstånd och vinklar}
+\begin{align*}
+  &\quad  \text{Låt $\mathbb{V}$ vara ett vektorrum med enskalärprodukt och $\vec{u},\vec{v}\in\mathbb{V}$} \\
+  &\quad  \text{1. Längden (normen) av $\vec{u}$ betecknas $|\vec{u}|$ och defineras som} \\
+  &\quad  |\vec{u}|=\sqrt{\vec{u}|\vec{u}} \\
+  &\quad  \text{2. Avstånder mellan $\vec{u}$ och $\vec{v}$ defineras som $\vec{u}-\vec{v}$}  \\
+  &\quad  \text{3. Om $\vec{u}\neq{0}$ och $\vec{v}\neq{0}$ defineras vinkeln mellan
+    $\vec{u}$ och $\vec{v}$ som}  \\
+  &\quad  \cos^{-1}\frac{(\vec{u}|\vec{v})}{|\vec{u}||\vec{v}|} \\
+  &\quad  \text{4. Vi säger att $\vec{u}$ och $\vec{u}$ är ortogonala om } \\
+  &\quad  (\vec{u}|\vec{v})=0 \\
+\end{align*}
+
+\textbf{Definition: Trianglar}
+\begin{align*}
+  &\quad  \text{Lår $\mathbb{V}$ vara ett vektorrum med en skalärprodukt och $\vec{u},\vec{v}\in\mathbb{V}$. } \\
+  &\quad  \text{Då bildar $\vec{u},\vec{b}$ och $\vec{u}+\vec{v}$ en triangel} \\
+  &\quad  {|\vec{u}+\vec{v}|}^2 = {|\vec{u}|}^2 + {|\vec{v}|}^2 + 2(\vec{u}|\vec{v}) \\
+\end{align*}
+
+\textbf{Definition: Ortogonal projektion och komponent}
+\begin{align*}
+  &\quad  \text{1. } \vec{u}_{\|\vec{u}} := \frac{(\vec{v}|\vec{u})}{(\vec{u}|\vec{u})}\vec{u} 
+  \text{kallas den ortogonala projektionen av $\vec{v}$ på $\vec{u}$} \\
+  &\quad  \text{2. } \vec{u}_{\perp{\vec{u}}} := \vec{v} - \vec{v}_{\|\vec{u}}
+  \text{kallas den ortogonala kompnenten av $\vec{v}$ med avseende på $\vec{v}$} \\    
+\end{align*}
+
+
+\newpage
+
+\section{Symetriska och positiva definita matriser}
+\textbf{Formel: skalärprodukt utrykt med matriser}
+\begin{align*}
+  &\quad  (\vec{u}|\vec{y}) = \vec{u}^t A \vec{y} \\
+  &\quad  \text{där $A$ är $(n \times n)$-matrisen som uppfyller följande krav} \\
+  &\quad  \text{1. Symetrisk om } A^t=A \\
+  &\quad  \text{2. Positivt definit om } \vec{x}^t A \vec{x} > 0, \, \forall \vec{x}\in\mathbb{R}^n, \, \vec{x}\neq \vec{0}  \\
+\end{align*}
+
+% Exempel: hurman visar att det är en skalärprodukt
+\textbf{Exempel: skalärprodukt utrykt med matriser}
+\begin{align*}
+  &\quad  \text{På $\mathbb{R}^2$ definierar vi } (\vec{x}|\vec{y}) = x_1y_1 + 3x_1y_2 + ax_2y_1 + bx_2y_2 \\
+  &\quad  \text{För vilka värdenpå $a$ och $b$ är detta en skalärprodukt? } a,b \in \mathbb{R} \\
+  &\quad  \\
+  &\quad  \text{Lösn: } \\
+  &\quad  \text{1. Symetrisk:  }  (\vec{x}|\vec{y}) = (\vec{y}|\vec{x}) = y_1x_1 + 3y_1x_2 + ay_2x_1 + by_2x_2 \\
+  &\quad  (\vec{x}|\vec{y}) =
+  \vec{x}^t
+  \left(\begin{array}{cc}
+    1 & 3 \\
+    a & b \\
+  \end{array}\right)
+  \vec{y} \Rightarrow{a=3} \text{pga summetri} \\
+  &\quad  \\
+  &\quad  \text{2. Pos def:  }  (\vec{x}|\vec{x}) > 0, \, \forall{} \vec{x} \neq{\vec{0}}  \\
+  &\quad  (\vec{x}|\vec{x}) = (x_1 x_2)
+  \left(\begin{array}{cc}
+    1 & 3 \\
+    a & b \\
+  \end{array}\right) \begin{pmatrix} x_1 \\ x_2 \end{pmatrix} = {x_1}^2 + 3x_1x_2 + 3x_2+x_1 + b{x_2}^2 \\
+  &\quad  = {x_1}^2 + 6x_1x_2 + b{x_2}^2 = {(x_1+3x_2)}^2 + (b-9){x_2}^2 \\
+  &\quad  \text{vilket endast är positivt då } b>9 \\
+\end{align*}
+
+
+
+\newpage
+
+\section{On-baser och Gram-Schmidt-ortonormalisering}
+\textbf{Definition: ON-bas}
+\begin{align*}
+  &\quad  \text{Låt $\mathbb{V}$ vara ett vektorrum med en skalärprodukt. } \\
+  &\quad  \text{En mängd $\{ \vec{u_1} \ldots \vec{u_n} \} \subseteq \mathbb{V}$ kallas ortonormal (ON) om} \\
+  &\quad  (\vec{u_i}|\vec{u_j}) = 
+  \left\{\begin{array}{rr}
+  1 \, i = j \\
+  0 \, i \neq i  \\
+  \end{array}\right. \\
+  &\quad  |\vec{u_i}| = 1 \\
+  &\quad  \\
+  &\quad  \text{Dvs alla vektorer är ortogonala mot varandra och att längden ska vara $1$} \\
+\end{align*}
+
+\textbf{Definition: Koordinater i en ON-bas}
+\begin{align*}
+  &\quad  \text{Låt $\underline{u} = (\vec{u_1} \ldots \vec{u_n})$ vara en ON-bas i $\mathbb{V}$ och }
+  \vec{v}, \vec{w} \in\mathbb{V} \text{ Då är} \\
+  &\quad  \text{1. } \vec{v}_{\underline{u}} =
+  \begin{pmatrix} (\vec{v}|\vec{u}_1) \\ . \\ . \\ (\vec{v}|\vec{u}_n) \end{pmatrix} \\
+  &\quad  \text{2. } (\vec{v}|\vec{w}) =
+  (\vec{v}|\vec{u}_1)(\vec{w}|\vec{u}_1)+ \ldots +(\vec{v}|\vec{u}_n)(\vec{w}|\vec{u}_n) = \vec{v}_n \bullet \vec{w}_n \\
+\end{align*}
+
+\textbf{Definition: Ortogonal komplement}
+\begin{align*}
+  &\quad  \text{Låt $\mathbb{V}$ vara ett vektorrum med en skalärprodukt och } \\
+  &\quad  \mathbb{U} \subseteq \mathbb{V} \text{ ett underrum. Då är} \\
+  &\quad  \mathbb{U}^{\perp} = \{ \vec{v}\in\mathbb{V} | (\vec{u}|\vec{v}) = 0, \, \forall \vec{u} \in \mathbb{U} \} \\
+  &\quad  \text{ett underrum som kallas det ortogonala koplementet till } \mathbb{U} \\
+\end{align*}
+
+\textbf{Exempel: Hitta en ON-bas med Gram-Schidt ortonormalisering}
+\begin{align*}
+  &\quad  U = [\vec{u}_1, \vec{u}_2, \vec{u}_3] \subseteq \mathbb{R}^4 , \,
+  \vec{u}_1 = \begin{pmatrix} 1 \\ 1 \\ 1 \\ 0 \end{pmatrix}
+  \vec{u}_2 = \begin{pmatrix} 1 \\ 0 \\ 2 \\ 1 \end{pmatrix}
+  \vec{u}_3 = \begin{pmatrix} 0 \\ 0 \\ 1 \\ 1 \end{pmatrix} \\
+  &\quad  \text{Hitta ON-bas} \\
+  &\quad  \\
+  &\quad  [\vec{u}_1] \subseteq [\vec{u}_1, \vec{u}_2] \subseteq [\vec{u}_1, \vec{u}_2, \vec{u}_3] \\
+  &\quad  \text{där } [\vec{u}_1] = U_1, \, [\vec{u}_1, \vec{u}_2] = U_2, \, [\vec{u}_1, \vec{u}_2, \vec{u}_3] = U_3
+  &\quad  \\
+  &\quad  \text{ON-bas } U_1: f_1 = \frac{1}{|\vec{u_1}|} \vec{u_1} =
+  \frac{1}{\sqrt{3}}\begin{pmatrix} 1 \\ 1 \\ 1 \\ 0 \end{pmatrix}  \\
+  &\quad  \\
+  &\quad  \text{ON-bas } U_2: f_1,f_2 \, \vec{u}_{2\perp\vec{u_1}} = \vec{u_2} - (\vec{u_2}|f_1)f_1 \\
+  &\quad  = \begin{pmatrix} 1 \\ 0 \\ 2 \\ 1 \end{pmatrix} -
+  \frac{1}{\sqrt{3}}(1+0+2+0)\frac{1}{\sqrt{3}}\begin{pmatrix} 1 \\ 1 \\ 1 \\ 0 \end{pmatrix} \\
+  &\quad  = \begin{pmatrix} 0 \\ -1 \\ 1 \\ 1 \end{pmatrix} \\
+  &\quad  f_2 = \frac{1}{\vec{u}_{2\perp\vec{u_1}}}\vec{u}_{2\perp\vec{u_1}} 
+  = \frac{1}{\sqrt{3}}\begin{pmatrix} 0 \\ -1 \\ 1 \\ 1 \end{pmatrix}  \\
+  &\quad  \\
+  &\quad  \text{ON-bas } U_3: f_1,f_2,f_3 \, \vec{u}_{3\perp\vec{u_2}}
+  = \vec{u_3} - (\vec{u_3}|f_1)f_1 - (\vec{u_3}|f_2)f_2 \\
+  &\quad  = \begin{pmatrix} 0 \\ 0 \\ 1 \\ 1 \end{pmatrix}
+  - \frac{1}{\sqrt{3}}(0+0+1+0)\frac{1}{\sqrt{3}}\begin{pmatrix} 1 \\ 1 \\ 1 \\ 0 \end{pmatrix}
+  - \frac{1}{\sqrt{3}}(0+0+1+1)\frac{1}{\sqrt{3}}\begin{pmatrix} 0 \\ -1 \\ 1 \\ 1 \end{pmatrix} \\
+  &\quad  =  \begin{pmatrix} 0 \\ 0 \\ 1 \\ 1 \end{pmatrix}
+  - \frac{1}{3}\begin{pmatrix} 1 \\ 1 \\ 1 \\ 0 \end{pmatrix}
+  - \frac{2}{3}\begin{pmatrix} 1 \\ 1 \\ 1 \\ 0 \end{pmatrix}
+  = \frac{1}{3}\begin{pmatrix} -1 \\ 1 \\ 0 \\ 1 \end{pmatrix}
+  \Rightarrow  f_3 = \frac{1}{\sqrt{3}}\begin{pmatrix} -1 \\ 1 \\ 0 \\ 1 \end{pmatrix} \\
+  &\quad  \\
+  &\quad  \text{Kontrollera att $f_1, f_2, f_3$ är ortogonala mot varandra} \\
+\end{align*}
+
+
+\newpage
+
+\section{Isometriska avbildningar och spektralsatsen}
+\textbf{Definition: isometrier}
+\begin{align*}
+  &\quad  \text{Låt $\mathbb{V}$ och $\mathbb{W}$ vara vektorrum med skalärprodukter. } \\
+  &\quad  \text{En linjär avbilding} \\
+  &\quad  F:\mathbb{V}\to\mathbb{W} \\
+  &\quad  \text{kallas en isomerik om } |F(\vec{v})| = |\vec{v}| \\
+  &\quad  \text{En isometrisk linjär avbildling kallas också en isometri.} \\
+  &\quad  \\
+  &\quad  \text{dvs. Så är längden oförendrad. $F$ är en isometri omm } \\
+  &\quad  (F(\vec{u})|F(\vec{v})) = (\vec{u}|\vec{u}) \\
+\end{align*}
+
+\textbf{Egenskaper: isometrier}
+\begin{align*}
+  &\quad  \text{\textbf{Sats:} Låt $F:\mathbb{V}\to\mathbb{W}$ vara en isometri. Då är $F$ injektiv} \\
+  &\quad  \text{\textbf{Sats:} Låt $F:\mathbb{V}\to\mathbb{W}$ vara en iventerbar isometri.} \\
+  &\quad  \text{Då är $F^{-1}:\mathbb{W}\to\mathbb{V}$ en isometri} \\
+  &\quad  \text{\textbf{Sats:} Låt $F:\mathbb{U}\to\mathbb{V}$ och $G:\mathbb{V}\to\mathbb{W}$ vara en isometrier.} \\
+  &\quad  \text{Då är $G\circ{F}:\mathbb{U}\to\mathbb{W}$ en isometri} \\
+\end{align*}
+
+\textbf{Sats: spektralsatsen}
+\begin{align*}
+  &\quad  \text{Låt $\mathbb{V}$ vara ett ändligt dimensionellt vektorrum med en } \\
+  &\quad  \text{skalär produkt och $F:\mathbb{V}\to\mathbb{V}$ en linjär avbildining.} \\
+  &\quad  \text{Då är följande vilkor ekvivalenta} \\
+  &\quad  \text{1. $F$ är symmetrisk} \\
+  &\quad  \text{2. $\mathbb{V}$ har en ON-bas av bestående av egenvektorer till $F$} \\
+  &\quad  \\
+  &\quad  \text{Låt $A$ vara en $(n\times{n})$-matris. Då är följande vilkor ekvivalenta} \\
+  &\quad  \text{1. $A$ är symmetrisk} \\
+  &\quad  \text{2. Det finns en ortonormal matris $T$ så att $D=T^{-1}AT$ är en diagonalmatris} \\
+\end{align*}
+
+
+\newpage
+
+\section{Andragradskurvor och andragradsytor}
+\begin{align*}
+  &\quad  Q(x)=1
+  \Leftrightarrow 1 x^t A x = 1
+  \Leftrightarrow y^t D y = 1
+  \Leftrightarrow \lambda_1 {y_1}^2 + \lambda_2 {y_2}^2 = 1 \\
+  &\quad  \\
+  &\quad  \text{Om $\lambda_1 = \lambda_2$ så berkriver $Q(x)=1$ en cirkel} \\
+  &\quad  \text{Om $\lambda_1 > 0$ och $\lambda_2 > 0$ så berkriver $Q(x)=1$ en ellips} \\
+  &\quad  \text{Om $\lambda_1 > 0$ och $\lambda_2 < 0$ så berkriver $Q(x)=1$ en hyperbel} \\
+\end{align*}
+
+\textbf{Exempel: Bestäm fomren}
+\begin{align*}
+  &\quad  Q(\vec{x})= \frac{14}{5}{x_1}^2 +  \frac{11}{5}{x_2}^2 + \frac{14}{5}x_1x_2  \\
+  &\quad  \\
+  &\quad  Q(\vec{x}) = (x_1 \, x_2 )
+  \left(\begin{array}{cc}
+    14/5 &  2/5  \\
+     2/5 & 11/5  \\
+  \end{array}\right) \begin{pmatrix} x_1 \\ x_2 \\ \end{pmatrix} \\
+  &\quad  \text{1. Egenvärden} \det{A} = (\frac{14}{5} -\lambda) (\frac{11}{5} -\lambda) -\frac{4}{25} = 0 \\
+  &\quad  \lambda_1 = 2 > 0 \\
+  &\quad  \lambda_2 = 3 > 0 \\
+  &\quad  \text{Därmed så beskriver $Q(x)=1$ en ellips} \\
+  &\quad  \text{2. Egenvektor får vi en ON-bas} \\
+  &\quad  \text{3. Ställer up ekvationen och ritar ut den} \\
+  &\quad  Q (\vec{y}) = y^-1
+  \left(\begin{array}{cc}
+    2 & 0  \\
+    0 & 3  \\
+  \end{array}\right) \vec{y} = 2{y_1}^2 + 3{y_2}^2 = 1
+\end{align*}
+
+
+\newpage
+
+\section{System av linjära differentialekvationer}
+\begin{align*}
+  &\quad  y'=Ay \\
+  &\quad  T^{-1}AT=D \\
+  &\quad  y=Tz \Rightarrow y'=Tz' \land y'=Ay \Leftrightarrow z'=dz \\
+  &\quad  z=
+  \begin{pmatrix} c_1e^{\lambda_1t} \\ c_2e^{\lambda_2t} \\.\\.\\.\\ c_n e^{\lambda_n t} \end{pmatrix}
+  \text{ där } c_i\in\mathbb{R}^n  \text{ och } y=Tz \\
+  &\quad  c = T^{-1}y_0 \text{ där } z(0) = c =
+    \begin{pmatrix} c_1 \\.\\.\\.\\ c_n \end{pmatrix} 
+\end{align*}
+
+\textbf{Exempel: Bestäm fomren}
+\begin{align*}
+  &\quad  \text{Lös följade system av differentialekvationer} \\
+  &\quad
+  \left\{\begin{array}{rrr}
+  \frac{dx(t)}{dt} = 2x(t) + y(t) + z(t) \\
+  \frac{dy(t)}{dt} =  x(t) +2y(t) + z(t) \\
+  \frac{dz(t)}{dt} =  x(t) + y(t) +2z(t) \\
+  \end{array}\right. x (0) =3, \, y (0) =2, \, z (0) =1  \\
+  &\quad  \\
+  &\quad  \text{1. Skriver up systemet} \\
+  &\quad
+  \begin{pmatrix} \frac{dx (t)}{dt} \\ \frac{dy (t)}{dt} \\ \frac{dz (t)}{dt} \end{pmatrix} =
+  \left(\begin{array}{ccc}
+    2 & 1 & 1 \\
+    1 & 2 & 1 \\
+    1 & 1 & 2 \\
+  \end{array}\right)
+  \begin{pmatrix} x (t) \\ y (t) \\ z (t)  \end{pmatrix}  \text{ Där matrisen är $A$} \\
+  &\quad  \\
+  &\quad  \text{2. Diagonaliserar} \\
+  &\quad  \text{2.1 egenvärden} \\
+  &\quad  \lambda_1 = 1 \text{ (multiplicitet 2), } \lambda_2 = 4 \text{ (multiplicitet 1) } \\
+  &\quad  \text{2.1 egenvektor} \\
+  &\quad  \lambda_1 = 1 \Rightarrow{}  A -I =
+  \left(\begin{array}{ccc}
+    1 & 1 & 1 \\
+    1 & 1 & 1 \\
+    1 & 1 & 1 \\
+  \end{array}\right)  \Rightarrow{}
+  \vec{v}_1 = \begin{pmatrix} 1 \\ 0 \\ -1  \end{pmatrix} \land{}
+  \vec{v}_2 = \begin{pmatrix} 0 \\ 1 \\ -1  \end{pmatrix} \\
+  &\quad  \lambda_2 = 4 \Rightarrow{}  A -4I =
+  \left(\begin{array}{ccc}
+    -2 & 1 & 1 \\
+    1 & -2 & 1 \\
+    1 & 1 & -2 \\
+  \end{array}\right) \Rightarrow{}
+  \vec{v}_3 = \begin{pmatrix} 1 \\ 1 \\ 1  \end{pmatrix} \\
+  &\quad  \text{Diagonal ekv blir } A=TDT^-1 \Rightarrow{} T =
+  \left(\begin{array}{ccc}
+    1 &  0 & 1 \\
+    0 &  1 & 1 \\
+    -1 & -1 & 1 \\
+  \end{array}\right) \, \land{} \, D =
+  \left(\begin{array}{ccc}
+    1 & 0 & 0 \\
+    0 & 1 & 0 \\
+    0 & 0 & 4 \\
+  \end{array}\right)
+  &\quad  \\
+  &\quad  \text{3. Finner den almäna lösningen} \\
+  &\quad  u'=Du \Rightarrow{}
+  \left\{\begin{array}{rrr}
+  u_1 = c_1e^{t} \\
+  u_2 = c_2e^{t} \\
+  u_3 = c_3e^{4t} \\
+  \end{array}\right. \text{ Där } c_1,c_2,c_3\in\mathbb{R} \\
+  &\quad  v'=Av \text{ Där } A^{-1}v' = Tu \Rightarrow{} v=Tu \\
+  &\quad  v = \begin{pmatrix} x(t) \\ y(t) \\ z(t)  \end{pmatrix} = 
+  \left(\begin{array}{ccc}
+    1 &  0 & 1 \\
+    0 &  1 & 1 \\
+    -1 & -1 & 1 \\
+  \end{array}\right) \begin{pmatrix} c_1e^{t} \\ c_2e^{t} \\ c_3e^{4t} \end{pmatrix} =
+  \begin{pmatrix} c_1e^{t} + c_2e^{t} \\ c_2e^{t} + c_3e^{4t} \\ -c_1e^{t} -c_2e^{t} +c_3e^{4t} \end{pmatrix} \\
+  &\quad  \\
+  &\quad  \text{4. Finner lösningen till begynelsevärdet} \\
+  &\quad
+  \left(\begin{array}{ccc|c}
+    1  &  0 & 1 & 3 \\
+    0  &  1 & 1 & 2 \\
+    -1 & -1 & 1 & 1 \\
+  \end{array}\right) \sim{}
+  \left(\begin{array}{ccc|c}
+    1  &  0 & 0 & 1 \\
+    0  &  1 & 0 & 0 \\
+    0  &  0 & 1 & 2 \\
+  \end{array}\right) \Rightarrow{}
+  \begin{pmatrix} c_1 \\ c_2 \\ c_3 \end{pmatrix} =
+  \begin{pmatrix} 1 \\ 0 \\ 2 \end{pmatrix}  \\
+  &\quad
+  \left\{\begin{array}{rrr}
+  x (t) = e^t + 2e^{4t} \\
+  y (t) = 2e^{4t} \\
+  z (t) = -e{t} + 2e^{4t} \\
+  \end{array}\right. \\
+\end{align*}

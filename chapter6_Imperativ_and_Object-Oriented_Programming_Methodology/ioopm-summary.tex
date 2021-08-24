@@ -1,0 +1,144 @@
+\chapter{Probability and Statistics DV}
+
+\newpage
+
+% Resorces
+% http://wrigstad.com/ioopm18/course-report2018.html
+% http://wrigstad.com/ioopm19/
+
+\section{Introduction}
+
+\subsection{Test}
+Innan: \newline
+Läs igenom standard instruktionerna. \newline
+Sätt upp mjukvaru miljö på skollans datorer. \newline
+
+Under: \newline
+Det är mycket tid. \newline
+Läs igenom instruktionerna på uppgiften nogrant. \newline
+
+
+
+\section{Imperative programming i C}
+C is a strict programming language, we must therefore write every type of variables.
+Like any other imperative programming language it execute sequentially and every argument is evaluated
+in order. It also allow side effects like changing the state freely. 
+
+\noindent\textbf{Vilkorsatser}
+\begin{lstlisting}[language=C]
+if (expr) { expr; } 
+if (age > 100) { puts("Very old"); } 
+
+if (expr) { expr; } else { expr; }
+if (age % 2 == 0) { puts("Even"); } else { puts("Odd"); }
+
+expr ? expr : expr
+a < b ? b : a;
+\end{lstlisting}
+
+\noindent\textbf{Shortcuts loop operations}
+\begin{lstlisting}[language=C]
+n_fakultet *= n--;
+\end{lstlisting}
+
+
+\subsection{Data structurer}
+\subsubsection{stack och heap}
+I kortids minnet som c kompilatorn hanterar skjälv så sappar datan i en stack.
+Stack funkar som talrikar som man staplar på varandra och tar den som du la senast ut.
+
+Heap är för långtids mine och störe data som arrayer.
+Det fungerar som ett rutat papper där varge ruta är en viss data size.
+
+\noindent\textbf{Shortcuts loop operations}
+För att andvända heapen, (rita på det rutade papret) måste man följa 4 steg.
+\noindent\emph{ steg 1: räkna ut hur många rutor vi behöver} \newline
+Använd plattformsoberoende hjälpmedel och vanlig aritmetik
+\begin{lstlisting}[language=C]
+  sizeof(T) * antal
+  int size = sizeof(int) * 1024
+\end{lstlisting}
+
+\noindent\emph{ steg 2: reservera motsvarande yta} \newline
+Här kan det gå fel — det kanske inte finns plats på papperet
+\begin{lstlisting}[language=C]
+  T *namn = malloc(antal bytes); 
+  int *skonummer = malloc(size);
+\end{lstlisting}
+
+\noindent\emph{ steg 3: använd ytan hejvilt} \newline
+Men sudda först!
+(Beror på datastrukturen)
+
+\noindent\emph{ steg 4: lämna tillbaka platsen när du är klar} \newline
+Annars kommer det gå dåligt i ett framtida steg 2
+\begin{lstlisting}[language=C]
+  free(namn); 
+  free(skonummer);
+\end{lstlisting}
+
+
+\subsubsection{Structar}
+För att skapa egna data structurer som andvänder man sig av ``struct'' operatorn.
+Om man vill gömma fler data typer i en så kan man andvända en ``union''.
+För att göra en typ så andväder man ``typedef'' och avslutar med \begin{verbatim}namnet_{t}\end{verbatim}
+
+\subsubsection{Pekare}
+Pekare pekar var datan finns så man kan skicka information utan att sicka stora mängder data.
+
+\begin{lstlisting}[language=C]
+  int  a  
+  int *b  
+\end{lstlisting}
+%// a är en variabel som innehåller ett heltal
+%// b är en variabel som innehåller en adress till en plats i minnet där det finns ett heltal
+Syntaxen som andvänds är:
+pekartypen \begin{verbatim} int * \end{verbatim}, adresstagningsoperatorn \begin{verbatim} & \end{verbatim} och avrefereringsoperatorn \begin{verbatim} * \end{verbatim}.
+  Skillnaden mellan arrayer och pointers är väldigt liten i c.
+  Därför är samma oporation för string (\begin{verbatim}char *\end{verbatim})
+som en pointer (\begin{verbatim} int * \end{verbatim}). Pekaren behöver inte peka på en data värde utan kan peka på flertal värden.
+
+
+%https://en.wikipedia.org/wiki/C_data_types
+
+\subsubsection{Linked list}
+%https://www.youtube.com/watch?v=VOpjAHCee7c
+Varge element har data av någon typ samt en pekare till nästa element.
+Head and tail kan beskriva en sådan lista, då head är första ellementet
+och tail är rästen.
+
+Tid komplexiteten är: O\(n\). Linjär
+
+
+\subsubsection{Hash table}
+%https://www.youtube.com/watch?v=2Ti5yvumFTU&list=WL&index=5&t=686s
+Hash table är ett mer effectivt sätt att hantera data istället för en array.
+Då man inte behöver kålla varge element vad den finns utan andvänder en hash
+function för att skapa ett ``nummer'' som pekar till vad datan finns någonstans
+exempelvis kan det vara mod element i hash table då vet vi har vi ska ska söka efter.
+Ett problem som kommer upstå är att data mappas till samma plats, då får man andvända
+exempelvis \emph{linuer probing} som säger att om det är fult på platsen gå till nästa tills
+det finns och om det inte finns så protesterar programet. Varge element inehåller inget värde
+eller deleted varde om det är tomma.
+
+Tid komplexiteten är: O\(1\). Konstant men inte i verkligheten
+
+
+% F12
+
+\section{Object-Oriented programming i Java}
+
+%arv, amerikanska skollan ärver kåd, is skandinaviska skollan ärver betende.
+%mäniska ärver från däggjur och däggjur ärver från djur, liv, ting....
+
+%i java fiins supper klasser som man inte kan skapa en nytt dådant objekt men du andvändar classarna som extendare som du skapar.
+
+% konstruktor är den metod som initialiserar objectet
+% supper
+% finnal value wont change like constant, class ej ervs
+% abstarct cant creat new objects (ingen instans)
+
+% man kan inte ha sama metod namn och argument men olika retur typer blir overload
+% Tillåtet i vissa språ
+kör den mest spesifica implementationen av metoden
+single dispage, vi bryr os ombjectet vi kör metoden på men inte argumentet
