@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.6.5)  27 AUG 2021 09:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.6.5)  29 AUG 2021 10:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -760,25 +760,25 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
-] (./main.toc [3] [4] [5] [6] [7])
+] (./main.toc [3] [4] [5] [6] [7] [8])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
 
-(./chapter1-Basic-Course-in-Mathematics/bcm-summary.tex [8]
-Chapter 1.
-[9
+(./chapter1-Basic-Course-in-Mathematics/bcm-summary.tex [9] [10
 
 ]
+Chapter 1.
+[11]
 Underfull \vbox (badness 1565) has occurred while \output is active []
 
- [10]
-[11] [12] [13] [14] [15] [16] [17] [18] [19]) [20]
+ [12]
+[13] [14] [15] [16] [17] [18] [19] [20] [21]) [22]
 (./chapter2-Program-Design-and-Data-Structures/pkd-summary.tex
 Chapter 2.
-[21
+[23
 
-] [22] [23]
+] [24] [25]
 
 LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 1
 16.
@@ -809,13 +809,13 @@ Missing character: There is no � in font cmr10!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [24]
-[25] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+ [26]
+[27] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (/usr/share/texmf-dist/tex/latex/listings/lstlang2.sty
 File: lstlang2.sty 2020/03/24 1.8d listings language file
-) [26]
+) [28]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
 32.
 
@@ -826,13 +826,13 @@ Overfull \hbox (46.12294pt too wide) in paragraph at lines 283--284
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[27] [28]
-<image/type-class.png, id=117, 511.9125pt x 665.48625pt>
+[29] [30]
+<image/type-class.png, id=123, 511.9125pt x 665.48625pt>
 File: image/type-class.png Graphic file (type png)
 <use image/type-class.png>
 Package pdftex.def Info: image/type-class.png  used on input line 304.
 (pdftex.def)             Requested size: 426.7932pt x 426.79318pt.
- [29 <./image/type-class.png>] [30]
+ [31 <./image/type-class.png>] [32]
 Underfull \hbox (badness 10000) in paragraph at lines 363--367
 
  []
@@ -842,7 +842,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 376--380
 
  []
 
-[31]
+[33]
 Underfull \hbox (badness 10000) in paragraph at lines 385--390
 
  []
@@ -857,17 +857,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 425--429
 
  []
 
-[32]
+[34]
 Overfull \hbox (40.12436pt too wide) in paragraph at lines 454--455
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[33]
+[35]
 Underfull \hbox (badness 10000) in paragraph at lines 530--534
 
  []
 
-[34] [35]
+[36] [37]
 Underfull \hbox (badness 10000) in paragraph at lines 584--585
 
  []
@@ -877,31 +877,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 614--616
 
  []
 
-[36] [37]) [38] (./chapter3-AlgebraI/al-summary.tex
+[38] [39]) [40] (./chapter3-AlgebraI/al-summary.tex
 Chapter 3.
-[39
+[41
 
-] [40] [41] [42] [43] [44] [45] [46] [47] [48] [49] [50] [51] [52] [53]
-[54] [55]) [56] (./chapter4-Single-Variable-Calculus/svc-summary.tex
+] [42] [43] [44] [45] [46] [47] [48] [49] [50] [51] [52] [53] [54] [55]
+[56] [57]) [58] (./chapter4-Single-Variable-Calculus/svc-summary.tex
 Chapter 4.
-[57
+[59
 
-] [58] [59] [60]
+] [60] [61] [62]
 Overfull \hbox (10.42351pt too wide) in paragraph at lines 170--171
 [][] 
  []
 
-[61] [62] [63] [64] [65] [66] [67] [68]
+[63] [64] [65] [66] [67] [68] [69] [70]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [69]
+ [71]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [70]
-[71] [72] [73]
+ [72]
+[73] [74] [75]
 Underfull \vbox (badness 3803) has occurred while \output is active []
 
- [74]
+ [76]
 Overfull \hbox (5.89043pt too wide) detected at line 726
 []
  []
@@ -909,10 +909,10 @@ Overfull \hbox (5.89043pt too wide) detected at line 726
 
 Underfull \vbox (badness 1596) has occurred while \output is active []
 
- [75]
+ [77]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [76]
+ [78]
 Overfull \hbox (17.21736pt too wide) detected at line 811
 []
  []
@@ -920,63 +920,63 @@ Overfull \hbox (17.21736pt too wide) detected at line 811
 
 Underfull \vbox (badness 6204) has occurred while \output is active []
 
- [77]
-[78] [79] [80] [81]
+ [79]
+[80] [81] [82] [83]
 Underfull \vbox (badness 5847) has occurred while \output is active []
 
- [82]
-[83]
+ [84]
+[85]
 Overfull \hbox (21.57982pt too wide) detected at line 1073
 []
  []
 
-[84]
+[86]
 Underfull \vbox (badness 5726) has occurred while \output is active []
 
- [85]
-[86] [87] [88] [89] [90]
+ [87]
+[88] [89] [90] [91] [92]
 Underfull \vbox (badness 1681) has occurred while \output is active []
 
- [91]
+ [93]
 Underfull \vbox (badness 2644) has occurred while \output is active []
 
- [92]
+ [94]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [93]
-[94]
+ [95]
+[96]
 Overfull \hbox (14.38548pt too wide) detected at line 1475
 []
  []
 
-) [95] (./chapter5-Computer-Architecture/ca-summary.tex [96
+) [97] (./chapter5-Computer-Architecture/ca-summary.tex [98
 
 ]
 Chapter 5.
-[97]
+[99]
 Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-[98]
-<image/mips-tabel.png, id=346, 1181.41376pt x 908.39375pt>
+[100]
+<image/mips-tabel.png, id=353, 1181.41376pt x 908.39375pt>
 File: image/mips-tabel.png Graphic file (type png)
 <use image/mips-tabel.png>
 Package pdftex.def Info: image/mips-tabel.png  used on input line 30.
 (pdftex.def)             Requested size: 455.23328pt x 369.87958pt.
- [99 <./image/mips-tabel.png>]
-<image/sequencing.png, id=350, 1283.79625pt x 676.5275pt>
+ [101 <./image/mips-tabel.png>]
+<image/sequencing.png, id=357, 1283.79625pt x 676.5275pt>
 File: image/sequencing.png Graphic file (type png)
 <use image/sequencing.png>
 Package pdftex.def Info: image/sequencing.png  used on input line 44.
 (pdftex.def)             Requested size: 455.23175pt x 284.53188pt.
- [100 <./image/sequencing.png>]
-<image/assambly-exampel.png, id=355, 721.69624pt x 285.065pt>
+ [102 <./image/sequencing.png>]
+<image/assambly-exampel.png, id=361, 721.69624pt x 285.065pt>
 File: image/assambly-exampel.png Graphic file (type png)
 <use image/assambly-exampel.png>
 Package pdftex.def Info: image/assambly-exampel.png  used on input line 55.
 (pdftex.def)             Requested size: 284.52179pt x 142.26247pt.
-<image/mips-types.png, id=356, 770.88pt x 184.69pt>
+<image/mips-types.png, id=362, 770.88pt x 184.69pt>
 File: image/mips-types.png Graphic file (type png)
 <use image/mips-types.png>
 Package pdftex.def Info: image/mips-types.png  used on input line 72.
@@ -986,13 +986,13 @@ Overfull \hbox (13.93759pt too wide) in paragraph at lines 72--73
  [][] 
  []
 
-[101 <./image/assambly-exampel.png> <./image/mips-types.png>] [102]
-<image/code-ex.png, id=363, 671.50874pt x 539.01375pt>
+[103 <./image/assambly-exampel.png> <./image/mips-types.png>] [104]
+<image/code-ex.png, id=370, 671.50874pt x 539.01375pt>
 File: image/code-ex.png Graphic file (type png)
 <use image/code-ex.png>
 Package pdftex.def Info: image/code-ex.png  used on input line 103.
 (pdftex.def)             Requested size: 455.24689pt x 341.43922pt.
-<image/mips-register.png, id=364, 1276.77pt x 668.4975pt>
+<image/mips-register.png, id=371, 1276.77pt x 668.4975pt>
 File: image/mips-register.png Graphic file (type png)
 <use image/mips-register.png>
 Package pdftex.def Info: image/mips-register.png  used on input line 110.
@@ -1001,8 +1001,8 @@ Package pdftex.def Info: image/mips-register.png  used on input line 110.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[103 <./image/code-ex.png>]
-<image/other-isa.png, id=369, 1142.2675pt x 429.605pt>
+[105 <./image/code-ex.png>]
+<image/other-isa.png, id=375, 1142.2675pt x 429.605pt>
 File: image/other-isa.png Graphic file (type png)
 <use image/other-isa.png>
 Package pdftex.def Info: image/other-isa.png  used on input line 121.
@@ -1011,26 +1011,26 @@ Package pdftex.def Info: image/other-isa.png  used on input line 121.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[104 <./image/mips-register.png>]
-<image/other-isa-instructions.png, id=373, 942.52126pt x 431.6125pt>
+[106 <./image/mips-register.png>]
+<image/other-isa-instructions.png, id=379, 942.52126pt x 431.6125pt>
 File: image/other-isa-instructions.png Graphic file (type png)
 <use image/other-isa-instructions.png>
 Package pdftex.def Info: image/other-isa-instructions.png  used on input line 1
 30.
 (pdftex.def)             Requested size: 455.25264pt x 170.71228pt.
- [105 <./image/other-isa.png> <./image/other-isa-instructions.png>]
-<image/floating-point.png, id=377, 977.6525pt x 292.09125pt>
+ [107 <./image/other-isa.png> <./image/other-isa-instructions.png>]
+<image/floating-point.png, id=383, 977.6525pt x 292.09125pt>
 File: image/floating-point.png Graphic file (type png)
 <use image/floating-point.png>
 Package pdftex.def Info: image/floating-point.png  used on input line 180.
 (pdftex.def)             Requested size: 455.24518pt x 142.26576pt.
- [106 <./image/floating-point.png>] [107]
-<image/logic-gates.jpeg, id=384, 1204.5pt x 571.13374pt>
+ [108 <./image/floating-point.png>] [109]
+<image/logic-gates.jpeg, id=391, 1204.5pt x 571.13374pt>
 File: image/logic-gates.jpeg Graphic file (type jpg)
 <use image/logic-gates.jpeg>
 Package pdftex.def Info: image/logic-gates.jpeg  used on input line 203.
 (pdftex.def)             Requested size: 455.25195pt x 227.62154pt.
-<image/important-logic-blocks.png, id=385, 1853.92625pt x 968.61874pt>
+<image/important-logic-blocks.png, id=392, 1853.92625pt x 968.61874pt>
 File: image/important-logic-blocks.png Graphic file (type png)
 <use image/important-logic-blocks.png>
 Package pdftex.def Info: image/important-logic-blocks.png  used on input line 2
@@ -1040,8 +1040,8 @@ Package pdftex.def Info: image/important-logic-blocks.png  used on input line 2
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[108 <./image/logic-gates.jpeg>]
-<image/latche.png, id=389, 1631.09375pt x 962.59625pt>
+[110 <./image/logic-gates.jpeg>]
+<image/latche.png, id=396, 1631.09375pt x 962.59625pt>
 File: image/latche.png Graphic file (type png)
 <use image/latche.png>
 Package pdftex.def Info: image/latche.png  used on input line 257.
@@ -1050,8 +1050,8 @@ Package pdftex.def Info: image/latche.png  used on input line 257.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[109 <./image/important-logic-blocks.png>]
-<image/mips-datapath-3parts.png, id=394, 825.0825pt x 945.5325pt>
+[111 <./image/important-logic-blocks.png>]
+<image/mips-datapath-3parts.png, id=400, 825.0825pt x 945.5325pt>
 File: image/mips-datapath-3parts.png Graphic file (type png)
 <use image/mips-datapath-3parts.png>
 Package pdftex.def Info: image/mips-datapath-3parts.png  used on input line 279
@@ -1061,8 +1061,8 @@ Package pdftex.def Info: image/mips-datapath-3parts.png  used on input line 279
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[110 <./image/latche.png>]
-<image/mips-datapath.png, id=398, 1222.5675pt x 951.555pt>
+[112 <./image/latche.png>]
+<image/mips-datapath.png, id=404, 1222.5675pt x 951.555pt>
 File: image/mips-datapath.png Graphic file (type png)
 <use image/mips-datapath.png>
 Package pdftex.def Info: image/mips-datapath.png  used on input line 290.
@@ -1071,27 +1071,27 @@ Package pdftex.def Info: image/mips-datapath.png  used on input line 290.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[111 <./image/mips-datapath-3parts.png>] [112 <./image/mips-datapath.png>]
-<image/pipline.png, id=405, 1707.37875pt x 934.49126pt>
+[113 <./image/mips-datapath-3parts.png>] [114 <./image/mips-datapath.png>]
+<image/pipline.png, id=411, 1707.37875pt x 934.49126pt>
 File: image/pipline.png Graphic file (type png)
 <use image/pipline.png>
 Package pdftex.def Info: image/pipline.png  used on input line 334.
 (pdftex.def)             Requested size: 455.24083pt x 227.61913pt.
 
-[113 <./image/pipline.png>] [114]
-<image/dubble-pump.png, id=412, 1632.0975pt x 848.16875pt>
+[115 <./image/pipline.png>] [116]
+<image/dubble-pump.png, id=419, 1632.0975pt x 848.16875pt>
 File: image/dubble-pump.png Graphic file (type png)
 <use image/dubble-pump.png>
 Package pdftex.def Info: image/dubble-pump.png  used on input line 381.
 (pdftex.def)             Requested size: 455.24092pt x 227.62383pt.
- [115 <./image/dubble-pump.png>] [116]
-[117]
-<image/branch-predictor.png, id=423, 1761.58125pt x 561.09625pt>
+ [117 <./image/dubble-pump.png>] [118]
+[119]
+<image/branch-predictor.png, id=429, 1761.58125pt x 561.09625pt>
 File: image/branch-predictor.png Graphic file (type png)
 <use image/branch-predictor.png>
 Package pdftex.def Info: image/branch-predictor.png  used on input line 447.
 (pdftex.def)             Requested size: 455.23174pt x 142.26001pt.
-<image/2-bit-predict.png, id=424, 1729.46124pt x 961.5925pt>
+<image/2-bit-predict.png, id=430, 1729.46124pt x 961.5925pt>
 File: image/2-bit-predict.png Graphic file (type png)
 <use image/2-bit-predict.png>
 Package pdftex.def Info: image/2-bit-predict.png  used on input line 455.
@@ -1100,8 +1100,8 @@ Package pdftex.def Info: image/2-bit-predict.png  used on input line 455.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[118 <./image/branch-predictor.png>]
-<image/btb.png, id=428, 1818.795pt x 545.03625pt>
+[120 <./image/branch-predictor.png>]
+<image/btb.png, id=434, 1818.795pt x 545.03625pt>
 File: image/btb.png Graphic file (type png)
 <use image/btb.png>
 Package pdftex.def Info: image/btb.png  used on input line 470.
@@ -1110,8 +1110,8 @@ Package pdftex.def Info: image/btb.png  used on input line 470.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[119 <./image/2-bit-predict.png>]
-<image/exceptions.png, id=432, 1809.76125pt x 879.285pt>
+[121 <./image/2-bit-predict.png>]
+<image/exceptions.png, id=439, 1809.76125pt x 879.285pt>
 File: image/exceptions.png Graphic file (type png)
 <use image/exceptions.png>
 Package pdftex.def Info: image/exceptions.png  used on input line 491.
@@ -1120,7 +1120,7 @@ Package pdftex.def Info: image/exceptions.png  used on input line 491.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[120 <./image/btb.png>] [121 <./image/exceptions.png>]
+[122 <./image/btb.png>] [123 <./image/exceptions.png>]
 
 Package Listings Warning: Text dropped after begin of listing on input line 539
 .
@@ -1129,14 +1129,14 @@ Package Listings Warning: Text dropped after begin of listing on input line 539
 Package Listings Warning: Text dropped after begin of listing on input line 552
 .
 
-[122]
-<image/memory-hierarchy.png, id=443, 1832.8475pt x 694.595pt>
+[124]
+<image/memory-hierarchy.png, id=449, 1832.8475pt x 694.595pt>
 File: image/memory-hierarchy.png Graphic file (type png)
 <use image/memory-hierarchy.png>
 Package pdftex.def Info: image/memory-hierarchy.png  used on input line 574.
 (pdftex.def)             Requested size: 455.24626pt x 199.16988pt.
- [123 <./image/memory-hierarchy.png>]
-<image/cache-format.png, id=447, 1652.1725pt x 779.91376pt>
+ [125 <./image/memory-hierarchy.png>]
+<image/cache-format.png, id=453, 1652.1725pt x 779.91376pt>
 File: image/cache-format.png Graphic file (type png)
 <use image/cache-format.png>
 Package pdftex.def Info: image/cache-format.png  used on input line 646.
@@ -1145,40 +1145,40 @@ Package pdftex.def Info: image/cache-format.png  used on input line 646.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[124] [125 <./image/cache-format.png>]
-<image/tlb.png, id=457, 1703.36375pt x 804.00375pt>
+[126] [127 <./image/cache-format.png>]
+<image/tlb.png, id=464, 1703.36375pt x 804.00375pt>
 File: image/tlb.png Graphic file (type png)
 <use image/tlb.png>
 Package pdftex.def Info: image/tlb.png  used on input line 710.
 (pdftex.def)             Requested size: 455.23595pt x 199.16023pt.
- [126 <./image/tlb.png>]
-<image/conversion.png, id=461, 1737.49126pt x 791.95876pt>
+ [128 <./image/tlb.png>]
+<image/conversion.png, id=468, 1737.49126pt x 791.95876pt>
 File: image/conversion.png Graphic file (type png)
 <use image/conversion.png>
 Package pdftex.def Info: image/conversion.png  used on input line 720.
 (pdftex.def)             Requested size: 455.23665pt x 199.16138pt.
- [127 <./image/conversion.png>] [128]
-<image/locks.png, id=469, 1900.09875pt x 704.6325pt>
+ [129 <./image/conversion.png>] [130]
+<image/locks.png, id=475, 1900.09875pt x 704.6325pt>
 File: image/locks.png Graphic file (type png)
 <use image/locks.png>
 Package pdftex.def Info: image/locks.png  used on input line 799.
 (pdftex.def)             Requested size: 455.2212pt x 199.16656pt.
-<image/snooping.png, id=470, 1880.02374pt x 448.67625pt>
+<image/snooping.png, id=476, 1880.02374pt x 448.67625pt>
 File: image/snooping.png Graphic file (type png)
 <use image/snooping.png>
 Package pdftex.def Info: image/snooping.png  used on input line 816.
 (pdftex.def)             Requested size: 455.23108pt x 142.25801pt.
- [129 <./image/locks.png> <./image/snooping.png>]
-<image/dual-issue-pipline.png, id=474, 1866.975pt x 925.4575pt>
+ [131 <./image/locks.png> <./image/snooping.png>]
+<image/dual-issue-pipline.png, id=480, 1866.975pt x 925.4575pt>
 File: image/dual-issue-pipline.png Graphic file (type png)
 <use image/dual-issue-pipline.png>
 Package pdftex.def Info: image/dual-issue-pipline.png  used on input line 835.
 (pdftex.def)             Requested size: 455.23358pt x 199.16718pt.
-) [130 <./image/dual-issue-pipline.png>]
+) [132 <./image/dual-issue-pipline.png>]
 (./chapter6_Imperativ_and_Object-Oriented_Programming_Methodology/ioopm-summary
 .tex
 Chapter 6.
-[131
+[133
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 12--15
@@ -1195,16 +1195,16 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-) [132]) [133]
-(./chapter7_Linear_Algebra_and_Geometry_I/lagI-summary.tex [134
+) [134]) [135]
+(./chapter7_Linear_Algebra_and_Geometry_I/lagI-summary.tex [136
 
 ]
 Chapter 7.
-[135] [136]
+[137] [138]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [137]
-[138]
+ [139]
+[140]
 Underfull \hbox (badness 10000) in paragraph at lines 195--198
 
  []
@@ -1212,9 +1212,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--198
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [139]
-[140] [141] [142]
-<image/Ortogonal-projektion.png, id=516, 1038.88126pt x 1001.7425pt>
+ [141]
+[142] [143] [144]
+<image/Ortogonal-projektion.png, id=522, 1038.88126pt x 1001.7425pt>
 File: image/Ortogonal-projektion.png Graphic file (type png)
 <use image/Ortogonal-projektion.png>
 Package pdftex.def Info: image/Ortogonal-projektion.png  used on input line 399
@@ -1223,34 +1223,34 @@ Package pdftex.def Info: image/Ortogonal-projektion.png  used on input line 399
 
 Underfull \vbox (badness 5133) has occurred while \output is active []
 
- [143 <./image/Ortogonal-projektion.png>]
+ [145 <./image/Ortogonal-projektion.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [144]
-[145] [146] [147]
-<image/vektorprodukt.png, id=534, 1860.9525pt x 823.075pt>
+ [146]
+[147] [148] [149]
+<image/vektorprodukt.png, id=540, 1860.9525pt x 823.075pt>
 File: image/vektorprodukt.png Graphic file (type png)
 <use image/vektorprodukt.png>
 Package pdftex.def Info: image/vektorprodukt.png  used on input line 615.
 (pdftex.def)             Requested size: 341.43124pt x 142.25688pt.
- [148 <./image/vektorprodukt.png>]
-<image/2.5.8.b.jpg, id=539, 4047.12pt x 3035.34pt>
+ [150 <./image/vektorprodukt.png>]
+<image/2.5.8.b.jpg, id=546, 4047.12pt x 3035.34pt>
 File: image/2.5.8.b.jpg Graphic file (type jpg)
 <use image/2.5.8.b.jpg>
 Package pdftex.def Info: image/2.5.8.b.jpg  used on input line 673.
 (pdftex.def)             Requested size: 284.50067pt x 170.6726pt.
- [149 <./image/2.5.8.b.jpg>]
-<image/parallelogram.png, id=543, 1837.86626pt x 920.43875pt>
+ [151 <./image/2.5.8.b.jpg>]
+<image/parallelogram.png, id=551, 1837.86626pt x 920.43875pt>
 File: image/parallelogram.png Graphic file (type png)
 <use image/parallelogram.png>
 Package pdftex.def Info: image/parallelogram.png  used on input line 690.
 (pdftex.def)             Requested size: 312.96596pt x 170.71388pt.
-[150 <./image/parallelogram.png>]
+[152 <./image/parallelogram.png>]
 Underfull \vbox (badness 4072) has occurred while \output is active []
 
- [151]
-[152]
-<image/ortogonal_projektion_p책_plan.png, id=556, 1876.00874pt x 944.52875pt>
+ [153]
+[154]
+<image/ortogonal_projektion_p책_plan.png, id=562, 1876.00874pt x 944.52875pt>
 File: image/ortogonal_projektion_p책_plan.png Graphic file (type png)
 <use image/ortogonal_projektion_p책_plan.png>
 Package pdftex.def Info: image/ortogonal_projektion_p책_plan.png  used on input
@@ -1259,8 +1259,8 @@ Package pdftex.def Info: image/ortogonal_projektion_p책_plan.png  used on input
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [153 <./image/ortogonal_projektion_p책_plan.png>] [154]
-<image/matris-multiplikation.png, id=564, 1358.07375pt x 969.6225pt>
+ [155 <./image/ortogonal_projektion_p책_plan.png>] [156]
+<image/matris-multiplikation.png, id=570, 1358.07375pt x 969.6225pt>
 File: image/matris-multiplikation.png Graphic file (type png)
 <use image/matris-multiplikation.png>
 Package pdftex.def Info: image/matris-multiplikation.png  used on input line 92
@@ -1269,79 +1269,229 @@ Package pdftex.def Info: image/matris-multiplikation.png  used on input line 92
 
 Underfull \vbox (badness 6510) has occurred while \output is active []
 
- [155 <./image/matris-multiplikation.png>] [156] [157] [158] [159] [160]
+ [157 <./image/matris-multiplikation.png>] [158] [159] [160] [161] [162]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [161]
-[162]) [163] (./chapter8_Linear_Algebra_II/laII-summary.tex [164
+ [163]
+[164]) [165] (./chapter8_Linear_Algebra_II/laII-summary.tex [166
 
 ]
 Chapter 8.
-[165]
+[167]
 Overfull \vbox (0.71841pt too high) has occurred while \output is active []
 
 
-[166] [167] [168] [169] [170] [171] [172] [173] [174] [175]
-<image/matris_lin_avb.png, id=634, 1845.89626pt x 960.58875pt>
+[168] [169] [170] [171] [172] [173] [174] [175] [176] [177]
+<image/matris_lin_avb.png, id=640, 1845.89626pt x 960.58875pt>
 File: image/matris_lin_avb.png Graphic file (type png)
 <use image/matris_lin_avb.png>
 Package pdftex.def Info: image/matris_lin_avb.png  used on input line 475.
 (pdftex.def)             Requested size: 284.5055pt x 142.26457pt.
- [176 <./image/matris_lin_avb.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [177]
-[178]
+ [178 <./image/matris_lin_avb.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [179]
-[180] [181] [182] [183]
+[180]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [184]
-[185] [186] [187]
+ [181]
+[182] [183] [184] [185]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [188])
-[189] (./chapter9_Computer_Systems_with_Project_Work/dsp-summary.tex [190
+ [186]
+[187] [188] [189]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [190])
+[191] (./chapter9_Computer_Systems_with_Project_Work/dsp-summary.tex [192
 
 ]
 Chapter 9.
-[191]) [192]
-(./chapter10_System_Design_with_a_User_Perspective/sdup-summary.tex
+[193]
+<image/memory-allocation.png, id=693, 269.005pt x 538.01pt>
+File: image/memory-allocation.png Graphic file (type png)
+<use image/memory-allocation.png>
+Package pdftex.def Info: image/memory-allocation.png  used on input line 34.
+(pdftex.def)             Requested size: 142.26411pt x 284.52823pt.
+ [194 <./image/memory-allocation.png>]
+<image/multiprogramming.png, id=698, 855.195pt x 514.92375pt>
+File: image/multiprogramming.png Graphic file (type png)
+<use image/multiprogramming.png>
+Package pdftex.def Info: image/multiprogramming.png  used on input line 49.
+(pdftex.def)             Requested size: 398.34013pt x 284.52892pt.
+<image/layering.png, id=699, 627.34375pt x 505.89pt>
+File: image/layering.png Graphic file (type png)
+<use image/layering.png>
+Package pdftex.def Info: image/layering.png  used on input line 58.
+(pdftex.def)             Requested size: 398.34927pt x 284.53154pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[195 <./image/multiprogramming.png>]
+<image/user-kernal-mode.png, id=704, 913.4125pt x 752.8125pt>
+File: image/user-kernal-mode.png Graphic file (type png)
+<use image/user-kernal-mode.png>
+Package pdftex.def Info: image/user-kernal-mode.png  used on input line 93.
+(pdftex.def)             Requested size: 398.33473pt x 284.53246pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--105
+
+ []
+
+[196 <./image/layering.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 111--115
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--120
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--136
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+
+ []
+
+[197 <./image/user-kernal-mode.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 143--147
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--157
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--161
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--169
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--174
+
+ []
+
+[198] [199]
+<image/ISM-band.png, id=720, 776.9025pt x 618.31pt>
+File: image/ISM-band.png Graphic file (type png)
+<use image/ISM-band.png>
+Package pdftex.def Info: image/ISM-band.png  used on input line 335.
+(pdftex.def)             Requested size: 341.43509pt x 284.53926pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[200]
+<image/Multithreading-models.png, id=725, 1044.90375pt x 613.29124pt>
+File: image/Multithreading-models.png Graphic file (type png)
+<use image/Multithreading-models.png>
+Package pdftex.def Info: image/Multithreading-models.png  used on input line 36
+2.
+(pdftex.def)             Requested size: 455.24693pt x 284.52242pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[201 <./image/ISM-band.png>] [202 <./image/Multithreading-models.png>] [203]
+[204]
+Underfull \hbox (badness 10000) in paragraph at lines 521--523
+
+ []
+
+<image/publik-key-krypto.png, id=740, 1021.8175pt x 712.6625pt>
+File: image/publik-key-krypto.png Graphic file (type png)
+<use image/publik-key-krypto.png>
+Package pdftex.def Info: image/publik-key-krypto.png  used on input line 554.
+(pdftex.def)             Requested size: 455.22969pt x 284.5271pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<image/chain-of-trust.png, id=741, 1018.80624pt x 650.43pt>
+File: image/chain-of-trust.png Graphic file (type png)
+<use image/chain-of-trust.png>
+Package pdftex.def Info: image/chain-of-trust.png  used on input line 566.
+(pdftex.def)             Requested size: 455.24062pt x 284.53264pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[205] [206 <./image/publik-key-krypto.png>]
+<image/firewall.png, id=750, 1021.8175pt x 583.17876pt>
+File: image/firewall.png Graphic file (type png)
+<use image/firewall.png>
+Package pdftex.def Info: image/firewall.png  used on input line 609.
+(pdftex.def)             Requested size: 455.22969pt x 284.53209pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [207 <./image/chain-of-trust.png>]
+(./chapter10_System_Design_with_a_User_Perspective/sdup-summary.tex [208 <./ima
+ge/firewall.png>]
 Chapter 10.
-[193
+[209
 
 ]
-<image/mvc.png, id=693, 1131.22626pt x 705.63625pt>
+<image/mvc.png, id=762, 1131.22626pt x 705.63625pt>
 File: image/mvc.png Graphic file (type png)
 <use image/mvc.png>
 Package pdftex.def Info: image/mvc.png  used on input line 91.
 (pdftex.def)             Requested size: 284.51471pt x 142.2553pt.
- [194]) [195 <./image/mvc.png>]
-(./chapter11_Probability_and_Statistics_DV/psdv-summary.tex [196
+ [210]) [211 <./image/mvc.png>]
+(./chapter11_Probability_and_Statistics_DV/psdv-summary.tex [212
 
 ]
 Chapter 11.
-[197] [198] [199] [200] [201]
+[213] [214] [215] [216] [217]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [202]
+ [218]
 Underfull \vbox (badness 2368) has occurred while \output is active []
 
- [203]
-[204] [205] [206] [207]
+ [219]
+[220] [221] [222] [223]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [208]
-[209]
+ [224]
+[225]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [210]
-[211]
+ [226]
+[227]
 Underfull \vbox (badness 1701) has occurred while \output is active []
 
- [212]
+ [228]
 
 LaTeX Warning: Command \texttwosuperior invalid in math mode on input line 609.
 
@@ -1363,19 +1513,19 @@ Missing character: There is no � in font cmr10!
 
 Underfull \vbox (badness 1270) has occurred while \output is active []
 
- [213]
+ [229]
 LaTeX Font Info:    Trying to load font information for U+bbm on input line 673
 .
 
 (/usr/share/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-) [214] [215] [216] [217])
-[218] (./main.aux) ) 
+) [230] [231] [232] [233])
+[234] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 28003 strings out of 478994
- 663512 string characters out of 5864752
- 1276929 words of memory out of 5000000
- 44937 multiletter control sequences out of 15000+600000
+ 28057 strings out of 478994
+ 664919 string characters out of 5864752
+ 1276930 words of memory out of 5000000
+ 44982 multiletter control sequences out of 15000+600000
  428326 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,21n,103p,717b,1661s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1407,10 +1557,10 @@ b></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/t
 exmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf-dist/fonts
 /type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/c
 m-super/sftt1000.pfb>
-Output written on main.pdf (218 pages, 9514874 bytes).
+Output written on main.pdf (234 pages, 10225745 bytes).
 PDF statistics:
- 889 PDF objects out of 1000 (max. 8388607)
- 588 compressed objects within 6 object streams
+ 958 PDF objects out of 1000 (max. 8388607)
+ 622 compressed objects within 7 object streams
  0 named destinations out of 1000 (max. 500000)
- 193 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 238 words of extra memory for PDF output out of 10000 (max. 10000000)
 

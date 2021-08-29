@@ -1,337 +1,420 @@
 \babel@toc {english}{}
-\contentsline {chapter}{\numberline {1}Basic Course in Mathematics}{9}{}%
-\contentsline {section}{\numberline {1.1}Basic}{10}{}%
-\contentsline {subsection}{\numberline {1.1.1}Mängder}{10}{}%
-\contentsline {subsection}{\numberline {1.1.2}Potenslagar}{10}{}%
-\contentsline {subsection}{\numberline {1.1.3}Logaritmer}{10}{}%
-\contentsline {subsection}{\numberline {1.1.4}Tillvägagångs sätt}{10}{}%
-\contentsline {subsubsection}{Lösning}{11}{}%
-\contentsline {subsection}{\numberline {1.1.5}Intervall}{11}{}%
-\contentsline {subsection}{\numberline {1.1.6}Tillvägagångs sätt}{11}{}%
-\contentsline {subsubsection}{Lösning}{11}{}%
-\contentsline {section}{\numberline {1.2}Komplexa tal}{12}{}%
-\contentsline {subsection}{\numberline {1.2.1}Polärform}{12}{}%
-\contentsline {subsubsection}{Binomisk ekvation}{13}{}%
-\contentsline {subsubsection}{Tillvägagångs sätt}{13}{}%
-\contentsline {section}{\numberline {1.3}Absolut Belopp}{14}{}%
-\contentsline {subsection}{\numberline {1.3.1}Tillvägagångs sätt}{14}{}%
-\contentsline {subsubsection}{lösning}{14}{}%
-\contentsline {section}{\numberline {1.4}Summor}{15}{}%
-\contentsline {subsection}{\numberline {1.4.1}Aritmetiska summor}{15}{}%
-\contentsline {subsection}{\numberline {1.4.2}Geometriska summor}{15}{}%
-\contentsline {subsection}{\numberline {1.4.3}Tillvägagångs sätt}{15}{}%
-\contentsline {subsubsection}{Lösning}{15}{}%
-\contentsline {section}{\numberline {1.5}Kombinatorik}{16}{}%
-\contentsline {subsection}{\numberline {1.5.1}Multiplikations principen}{16}{}%
-\contentsline {subsection}{\numberline {1.5.2}Kombinationer}{16}{}%
-\contentsline {subsubsection}{Pascal triangel}{16}{}%
-\contentsline {subsection}{\numberline {1.5.3}Binomial satsen}{16}{}%
-\contentsline {section}{\numberline {1.6}Funktioner och kordinatsystem}{17}{}%
-\contentsline {subsection}{\numberline {1.6.1}Avståndsformeln}{17}{}%
-\contentsline {subsection}{\numberline {1.6.2}Elipser}{17}{}%
-\contentsline {subsubsection}{Hyperbol}{17}{}%
-\contentsline {subsubsection}{Circkel}{17}{}%
-\contentsline {section}{\numberline {1.7}Polynom division}{18}{}%
-\contentsline {subsection}{\numberline {1.7.1}Tillvägagångs sätt}{18}{}%
-\contentsline {section}{\numberline {1.8}Trigonometri}{19}{}%
-\contentsline {subsection}{\numberline {1.8.1}Tillvägagångs sätt}{20}{}%
-\contentsline {chapter}{\numberline {2}Program Design and Data Structures}{21}{}%
-\contentsline {section}{\numberline {2.1}Coding convension}{22}{}%
-\contentsline {section}{\numberline {2.2}Design approach}{22}{}%
-\contentsline {subsection}{\numberline {2.2.1}Process}{22}{}%
-\contentsline {section}{\numberline {2.3}Recursion}{23}{}%
-\contentsline {subsection}{\numberline {2.3.1}Recursion types}{23}{}%
-\contentsline {section}{\numberline {2.4}Complexity}{23}{}%
-\contentsline {subsection}{\numberline {2.4.1}Growth}{23}{}%
-\contentsline {subsubsection}{Relation}{23}{}%
-\contentsline {section}{\numberline {2.5}Recurrences}{23}{}%
-\contentsline {subsection}{\numberline {2.5.1}Closed Form}{24}{}%
-\contentsline {subsubsection}{Expansion Method}{24}{}%
-\contentsline {subsubsection}{Substitution Method}{25}{}%
-\contentsline {section}{\numberline {2.6}Higher-Order Function}{26}{}%
-\contentsline {subsection}{\numberline {2.6.1}Higher-Order Functions on Lists}{26}{}%
-\contentsline {subsubsection}{map}{26}{}%
-\contentsline {subsubsection}{filter}{26}{}%
-\contentsline {subsubsection}{foldl}{26}{}%
-\contentsline {subsubsection}{foldr}{26}{}%
-\contentsline {section}{\numberline {2.7}Data types}{27}{}%
-\contentsline {subsection}{\numberline {2.7.1}Basic}{27}{}%
-\contentsline {subsection}{\numberline {2.7.2}Maybe Type}{27}{}%
-\contentsline {subsection}{\numberline {2.7.3}New types and enumeration types}{27}{}%
-\contentsline {subsubsection}{Type classes}{27}{}%
-\contentsline {subsection}{\numberline {2.7.4}Inductive Data Types}{30}{}%
-\contentsline {subsection}{\numberline {2.7.5}Trees}{31}{}%
-\contentsline {subsubsection}{Binary tree}{31}{}%
-\contentsline {subsubsection}{Binary search tree}{31}{}%
-\contentsline {subsubsection}{Red and black trees}{32}{}%
-\contentsline {subsubsection}{Binomial Trees and heaps}{32}{}%
-\contentsline {subsection}{\numberline {2.7.6}Other data types}{33}{}%
-\contentsline {subsubsection}{Tables, Stacking and queuing}{33}{}%
-\contentsline {subsubsection}{Hastables}{34}{}%
-\contentsline {subsection}{\numberline {2.7.7}Graphs}{35}{}%
-\contentsline {subsubsection}{Types of graphs}{35}{}%
-\contentsline {subsubsection}{Treminolage}{35}{}%
-\contentsline {subsubsection}{Representation}{35}{}%
-\contentsline {subsubsection}{topological sort}{36}{}%
-\contentsline {subsubsection}{Graph Traversals}{36}{}%
-\contentsline {subsubsection}{Strongly-Connected Components}{37}{}%
-\contentsline {section}{\numberline {2.8}Important syntax}{38}{}%
-\contentsline {subsection}{\numberline {2.8.1}Let}{38}{}%
-\contentsline {subsection}{\numberline {2.8.2}IO}{38}{}%
-\contentsline {section}{\numberline {2.9}Sorting Algorithms}{38}{}%
-\contentsline {chapter}{\numberline {3}Algebra 1}{39}{}%
-\contentsline {section}{\numberline {3.1}logik}{40}{}%
-\contentsline {subsection}{\numberline {3.1.1}värde tabeller}{40}{}%
-\contentsline {subsection}{\numberline {3.1.2}Implikationer}{40}{}%
-\contentsline {section}{\numberline {3.2}Mängder}{42}{}%
-\contentsline {section}{\numberline {3.3}Bevis}{43}{}%
-\contentsline {subsection}{\numberline {3.3.1}Induktions bevis}{43}{}%
-\contentsline {subsection}{\numberline {3.3.2}Motsägelse bevis}{43}{}%
-\contentsline {section}{\numberline {3.4}Delbarhet}{44}{}%
-\contentsline {subsection}{\numberline {3.4.1}Största Gemensama Delaren (SGD)}{44}{}%
-\contentsline {subsection}{\numberline {3.4.2}Primtal}{46}{}%
-\contentsline {section}{\numberline {3.5}Diofantiska ekvationer}{47}{}%
-\contentsline {section}{\numberline {3.6}Talbaser}{48}{}%
-\contentsline {subsection}{\numberline {3.6.1}konvertera från decimal bass till annan bas}{48}{}%
-\contentsline {subsection}{\numberline {3.6.2}konvertera från annan bas till decimal bas}{48}{}%
-\contentsline {subsection}{\numberline {3.6.3}Andra exempel}{48}{}%
-\contentsline {section}{\numberline {3.7}Functioner}{49}{}%
-\contentsline {subsection}{\numberline {3.7.1}Inversen}{49}{}%
-\contentsline {subsection}{\numberline {3.7.2}Relatioiner}{49}{}%
-\contentsline {section}{\numberline {3.8}Summor}{50}{}%
-\contentsline {subsection}{\numberline {3.8.1}Aritmetiska summor}{50}{}%
-\contentsline {subsection}{\numberline {3.8.2}Geometriska summor}{50}{}%
-\contentsline {section}{\numberline {3.9}Kongruensräkning}{51}{}%
-\contentsline {section}{\numberline {3.10}Kardinalitet}{52}{}%
-\contentsline {subsection}{\numberline {3.10.1}Uppräkneligamängder}{52}{}%
-\contentsline {section}{\numberline {3.11}Polynom}{53}{}%
-\contentsline {subsection}{\numberline {3.11.1}Polynom division}{53}{}%
-\contentsline {subsection}{\numberline {3.11.2}Faktorsatsen}{54}{}%
-\contentsline {chapter}{\numberline {4}Single Variable Calculus}{57}{}%
-\contentsline {section}{\numberline {4.1}Basic}{58}{}%
-\contentsline {subsection}{\numberline {4.1.1}Mängder}{58}{}%
-\contentsline {subsection}{\numberline {4.1.2}Intervall}{59}{}%
-\contentsline {subsection}{\numberline {4.1.3}Funktion}{60}{}%
-\contentsline {subsection}{\numberline {4.1.4}Trigonometri}{61}{}%
-\contentsline {subsection}{\numberline {4.1.5}Exempel: Trigonometri}{62}{}%
-\contentsline {section}{\numberline {4.2}Gränsvärden}{63}{}%
-\contentsline {subsection}{\numberline {4.2.1}Kontinuitet}{64}{}%
-\contentsline {section}{\numberline {4.3}Derivator}{65}{}%
-\contentsline {subsection}{\numberline {4.3.1}Kjedje regeln}{65}{}%
-\contentsline {subsection}{\numberline {4.3.2}L'Hôpital's rule}{66}{}%
-\contentsline {subsection}{\numberline {4.3.3}Medelvärdessatsen}{66}{}%
-\contentsline {subsection}{\numberline {4.3.4}Rolle}{66}{}%
-\contentsline {subsection}{\numberline {4.3.5}växande funktioner}{67}{}%
-\contentsline {subsection}{\numberline {4.3.6}Högreordnings devivator}{67}{}%
-\contentsline {subsection}{\numberline {4.3.7}Impericit derivering}{67}{}%
-\contentsline {subsection}{\numberline {4.3.8}invers funktioner}{67}{}%
-\contentsline {subsection}{\numberline {4.3.9}exponetial och logaritm}{68}{}%
-\contentsline {subsection}{\numberline {4.3.10}odefinerad form}{68}{}%
-\contentsline {subsection}{\numberline {4.3.11}inversa trigometriska funktioner}{69}{}%
-\contentsline {subsubsection}{arcsin}{69}{}%
-\contentsline {subsubsection}{arccos}{69}{}%
-\contentsline {subsubsection}{arctan}{69}{}%
-\contentsline {subsubsection}{exempel}{70}{}%
-\contentsline {section}{\numberline {4.4}Grafritning}{70}{}%
-\contentsline {section}{\numberline {4.5}Optemering}{72}{}%
-\contentsline {section}{\numberline {4.6}Talfölder och serier}{73}{}%
-\contentsline {subsection}{\numberline {4.6.1}Serier med varierande tecken}{75}{}%
-\contentsline {subsection}{\numberline {4.6.2}Potensserier}{75}{}%
-\contentsline {subsection}{\numberline {4.6.3}Taylor serier}{77}{}%
-\contentsline {section}{\numberline {4.7}Integraler}{79}{}%
-\contentsline {subsection}{\numberline {4.7.1}variabelsubstition}{81}{}%
-\contentsline {subsubsection}{Integraller som följer mönster}{81}{}%
-\contentsline {subsection}{\numberline {4.7.2}Integration av rationella funktioner}{82}{}%
-\contentsline {subsection}{\numberline {4.7.3}Partiell integration}{84}{}%
-\contentsline {subsection}{\numberline {4.7.4}Generaliserande integraler}{85}{}%
-\contentsline {subsection}{\numberline {4.7.5}Volymberäkningar}{87}{}%
-\contentsline {subsubsection}{Kurvlängd}{87}{}%
-\contentsline {subsubsection}{Rotationsarea}{88}{}%
-\contentsline {section}{\numberline {4.8}Differential ekvationer}{89}{}%
-\contentsline {subsection}{\numberline {4.8.1}superabla ekvationer}{90}{}%
-\contentsline {subsection}{\numberline {4.8.2}Linjära differentialekvationer av ordning 1}{91}{}%
-\contentsline {subsection}{\numberline {4.8.3}Linjära differentialekvationer av ordning 2}{92}{}%
-\contentsline {subsubsection}{Partikulär lösning}{93}{}%
-\contentsline {subsubsection}{Resonans}{95}{}%
-\contentsline {subsubsection}{Serielösningar}{95}{}%
-\contentsline {chapter}{\numberline {5}Computer Architecture}{97}{}%
-\contentsline {section}{\numberline {5.1}ISA1}{98}{}%
-\contentsline {subsection}{\numberline {5.1.1}MIPS instructions}{98}{}%
-\contentsline {subsection}{\numberline {5.1.2}Sequencing}{100}{}%
-\contentsline {subsection}{\numberline {5.1.3}Converge to Assambly code}{101}{}%
-\contentsline {section}{\numberline {5.2}ISA2}{101}{}%
-\contentsline {subsection}{\numberline {5.2.1}MIPS type format}{101}{}%
-\contentsline {subsection}{\numberline {5.2.2}Procedure}{102}{}%
-\contentsline {subsubsection}{Stacking}{103}{}%
-\contentsline {subsection}{\numberline {5.2.3}Other ISA}{104}{}%
-\contentsline {section}{\numberline {5.3}Arithetic}{106}{}%
-\contentsline {subsection}{\numberline {5.3.1}Binary numbers}{106}{}%
-\contentsline {subsection}{\numberline {5.3.2}Negative integes}{106}{}%
-\contentsline {subsection}{\numberline {5.3.3}Oporations}{106}{}%
-\contentsline {subsection}{\numberline {5.3.4}Non integer numbers (Floating and fixed point)}{106}{}%
-\contentsline {subsection}{\numberline {5.3.5}Overflow}{107}{}%
-\contentsline {section}{\numberline {5.4}Logic}{108}{}%
-\contentsline {section}{\numberline {5.5}processor control and datapath}{110}{}%
-\contentsline {subsection}{\numberline {5.5.1}Clock}{112}{}%
-\contentsline {subsection}{\numberline {5.5.2}Critical path}{112}{}%
-\contentsline {section}{\numberline {5.6}pipline}{113}{}%
-\contentsline {section}{\numberline {5.7}Pipline hazards}{115}{}%
-\contentsline {subsection}{\numberline {5.7.1}Data hazards}{115}{}%
-\contentsline {subsection}{\numberline {5.7.2}Control hazards}{115}{}%
-\contentsline {subsection}{\numberline {5.7.3}Structural hazards}{116}{}%
-\contentsline {section}{\numberline {5.8}Predicting Branches and Exceptions}{117}{}%
-\contentsline {subsection}{\numberline {5.8.1}Static pridictors}{117}{}%
-\contentsline {subsection}{\numberline {5.8.2}Dynamic pridictors}{118}{}%
-\contentsline {subsection}{\numberline {5.8.3}Exceptions}{120}{}%
-\contentsline {section}{\numberline {5.9}Input/Output}{121}{}%
-\contentsline {section}{\numberline {5.10}Cache}{123}{}%
-\contentsline {subsection}{\numberline {5.10.1}Memory hierarchy}{123}{}%
-\contentsline {subsection}{\numberline {5.10.2}Cache misses $3C's$}{124}{}%
-\contentsline {section}{\numberline {5.11}Virtual Memory}{125}{}%
-\contentsline {section}{\numberline {5.12}Parallism}{128}{}%
-\contentsline {subsection}{\numberline {5.12.1}Multicore}{128}{}%
-\contentsline {subsection}{\numberline {5.12.2}Paralel programming}{128}{}%
-\contentsline {subsection}{\numberline {5.12.3}Synchronization}{128}{}%
-\contentsline {subsection}{\numberline {5.12.4}Cache coherency}{129}{}%
-\contentsline {subsection}{\numberline {5.12.5}ILP}{130}{}%
-\contentsline {chapter}{\numberline {6}Probability and Statistics DV}{131}{}%
-\contentsline {section}{\numberline {6.1}Introduction}{132}{}%
-\contentsline {subsection}{\numberline {6.1.1}Test}{132}{}%
-\contentsline {section}{\numberline {6.2}Imperative programming i C}{132}{}%
-\contentsline {subsection}{\numberline {6.2.1}Data structurer}{132}{}%
-\contentsline {subsubsection}{stack och heap}{132}{}%
-\contentsline {subsubsection}{Structar}{133}{}%
-\contentsline {subsubsection}{Pekare}{133}{}%
-\contentsline {subsubsection}{Linked list}{133}{}%
-\contentsline {subsubsection}{Hash table}{133}{}%
-\contentsline {section}{\numberline {6.3}Object-Oriented programming i Java}{133}{}%
-\contentsline {chapter}{\numberline {7}Linear Algebra and Geometry I}{135}{}%
-\contentsline {section}{\numberline {7.1}Linjära ekvationssystem}{136}{}%
-\contentsline {subsection}{\numberline {7.1.1}Total Matris}{137}{}%
-\contentsline {section}{\numberline {7.2}Vektorer/koordinater i planet och rummet}{139}{}%
-\contentsline {subsection}{\numberline {7.2.1}Bas}{139}{}%
-\contentsline {section}{\numberline {7.3}Skalärprodukt och vektorprodukt}{141}{}%
-\contentsline {subsection}{\numberline {7.3.1}Skalärprodukt}{141}{}%
-\contentsline {subsection}{\numberline {7.3.2}Ortogonal projektion}{143}{}%
-\contentsline {subsection}{\numberline {7.3.3}Enhetsvektorer och ON-baser}{147}{}%
-\contentsline {subsection}{\numberline {7.3.4}Vektorprodukten}{147}{}%
-\contentsline {subsection}{\numberline {7.3.5}Area och Volym}{150}{}%
-\contentsline {section}{\numberline {7.4}Linjer och plan}{151}{}%
-\contentsline {subsection}{\numberline {7.4.1}ortogonal projektion på plan}{153}{}%
-\contentsline {section}{\numberline {7.5}Matrisräkning}{155}{}%
-\contentsline {subsection}{\numberline {7.5.1}Transpornat}{156}{}%
-\contentsline {subsection}{\numberline {7.5.2}Matrisinvers}{156}{}%
-\contentsline {section}{\numberline {7.6}Determinanter}{158}{}%
-\contentsline {subsection}{\numberline {7.6.1}Ko-faktorna}{159}{}%
-\contentsline {subsection}{\numberline {7.6.2}Geometri: parallellepiped}{159}{}%
-\contentsline {section}{\numberline {7.7}Vektorer i $\mathbb {R}^n$}{160}{}%
-\contentsline {section}{\numberline {7.8}Linjära avbildningar $\mathbb {R}^n\to \mathbb {R}^m$}{161}{}%
-\contentsline {subsection}{\numberline {7.8.1}Matristransformationer och linjära funktioner}{161}{}%
-\contentsline {subsection}{\numberline {7.8.2}Injektiv/Surjektiv/Bijektiv}{163}{}%
-\contentsline {chapter}{\numberline {8}Linear Algebra II}{165}{}%
-\contentsline {section}{\numberline {8.1}Grudläggande teori}{166}{}%
-\contentsline {subsection}{\numberline {8.1.1}Ekvationssystem och matris räkning}{166}{}%
-\contentsline {subsection}{\numberline {8.1.2}determinanter}{167}{}%
-\contentsline {subsection}{\numberline {8.1.3}flerdimisionel dvs $R^n$}{167}{}%
-\contentsline {subsection}{\numberline {8.1.4}Funktioner}{167}{}%
-\contentsline {subsection}{\numberline {8.1.5}Linjer}{167}{}%
-\contentsline {section}{\numberline {8.2}Vektorrum}{168}{}%
-\contentsline {section}{\numberline {8.3}Underrum och linjära höljet}{169}{}%
-\contentsline {section}{\numberline {8.4}Linjärt \(o\)beroende}{171}{}%
-\contentsline {section}{\numberline {8.5}Bas}{172}{}%
-\contentsline {section}{\numberline {8.6}Basomvandling}{173}{}%
-\contentsline {section}{\numberline {8.7}Linjär avbildning}{175}{}%
-\contentsline {section}{\numberline {8.8}Matrisen av en linjär avbilding}{176}{}%
-\contentsline {section}{\numberline {8.9}Basbyte av linjära avbildningar}{177}{}%
-\contentsline {section}{\numberline {8.10}Kärna och bild av en linjär avbildning}{178}{}%
-\contentsline {section}{\numberline {8.11}Egenvärden och egenvektorer}{179}{}%
-\contentsline {section}{\numberline {8.12}Diagonalisering}{181}{}%
-\contentsline {section}{\numberline {8.13}Inre produkrum}{182}{}%
-\contentsline {section}{\numberline {8.14}Symetriska och positiva definita matriser}{183}{}%
-\contentsline {section}{\numberline {8.15}On-baser och Gram-Schmidt-ortonormalisering}{184}{}%
-\contentsline {section}{\numberline {8.16}Isometriska avbildningar och spektralsatsen}{186}{}%
-\contentsline {section}{\numberline {8.17}Andragradskurvor och andragradsytor}{187}{}%
-\contentsline {section}{\numberline {8.18}System av linjära differentialekvationer}{188}{}%
-\contentsline {chapter}{\numberline {9}Computer System with Project Work}{191}{}%
-\contentsline {section}{\numberline {9.1}Conclusion}{192}{}%
-\contentsline {subsection}{\numberline {9.1.1}Man-in-middle attack}{192}{}%
-\contentsline {subsection}{\numberline {9.1.2}Chosen-plaintext attack}{192}{}%
-\contentsline {subsection}{\numberline {9.1.3}Side-channel attack}{192}{}%
-\contentsline {subsection}{\numberline {9.1.4}Replay attack}{192}{}%
-\contentsline {chapter}{\numberline {10}Basic Course in Mathematics}{193}{}%
-\contentsline {section}{\numberline {10.1}Documentation}{194}{}%
-\contentsline {subsection}{\numberline {10.1.1}Implicit documentation}{194}{}%
-\contentsline {subsection}{\numberline {10.1.2}Implicit documentation}{194}{}%
-\contentsline {section}{\numberline {10.2}Human factors}{194}{}%
-\contentsline {subsection}{\numberline {10.2.1}Color combinations}{194}{}%
-\contentsline {subsection}{\numberline {10.2.2}Personas}{194}{}%
-\contentsline {subsection}{\numberline {10.2.3}Memory}{194}{}%
-\contentsline {subsection}{\numberline {10.2.4}What is needed to desing a system?}{194}{}%
-\contentsline {section}{\numberline {10.3}Model-View-Control}{195}{}%
-\contentsline {chapter}{\numberline {11}Probability and Statistics DV}{197}{}%
-\contentsline {section}{\numberline {11.1}Statistisk mått och begreppet sannolikhet}{198}{}%
-\contentsline {subsection}{\numberline {11.1.1}Begrepp}{198}{}%
-\contentsline {section}{\numberline {11.2}Sannolikheter och slumpvariabler}{200}{}%
-\contentsline {subsection}{\numberline {11.2.1}Betingade sannolikheter}{200}{}%
-\contentsline {subsection}{\numberline {11.2.2}Kedjer av händelse}{200}{}%
-\contentsline {subsection}{\numberline {11.2.3}Oberonde händelser}{200}{}%
-\contentsline {section}{\numberline {11.3}Fördelningar}{201}{}%
-\contentsline {subsection}{\numberline {11.3.1}Binomial-fördelningar}{201}{}%
-\contentsline {subsection}{\numberline {11.3.2}Possion-fördelningar}{202}{}%
-\contentsline {subsection}{\numberline {11.3.3}Likformig/rektangulär-fördelningar}{202}{}%
-\contentsline {subsection}{\numberline {11.3.4}Exponential-fördelningar}{203}{}%
-\contentsline {subsection}{\numberline {11.3.5}Normalfördelning-fördelningar}{203}{}%
-\contentsline {subsection}{\numberline {11.3.6}Läges och spridningsmått}{203}{}%
-\contentsline {subsubsection}{Väntevärde}{203}{}%
-\contentsline {subsubsection}{varians}{204}{}%
-\contentsline {subsubsection}{Alternativ form}{204}{}%
-\contentsline {section}{\numberline {11.4}Olikheter}{204}{}%
-\contentsline {subsection}{\numberline {11.4.1}Markovs olikhet}{204}{}%
-\contentsline {subsection}{\numberline {11.4.2}Thebysjovs olikhet (chebyshev)}{204}{}%
-\contentsline {subsection}{\numberline {11.4.3}Fördelnings functioner}{204}{}%
-\contentsline {subsubsection}{Normalfördelning}{204}{}%
-\contentsline {subsubsection}{kvartier}{205}{}%
-\contentsline {subsection}{\numberline {11.4.4}Oberonede slupvariabel}{205}{}%
-\contentsline {subsubsection}{räkneregler}{205}{}%
-\contentsline {subsubsection}{väntevärde av produkter}{205}{}%
-\contentsline {subsubsection}{Special fall}{206}{}%
-\contentsline {subsection}{\numberline {11.4.5}Fördelning av summor}{206}{}%
-\contentsline {subsection}{\numberline {11.4.6}Central gränsvärdessatsen (CGS)}{206}{}%
-\contentsline {section}{\numberline {11.5}Simulering av slumptal}{206}{}%
-\contentsline {subsection}{\numberline {11.5.1}äkta slummpmässiga tal}{206}{}%
-\contentsline {subsection}{\numberline {11.5.2}Pseudoslumpmässiga tal}{207}{}%
-\contentsline {subsubsection}{Von Neumann}{207}{}%
-\contentsline {subsubsection}{Kongruens}{207}{}%
-\contentsline {subsubsection}{XOR-generator}{207}{}%
-\contentsline {subsubsection}{Mersenne Twister}{208}{}%
-\contentsline {section}{\numberline {11.6}Statistikens grunder}{208}{}%
-\contentsline {subsection}{\numberline {11.6.1}Allmänt}{208}{}%
-\contentsline {subsection}{\numberline {11.6.2}Medelfel}{209}{}%
-\contentsline {subsection}{\numberline {11.6.3}Skattning av varians}{209}{}%
-\contentsline {subsection}{\numberline {11.6.4}Väntevärdsriktig}{210}{}%
-\contentsline {subsection}{\numberline {11.6.5}Konfidensintervall för $\mu $ från $N(\mu ,\sigma ^2)$ med känt $\sigma $}{210}{}%
-\contentsline {subsection}{\numberline {11.6.6}Example}{211}{}%
-\contentsline {subsection}{\numberline {11.6.7}Konfidensintervall för $p$ från binomialfördelad}{211}{}%
-\contentsline {subsection}{\numberline {11.6.8}Konfidensintervall för skillnad i väntevärde }{211}{}%
-\contentsline {subsubsection}{Okända varianser}{211}{}%
-\contentsline {subsection}{\numberline {11.6.9}Ensidiga intervall}{212}{}%
-\contentsline {subsection}{\numberline {11.6.10}Stickprov i par}{212}{}%
-\contentsline {section}{\numberline {11.7}Regrission}{212}{}%
-\contentsline {subsection}{\numberline {11.7.1}Modell}{212}{}%
-\contentsline {subsection}{\numberline {11.7.2}Modellens giltighet}{213}{}%
-\contentsline {subsubsection}{Förklaringsgrad}{213}{}%
-\contentsline {subsubsection}{Residualer}{213}{}%
-\contentsline {subsection}{\numberline {11.7.3}Användning ag modellen}{213}{}%
-\contentsline {section}{\numberline {11.8}Stokastiska processer}{214}{}%
-\contentsline {subsection}{\numberline {11.8.1}Bornulli processer}{214}{}%
-\contentsline {subsection}{\numberline {11.8.2}Poisson processer}{214}{}%
-\contentsline {subsubsection}{Förtunning}{214}{}%
-\contentsline {subsubsection}{Superposition}{214}{}%
-\contentsline {subsubsection}{Spatial process}{215}{}%
-\contentsline {subsubsection}{M/M/$\infty $-modellen}{215}{}%
-\contentsline {section}{\numberline {11.9}Markovkedjor}{215}{}%
-\contentsline {subsection}{\numberline {11.9.1}Ehrenfestmodellen}{216}{}%
-\contentsline {subsection}{\numberline {11.9.2}Google-kedjan}{217}{}%
-\contentsline {subsection}{\numberline {11.9.3}Hashfunktioner}{217}{}%
-\contentsline {subsection}{\numberline {11.9.4}Kollisionmodoll}{217}{}%
-\contentsline {subsection}{\numberline {11.9.5}Markov Buffer/Markovkö}{218}{}%
+\contentsline {chapter}{\numberline {1}Basic Course in Mathematics}{11}{}%
+\contentsline {section}{\numberline {1.1}Basic}{12}{}%
+\contentsline {subsection}{\numberline {1.1.1}Mängder}{12}{}%
+\contentsline {subsection}{\numberline {1.1.2}Potenslagar}{12}{}%
+\contentsline {subsection}{\numberline {1.1.3}Logaritmer}{12}{}%
+\contentsline {subsection}{\numberline {1.1.4}Tillvägagångs sätt}{12}{}%
+\contentsline {subsubsection}{Lösning}{13}{}%
+\contentsline {subsection}{\numberline {1.1.5}Intervall}{13}{}%
+\contentsline {subsection}{\numberline {1.1.6}Tillvägagångs sätt}{13}{}%
+\contentsline {subsubsection}{Lösning}{13}{}%
+\contentsline {section}{\numberline {1.2}Komplexa tal}{14}{}%
+\contentsline {subsection}{\numberline {1.2.1}Polärform}{14}{}%
+\contentsline {subsubsection}{Binomisk ekvation}{15}{}%
+\contentsline {subsubsection}{Tillvägagångs sätt}{15}{}%
+\contentsline {section}{\numberline {1.3}Absolut Belopp}{16}{}%
+\contentsline {subsection}{\numberline {1.3.1}Tillvägagångs sätt}{16}{}%
+\contentsline {subsubsection}{lösning}{16}{}%
+\contentsline {section}{\numberline {1.4}Summor}{17}{}%
+\contentsline {subsection}{\numberline {1.4.1}Aritmetiska summor}{17}{}%
+\contentsline {subsection}{\numberline {1.4.2}Geometriska summor}{17}{}%
+\contentsline {subsection}{\numberline {1.4.3}Tillvägagångs sätt}{17}{}%
+\contentsline {subsubsection}{Lösning}{17}{}%
+\contentsline {section}{\numberline {1.5}Kombinatorik}{18}{}%
+\contentsline {subsection}{\numberline {1.5.1}Multiplikations principen}{18}{}%
+\contentsline {subsection}{\numberline {1.5.2}Kombinationer}{18}{}%
+\contentsline {subsubsection}{Pascal triangel}{18}{}%
+\contentsline {subsection}{\numberline {1.5.3}Binomial satsen}{18}{}%
+\contentsline {section}{\numberline {1.6}Funktioner och kordinatsystem}{19}{}%
+\contentsline {subsection}{\numberline {1.6.1}Avståndsformeln}{19}{}%
+\contentsline {subsection}{\numberline {1.6.2}Elipser}{19}{}%
+\contentsline {subsubsection}{Hyperbol}{19}{}%
+\contentsline {subsubsection}{Circkel}{19}{}%
+\contentsline {section}{\numberline {1.7}Polynom division}{20}{}%
+\contentsline {subsection}{\numberline {1.7.1}Tillvägagångs sätt}{20}{}%
+\contentsline {section}{\numberline {1.8}Trigonometri}{21}{}%
+\contentsline {subsection}{\numberline {1.8.1}Tillvägagångs sätt}{22}{}%
+\contentsline {chapter}{\numberline {2}Program Design and Data Structures}{23}{}%
+\contentsline {section}{\numberline {2.1}Coding convension}{24}{}%
+\contentsline {section}{\numberline {2.2}Design approach}{24}{}%
+\contentsline {subsection}{\numberline {2.2.1}Process}{24}{}%
+\contentsline {section}{\numberline {2.3}Recursion}{25}{}%
+\contentsline {subsection}{\numberline {2.3.1}Recursion types}{25}{}%
+\contentsline {section}{\numberline {2.4}Complexity}{25}{}%
+\contentsline {subsection}{\numberline {2.4.1}Growth}{25}{}%
+\contentsline {subsubsection}{Relation}{25}{}%
+\contentsline {section}{\numberline {2.5}Recurrences}{25}{}%
+\contentsline {subsection}{\numberline {2.5.1}Closed Form}{26}{}%
+\contentsline {subsubsection}{Expansion Method}{26}{}%
+\contentsline {subsubsection}{Substitution Method}{27}{}%
+\contentsline {section}{\numberline {2.6}Higher-Order Function}{28}{}%
+\contentsline {subsection}{\numberline {2.6.1}Higher-Order Functions on Lists}{28}{}%
+\contentsline {subsubsection}{map}{28}{}%
+\contentsline {subsubsection}{filter}{28}{}%
+\contentsline {subsubsection}{foldl}{28}{}%
+\contentsline {subsubsection}{foldr}{28}{}%
+\contentsline {section}{\numberline {2.7}Data types}{29}{}%
+\contentsline {subsection}{\numberline {2.7.1}Basic}{29}{}%
+\contentsline {subsection}{\numberline {2.7.2}Maybe Type}{29}{}%
+\contentsline {subsection}{\numberline {2.7.3}New types and enumeration types}{29}{}%
+\contentsline {subsubsection}{Type classes}{29}{}%
+\contentsline {subsection}{\numberline {2.7.4}Inductive Data Types}{32}{}%
+\contentsline {subsection}{\numberline {2.7.5}Trees}{33}{}%
+\contentsline {subsubsection}{Binary tree}{33}{}%
+\contentsline {subsubsection}{Binary search tree}{33}{}%
+\contentsline {subsubsection}{Red and black trees}{34}{}%
+\contentsline {subsubsection}{Binomial Trees and heaps}{34}{}%
+\contentsline {subsection}{\numberline {2.7.6}Other data types}{35}{}%
+\contentsline {subsubsection}{Tables, Stacking and queuing}{35}{}%
+\contentsline {subsubsection}{Hastables}{36}{}%
+\contentsline {subsection}{\numberline {2.7.7}Graphs}{37}{}%
+\contentsline {subsubsection}{Types of graphs}{37}{}%
+\contentsline {subsubsection}{Treminolage}{37}{}%
+\contentsline {subsubsection}{Representation}{37}{}%
+\contentsline {subsubsection}{topological sort}{38}{}%
+\contentsline {subsubsection}{Graph Traversals}{38}{}%
+\contentsline {subsubsection}{Strongly-Connected Components}{39}{}%
+\contentsline {section}{\numberline {2.8}Important syntax}{40}{}%
+\contentsline {subsection}{\numberline {2.8.1}Let}{40}{}%
+\contentsline {subsection}{\numberline {2.8.2}IO}{40}{}%
+\contentsline {section}{\numberline {2.9}Sorting Algorithms}{40}{}%
+\contentsline {chapter}{\numberline {3}Algebra 1}{41}{}%
+\contentsline {section}{\numberline {3.1}logik}{42}{}%
+\contentsline {subsection}{\numberline {3.1.1}värde tabeller}{42}{}%
+\contentsline {subsection}{\numberline {3.1.2}Implikationer}{42}{}%
+\contentsline {section}{\numberline {3.2}Mängder}{44}{}%
+\contentsline {section}{\numberline {3.3}Bevis}{45}{}%
+\contentsline {subsection}{\numberline {3.3.1}Induktions bevis}{45}{}%
+\contentsline {subsection}{\numberline {3.3.2}Motsägelse bevis}{45}{}%
+\contentsline {section}{\numberline {3.4}Delbarhet}{46}{}%
+\contentsline {subsection}{\numberline {3.4.1}Största Gemensama Delaren (SGD)}{46}{}%
+\contentsline {subsection}{\numberline {3.4.2}Primtal}{48}{}%
+\contentsline {section}{\numberline {3.5}Diofantiska ekvationer}{49}{}%
+\contentsline {section}{\numberline {3.6}Talbaser}{50}{}%
+\contentsline {subsection}{\numberline {3.6.1}konvertera från decimal bass till annan bas}{50}{}%
+\contentsline {subsection}{\numberline {3.6.2}konvertera från annan bas till decimal bas}{50}{}%
+\contentsline {subsection}{\numberline {3.6.3}Andra exempel}{50}{}%
+\contentsline {section}{\numberline {3.7}Functioner}{51}{}%
+\contentsline {subsection}{\numberline {3.7.1}Inversen}{51}{}%
+\contentsline {subsection}{\numberline {3.7.2}Relatioiner}{51}{}%
+\contentsline {section}{\numberline {3.8}Summor}{52}{}%
+\contentsline {subsection}{\numberline {3.8.1}Aritmetiska summor}{52}{}%
+\contentsline {subsection}{\numberline {3.8.2}Geometriska summor}{52}{}%
+\contentsline {section}{\numberline {3.9}Kongruensräkning}{53}{}%
+\contentsline {section}{\numberline {3.10}Kardinalitet}{54}{}%
+\contentsline {subsection}{\numberline {3.10.1}Uppräkneligamängder}{54}{}%
+\contentsline {section}{\numberline {3.11}Polynom}{55}{}%
+\contentsline {subsection}{\numberline {3.11.1}Polynom division}{55}{}%
+\contentsline {subsection}{\numberline {3.11.2}Faktorsatsen}{56}{}%
+\contentsline {chapter}{\numberline {4}Single Variable Calculus}{59}{}%
+\contentsline {section}{\numberline {4.1}Basic}{60}{}%
+\contentsline {subsection}{\numberline {4.1.1}Mängder}{60}{}%
+\contentsline {subsection}{\numberline {4.1.2}Intervall}{61}{}%
+\contentsline {subsection}{\numberline {4.1.3}Funktion}{62}{}%
+\contentsline {subsection}{\numberline {4.1.4}Trigonometri}{63}{}%
+\contentsline {subsection}{\numberline {4.1.5}Exempel: Trigonometri}{64}{}%
+\contentsline {section}{\numberline {4.2}Gränsvärden}{65}{}%
+\contentsline {subsection}{\numberline {4.2.1}Kontinuitet}{66}{}%
+\contentsline {section}{\numberline {4.3}Derivator}{67}{}%
+\contentsline {subsection}{\numberline {4.3.1}Kjedje regeln}{67}{}%
+\contentsline {subsection}{\numberline {4.3.2}L'Hôpital's rule}{68}{}%
+\contentsline {subsection}{\numberline {4.3.3}Medelvärdessatsen}{68}{}%
+\contentsline {subsection}{\numberline {4.3.4}Rolle}{68}{}%
+\contentsline {subsection}{\numberline {4.3.5}växande funktioner}{69}{}%
+\contentsline {subsection}{\numberline {4.3.6}Högreordnings devivator}{69}{}%
+\contentsline {subsection}{\numberline {4.3.7}Impericit derivering}{69}{}%
+\contentsline {subsection}{\numberline {4.3.8}invers funktioner}{69}{}%
+\contentsline {subsection}{\numberline {4.3.9}exponetial och logaritm}{70}{}%
+\contentsline {subsection}{\numberline {4.3.10}odefinerad form}{70}{}%
+\contentsline {subsection}{\numberline {4.3.11}inversa trigometriska funktioner}{71}{}%
+\contentsline {subsubsection}{arcsin}{71}{}%
+\contentsline {subsubsection}{arccos}{71}{}%
+\contentsline {subsubsection}{arctan}{71}{}%
+\contentsline {subsubsection}{exempel}{72}{}%
+\contentsline {section}{\numberline {4.4}Grafritning}{72}{}%
+\contentsline {section}{\numberline {4.5}Optemering}{74}{}%
+\contentsline {section}{\numberline {4.6}Talfölder och serier}{75}{}%
+\contentsline {subsection}{\numberline {4.6.1}Serier med varierande tecken}{77}{}%
+\contentsline {subsection}{\numberline {4.6.2}Potensserier}{77}{}%
+\contentsline {subsection}{\numberline {4.6.3}Taylor serier}{79}{}%
+\contentsline {section}{\numberline {4.7}Integraler}{81}{}%
+\contentsline {subsection}{\numberline {4.7.1}variabelsubstition}{83}{}%
+\contentsline {subsubsection}{Integraller som följer mönster}{83}{}%
+\contentsline {subsection}{\numberline {4.7.2}Integration av rationella funktioner}{84}{}%
+\contentsline {subsection}{\numberline {4.7.3}Partiell integration}{86}{}%
+\contentsline {subsection}{\numberline {4.7.4}Generaliserande integraler}{87}{}%
+\contentsline {subsection}{\numberline {4.7.5}Volymberäkningar}{89}{}%
+\contentsline {subsubsection}{Kurvlängd}{89}{}%
+\contentsline {subsubsection}{Rotationsarea}{90}{}%
+\contentsline {section}{\numberline {4.8}Differential ekvationer}{91}{}%
+\contentsline {subsection}{\numberline {4.8.1}superabla ekvationer}{92}{}%
+\contentsline {subsection}{\numberline {4.8.2}Linjära differentialekvationer av ordning 1}{93}{}%
+\contentsline {subsection}{\numberline {4.8.3}Linjära differentialekvationer av ordning 2}{94}{}%
+\contentsline {subsubsection}{Partikulär lösning}{95}{}%
+\contentsline {subsubsection}{Resonans}{97}{}%
+\contentsline {subsubsection}{Serielösningar}{97}{}%
+\contentsline {chapter}{\numberline {5}Computer Architecture}{99}{}%
+\contentsline {section}{\numberline {5.1}ISA1}{100}{}%
+\contentsline {subsection}{\numberline {5.1.1}MIPS instructions}{100}{}%
+\contentsline {subsection}{\numberline {5.1.2}Sequencing}{102}{}%
+\contentsline {subsection}{\numberline {5.1.3}Converge to Assambly code}{103}{}%
+\contentsline {section}{\numberline {5.2}ISA2}{103}{}%
+\contentsline {subsection}{\numberline {5.2.1}MIPS type format}{103}{}%
+\contentsline {subsection}{\numberline {5.2.2}Procedure}{104}{}%
+\contentsline {subsubsection}{Stacking}{105}{}%
+\contentsline {subsection}{\numberline {5.2.3}Other ISA}{106}{}%
+\contentsline {section}{\numberline {5.3}Arithetic}{108}{}%
+\contentsline {subsection}{\numberline {5.3.1}Binary numbers}{108}{}%
+\contentsline {subsection}{\numberline {5.3.2}Negative integes}{108}{}%
+\contentsline {subsection}{\numberline {5.3.3}Oporations}{108}{}%
+\contentsline {subsection}{\numberline {5.3.4}Non integer numbers (Floating and fixed point)}{108}{}%
+\contentsline {subsection}{\numberline {5.3.5}Overflow}{109}{}%
+\contentsline {section}{\numberline {5.4}Logic}{110}{}%
+\contentsline {section}{\numberline {5.5}processor control and datapath}{112}{}%
+\contentsline {subsection}{\numberline {5.5.1}Clock}{114}{}%
+\contentsline {subsection}{\numberline {5.5.2}Critical path}{114}{}%
+\contentsline {section}{\numberline {5.6}pipline}{115}{}%
+\contentsline {section}{\numberline {5.7}Pipline hazards}{117}{}%
+\contentsline {subsection}{\numberline {5.7.1}Data hazards}{117}{}%
+\contentsline {subsection}{\numberline {5.7.2}Control hazards}{117}{}%
+\contentsline {subsection}{\numberline {5.7.3}Structural hazards}{118}{}%
+\contentsline {section}{\numberline {5.8}Predicting Branches and Exceptions}{119}{}%
+\contentsline {subsection}{\numberline {5.8.1}Static pridictors}{119}{}%
+\contentsline {subsection}{\numberline {5.8.2}Dynamic pridictors}{120}{}%
+\contentsline {subsection}{\numberline {5.8.3}Exceptions}{122}{}%
+\contentsline {section}{\numberline {5.9}Input/Output}{123}{}%
+\contentsline {section}{\numberline {5.10}Cache}{125}{}%
+\contentsline {subsection}{\numberline {5.10.1}Memory hierarchy}{125}{}%
+\contentsline {subsection}{\numberline {5.10.2}Cache misses $3C's$}{126}{}%
+\contentsline {section}{\numberline {5.11}Virtual Memory}{127}{}%
+\contentsline {section}{\numberline {5.12}Parallism}{130}{}%
+\contentsline {subsection}{\numberline {5.12.1}Multicore}{130}{}%
+\contentsline {subsection}{\numberline {5.12.2}Paralel programming}{130}{}%
+\contentsline {subsection}{\numberline {5.12.3}Synchronization}{130}{}%
+\contentsline {subsection}{\numberline {5.12.4}Cache coherency}{131}{}%
+\contentsline {subsection}{\numberline {5.12.5}ILP}{132}{}%
+\contentsline {chapter}{\numberline {6}Probability and Statistics DV}{133}{}%
+\contentsline {section}{\numberline {6.1}Introduction}{134}{}%
+\contentsline {subsection}{\numberline {6.1.1}Test}{134}{}%
+\contentsline {section}{\numberline {6.2}Imperative programming i C}{134}{}%
+\contentsline {subsection}{\numberline {6.2.1}Data structurer}{134}{}%
+\contentsline {subsubsection}{stack och heap}{134}{}%
+\contentsline {subsubsection}{Structar}{135}{}%
+\contentsline {subsubsection}{Pekare}{135}{}%
+\contentsline {subsubsection}{Linked list}{135}{}%
+\contentsline {subsubsection}{Hash table}{135}{}%
+\contentsline {section}{\numberline {6.3}Object-Oriented programming i Java}{135}{}%
+\contentsline {chapter}{\numberline {7}Linear Algebra and Geometry I}{137}{}%
+\contentsline {section}{\numberline {7.1}Linjära ekvationssystem}{138}{}%
+\contentsline {subsection}{\numberline {7.1.1}Total Matris}{139}{}%
+\contentsline {section}{\numberline {7.2}Vektorer/koordinater i planet och rummet}{141}{}%
+\contentsline {subsection}{\numberline {7.2.1}Bas}{141}{}%
+\contentsline {section}{\numberline {7.3}Skalärprodukt och vektorprodukt}{143}{}%
+\contentsline {subsection}{\numberline {7.3.1}Skalärprodukt}{143}{}%
+\contentsline {subsection}{\numberline {7.3.2}Ortogonal projektion}{145}{}%
+\contentsline {subsection}{\numberline {7.3.3}Enhetsvektorer och ON-baser}{149}{}%
+\contentsline {subsection}{\numberline {7.3.4}Vektorprodukten}{149}{}%
+\contentsline {subsection}{\numberline {7.3.5}Area och Volym}{152}{}%
+\contentsline {section}{\numberline {7.4}Linjer och plan}{153}{}%
+\contentsline {subsection}{\numberline {7.4.1}ortogonal projektion på plan}{155}{}%
+\contentsline {section}{\numberline {7.5}Matrisräkning}{157}{}%
+\contentsline {subsection}{\numberline {7.5.1}Transpornat}{158}{}%
+\contentsline {subsection}{\numberline {7.5.2}Matrisinvers}{158}{}%
+\contentsline {section}{\numberline {7.6}Determinanter}{160}{}%
+\contentsline {subsection}{\numberline {7.6.1}Ko-faktorna}{161}{}%
+\contentsline {subsection}{\numberline {7.6.2}Geometri: parallellepiped}{161}{}%
+\contentsline {section}{\numberline {7.7}Vektorer i $\mathbb {R}^n$}{162}{}%
+\contentsline {section}{\numberline {7.8}Linjära avbildningar $\mathbb {R}^n\to \mathbb {R}^m$}{163}{}%
+\contentsline {subsection}{\numberline {7.8.1}Matristransformationer och linjära funktioner}{163}{}%
+\contentsline {subsection}{\numberline {7.8.2}Injektiv/Surjektiv/Bijektiv}{165}{}%
+\contentsline {chapter}{\numberline {8}Linear Algebra II}{167}{}%
+\contentsline {section}{\numberline {8.1}Grudläggande teori}{168}{}%
+\contentsline {subsection}{\numberline {8.1.1}Ekvationssystem och matris räkning}{168}{}%
+\contentsline {subsection}{\numberline {8.1.2}determinanter}{169}{}%
+\contentsline {subsection}{\numberline {8.1.3}flerdimisionel dvs $R^n$}{169}{}%
+\contentsline {subsection}{\numberline {8.1.4}Funktioner}{169}{}%
+\contentsline {subsection}{\numberline {8.1.5}Linjer}{169}{}%
+\contentsline {section}{\numberline {8.2}Vektorrum}{170}{}%
+\contentsline {section}{\numberline {8.3}Underrum och linjära höljet}{171}{}%
+\contentsline {section}{\numberline {8.4}Linjärt \(o\)beroende}{173}{}%
+\contentsline {section}{\numberline {8.5}Bas}{174}{}%
+\contentsline {section}{\numberline {8.6}Basomvandling}{175}{}%
+\contentsline {section}{\numberline {8.7}Linjär avbildning}{177}{}%
+\contentsline {section}{\numberline {8.8}Matrisen av en linjär avbilding}{178}{}%
+\contentsline {section}{\numberline {8.9}Basbyte av linjära avbildningar}{179}{}%
+\contentsline {section}{\numberline {8.10}Kärna och bild av en linjär avbildning}{180}{}%
+\contentsline {section}{\numberline {8.11}Egenvärden och egenvektorer}{181}{}%
+\contentsline {section}{\numberline {8.12}Diagonalisering}{183}{}%
+\contentsline {section}{\numberline {8.13}Inre produkrum}{184}{}%
+\contentsline {section}{\numberline {8.14}Symetriska och positiva definita matriser}{185}{}%
+\contentsline {section}{\numberline {8.15}On-baser och Gram-Schmidt-ortonormalisering}{186}{}%
+\contentsline {section}{\numberline {8.16}Isometriska avbildningar och spektralsatsen}{188}{}%
+\contentsline {section}{\numberline {8.17}Andragradskurvor och andragradsytor}{189}{}%
+\contentsline {section}{\numberline {8.18}System av linjära differentialekvationer}{190}{}%
+\contentsline {chapter}{\numberline {9}Computer System with Project Work}{193}{}%
+\contentsline {section}{\numberline {9.1}M1}{194}{}%
+\contentsline {subsection}{\numberline {9.1.1}CPU}{194}{}%
+\contentsline {subsection}{\numberline {9.1.2}Register}{194}{}%
+\contentsline {subsection}{\numberline {9.1.3}Memory}{194}{}%
+\contentsline {subsection}{\numberline {9.1.4}CPU context}{194}{}%
+\contentsline {subsection}{\numberline {9.1.5}Memory allocation}{194}{}%
+\contentsline {subsection}{\numberline {9.1.6}Kernal}{195}{}%
+\contentsline {subsection}{\numberline {9.1.7}Multiprogramming}{195}{}%
+\contentsline {section}{\numberline {9.2}M2}{195}{}%
+\contentsline {subsection}{\numberline {9.2.1}Network communication}{195}{}%
+\contentsline {subsection}{\numberline {9.2.2}Prossesses}{196}{}%
+\contentsline {section}{\numberline {9.3}M3}{196}{}%
+\contentsline {subsection}{\numberline {9.3.1}Dispatcher}{196}{}%
+\contentsline {subsection}{\numberline {9.3.2}PSB}{197}{}%
+\contentsline {subsection}{\numberline {9.3.3}IO bound/CPU bound}{197}{}%
+\contentsline {subsection}{\numberline {9.3.4}Schedular algorithems}{198}{}%
+\contentsline {section}{\numberline {9.4}M4}{198}{}%
+\contentsline {subsection}{\numberline {9.4.1}Concurrency}{198}{}%
+\contentsline {subsection}{\numberline {9.4.2}Parallelism}{198}{}%
+\contentsline {subsection}{\numberline {9.4.3}Client-Server modle}{198}{}%
+\contentsline {subsection}{\numberline {9.4.4}Threads}{198}{}%
+\contentsline {subsubsection}{Atomic}{198}{}%
+\contentsline {subsubsection}{Race condition}{199}{}%
+\contentsline {subsubsection}{Data race}{199}{}%
+\contentsline {subsection}{\numberline {9.4.5}Locks}{199}{}%
+\contentsline {subsection}{\numberline {9.4.6}Spinlock}{199}{}%
+\contentsline {subsection}{\numberline {9.4.7}TestAndSet}{199}{}%
+\contentsline {subsection}{\numberline {9.4.8}Swap}{199}{}%
+\contentsline {subsection}{\numberline {9.4.9}Bounded waiting}{199}{}%
+\contentsline {subsection}{\numberline {9.4.10}Semaphores}{199}{}%
+\contentsline {subsection}{\numberline {9.4.11}Mutex lock}{199}{}%
+\contentsline {subsection}{\numberline {9.4.12}Deadlock}{199}{}%
+\contentsline {subsection}{\numberline {9.4.13}Mutual exclusion}{199}{}%
+\contentsline {subsection}{\numberline {9.4.14}Deadlock prevention}{199}{}%
+\contentsline {subsection}{\numberline {9.4.15}Deadlock avoidance}{200}{}%
+\contentsline {subsection}{\numberline {9.4.16}Clock Synchronization}{200}{}%
+\contentsline {subsection}{\numberline {9.4.17}Mutual exclusion}{200}{}%
+\contentsline {subsection}{\numberline {9.4.18}Desired properties of Transactions}{200}{}%
+\contentsline {subsection}{\numberline {9.4.19}WiFi}{200}{}%
+\contentsline {subsection}{\numberline {9.4.20}Bluetooth}{200}{}%
+\contentsline {subsection}{\numberline {9.4.21}ISM-band}{201}{}%
+\contentsline {subsection}{\numberline {9.4.22}Properties of a medium}{201}{}%
+\contentsline {subsection}{\numberline {9.4.23}Sampling}{201}{}%
+\contentsline {subsection}{\numberline {9.4.24}Multithreading models}{201}{}%
+\contentsline {subsection}{\numberline {9.4.25}Bounded buffer}{201}{}%
+\contentsline {subsection}{\numberline {9.4.26}Priority inversion}{202}{}%
+\contentsline {section}{\numberline {9.5}M5}{202}{}%
+\contentsline {subsection}{\numberline {9.5.1}Single contiguous}{202}{}%
+\contentsline {subsection}{\numberline {9.5.2}Swapping}{202}{}%
+\contentsline {subsection}{\numberline {9.5.3}Memory resident}{202}{}%
+\contentsline {subsection}{\numberline {9.5.4}Partitioned allocation}{203}{}%
+\contentsline {subsection}{\numberline {9.5.5}Logical address space}{203}{}%
+\contentsline {subsection}{\numberline {9.5.6}Address binding}{203}{}%
+\contentsline {subsection}{\numberline {9.5.7}Memory management unit (MMU)}{203}{}%
+\contentsline {subsection}{\numberline {9.5.8}Fragmentation}{203}{}%
+\contentsline {subsection}{\numberline {9.5.9}Compaction}{203}{}%
+\contentsline {subsection}{\numberline {9.5.10}Memory protection}{203}{}%
+\contentsline {subsection}{\numberline {9.5.11}Shared pages}{203}{}%
+\contentsline {subsection}{\numberline {9.5.12}Translation lookaside buffer}{203}{}%
+\contentsline {subsection}{\numberline {9.5.13}Operating System}{203}{}%
+\contentsline {subsection}{\numberline {9.5.14}Access methods}{203}{}%
+\contentsline {subsection}{\numberline {9.5.15}RAM}{203}{}%
+\contentsline {subsection}{\numberline {9.5.16}Volatile memory}{204}{}%
+\contentsline {subsection}{\numberline {9.5.17}Persistent data storage}{204}{}%
+\contentsline {subsection}{\numberline {9.5.18}The file}{204}{}%
+\contentsline {subsection}{\numberline {9.5.19}Block data storage}{204}{}%
+\contentsline {subsection}{\numberline {9.5.20}File control block}{204}{}%
+\contentsline {subsection}{\numberline {9.5.21}Directory}{204}{}%
+\contentsline {subsection}{\numberline {9.5.22}Contiguous allocation}{204}{}%
+\contentsline {subsection}{\numberline {9.5.23}Linked allocation}{204}{}%
+\contentsline {subsection}{\numberline {9.5.24}Indexed allocation}{204}{}%
+\contentsline {subsection}{\numberline {9.5.25}FAT}{204}{}%
+\contentsline {subsection}{\numberline {9.5.26}iNode}{204}{}%
+\contentsline {subsection}{\numberline {9.5.27}Directory}{204}{}%
+\contentsline {subsection}{\numberline {9.5.28}M6}{205}{}%
+\contentsline {subsection}{\numberline {9.5.29}Classic historical ciphers}{205}{}%
+\contentsline {subsection}{\numberline {9.5.30}Modern cryptography}{205}{}%
+\contentsline {subsection}{\numberline {9.5.31}Public key exchange}{205}{}%
+\contentsline {subsection}{\numberline {9.5.32}Certification Authority (CA)}{205}{}%
+\contentsline {subsection}{\numberline {9.5.33}Chain of trust}{205}{}%
+\contentsline {subsection}{\numberline {9.5.34}Self-issued certificates}{205}{}%
+\contentsline {subsection}{\numberline {9.5.35}Usage of modern cryptography}{205}{}%
+\contentsline {subsection}{\numberline {9.5.36}Man-in-middle attack}{206}{}%
+\contentsline {subsection}{\numberline {9.5.37}Chosen-plaintext attack}{206}{}%
+\contentsline {subsection}{\numberline {9.5.38}Side-channel attack}{206}{}%
+\contentsline {subsection}{\numberline {9.5.39}Replay attack}{206}{}%
+\contentsline {subsection}{\numberline {9.5.40}Security in the Internet stack}{207}{}%
+\contentsline {subsection}{\numberline {9.5.41}Firewall}{207}{}%
+\contentsline {chapter}{\numberline {10}System Design with User Perspective}{209}{}%
+\contentsline {section}{\numberline {10.1}Documentation}{210}{}%
+\contentsline {subsection}{\numberline {10.1.1}Implicit documentation}{210}{}%
+\contentsline {subsection}{\numberline {10.1.2}Implicit documentation}{210}{}%
+\contentsline {section}{\numberline {10.2}Human factors}{210}{}%
+\contentsline {subsection}{\numberline {10.2.1}Color combinations}{210}{}%
+\contentsline {subsection}{\numberline {10.2.2}Personas}{210}{}%
+\contentsline {subsection}{\numberline {10.2.3}Memory}{210}{}%
+\contentsline {subsection}{\numberline {10.2.4}What is needed to desing a system?}{210}{}%
+\contentsline {section}{\numberline {10.3}Model-View-Control}{211}{}%
+\contentsline {chapter}{\numberline {11}Probability and Statistics DV}{213}{}%
+\contentsline {section}{\numberline {11.1}Statistisk mått och begreppet sannolikhet}{214}{}%
+\contentsline {subsection}{\numberline {11.1.1}Begrepp}{214}{}%
+\contentsline {section}{\numberline {11.2}Sannolikheter och slumpvariabler}{216}{}%
+\contentsline {subsection}{\numberline {11.2.1}Betingade sannolikheter}{216}{}%
+\contentsline {subsection}{\numberline {11.2.2}Kedjer av händelse}{216}{}%
+\contentsline {subsection}{\numberline {11.2.3}Oberonde händelser}{216}{}%
+\contentsline {section}{\numberline {11.3}Fördelningar}{217}{}%
+\contentsline {subsection}{\numberline {11.3.1}Binomial-fördelningar}{217}{}%
+\contentsline {subsection}{\numberline {11.3.2}Possion-fördelningar}{218}{}%
+\contentsline {subsection}{\numberline {11.3.3}Likformig/rektangulär-fördelningar}{218}{}%
+\contentsline {subsection}{\numberline {11.3.4}Exponential-fördelningar}{219}{}%
+\contentsline {subsection}{\numberline {11.3.5}Normalfördelning-fördelningar}{219}{}%
+\contentsline {subsection}{\numberline {11.3.6}Läges och spridningsmått}{219}{}%
+\contentsline {subsubsection}{Väntevärde}{219}{}%
+\contentsline {subsubsection}{varians}{220}{}%
+\contentsline {subsubsection}{Alternativ form}{220}{}%
+\contentsline {section}{\numberline {11.4}Olikheter}{220}{}%
+\contentsline {subsection}{\numberline {11.4.1}Markovs olikhet}{220}{}%
+\contentsline {subsection}{\numberline {11.4.2}Thebysjovs olikhet (chebyshev)}{220}{}%
+\contentsline {subsection}{\numberline {11.4.3}Fördelnings functioner}{220}{}%
+\contentsline {subsubsection}{Normalfördelning}{220}{}%
+\contentsline {subsubsection}{kvartier}{221}{}%
+\contentsline {subsection}{\numberline {11.4.4}Oberonede slupvariabel}{221}{}%
+\contentsline {subsubsection}{räkneregler}{221}{}%
+\contentsline {subsubsection}{väntevärde av produkter}{221}{}%
+\contentsline {subsubsection}{Special fall}{222}{}%
+\contentsline {subsection}{\numberline {11.4.5}Fördelning av summor}{222}{}%
+\contentsline {subsection}{\numberline {11.4.6}Central gränsvärdessatsen (CGS)}{222}{}%
+\contentsline {section}{\numberline {11.5}Simulering av slumptal}{222}{}%
+\contentsline {subsection}{\numberline {11.5.1}äkta slummpmässiga tal}{222}{}%
+\contentsline {subsection}{\numberline {11.5.2}Pseudoslumpmässiga tal}{223}{}%
+\contentsline {subsubsection}{Von Neumann}{223}{}%
+\contentsline {subsubsection}{Kongruens}{223}{}%
+\contentsline {subsubsection}{XOR-generator}{223}{}%
+\contentsline {subsubsection}{Mersenne Twister}{224}{}%
+\contentsline {section}{\numberline {11.6}Statistikens grunder}{224}{}%
+\contentsline {subsection}{\numberline {11.6.1}Allmänt}{224}{}%
+\contentsline {subsection}{\numberline {11.6.2}Medelfel}{225}{}%
+\contentsline {subsection}{\numberline {11.6.3}Skattning av varians}{225}{}%
+\contentsline {subsection}{\numberline {11.6.4}Väntevärdsriktig}{226}{}%
+\contentsline {subsection}{\numberline {11.6.5}Konfidensintervall för $\mu $ från $N(\mu ,\sigma ^2)$ med känt $\sigma $}{226}{}%
+\contentsline {subsection}{\numberline {11.6.6}Example}{227}{}%
+\contentsline {subsection}{\numberline {11.6.7}Konfidensintervall för $p$ från binomialfördelad}{227}{}%
+\contentsline {subsection}{\numberline {11.6.8}Konfidensintervall för skillnad i väntevärde }{227}{}%
+\contentsline {subsubsection}{Okända varianser}{227}{}%
+\contentsline {subsection}{\numberline {11.6.9}Ensidiga intervall}{228}{}%
+\contentsline {subsection}{\numberline {11.6.10}Stickprov i par}{228}{}%
+\contentsline {section}{\numberline {11.7}Regrission}{228}{}%
+\contentsline {subsection}{\numberline {11.7.1}Modell}{228}{}%
+\contentsline {subsection}{\numberline {11.7.2}Modellens giltighet}{229}{}%
+\contentsline {subsubsection}{Förklaringsgrad}{229}{}%
+\contentsline {subsubsection}{Residualer}{229}{}%
+\contentsline {subsection}{\numberline {11.7.3}Användning ag modellen}{229}{}%
+\contentsline {section}{\numberline {11.8}Stokastiska processer}{230}{}%
+\contentsline {subsection}{\numberline {11.8.1}Bornulli processer}{230}{}%
+\contentsline {subsection}{\numberline {11.8.2}Poisson processer}{230}{}%
+\contentsline {subsubsection}{Förtunning}{230}{}%
+\contentsline {subsubsection}{Superposition}{230}{}%
+\contentsline {subsubsection}{Spatial process}{231}{}%
+\contentsline {subsubsection}{M/M/$\infty $-modellen}{231}{}%
+\contentsline {section}{\numberline {11.9}Markovkedjor}{231}{}%
+\contentsline {subsection}{\numberline {11.9.1}Ehrenfestmodellen}{232}{}%
+\contentsline {subsection}{\numberline {11.9.2}Google-kedjan}{233}{}%
+\contentsline {subsection}{\numberline {11.9.3}Hashfunktioner}{233}{}%
+\contentsline {subsection}{\numberline {11.9.4}Kollisionmodoll}{233}{}%
+\contentsline {subsection}{\numberline {11.9.5}Markov Buffer/Markovkö}{234}{}%
