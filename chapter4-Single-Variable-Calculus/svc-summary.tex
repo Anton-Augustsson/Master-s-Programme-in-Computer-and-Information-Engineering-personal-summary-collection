@@ -7,8 +7,8 @@
 \begin{align*}
   &\quad \text{Naturliga tal: } \mathbb{N} = \{0, 1, 2 , 3 ..  \} \text{ or } \{1, 2 , 3 ..  \} \\
   &\quad \text{Heltal: }\mathbb{Z} = \{.. -2, 1, 0, 1, 2 ..  \} \\
-  &\quad \text{Rationella tal: }\mathbb{Q} = \{ \frac{a}{b} | a,b \in \mathbb{Z}, b \\
-  &\quad \text{Irrationella tal: }\mathbb{P} = \frac{\mathbb{R}}{\mathbb{Q}}eller \{ x | x \in \mathbb{R}, x \notin \mathbb{Q} \} \\
+  &\quad \text{Rationella tal: }\mathbb{Q} = \left\{ \frac{a}{b} \Big| \; a,b \in \mathbb{Z} \right\} \\
+  &\quad \text{Irrationella tal: }\mathbb{P} = \frac{\mathbb{R}}{\mathbb{Q}}eller \left\{ x | x \in \mathbb{R}, x \notin \mathbb{Q} \right\} \\
   &\quad \text{Reella tal: }\mathbb{R} =  \mathbb{P} \cup \mathbb{Q} \\
 \end{align*}
 
@@ -174,8 +174,8 @@ Värde tabell:
 \textbf{Sats:}\par
 \begin{align*}
   &\quad 360^\circ = 2\pi rad \\
-  &\quad v_{g} = v_{r} * \frac{180^\circ}{\pi} \\
-  &\quad v_{r} = v_{g} * \frac{\pi}{180^\circ} \\
+  &\quad v_{g} = v_{r} \cdot \frac{180^\circ}{\pi} \\
+  &\quad v_{r} = v_{g} \cdot \frac{\pi}{180^\circ} \\
 \end{align*}
 
 \textbf{Sats:}\par
@@ -233,8 +233,8 @@ Värde tabell:
 
 \textbf{Example: 0/0}
 \begin{align*}
-  &\quad  \text{Lös: } \lim_{x\to 0} \frac{x \cdot \cos(x) + \frac{\sin(x)}{x}}{x+x^2}  \\
-  &\quad  \lim_{x\to 0} \frac{x \cdot \cos(x) + \frac{\sin(x)}{x}}{x(1+x)} = \frac{1+1}{1} = 2  \\
+  &\quad  \text{Lös: } \lim_{x\to 0} \frac{x \cdot \left( \cos(x) + \frac{\sin(x)}{x} \right) }{x+x^2} \\
+  &\quad  \lim_{x\to 0} \frac{ x \cdot \left( \cos(x) + \frac{ \sin(x) }{ x } \right) }{x(1+x)} = \frac{1+1}{1} = 2  \\
 \end{align*}
 
 \textbf{Example: roten ur i nämnaren}
@@ -264,13 +264,11 @@ Värde tabell:
 
 \subsection{Kontinuitet}
 \begin{align*}
-  &\quad  \text{en funktion är kontnuelig i punkt } x_0, \; \forall \varepsilon \land \exists \delta: |x-x_0| < \delta \Leftrightarrow |f(x)-f(c_0)|<\varepsilon \\
+  &\quad  \text{En funktion är kontnuelig i punkt } x_0, \; \forall \varepsilon \land \exists \delta: |x-x_0| < \delta \Leftrightarrow |f(x)-f(c_0)|<\varepsilon. \\
   &\quad  \text{Altså så finns det inga hopp i funktionen. Man kan dra penan på grafen utan att släppa} \\
   &\quad  \text{om functionen bestor av flera utryck är funktionen kontenuerlig om alla utrycken är det } \\
 \end{align*}
 
-
-\newpage
 
 \section{Derivator}
 \begin{align*}
@@ -292,7 +290,7 @@ Värde tabell:
  $e^{kx}$  & $ke^{x}$       \\
  $\sin{x}$ & $\cos{x}$     \\
  $\cos{x}$ & $-\sin{x}$    \\
- $\tan{x}$ & $1+\tan^2{x}\frac{1}{\cos^2{x}}$    \\
+ $\tan{x}$ & $\frac{1}{\cos^2{x}}$    \\
  $\ln{x}$  & $\frac{1}{x}$ \\
  \hline
 \end{tabular}
@@ -302,7 +300,7 @@ Värde tabell:
   &\quad  (f+g)' = f' + g' \\
   &\quad  (cf)'  = cf' \\
   &\quad  (fg)'  = f'g + fg' \text{ Produktregeln} \\
-  &\quad  (\frac{f}{g})' = \frac{f'g - fg'}{g^2} \text{ Kvotregeln, } g \neq 0 \\
+  &\quad  \left( \frac{f}{g} \right)' = \frac{f'g - fg'}{g^2} \text{ Kvotregeln, } g \neq 0 \\
 \end{align*}
 
 % derivatans Definetion
@@ -311,30 +309,30 @@ Värde tabell:
 
 \subsection{Kjedje regeln}
 \begin{align*}
-  &\quad  \text{om functionen g är deriverbar i x och functionen är deriverbar i } g(x) \\
-  &\quad  \Rightarrow h(x)=f \circ g = f(g(x)) \text{deriverbar i } x \\
+  &\quad  \text{Om functionen $f$ är deriverbar i $x$ och funktionen är deriverbar i } g(x) \\
+  &\quad  \Rightarrow h(x)=f \circ g = f(g(x)) \text{ deriverbar i } x \\
   &\quad  h'(x)=(f(g(x)))'=f'(g(x))g'(x) \\ 
 \end{align*}
 
 \textbf{Example: Kjedje regeln}
 \begin{align*}
   &\quad  \text{Lös: } (x^x)'  \\
-  &\quad  (x^x)'=(e^{x\ln{x}})'=e^(x\ln{x})(\ln{x}+x\frac{1}{x})=e^{x\ln{x}}(1+\ln{x})=x^x(1+\ln{x}) \\
+  &\quad  (x^x)'=\left( e^{x\ln{x}} \right)'=e^{x\ln{x}} \left( \ln{x}+x\frac{1}{x} \right) = e^{x\ln{x}}(1+\ln{x})=x^x(1+\ln{x}) \\
 \end{align*}
 
 \newpage
 
 \subsection{L'Hôpital's rule} 
 \begin{align*}
-  &\quad  f,g:\mathbb{R}\to\mathbb{R} \land (\lim_{x \to x_0}\frac{f}{g}
-  =\frac{0}{0}\lor ``\lim_{x\to x_0}\frac{f}{g}=\frac{\pm \infty}{\pm \infty}'')
+  &\quad  f,g:\mathbb{R}\to\mathbb{R} \land \left( \lim_{x \to x_0}\frac{f}{g}
+  =\frac{0}{0}\lor ''{\lim_{x\to x_0}\frac{f}{g}=\frac{\pm \infty}{\pm \infty}}'' \right)
   \Rightarrow \lim_{x \to x_0}\frac{f}{g}=\lim_{x \to x_0}\frac{f'}{g'} \\ 
 \end{align*}
 
 \textbf{Example: L'Hôpital's rule}
 \begin{align*}
   &\quad  \text{Lös: } \lim_{x \to 1}\frac{x^4-6x^3+5x^2}{x^3-8x^2+7x}\\
-  &\quad  \lim_{x \to 1}\frac{x^4-6x^3+5x^2}{x^3-8x^2+7x} = `` \; \frac{0}{0} \; `` \\
+  &\quad  \lim_{x \to 1}\frac{x^4-6x^3+5x^2}{x^3-8x^2+7x} = '' \; \frac{0}{0} \; '' \\
   &\quad  \text{L'Hôpital's rule} \Rightarrow \lim_{x \to 1}\frac{4x^3-18x^2+10x}{3x^2-16x+7} \\
   &\quad  = \frac{-4}{-6} = \frac{2}{3} \\
 \end{align*}
@@ -350,7 +348,7 @@ Värde tabell:
 \textbf{Example: Medelvärdessatsen}
 \begin{align*}
   &\quad  \text{Bevisa att för varge $a>b$ gäller följande} |\cos{a}-\cos{b}| \leq |a-b| \\
-  &\quad  f(x)=\cos{x} \text{är kont och deriverbar i } \mathbb{R} \land [ \, a,b ] \, \\
+  &\quad  f(x)=\cos{x} \text{ är kont och deriverbar i } \mathbb{R} \land [ \, a,b ] \, \\
   &\quad  \text{MVS }\Rightarrow \exists c \in (a,b):f'(c)=\frac{f(b)-(a)}{b-a}=
   \frac{\cos(b)-\cos(a)}{b-a}=-\sin(c) \\
   &\quad  \Rightarrow |\frac{\cos(b)-\cos(a)}{b-a}|=|-\sin(c)| \Rightarrow
@@ -372,7 +370,7 @@ Värde tabell:
 \subsection{växande funktioner}
 \begin{align*}
   &\quad  \text{växande: }          x_1<x_2 \Rightarrow f(x_1) \leq f(x_2) \\
-  &\quad  \text{stänkt växande: }   x_1<x_2 \Rightarrow f(x_1) < f(x_2)    \\
+  &\quad  \text{strängt växande: }   x_1<x_2 \Rightarrow f(x_1) < f(x_2)    \\
   &\quad  \text{avtagande: }        x_1<x_2 \Rightarrow f(x_1) \geq f(x_2) \\
   &\quad  \text{stänkt avtagande: } x_1<x_2 \Rightarrow f(x_1) > f(x_2)    \\
 \end{align*}
@@ -421,13 +419,13 @@ Värde tabell:
   &\quad {\frac{a}{b}}^{-3} = {\frac{b}{a}}^{3} \\
   &\quad \sqrt{a} = a^{\frac{1}{2}} \\
   &\quad a^{x+y}=a^{x}a^{y} \\
-  &\quad {(a^{x})}^y=a^{x}a^{y} \\
+  &\quad {(a^{x})}^y=a^{xy} \\
   &\quad a^{-x}=\frac{1}{a^x} \\
   &\quad a^{\frac{m}{n}}={\sqrt{a^{m}}}^{n} \\
   &\quad  \\
   &\quad \text{(1): } b = a^x \Leftrightarrow \log_a(b) = x  \text{ för: } a>0, b>0, a \ne 1  \\
   &\quad \text{(2): } \log_a(\frac{b}{c}) = \log_a(b) - \log_a(c) \\
-  &\quad \text{(3): } \log_a(b*c) = \log_a(b) + \log_a(c) \\
+  &\quad \text{(3): } \log_a(b \cdot c) = \log_a(b) + \log_a(c) \\
   &\quad \text{(4): } \log_a(b^d) = d\log_a(b) \\
   &\quad \text{(5): } \log_a(b) = \frac{\log_f(b)}{\log_f(a)} \\
   &\quad \text{(6): } \log_a(a) = 1 \\
@@ -516,7 +514,7 @@ Ta reda på extrem punkterna och rita utifrån det
   &\quad  \text{(1) Kollar om functionen är Konternuelig:} \\
   &\quad  \text{Eftersom funkrionen består av polynom är den konternuerlig}   \\
   &\quad  \text{(2) Extrem punkter: }   \\
-  &\quad  \text{ (I) Derivatan: functionen är deriverbar} y'=3{(x^2-1)}^2 \cdot 2x=0 \\
+  &\quad  \text{ (I) Derivatan: functionen är deriverbar } y'=3{(x^2-1)}^2 \cdot 2x=0 \\
   &\quad  \Rightarrow x=0  \\
   &\quad  \text{ (II) Singulär punkter:} \\
   &\quad  \text{eftersom funktionen är deriverbar i alla punkter i definitions mängden } \\
@@ -553,8 +551,8 @@ Ta reda på extrem punkterna och rita utifrån det
 
 \section{Optemering}
 \begin{align*}
-  &\quad  \text{Sats: om funktionen $f(x)$ är knternuerlig på det slutna intervalet} [a,b] \\
-  &\quad  \text{så antar det sitt största värde och minsta värde där} \exists x_1,x_2\in[a,b] \\
+  &\quad  \text{Sats: om funktionen $f(x)$ är knternuerlig på det slutna intervalet } [a,b] \\
+  &\quad  \text{så antar det sitt största värde och minsta värde där } \exists x_1,x_2\in[a,b] \\
   &\quad  \text{så att} f(x_1) \leq f(x) \leq f(x_2)  \\
 \end{align*}
 
@@ -601,7 +599,7 @@ Ta reda på extrem punkterna och rita utifrån det
 \textbf{Exempel: Derivatan av serier}
 \begin{align*}
   &\quad  \text{Ange } f'(2), \; f(x)= \displaystyle\sum_{n=1}^{\infty} \frac{{(x-2)}^n}{n^2 2^{2n}} \\
-  &\quad  \text{Anger den första termen } (\frac{x-2}{4})' = \frac{1}{4} \\
+  &\quad  \text{Anger den första termen } \left( \frac{x-2}{4} \right)' = \frac{1}{4} \\
   &\quad  f'(x) = \frac{1}{4} + \displaystyle\sum_{n=2}^{\infty} \frac{n{(x-2)}^{n-1}}{n^2 2^{2n}}
   \text{ Inre och yttre derivatan} \\
   &\quad  f'(2) =  \frac{1}{4} + \displaystyle\sum_{n=2}^{\infty} \frac{n{(2-2)}^{n-1}}{n^2 2^{2n}}
@@ -627,8 +625,8 @@ Ta reda på extrem punkterna och rita utifrån det
   &\quad  s _ { n } = a + a k + a k ^ { 2 } + \ldots + a k ^ { n - 1 } = \frac { a \left( k ^ { n } - 1 \right) }
   { k - 1 } \\
   &\quad  \displaystyle\sum_{n=0}^{\infty}r^n \Rightarrow \\
-  &\quad  \text{ Konvergent om} |r|<1  \\
-  &\quad  \text{ divergent om} |r|<1  \\
+  &\quad  \text{ Konvergent om } |r|<1  \\
+  &\quad  \text{ divergent om } |r|<1  \\
 \end{align*}
 
 \textbf{Sats: }
@@ -854,7 +852,7 @@ Ta reda på extrem punkterna och rita utifrån det
 
 \textbf{Regler no.7}
 \begin{align*}
-  &\quad  |\int_a^b f(x)dx| \leq \int_a^b |f(x)|dx \\
+  &\quad  \left| \int_a^b f(x)dx \right| \leq \int_a^b |f(x)|dx \\
 \end{align*}
 
 \textbf{Regler no.8}
@@ -971,7 +969,7 @@ Satsen är den vi andvänder för att lösa integraler utan geometrisk tolkning
   &\quad  \\
   &\quad  \text{Exempel: } \int \frac{dx}{2+\sqrt{x}} \\
   &\quad  \text{Låt: } u^2=x \Rightarrow 2udu=dx \\
-  &\quad  \Rightarrow \int\frac{2udu}{2+u} = 2\int\frac{u+2-2}{2+u}du = 2(\int du -2\int\frac{du}{2+u})
+  &\quad  \Rightarrow \int\frac{2udu}{2+u} = 2\int\frac{u+2-2}{2+u}du = 2\left( \int du -2\int\frac{du}{2+u} \right)
   = 2u -4(\ln{2+u}) +c \\
 \end{align*}
 
@@ -1241,8 +1239,8 @@ Om det är integraler med två funktioner så hjälper oftast partiell integrati
   &\quad  y'' - 4t^2t' + e^t y = 0 \text{ är linjär} \\
   &\quad  t^2 y''' + 5ty' - 4y^2 = 5 \text{ är inte linjär} \\
   &\quad  \\
-  &\quad  \text{Homogen: } om h(t)=0 \Rightarrow \text{ ODE är homogen} \\
-  &\quad  \text{Inhomogen: } om h(t)\neq0 \Rightarrow \text{ ODE är inhomogen} \\
+  &\quad  \text{Homogen: om } h(t)=0 \Rightarrow \text{ ODE är homogen} \\
+  &\quad  \text{Inhomogen: om } h(t)\neq0 \Rightarrow \text{ ODE är inhomogen} \\
   &\quad  y''' - \sin^2(t)y' = 5y \text{ är homogen} \\
   &\quad  e^{t^2} y^{(5)} - y'' + 4ty(t) = e^t + t^3 \text{ är inhomogen} \\
 \end{align*}
@@ -1276,7 +1274,7 @@ Om det är integraler med två funktioner så hjälper oftast partiell integrati
 
 \textbf{Exempel: beräkning}  
 \begin{align*}
-  &\quad  \text{Lös} y'(x)=(1+e^{-x})(y^2-1) \\
+  &\quad  \text{Lös } y'(x)=(1+e^{-x})(y^2-1) \\
   &\quad  \\
   &\quad  y=\pm1 \\
   &\quad  \frac{dy}{y^2-1}=(1+e^-1)dx  \Rightarrow \int \frac{dy}{y^2-1}= \int (1+e^{-1})dx (*)\\
@@ -1298,8 +1296,8 @@ Om det är integraler med två funktioner så hjälper oftast partiell integrati
 \textbf{Methodology}  
 \begin{align*}
   &\quad  y'+p(x)y = q(x)  \\
-  &\quad  \text{Om} g(x)=0 \Rightarrow \text{ homogen och därmed seperable} \\
-  &\quad  \text{Om} g(x)\equiv0 \text{ Multiplisera med } e^{M(x)} \text{ För att kuna andvända produktregeln
+  &\quad  \text{Om } g(x)=0 \Rightarrow \text{ homogen och därmed seperable} \\
+  &\quad  \text{Om } g(x)\equiv0 \text{ Multiplisera med } e^{M(x)} \text{ För att kuna andvända produktregeln
   så vi kan slå ihop } y, y' \\
   &\quad  M(x)= \int p(x)dx \text{ är en primitiv dunktion till } p(x) \Rightarrow c=0 \\
   &\quad  \\
@@ -1315,7 +1313,7 @@ Om det är integraler med två funktioner så hjälper oftast partiell integrati
 
 \textbf{Exempel} 
 \begin{align*}
-  &\quad  \text{Lös} (1+t^2)y' + ty = \frac{1}{\sqrt{1+t^2}} \\
+  &\quad  \text{Lös } (1+t^2)y' + ty = \frac{1}{\sqrt{1+t^2}} \\
   &\quad  \\
   &\quad  y'+\frac{t}{(1+t^2)y} = \frac{1}{(1+t^2)\sqrt{1+t^2}} \text{ Linjär ode, ordning 1} \\
   &\quad  p(t)=\frac{t}{(1+t^2)y}, \; q(t)=\frac{1}{(1+t^2)\sqrt{1+t^2}} \\

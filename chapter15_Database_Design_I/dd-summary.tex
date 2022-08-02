@@ -1,17 +1,4 @@
-\documentclass{article}
-\usepackage{preamble}
-
-\title{Database Design I Samanfattning}
-\author{Anton Augustsson}
-\date{Octrober 2021}
-
-
-\begin{document}
-
-\maketitle
-\newpage
-\tableofcontents
-\newpage
+\chapter{Database Design I Samanfattning}
 
 \textbf{Resorcess}
 \begin{itemize}
@@ -36,7 +23,7 @@
 
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=12cm]{images/database-system.pdf}
+    \includegraphics[width=12cm]{image/database-system.pdf}
     \caption{Database system}
 \end{figure}
 
@@ -44,7 +31,7 @@
 \section{Ch3. Data Modeling Using the Entity-Relationship (ER) Model}
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=10cm]{images/notation-er-diagrams.pdf}
+    \includegraphics[width=10cm]{image/notation-er-diagrams.pdf}
     \caption{NOTATION ER Diagram}
 \end{figure}
 
@@ -88,7 +75,7 @@
 
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=8cm]{images/crow_foot.png}
+    \includegraphics[width=8cm]{image/crow_foot.png}
     \caption{Crow foot notation}
 \end{figure}
 
@@ -112,7 +99,7 @@ EER includes all modeling consents of basic ER, but also have additional concept
 
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=8cm]{images/constraints_specialization-generalization.png}
+    \includegraphics[width=8cm]{image/constraints_specialization-generalization.png}
     \caption{Overlapping, can be a member of multiple subclasses. Disjoint, can only be a member of at most one of the subclasses (Disjointness Constraint),  Total, it must be a member of at least one (Completeness constraint). Partial, don't need to belong to any of the subclasses}
 \end{figure}
 
@@ -410,7 +397,7 @@ constructs
 \end{verbatim}
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=12cm]{images/sql_joins.png}
+    \includegraphics[width=12cm]{image/sql_joins.png}
     \caption{SQL JOIN statements}
     \label{fig:sql_joins}
 \end{figure}
@@ -530,16 +517,14 @@ simultaneously in the diagnostic area
 \begin{appendices}
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=12cm]{images/temporary_update_problem.png}
+    \includegraphics[width=12cm]{image/temporary_update_problem.png}
     \caption{Temporary update problem}
     \label{fig:temporary_update_problem}
 \end{figure}
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=12cm]{images/incorrect_summary_problem.png}
+    \includegraphics[width=12cm]{image/incorrect_summary_problem.png}
     \caption{Incorrect summary problem}
     \label{fig:incorrect_summary_problem}
 \end{figure}
 \end{appendices}
-
-\end{document}

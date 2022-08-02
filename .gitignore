@@ -7,3 +7,5 @@
 # ignore generated aux files from latex
 *.toc
 
+# Emacs spesific
+*.~undo-tree~
