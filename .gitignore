@@ -1,11 +1,9 @@
-# ignore generated aux files from latex
+# latex generated
 *.aux
-
-# ignore generated log files from latex
 *.log
-
-# ignore generated aux files from latex
 *.toc
+*.bbl
+*.blg
 
 # Emacs spesific
 *.~undo-tree~

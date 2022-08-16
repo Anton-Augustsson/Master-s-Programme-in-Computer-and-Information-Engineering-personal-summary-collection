@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.7.27)  3 AUG 2022 16:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.7.27)  16 AUG 2022 13:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1067,7 +1067,21 @@ File: tikzlibraryfadings.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code
 .tex
 File: pgflibraryfadings.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-)))) (./main.aux)
+)))) (./main.aux
+
+! Package natbib Error: Bibliography not compatible with author-year citations.
+
+(natbib)                Press <return> to continue in numerical citation style.
+
+
+See the natbib package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1049 ...nd\NAT@force@numbers{}\NAT@force@numbers
+                                                  
+? 
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -1088,8 +1102,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count355
 \scratchdimen=\dimen339
@@ -1378,7 +1391,7 @@ Overfull \hbox (17.21736pt too wide) detected at line 809
  []
 
 
-Underfull \vbox (badness 6204) has occurred while \output is active []
+Underfull \vbox (badness 5563) has occurred while \output is active []
 
  [82]
 [83] [84] [85] [86] [87] [88]
@@ -1415,24 +1428,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
  []
 
 [102]
-<image/mips-tabel.png, id=3640, 1181.41376pt x 908.39375pt>
+<image/mips-tabel.png, id=3643, 1181.41376pt x 908.39375pt>
 File: image/mips-tabel.png Graphic file (type png)
 <use image/mips-tabel.png>
 Package pdftex.def Info: image/mips-tabel.png  used on input line 30.
 (pdftex.def)             Requested size: 455.23328pt x 369.87958pt.
  [103 <./image/mips-tabel.png>]
-<image/sequencing.png, id=3647, 1283.79625pt x 676.5275pt>
+<image/sequencing.png, id=3650, 1283.79625pt x 676.5275pt>
 File: image/sequencing.png Graphic file (type png)
 <use image/sequencing.png>
 Package pdftex.def Info: image/sequencing.png  used on input line 44.
 (pdftex.def)             Requested size: 455.23175pt x 284.53188pt.
  [104 <./image/sequencing.png>]
-<image/assambly-exampel.png, id=3653, 721.69624pt x 285.065pt>
+<image/assambly-exampel.png, id=3656, 721.69624pt x 285.065pt>
 File: image/assambly-exampel.png Graphic file (type png)
 <use image/assambly-exampel.png>
 Package pdftex.def Info: image/assambly-exampel.png  used on input line 55.
 (pdftex.def)             Requested size: 284.52179pt x 142.26247pt.
-<image/mips-types.png, id=3654, 770.88pt x 184.69pt>
+<image/mips-types.png, id=3657, 770.88pt x 184.69pt>
 File: image/mips-types.png Graphic file (type png)
 <use image/mips-types.png>
 Package pdftex.def Info: image/mips-types.png  used on input line 72.
@@ -1443,12 +1456,12 @@ Overfull \hbox (13.93759pt too wide) in paragraph at lines 72--73
  []
 
 [105 <./image/assambly-exampel.png> <./image/mips-types.png>] [106]
-<image/code-ex.png, id=3665, 671.50874pt x 539.01375pt>
+<image/code-ex.png, id=3668, 671.50874pt x 539.01375pt>
 File: image/code-ex.png Graphic file (type png)
 <use image/code-ex.png>
 Package pdftex.def Info: image/code-ex.png  used on input line 103.
 (pdftex.def)             Requested size: 455.24689pt x 341.43922pt.
-<image/mips-register.png, id=3666, 1276.77pt x 668.4975pt>
+<image/mips-register.png, id=3669, 1276.77pt x 668.4975pt>
 File: image/mips-register.png Graphic file (type png)
 <use image/mips-register.png>
 Package pdftex.def Info: image/mips-register.png  used on input line 110.
@@ -1458,7 +1471,7 @@ Package pdftex.def Info: image/mips-register.png  used on input line 110.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [107 <./image/code-ex.png>]
-<image/other-isa.png, id=3673, 1142.2675pt x 429.605pt>
+<image/other-isa.png, id=3676, 1142.2675pt x 429.605pt>
 File: image/other-isa.png Graphic file (type png)
 <use image/other-isa.png>
 Package pdftex.def Info: image/other-isa.png  used on input line 121.
@@ -1468,25 +1481,25 @@ Package pdftex.def Info: image/other-isa.png  used on input line 121.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [108 <./image/mips-register.png>]
-<image/other-isa-instructions.png, id=3679, 942.52126pt x 431.6125pt>
+<image/other-isa-instructions.png, id=3682, 942.52126pt x 431.6125pt>
 File: image/other-isa-instructions.png Graphic file (type png)
 <use image/other-isa-instructions.png>
 Package pdftex.def Info: image/other-isa-instructions.png  used on input line 1
 30.
 (pdftex.def)             Requested size: 455.25264pt x 170.71228pt.
  [109 <./image/other-isa.png> <./image/other-isa-instructions.png>]
-<image/floating-point.png, id=3687, 977.6525pt x 292.09125pt>
+<image/floating-point.png, id=3690, 977.6525pt x 292.09125pt>
 File: image/floating-point.png Graphic file (type png)
 <use image/floating-point.png>
 Package pdftex.def Info: image/floating-point.png  used on input line 180.
 (pdftex.def)             Requested size: 455.24518pt x 142.26576pt.
  [110 <./image/floating-point.png>] [111]
-<image/logic-gates.jpeg, id=3697, 1204.5pt x 571.13374pt>
+<image/logic-gates.jpeg, id=3700, 1204.5pt x 571.13374pt>
 File: image/logic-gates.jpeg Graphic file (type jpg)
 <use image/logic-gates.jpeg>
 Package pdftex.def Info: image/logic-gates.jpeg  used on input line 203.
 (pdftex.def)             Requested size: 455.25195pt x 227.62154pt.
-<image/important-logic-blocks.png, id=3698, 1853.92625pt x 968.61874pt>
+<image/important-logic-blocks.png, id=3701, 1853.92625pt x 968.61874pt>
 File: image/important-logic-blocks.png Graphic file (type png)
 <use image/important-logic-blocks.png>
 Package pdftex.def Info: image/important-logic-blocks.png  used on input line 2
@@ -1497,7 +1510,7 @@ Package pdftex.def Info: image/important-logic-blocks.png  used on input line 2
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [112 <./image/logic-gates.jpeg>]
-<image/latche.png, id=3704, 1631.09375pt x 962.59625pt>
+<image/latche.png, id=3707, 1631.09375pt x 962.59625pt>
 File: image/latche.png Graphic file (type png)
 <use image/latche.png>
 Package pdftex.def Info: image/latche.png  used on input line 257.
@@ -1507,7 +1520,7 @@ Package pdftex.def Info: image/latche.png  used on input line 257.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [113 <./image/important-logic-blocks.png>]
-<image/mips-datapath-3parts.png, id=3710, 825.0825pt x 945.5325pt>
+<image/mips-datapath-3parts.png, id=3713, 825.0825pt x 945.5325pt>
 File: image/mips-datapath-3parts.png Graphic file (type png)
 <use image/mips-datapath-3parts.png>
 Package pdftex.def Info: image/mips-datapath-3parts.png  used on input line 279
@@ -1518,7 +1531,7 @@ Package pdftex.def Info: image/mips-datapath-3parts.png  used on input line 279
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [114 <./image/latche.png>]
-<image/mips-datapath.png, id=3716, 1222.5675pt x 951.555pt>
+<image/mips-datapath.png, id=3719, 1222.5675pt x 951.555pt>
 File: image/mips-datapath.png Graphic file (type png)
 <use image/mips-datapath.png>
 Package pdftex.def Info: image/mips-datapath.png  used on input line 290.
@@ -1528,26 +1541,26 @@ Package pdftex.def Info: image/mips-datapath.png  used on input line 290.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [115 <./image/mips-datapath-3parts.png>] [116 <./image/mips-datapath.png>]
-<image/pipline.png, id=3728, 1707.37875pt x 934.49126pt>
+<image/pipline.png, id=3731, 1707.37875pt x 934.49126pt>
 File: image/pipline.png Graphic file (type png)
 <use image/pipline.png>
 Package pdftex.def Info: image/pipline.png  used on input line 334.
 (pdftex.def)             Requested size: 455.24083pt x 227.61913pt.
 
 [117 <./image/pipline.png>] [118]
-<image/dubble-pump.png, id=3738, 1632.0975pt x 848.16875pt>
+<image/dubble-pump.png, id=3741, 1632.0975pt x 848.16875pt>
 File: image/dubble-pump.png Graphic file (type png)
 <use image/dubble-pump.png>
 Package pdftex.def Info: image/dubble-pump.png  used on input line 381.
 (pdftex.def)             Requested size: 455.24092pt x 227.62383pt.
  [119 <./image/dubble-pump.png>] [120]
 [121]
-<image/branch-predictor.png, id=3754, 1761.58125pt x 561.09625pt>
+<image/branch-predictor.png, id=3757, 1761.58125pt x 561.09625pt>
 File: image/branch-predictor.png Graphic file (type png)
 <use image/branch-predictor.png>
 Package pdftex.def Info: image/branch-predictor.png  used on input line 447.
 (pdftex.def)             Requested size: 455.23174pt x 142.26001pt.
-<image/2-bit-predict.png, id=3755, 1729.46124pt x 961.5925pt>
+<image/2-bit-predict.png, id=3758, 1729.46124pt x 961.5925pt>
 File: image/2-bit-predict.png Graphic file (type png)
 <use image/2-bit-predict.png>
 Package pdftex.def Info: image/2-bit-predict.png  used on input line 455.
@@ -1557,7 +1570,7 @@ Package pdftex.def Info: image/2-bit-predict.png  used on input line 455.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [122 <./image/branch-predictor.png>]
-<image/btb.png, id=3761, 1818.795pt x 545.03625pt>
+<image/btb.png, id=3764, 1818.795pt x 545.03625pt>
 File: image/btb.png Graphic file (type png)
 <use image/btb.png>
 Package pdftex.def Info: image/btb.png  used on input line 470.
@@ -1567,7 +1580,7 @@ Package pdftex.def Info: image/btb.png  used on input line 470.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [123 <./image/2-bit-predict.png>]
-<image/exceptions.png, id=3767, 1809.76125pt x 879.285pt>
+<image/exceptions.png, id=3770, 1809.76125pt x 879.285pt>
 File: image/exceptions.png Graphic file (type png)
 <use image/exceptions.png>
 Package pdftex.def Info: image/exceptions.png  used on input line 491.
@@ -1586,13 +1599,13 @@ Package Listings Warning: Text dropped after begin of listing on input line 552
 .
 
 [126]
-<image/memory-hierarchy.png, id=3800, 1832.8475pt x 694.595pt>
+<image/memory-hierarchy.png, id=3803, 1832.8475pt x 694.595pt>
 File: image/memory-hierarchy.png Graphic file (type png)
 <use image/memory-hierarchy.png>
 Package pdftex.def Info: image/memory-hierarchy.png  used on input line 574.
 (pdftex.def)             Requested size: 455.24626pt x 199.16988pt.
  [127 <./image/memory-hierarchy.png>]
-<image/cache-format.png, id=3807, 1652.1725pt x 779.91376pt>
+<image/cache-format.png, id=3810, 1652.1725pt x 779.91376pt>
 File: image/cache-format.png Graphic file (type png)
 <use image/cache-format.png>
 Package pdftex.def Info: image/cache-format.png  used on input line 646.
@@ -1610,30 +1623,30 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 656.
 
 [128] [129 <./image/cache-format.png>]
-<image/tlb.png, id=3820, 1703.36375pt x 804.00375pt>
+<image/tlb.png, id=3823, 1703.36375pt x 804.00375pt>
 File: image/tlb.png Graphic file (type png)
 <use image/tlb.png>
 Package pdftex.def Info: image/tlb.png  used on input line 710.
 (pdftex.def)             Requested size: 455.23595pt x 199.16023pt.
  [130 <./image/tlb.png>]
-<image/conversion.png, id=3826, 1737.49126pt x 791.95876pt>
+<image/conversion.png, id=3829, 1737.49126pt x 791.95876pt>
 File: image/conversion.png Graphic file (type png)
 <use image/conversion.png>
 Package pdftex.def Info: image/conversion.png  used on input line 720.
 (pdftex.def)             Requested size: 455.23665pt x 199.16138pt.
  [131 <./image/conversion.png>] [132]
-<image/locks.png, id=3836, 1900.09875pt x 704.6325pt>
+<image/locks.png, id=3839, 1900.09875pt x 704.6325pt>
 File: image/locks.png Graphic file (type png)
 <use image/locks.png>
 Package pdftex.def Info: image/locks.png  used on input line 799.
 (pdftex.def)             Requested size: 455.2212pt x 199.16656pt.
-<image/snooping.png, id=3837, 1880.02374pt x 448.67625pt>
+<image/snooping.png, id=3840, 1880.02374pt x 448.67625pt>
 File: image/snooping.png Graphic file (type png)
 <use image/snooping.png>
 Package pdftex.def Info: image/snooping.png  used on input line 816.
 (pdftex.def)             Requested size: 455.23108pt x 142.25801pt.
  [133 <./image/locks.png> <./image/snooping.png>]
-<image/dual-issue-pipline.png, id=3845, 1866.975pt x 925.4575pt>
+<image/dual-issue-pipline.png, id=3848, 1866.975pt x 925.4575pt>
 File: image/dual-issue-pipline.png Graphic file (type png)
 <use image/dual-issue-pipline.png>
 Package pdftex.def Info: image/dual-issue-pipline.png  used on input line 835.
@@ -1687,7 +1700,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [143]
 [144] [145] [146]
-<image/Ortogonal-projektion.png, id=3930, 1038.88126pt x 1001.7425pt>
+<image/Ortogonal-projektion.png, id=3933, 1038.88126pt x 1001.7425pt>
 File: image/Ortogonal-projektion.png Graphic file (type png)
 <use image/Ortogonal-projektion.png>
 Package pdftex.def Info: image/Ortogonal-projektion.png  used on input line 399
@@ -1701,19 +1714,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [148]
 [149] [150] [151]
-<image/vektorprodukt.png, id=3954, 1860.9525pt x 823.075pt>
+<image/vektorprodukt.png, id=3957, 1860.9525pt x 823.075pt>
 File: image/vektorprodukt.png Graphic file (type png)
 <use image/vektorprodukt.png>
 Package pdftex.def Info: image/vektorprodukt.png  used on input line 615.
 (pdftex.def)             Requested size: 341.43124pt x 142.25688pt.
  [152 <./image/vektorprodukt.png>]
-<image/2.5.8.b.jpg, id=3961, 4047.12pt x 3035.34pt>
+<image/2.5.8.b.jpg, id=3964, 4047.12pt x 3035.34pt>
 File: image/2.5.8.b.jpg Graphic file (type jpg)
 <use image/2.5.8.b.jpg>
 Package pdftex.def Info: image/2.5.8.b.jpg  used on input line 673.
 (pdftex.def)             Requested size: 284.50067pt x 170.6726pt.
  [153 <./image/2.5.8.b.jpg>]
-<image/parallelogram.png, id=3967, 1837.86626pt x 920.43875pt>
+<image/parallelogram.png, id=3971, 1837.86626pt x 920.43875pt>
 File: image/parallelogram.png Graphic file (type png)
 <use image/parallelogram.png>
 Package pdftex.def Info: image/parallelogram.png  used on input line 690.
@@ -1723,7 +1736,7 @@ Underfull \vbox (badness 4072) has occurred while \output is active []
 
  [155]
 [156]
-<image/ortogonal_projektion_på_plan.png, id=3983, 1876.00874pt x 944.52875pt>
+<image/ortogonal_projektion_på_plan.png, id=3986, 1876.00874pt x 944.52875pt>
 File: image/ortogonal_projektion_på_plan.png Graphic file (type png)
 <use image/ortogonal_projektion_på_plan.png>
 Package pdftex.def Info: image/ortogonal_projektion_på_plan.png  used on input
@@ -1733,7 +1746,7 @@ Package pdftex.def Info: image/ortogonal_projektion_på_plan.png  used on input
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [157 <./image/ortogonal_projektion_på_plan.png>] [158]
-<image/matris-multiplikation.png, id=3995, 1358.07375pt x 969.6225pt>
+<image/matris-multiplikation.png, id=3998, 1358.07375pt x 969.6225pt>
 File: image/matris-multiplikation.png Graphic file (type png)
 <use image/matris-multiplikation.png>
 Package pdftex.def Info: image/matris-multiplikation.png  used on input line 92
@@ -1810,7 +1823,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 241.
 
 [176] [177] [178] [179] [180]
-<image/matris_lin_avb.png, id=4091, 1845.89626pt x 960.58875pt>
+<image/matris_lin_avb.png, id=4094, 1845.89626pt x 960.58875pt>
 File: image/matris_lin_avb.png Graphic file (type png)
 <use image/matris_lin_avb.png>
 Package pdftex.def Info: image/matris_lin_avb.png  used on input line 475.
@@ -1836,18 +1849,18 @@ Chapter 9.
 [195
 
 ]
-<image/memory-allocation.png, id=4157, 269.005pt x 538.01pt>
+<image/memory-allocation.png, id=4160, 269.005pt x 538.01pt>
 File: image/memory-allocation.png Graphic file (type png)
 <use image/memory-allocation.png>
 Package pdftex.def Info: image/memory-allocation.png  used on input line 34.
 (pdftex.def)             Requested size: 142.26411pt x 284.52823pt.
  [196 <./image/memory-allocation.png>]
-<image/multiprogramming.png, id=4164, 855.195pt x 514.92375pt>
+<image/multiprogramming.png, id=4167, 855.195pt x 514.92375pt>
 File: image/multiprogramming.png Graphic file (type png)
 <use image/multiprogramming.png>
 Package pdftex.def Info: image/multiprogramming.png  used on input line 49.
 (pdftex.def)             Requested size: 398.34013pt x 284.52892pt.
-<image/layering.png, id=4165, 627.34375pt x 505.89pt>
+<image/layering.png, id=4168, 627.34375pt x 505.89pt>
 File: image/layering.png Graphic file (type png)
 <use image/layering.png>
 Package pdftex.def Info: image/layering.png  used on input line 58.
@@ -1857,7 +1870,7 @@ Package pdftex.def Info: image/layering.png  used on input line 58.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [197 <./image/multiprogramming.png>]
-<image/user-kernal-mode.png, id=4172, 913.4125pt x 752.8125pt>
+<image/user-kernal-mode.png, id=4175, 913.4125pt x 752.8125pt>
 File: image/user-kernal-mode.png Graphic file (type png)
 <use image/user-kernal-mode.png>
 Package pdftex.def Info: image/user-kernal-mode.png  used on input line 93.
@@ -1932,7 +1945,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 170--174
  []
 
 [200] [201]
-<image/ISM-band.png, id=4198, 776.9025pt x 618.31pt>
+<image/ISM-band.png, id=4201, 776.9025pt x 618.31pt>
 File: image/ISM-band.png Graphic file (type png)
 <use image/ISM-band.png>
 Package pdftex.def Info: image/ISM-band.png  used on input line 335.
@@ -1942,7 +1955,7 @@ Package pdftex.def Info: image/ISM-band.png  used on input line 335.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [202]
-<image/Multithreading-models.png, id=4203, 1044.90375pt x 613.29124pt>
+<image/Multithreading-models.png, id=4206, 1044.90375pt x 613.29124pt>
 File: image/Multithreading-models.png Graphic file (type png)
 <use image/Multithreading-models.png>
 Package pdftex.def Info: image/Multithreading-models.png  used on input line 36
@@ -1958,7 +1971,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 521--523
 
  []
 
-<image/publik-key-krypto.png, id=4225, 1021.8175pt x 712.6625pt>
+<image/publik-key-krypto.png, id=4228, 1021.8175pt x 712.6625pt>
 File: image/publik-key-krypto.png Graphic file (type png)
 <use image/publik-key-krypto.png>
 Package pdftex.def Info: image/publik-key-krypto.png  used on input line 554.
@@ -1966,7 +1979,7 @@ Package pdftex.def Info: image/publik-key-krypto.png  used on input line 554.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<image/chain-of-trust.png, id=4226, 1018.80624pt x 650.43pt>
+<image/chain-of-trust.png, id=4229, 1018.80624pt x 650.43pt>
 File: image/chain-of-trust.png Graphic file (type png)
 <use image/chain-of-trust.png>
 Package pdftex.def Info: image/chain-of-trust.png  used on input line 566.
@@ -1975,7 +1988,7 @@ Package pdftex.def Info: image/chain-of-trust.png  used on input line 566.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [207] [208 <./image/publik-key-krypto.png>]
-<image/firewall.png, id=4238, 1021.8175pt x 583.17876pt>
+<image/firewall.png, id=4241, 1021.8175pt x 583.17876pt>
 File: image/firewall.png Graphic file (type png)
 <use image/firewall.png>
 Package pdftex.def Info: image/firewall.png  used on input line 609.
@@ -1991,7 +2004,7 @@ Chapter 10.
 [211
 
 ]
-<image/mvc.png, id=4256, 1131.22626pt x 705.63625pt>
+<image/mvc.png, id=4259, 1131.22626pt x 705.63625pt>
 File: image/mvc.png Graphic file (type png)
 <use image/mvc.png>
 Package pdftex.def Info: image/mvc.png  used on input line 91.
@@ -2126,7 +2139,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--32
 
  []
 
-<image/volt.png, id=4394, 1096.095pt x 344.28625pt>
+<image/volt.png, id=4397, 1096.095pt x 344.28625pt>
 File: image/volt.png Graphic file (type png)
 <use image/volt.png>
 Package pdftex.def Info: image/volt.png  used on input line 44.
@@ -2136,7 +2149,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--54
 
  []
 
-<image/circuit-elements.png, id=4403, 598.235pt x 354.32375pt>
+<image/circuit-elements.png, id=4406, 598.235pt x 354.32375pt>
 File: image/circuit-elements.png Graphic file (type png)
 <use image/circuit-elements.png>
 Package pdftex.def Info: image/circuit-elements.png  used on input line 107.
@@ -2145,7 +2158,7 @@ Package pdftex.def Info: image/circuit-elements.png  used on input line 107.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [239]
-<image/voltage-distributes-between-resistors-in-series.png, id=4413, 906.38625p
+<image/voltage-distributes-between-resistors-in-series.png, id=4416, 906.38625p
 t x 412.54124pt>
 File: image/voltage-distributes-between-resistors-in-series.png Graphic file (t
 ype png)
@@ -2155,7 +2168,7 @@ png  used on input line 174.
 (pdftex.def)             Requested size: 199.16928pt x 90.65233pt.
  [240 <./image/circuit-elements.png> <./image/voltage-distributes-between-resis
 tors-in-series.png>] [241]
-<image/current-distributes-between-resistors-in-parallel.png, id=4429, 666.49pt
+<image/current-distributes-between-resistors-in-parallel.png, id=4432, 666.49pt
  x 276.03125pt>
 File: image/current-distributes-between-resistors-in-parallel.png Graphic file 
 (type png)
@@ -2164,13 +2177,13 @@ Package pdftex.def Info: image/current-distributes-between-resistors-in-paralle
 l.png  used on input line 198.
 (pdftex.def)             Requested size: 170.71652pt x 70.70082pt.
  [242 <./image/current-distributes-between-resistors-in-parallel.png>]
-<image/voltage-divider.png, id=4438, 605.26125pt x 580.1675pt>
+<image/voltage-divider.png, id=4441, 605.26125pt x 580.1675pt>
 File: image/voltage-divider.png Graphic file (type png)
 <use image/voltage-divider.png>
 Package pdftex.def Info: image/voltage-divider.png  used on input line 223.
 (pdftex.def)             Requested size: 227.61888pt x 170.71414pt.
  [243 <./image/voltage-divider.png>]
-<image/node-voltage-method.png, id=4450, 740.7675pt x 457.71pt>
+<image/node-voltage-method.png, id=4453, 740.7675pt x 457.71pt>
 File: image/node-voltage-method.png Graphic file (type png)
 <use image/node-voltage-method.png>
 Package pdftex.def Info: image/node-voltage-method.png  used on input line 250.
@@ -2185,20 +2198,20 @@ Overfull \hbox (8.16492pt too wide) detected at line 284
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [244 <./image/node-voltage-method.png>] [245]
-<image/mesh_current_method.png, id=4461, 675.52374pt x 315.1775pt>
+<image/mesh_current_method.png, id=4464, 675.52374pt x 315.1775pt>
 File: image/mesh_current_method.png Graphic file (type png)
 <use image/mesh_current_method.png>
 Package pdftex.def Info: image/mesh_current_method.png  used on input line 294.
 
 (pdftex.def)             Requested size: 341.44087pt x 170.71751pt.
  [246 <./image/mesh_current_method.png>]
-<image/ex_RC_natural_response.png, id=4473, 304.13625pt x 188.705pt>
+<image/ex_RC_natural_response.png, id=4476, 304.13625pt x 188.705pt>
 File: image/ex_RC_natural_response.png Graphic file (type png)
 <use image/ex_RC_natural_response.png>
 Package pdftex.def Info: image/ex_RC_natural_response.png  used on input line 3
 50.
 (pdftex.def)             Requested size: 142.26378pt x 88.27097pt.
-<image/plot_RC_natural_response.png, id=4474, 528.97626pt x 484.81125pt>
+<image/plot_RC_natural_response.png, id=4477, 528.97626pt x 484.81125pt>
 File: image/plot_RC_natural_response.png Graphic file (type png)
 <use image/plot_RC_natural_response.png>
 Package pdftex.def Info: image/plot_RC_natural_response.png  used on input line
@@ -2211,18 +2224,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 426--428
 
  []
 
-<image/inside-opamp.png, id=4500, 804.00375pt x 330.23375pt>
+<image/inside-opamp.png, id=4503, 804.00375pt x 330.23375pt>
 File: image/inside-opamp.png Graphic file (type png)
 <use image/inside-opamp.png>
 Package pdftex.def Info: image/inside-opamp.png  used on input line 438.
 (pdftex.def)             Requested size: 341.43332pt x 170.71977pt.
 [249 <./image/inside-opamp.png>]
-<image/op-amp-comparator.png, id=4507, 223.83624pt x 167.62625pt>
+<image/op-amp-comparator.png, id=4510, 223.83624pt x 167.62625pt>
 File: image/op-amp-comparator.png Graphic file (type png)
 <use image/op-amp-comparator.png>
 Package pdftex.def Info: image/op-amp-comparator.png  used on input line 454.
 (pdftex.def)             Requested size: 227.62685pt x 170.71559pt.
-<image/Operational_amplifier_noninverting.png, id=4508, 220.825pt x 217.81375pt
+<image/Operational_amplifier_noninverting.png, id=4511, 220.825pt x 217.81375pt
 >
 File: image/Operational_amplifier_noninverting.png Graphic file (type png)
 <use image/Operational_amplifier_noninverting.png>
@@ -2231,44 +2244,44 @@ input line 467.
 (pdftex.def)             Requested size: 170.72314pt x 170.71495pt.
  [250 <./image/op-amp-comparator.png> <./image/Operational_amplifier_noninverti
 ng.png>]
-<image/op-amp-voltage-follower.png, id=4519, 517.935pt x 199.74625pt>
+<image/op-amp-voltage-follower.png, id=4522, 517.935pt x 199.74625pt>
 File: image/op-amp-voltage-follower.png Graphic file (type png)
 <use image/op-amp-voltage-follower.png>
 Package pdftex.def Info: image/op-amp-voltage-follower.png  used on input line 
 476.
 (pdftex.def)             Requested size: 341.4509pt x 170.72385pt.
  [251 <./image/op-amp-voltage-follower.png>]
-<image/op-amp-inverting.png, id=4527, 705.63625pt x 348.30125pt>
+<image/op-amp-inverting.png, id=4530, 705.63625pt x 348.30125pt>
 File: image/op-amp-inverting.png Graphic file (type png)
 <use image/op-amp-inverting.png>
 Package pdftex.def Info: image/op-amp-inverting.png  used on input line 486.
 (pdftex.def)             Requested size: 227.61708pt x 170.71693pt.
-<image/op-amp-calc-inverting.png, id=4528, 634.37pt x 323.2075pt>
+<image/op-amp-calc-inverting.png, id=4531, 634.37pt x 323.2075pt>
 File: image/op-amp-calc-inverting.png Graphic file (type png)
 <use image/op-amp-calc-inverting.png>
 Package pdftex.def Info: image/op-amp-calc-inverting.png  used on input line 49
 3.
 (pdftex.def)             Requested size: 284.5346pt x 170.71721pt.
  [252 <./image/op-amp-inverting.png> <./image/op-amp-calc-inverting.png>]
-<image/op-amp-summing.png, id=4538, 823.075pt x 436.63126pt>
+<image/op-amp-summing.png, id=4541, 823.075pt x 436.63126pt>
 File: image/op-amp-summing.png Graphic file (type png)
 <use image/op-amp-summing.png>
 Package pdftex.def Info: image/op-amp-summing.png  used on input line 504.
 (pdftex.def)             Requested size: 227.62106pt x 170.7119pt.
 
 [253 <./image/op-amp-summing.png>]
-<image/op-amp-example.png, id=4547, 619.31375pt x 439.6425pt>
+<image/op-amp-example.png, id=4550, 619.31375pt x 439.6425pt>
 File: image/op-amp-example.png Graphic file (type png)
 <use image/op-amp-example.png>
 Package pdftex.def Info: image/op-amp-example.png  used on input line 517.
 (pdftex.def)             Requested size: 227.62105pt x 170.71524pt.
  [254 <./image/op-amp-example.png>]
-<image/ideal-diode.jpg, id=4554, 602.25pt x 401.5pt>
+<image/ideal-diode.jpg, id=4557, 602.25pt x 401.5pt>
 File: image/ideal-diode.jpg Graphic file (type jpg)
 <use image/ideal-diode.jpg>
 Package pdftex.def Info: image/ideal-diode.jpg  used on input line 562.
 (pdftex.def)             Requested size: 227.62596pt x 170.71794pt.
-<image/real-diode.png, id=4555, 752.8125pt x 752.8125pt>
+<image/real-diode.png, id=4558, 752.8125pt x 752.8125pt>
 File: image/real-diode.png Graphic file (type png)
 <use image/real-diode.png>
 Package pdftex.def Info: image/real-diode.png  used on input line 583.
@@ -2278,49 +2291,49 @@ Package pdftex.def Info: image/real-diode.png  used on input line 583.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [255 <./image/ideal-diode.jpg>]
-<image/real_diode_dc.png, id=4565, 678.535pt x 344.28625pt>
+<image/real_diode_dc.png, id=4568, 678.535pt x 344.28625pt>
 File: image/real_diode_dc.png Graphic file (type png)
 <use image/real_diode_dc.png>
 Package pdftex.def Info: image/real_diode_dc.png  used on input line 591.
 (pdftex.def)             Requested size: 227.61346pt x 170.71378pt.
  [256 <./image/real-diode.png> <./image/real_diode_dc.png>]
-<image/example-diode.png, id=4573, 547.04375pt x 357.335pt>
+<image/example-diode.png, id=4576, 547.04375pt x 357.335pt>
 File: image/example-diode.png Graphic file (type png)
 <use image/example-diode.png>
 Package pdftex.def Info: image/example-diode.png  used on input line 599.
 (pdftex.def)             Requested size: 227.62204pt x 148.68384pt.
  [257 <./image/example-diode.png>]
-<image/zener-diode.png, id=4580, 628.3475pt x 459.7175pt>
+<image/zener-diode.png, id=4583, 628.3475pt x 459.7175pt>
 File: image/zener-diode.png Graphic file (type png)
 <use image/zener-diode.png>
 Package pdftex.def Info: image/zener-diode.png  used on input line 630.
 (pdftex.def)             Requested size: 227.62204pt x 166.52933pt.
-<image/zener_diode_dc.png, id=4581, 548.0475pt x 629.35126pt>
+<image/zener_diode_dc.png, id=4584, 548.0475pt x 629.35126pt>
 File: image/zener_diode_dc.png Graphic file (type png)
 <use image/zener_diode_dc.png>
 Package pdftex.def Info: image/zener_diode_dc.png  used on input line 636.
 (pdftex.def)             Requested size: 199.16928pt x 228.71738pt.
  [258 <./image/zener-diode.png> <./image/zener_diode_dc.png>]
-<image/example_zener-diode.pdf, id=4591, 265.9536pt x 106.2369pt>
+<image/example_zener-diode.pdf, id=4594, 265.9536pt x 106.2369pt>
 File: image/example_zener-diode.pdf Graphic file (type pdf)
 <use image/example_zener-diode.pdf>
 Package pdftex.def Info: image/example_zener-diode.pdf  used on input line 648.
 
 (pdftex.def)             Requested size: 227.62204pt x 90.92911pt.
  [259 <./image/example_zener-diode.pdf>]
-<image/transistor-NPN.png, id=4605, 190.7125pt x 216.81pt>
+<image/transistor-NPN.png, id=4608, 190.7125pt x 216.81pt>
 File: image/transistor-NPN.png Graphic file (type png)
 <use image/transistor-NPN.png>
 Package pdftex.def Info: image/transistor-NPN.png  used on input line 677.
 (pdftex.def)             Requested size: 170.72299pt x 170.72554pt.
-<image/transistor_operation-mode.png, id=4606, 463.7325pt x 377.41pt>
+<image/transistor_operation-mode.png, id=4609, 463.7325pt x 377.41pt>
 File: image/transistor_operation-mode.png Graphic file (type png)
 <use image/transistor_operation-mode.png>
 Package pdftex.def Info: image/transistor_operation-mode.png  used on input lin
 e 684.
 (pdftex.def)             Requested size: 199.17465pt x 170.71402pt.
  [260 <./image/transistor-NPN.png> <./image/transistor_operation-mode.png>]
-<image/example-transistor.png, id=4615, 261.97874pt x 308.15125pt>
+<image/example-transistor.png, id=4618, 261.97874pt x 308.15125pt>
 File: image/example-transistor.png Graphic file (type png)
 <use image/example-transistor.png>
 Package pdftex.def Info: image/example-transistor.png  used on input line 760.
@@ -2351,18 +2364,18 @@ File: image/logic-gates.jpeg Graphic file (type jpg)
 Package pdftex.def Info: image/logic-gates.jpeg  used on input line 795.
 (pdftex.def)             Requested size: 284.52788pt x 170.71397pt.
  [262]
-<image/bolean-factorization.png, id=4628, 475.7775pt x 248.93pt>
+<image/bolean-factorization.png, id=4631, 475.7775pt x 248.93pt>
 File: image/bolean-factorization.png Graphic file (type png)
 <use image/bolean-factorization.png>
 Package pdftex.def Info: image/bolean-factorization.png  used on input line 837
 .
 (pdftex.def)             Requested size: 170.71652pt x 89.31845pt.
-<image/kmap-patterns.png, id=4629, 427.5975pt x 463.7325pt>
+<image/kmap-patterns.png, id=4632, 427.5975pt x 463.7325pt>
 File: image/kmap-patterns.png Graphic file (type png)
 <use image/kmap-patterns.png>
 Package pdftex.def Info: image/kmap-patterns.png  used on input line 843.
 (pdftex.def)             Requested size: 142.26378pt x 154.28464pt.
-<image/logic-families.png, id=4630, 787.94376pt x 274.02374pt>
+<image/logic-families.png, id=4633, 787.94376pt x 274.02374pt>
 File: image/logic-families.png Graphic file (type png)
 <use image/logic-families.png>
 Package pdftex.def Info: image/logic-families.png  used on input line 855.
@@ -2378,20 +2391,20 @@ ogic-families.png>]
 \@karnaughmap@local@coordinatetwocounter@=\count369
 \@karnaughmap@local@coordinateonecounter@=\count370
 \@karnaughmap@local@coordinatetwocounter@=\count371
-<image/example-cobinational-lodgic.pdf, id=4641, 510.94891pt x 679.33798pt>
+<image/example-cobinational-lodgic.pdf, id=4644, 510.94891pt x 679.33798pt>
 File: image/example-cobinational-lodgic.pdf Graphic file (type pdf)
 <use image/example-cobinational-lodgic.pdf>
 Package pdftex.def Info: image/example-cobinational-lodgic.pdf  used on input l
 ine 894.
 (pdftex.def)             Requested size: 227.62204pt x 302.64134pt.
  [264 <./image/example-cobinational-lodgic.pdf>]
-<image/sequential-circuits-moore-type.png, id=4658, 694.595pt x 310.15875pt>
+<image/sequential-circuits-moore-type.png, id=4661, 694.595pt x 310.15875pt>
 File: image/sequential-circuits-moore-type.png Graphic file (type png)
 <use image/sequential-circuits-moore-type.png>
 Package pdftex.def Info: image/sequential-circuits-moore-type.png  used on inpu
 t line 906.
 (pdftex.def)             Requested size: 341.44618pt x 170.7156pt.
-<image/sequential-circuits-mealy-type.png, id=4659, 716.6775pt x 359.3425pt>
+<image/sequential-circuits-mealy-type.png, id=4662, 716.6775pt x 359.3425pt>
 File: image/sequential-circuits-mealy-type.png Graphic file (type png)
 <use image/sequential-circuits-mealy-type.png>
 Package pdftex.def Info: image/sequential-circuits-mealy-type.png  used on inpu
@@ -2399,66 +2412,66 @@ t line 913.
 (pdftex.def)             Requested size: 284.53348pt x 170.72235pt.
  [265 <./image/sequential-circuits-moore-type.png> <./image/sequential-circuits
 -mealy-type.png>]
-<image/SR_latch.png, id=4669, 453.19313pt x 323.70938pt>
+<image/SR_latch.png, id=4672, 453.19313pt x 323.70938pt>
 File: image/SR_latch.png Graphic file (type png)
 <use image/SR_latch.png>
 Package pdftex.def Info: image/SR_latch.png  used on input line 927.
 (pdftex.def)             Requested size: 140.92793pt x 100.66005pt.
-<image/Gated_SR_Latch.png, id=4670, 803.0pt x 483.8075pt>
+<image/Gated_SR_Latch.png, id=4673, 803.0pt x 483.8075pt>
 File: image/Gated_SR_Latch.png Graphic file (type png)
 <use image/Gated_SR_Latch.png>
 Package pdftex.def Info: image/Gated_SR_Latch.png  used on input line 931.
 (pdftex.def)             Requested size: 140.92793pt x 84.90381pt.
-<image/Gated_D_latch.png, id=4671, 458.31226pt x 222.23026pt>
+<image/Gated_D_latch.png, id=4674, 458.31226pt x 222.23026pt>
 File: image/Gated_D_latch.png Graphic file (type png)
 <use image/Gated_D_latch.png>
 Package pdftex.def Info: image/Gated_D_latch.png  used on input line 935.
 (pdftex.def)             Requested size: 140.92793pt x 68.33455pt.
-<image/D_Flip_Flop.png, id=4672, 693.59125pt x 319.1925pt>
+<image/D_Flip_Flop.png, id=4675, 693.59125pt x 319.1925pt>
 File: image/D_Flip_Flop.png Graphic file (type png)
 <use image/D_Flip_Flop.png>
 Package pdftex.def Info: image/D_Flip_Flop.png  used on input line 939.
 (pdftex.def)             Requested size: 140.92793pt x 64.85529pt.
  [266 <./image/SR_latch.png> <./image/Gated_SR_Latch.png> <./image/Gated_D_latc
 h.png> <./image/D_Flip_Flop.png>]
-<image/timing-diagram.pdf, id=4682, 589.72322pt x 430.7292pt>
+<image/timing-diagram.pdf, id=4685, 589.72322pt x 430.7292pt>
 File: image/timing-diagram.pdf Graphic file (type pdf)
 <use image/timing-diagram.pdf>
 Package pdftex.def Info: image/timing-diagram.pdf  used on input line 950.
 (pdftex.def)             Requested size: 284.52756pt x 207.8124pt.
  [267 <./image/timing-diagram.pdf>]
-<image/state-diagram-moore.png, id=4697, 250.9375pt x 397.485pt>
+<image/state-diagram-moore.png, id=4700, 250.9375pt x 397.485pt>
 File: image/state-diagram-moore.png Graphic file (type png)
 <use image/state-diagram-moore.png>
 Package pdftex.def Info: image/state-diagram-moore.png  used on input line 997.
 
 (pdftex.def)             Requested size: 142.26378pt x 225.35577pt.
-<image/state-diagram-mealy.png, id=4698, 303.1325pt x 327.2225pt>
+<image/state-diagram-mealy.png, id=4701, 303.1325pt x 327.2225pt>
 File: image/state-diagram-mealy.png Graphic file (type png)
 <use image/state-diagram-mealy.png>
 Package pdftex.def Info: image/state-diagram-mealy.png  used on input line 1005
 .
 (pdftex.def)             Requested size: 142.26378pt x 153.5699pt.
  [268 <./image/state-diagram-moore.png> <./image/state-diagram-mealy.png>]
-<image/shift-register.png, id=4707, 763.85374pt x 252.945pt>
+<image/shift-register.png, id=4710, 763.85374pt x 252.945pt>
 File: image/shift-register.png Graphic file (type png)
 <use image/shift-register.png>
 Package pdftex.def Info: image/shift-register.png  used on input line 1026.
 (pdftex.def)             Requested size: 284.52756pt x 94.2173pt.
-<image/mux.png, id=4708, 214.8025pt x 287.0725pt>
+<image/mux.png, id=4711, 214.8025pt x 287.0725pt>
 File: image/mux.png Graphic file (type png)
 <use image/mux.png>
 Package pdftex.def Info: image/mux.png  used on input line 1034.
 (pdftex.def)             Requested size: 142.26378pt x 190.12987pt.
  [269 <./image/shift-register.png> <./image/mux.png>] [270]
-<image/AC-euler-representation-demostration.png, id=4723, 946.53625pt x 663.478
+<image/AC-euler-representation-demostration.png, id=4726, 946.53625pt x 663.478
 74pt>
 File: image/AC-euler-representation-demostration.png Graphic file (type png)
 <use image/AC-euler-representation-demostration.png>
 Package pdftex.def Info: image/AC-euler-representation-demostration.png  used o
 n input line 1104.
 (pdftex.def)             Requested size: 369.88582pt x 259.27197pt.
-<image/AC_resistor_representation.png, id=4724, 734.745pt x 209.78375pt>
+<image/AC_resistor_representation.png, id=4727, 734.745pt x 209.78375pt>
 File: image/AC_resistor_representation.png Graphic file (type png)
 <use image/AC_resistor_representation.png>
 Package pdftex.def Info: image/AC_resistor_representation.png  used on input li
@@ -2466,13 +2479,13 @@ ne 1112.
 (pdftex.def)             Requested size: 369.88582pt x 105.61183pt.
  [271 <./image/AC-euler-representation-demostration.png> <./image/AC_resistor_r
 epresentation.png>]
-<image/signal-filtering.png, id=4734, 1463.4675pt x 843.15pt>
+<image/signal-filtering.png, id=4737, 1463.4675pt x 843.15pt>
 File: image/signal-filtering.png Graphic file (type png)
 <use image/signal-filtering.png>
 Package pdftex.def Info: image/signal-filtering.png  used on input line 1159.
 (pdftex.def)             Requested size: 284.52756pt x 163.91826pt.
  [272 <./image/signal-filtering.png>]
-<image/HP-filter_circuit.png, id=4743, 699.61375pt x 411.5375pt>
+<image/HP-filter_circuit.png, id=4746, 699.61375pt x 411.5375pt>
 File: image/HP-filter_circuit.png Graphic file (type png)
 <use image/HP-filter_circuit.png>
 Package pdftex.def Info: image/HP-filter_circuit.png  used on input line 1178.
@@ -2493,7 +2506,7 @@ beginning of the first array dimension in Noise whose size does not equal 1.[]
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) [276] [277]
 [278] [279] [280] [281] [282]
-<image/Runge-Kutta_slopes.png, id=4799, 451.6875pt x 451.6875pt>
+<image/Runge-Kutta_slopes.png, id=4802, 451.6875pt x 451.6875pt>
 File: image/Runge-Kutta_slopes.png Graphic file (type png)
 <use image/Runge-Kutta_slopes.png>
 Package pdftex.def Info: image/Runge-Kutta_slopes.png  used on input line 205.
@@ -2520,7 +2533,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 475--476
 ]
 Chapter 14.
 [293]
-<image/caractaristic-signal-plots.pdf, id=4867, 556.47902pt x 478.42741pt>
+<image/caractaristic-signal-plots.pdf, id=4870, 556.47902pt x 478.42741pt>
 File: image/caractaristic-signal-plots.pdf Graphic file (type pdf)
 <use image/caractaristic-signal-plots.pdf>
 Package pdftex.def Info: image/caractaristic-signal-plots.pdf  used on input li
@@ -2537,7 +2550,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 386--387
  []
 
 [301] [302] [303] [304]
-<image/unilateral-Laplace-transform-pairs.pdf, id=4943, 320.8788pt x 407.60278p
+<image/unilateral-Laplace-transform-pairs.pdf, id=4946, 320.8788pt x 407.60278p
 t>
 File: image/unilateral-Laplace-transform-pairs.pdf Graphic file (type pdf)
 <use image/unilateral-Laplace-transform-pairs.pdf>
@@ -2580,23 +2593,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 642--645
  []
 
 [309] [310]
-<image/bode-plot-example.pdf, id=4985, 882.4167pt x 377.24939pt>
+<image/bode-plot-example.pdf, id=4988, 882.4167pt x 377.24939pt>
 File: image/bode-plot-example.pdf Graphic file (type pdf)
 <use image/bode-plot-example.pdf>
 Package pdftex.def Info: image/bode-plot-example.pdf  used on input line 724.
 (pdftex.def)             Requested size: 341.43306pt x 145.96964pt.
  [311 <./image/bode-plot-example.pdf>]
-<image/filter-lp-hp.pdf, id=4997, 396.0396pt x 120.6909pt>
+<image/filter-lp-hp.pdf, id=5000, 396.0396pt x 120.6909pt>
 File: image/filter-lp-hp.pdf Graphic file (type pdf)
 <use image/filter-lp-hp.pdf>
 Package pdftex.def Info: image/filter-lp-hp.pdf  used on input line 771.
 (pdftex.def)             Requested size: 341.43306pt x 104.04996pt.
-<image/filter-bp-bs.pdf, id=4998, 402.54391pt x 119.9682pt>
+<image/filter-bp-bs.pdf, id=5001, 402.54391pt x 119.9682pt>
 File: image/filter-bp-bs.pdf Graphic file (type pdf)
 <use image/filter-bp-bs.pdf>
 Package pdftex.def Info: image/filter-bp-bs.pdf  used on input line 778.
 (pdftex.def)             Requested size: 341.43306pt x 101.75743pt.
-<image/approximation-spectrum.pdf, id=4999, 414.8298pt x 255.8358pt>
+<image/approximation-spectrum.pdf, id=5002, 414.8298pt x 255.8358pt>
 File: image/approximation-spectrum.pdf Graphic file (type pdf)
 <use image/approximation-spectrum.pdf>
 Package pdftex.def Info: image/approximation-spectrum.pdf  used on input line 7
@@ -2611,7 +2624,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 pdfTeX warning: pdflatex (file ./image/filter-bp-bs.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
 >] [313 <./image/approximation-spectrum.pdf>] [314]
-<image/sampling_and_reconstruction.pdf, id=5040, 419.166pt x 241.38179pt>
+<image/sampling_and_reconstruction.pdf, id=5043, 419.166pt x 241.38179pt>
 File: image/sampling_and_reconstruction.pdf Graphic file (type pdf)
 <use image/sampling_and_reconstruction.pdf>
 Package pdftex.def Info: image/sampling_and_reconstruction.pdf  used on input l
@@ -2628,18 +2641,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 925--928
  []
 
 [315 <./image/sampling_and_reconstruction.pdf>] [316]
-<image/sampling_graphs.png, id=5058, 573.14125pt x 662.475pt>
+<image/sampling_graphs.png, id=5061, 573.14125pt x 662.475pt>
 File: image/sampling_graphs.png Graphic file (type png)
 <use image/sampling_graphs.png>
 Package pdftex.def Info: image/sampling_graphs.png  used on input line 974.
 (pdftex.def)             Requested size: 341.43306pt x 394.65768pt.
  [317 <./image/sampling_graphs.png>]
-<image/aliasing.pdf, id=5065, 187.902pt x 113.4639pt>
+<image/aliasing.pdf, id=5068, 187.902pt x 113.4639pt>
 File: image/aliasing.pdf Graphic file (type pdf)
 <use image/aliasing.pdf>
 Package pdftex.def Info: image/aliasing.pdf  used on input line 989.
 (pdftex.def)             Requested size: 170.71652pt x 103.09128pt.
-<image/ideal_reconstruction.pdf, id=5066, 180.675pt x 145.9854pt>
+<image/ideal_reconstruction.pdf, id=5069, 180.675pt x 145.9854pt>
 File: image/ideal_reconstruction.pdf Graphic file (type pdf)
 <use image/ideal_reconstruction.pdf>
 Package pdftex.def Info: image/ideal_reconstruction.pdf  used on input line 100
@@ -2650,13 +2663,13 @@ Package pdftex.def Info: image/ideal_reconstruction.pdf  used on input line 100
 pdfTeX warning: pdflatex (file ./image/ideal_reconstruction.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
 >]
-<image/quantization.png, id=5088, 888.31876pt x 393.47pt>
+<image/quantization.png, id=5091, 888.31876pt x 393.47pt>
 File: image/quantization.png Graphic file (type png)
 <use image/quantization.png>
 Package pdftex.def Info: image/quantization.png  used on input line 1025.
 (pdftex.def)             Requested size: 341.43306pt x 151.23125pt.
  [319 <./image/quantization.png>] [320] [321]
-<image/properties_of_the_discreate_time_convolution_sum.pdf, id=5108, 423.50221
+<image/properties_of_the_discreate_time_convolution_sum.pdf, id=5111, 423.50221
 pt x 227.6505pt>
 File: image/properties_of_the_discreate_time_convolution_sum.pdf Graphic file (
 type pdf)
@@ -2665,7 +2678,7 @@ Package pdftex.def Info: image/properties_of_the_discreate_time_convolution_sum
 .pdf  used on input line 1123.
 (pdftex.def)             Requested size: 341.43306pt x 183.53441pt.
  [322 <./image/properties_of_the_discreate_time_convolution_sum.pdf>] [323]
-<image/properties_discrete_time_fourier_transform.png, id=5126, 640.3925pt x 58
+<image/properties_discrete_time_fourier_transform.png, id=5129, 640.3925pt x 58
 0.1675pt>
 File: image/properties_discrete_time_fourier_transform.png Graphic file (type p
 ng)
@@ -2674,7 +2687,7 @@ Package pdftex.def Info: image/properties_discrete_time_fourier_transform.png
 used on input line 1183.
 (pdftex.def)             Requested size: 341.43306pt x 309.32864pt.
  [324 <./image/properties_discrete_time_fourier_transform.png>]
-<image/properties_of_the_dft.png, id=5134, 859.21pt x 374.39874pt>
+<image/properties_of_the_dft.png, id=5137, 859.21pt x 374.39874pt>
 File: image/properties_of_the_dft.png Graphic file (type png)
 <use image/properties_of_the_dft.png>
 Package pdftex.def Info: image/properties_of_the_dft.png  used on input line 12
@@ -2696,20 +2709,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 1284--1293
  []
 
 [327]
-<image/z-transform_pairs.png, id=5159, 724.7075pt x 779.91376pt>
+<image/z-transform_pairs.png, id=5162, 724.7075pt x 779.91376pt>
 File: image/z-transform_pairs.png Graphic file (type png)
 <use image/z-transform_pairs.png>
 Package pdftex.def Info: image/z-transform_pairs.png  used on input line 1326.
 (pdftex.def)             Requested size: 312.9803pt x 336.82014pt.
  [328 <./image/z-transform_pairs.png>]
-<image/properties_z-transform.png, id=5167, 710.655pt x 509.905pt>
+<image/properties_z-transform.png, id=5170, 710.655pt x 509.905pt>
 File: image/properties_z-transform.png Graphic file (type png)
 <use image/properties_z-transform.png>
 Package pdftex.def Info: image/properties_z-transform.png  used on input line 1
 337.
 (pdftex.def)             Requested size: 341.43306pt x 244.98503pt.
  [329 <./image/properties_z-transform.png>]
-<image/stability_z-transform.png, id=5178, 629.35126pt x 554.07pt>
+<image/stability_z-transform.png, id=5181, 629.35126pt x 554.07pt>
 File: image/stability_z-transform.png Graphic file (type png)
 <use image/stability_z-transform.png>
 Package pdftex.def Info: image/stability_z-transform.png  used on input line 13
@@ -2722,7 +2735,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [331]
-<image/descrete_time_filter_frequncy_impulse_respons.png, id=5191, 789.95125pt 
+<image/descrete_time_filter_frequncy_impulse_respons.png, id=5194, 789.95125pt 
 x 352.31625pt>
 File: image/descrete_time_filter_frequncy_impulse_respons.png Graphic file (typ
 e png)
@@ -2787,7 +2800,7 @@ Overfull \hbox (7.03625pt too wide) in paragraph at lines 1512--1532
 []
  []
 
-<image/connection_mind-map.pdf, id=5212, 400.37581pt x 491.436pt>
+<image/connection_mind-map.pdf, id=5215, 400.37581pt x 491.436pt>
 File: image/connection_mind-map.pdf Graphic file (type pdf)
 <use image/connection_mind-map.pdf>
 Package pdftex.def Info: image/connection_mind-map.pdf  used on input line 1535
@@ -2797,7 +2810,7 @@ Package pdftex.def Info: image/connection_mind-map.pdf  used on input line 1535
 
 
 ] [336]
-<image/transform_tables.pdf, id=5237, 845.0471pt x 597.50829pt>
+<image/transform_tables.pdf, id=5240, 845.0471pt x 597.50829pt>
 File: image/transform_tables.pdf Graphic file (type pdf)
 <use image/transform_tables.pdf>
 Package pdftex.def Info: image/transform_tables.pdf  used on input line 1566.
@@ -2806,7 +2819,7 @@ File: image/transform_tables.pdf Graphic file (type pdf)
 <use image/transform_tables.pdf>
 Package pdftex.def Info: image/transform_tables.pdf  used on input line 1566.
 (pdftex.def)             Requested size: 845.04504pt x 597.50682pt.
-<image/transform_tables.pdf, id=5240, page=1, 845.0471pt x 597.50829pt>
+<image/transform_tables.pdf, id=5243, page=1, 845.0471pt x 597.50829pt>
 File: image/transform_tables.pdf Graphic file (type pdf)
 <use image/transform_tables.pdf, page 1>
 Package pdftex.def Info: image/transform_tables.pdf , page1 used on input line 
@@ -2833,7 +2846,7 @@ Package pdftex.def Info: image/transform_tables.pdf , page1 used on input line
 1566.
 (pdftex.def)             Requested size: 1106.82642pt x 782.60483pt.
  [337 <./image/transform_tables.pdf>]
-<image/transform_tables.pdf, id=5307, page=2, 845.0471pt x 597.50829pt>
+<image/transform_tables.pdf, id=5310, page=2, 845.0471pt x 597.50829pt>
 File: image/transform_tables.pdf Graphic file (type pdf)
 <use image/transform_tables.pdf, page 2>
 Package pdftex.def Info: image/transform_tables.pdf , page2 used on input line 
@@ -2850,7 +2863,7 @@ Package pdftex.def Info: image/transform_tables.pdf , page2 used on input line
 1566.
 (pdftex.def)             Requested size: 1106.82642pt x 782.60483pt.
  [338 <./image/transform_tables.pdf>]
-<image/transform_tables.pdf, id=5348, page=3, 845.0471pt x 597.50829pt>
+<image/transform_tables.pdf, id=5351, page=3, 845.0471pt x 597.50829pt>
 File: image/transform_tables.pdf Graphic file (type pdf)
 <use image/transform_tables.pdf, page 3>
 Package pdftex.def Info: image/transform_tables.pdf , page3 used on input line 
@@ -2867,7 +2880,7 @@ Package pdftex.def Info: image/transform_tables.pdf , page3 used on input line
 1566.
 (pdftex.def)             Requested size: 1106.82642pt x 782.60483pt.
  [339 <./image/transform_tables.pdf>]
-<image/transform_tables.pdf, id=5358, page=4, 845.0471pt x 597.50829pt>
+<image/transform_tables.pdf, id=5361, page=4, 845.0471pt x 597.50829pt>
 File: image/transform_tables.pdf Graphic file (type pdf)
 <use image/transform_tables.pdf, page 4>
 Package pdftex.def Info: image/transform_tables.pdf , page4 used on input line 
@@ -2884,7 +2897,7 @@ Package pdftex.def Info: image/transform_tables.pdf , page4 used on input line
 1566.
 (pdftex.def)             Requested size: 1106.82642pt x 782.60483pt.
  [340 <./image/transform_tables.pdf>]
-<image/transform_tables.pdf, id=5363, page=5, 845.0471pt x 597.50829pt>
+<image/transform_tables.pdf, id=5366, page=5, 845.0471pt x 597.50829pt>
 File: image/transform_tables.pdf Graphic file (type pdf)
 <use image/transform_tables.pdf, page 5>
 Package pdftex.def Info: image/transform_tables.pdf , page5 used on input line 
@@ -2901,7 +2914,7 @@ Package pdftex.def Info: image/transform_tables.pdf , page5 used on input line
 1566.
 (pdftex.def)             Requested size: 1106.82642pt x 782.60483pt.
  [341 <./image/transform_tables.pdf>]
-<image/transform_tables.pdf, id=5368, page=6, 845.0471pt x 597.50829pt>
+<image/transform_tables.pdf, id=5371, page=6, 845.0471pt x 597.50829pt>
 File: image/transform_tables.pdf Graphic file (type pdf)
 <use image/transform_tables.pdf, page 6>
 Package pdftex.def Info: image/transform_tables.pdf , page6 used on input line 
@@ -2918,7 +2931,7 @@ Package pdftex.def Info: image/transform_tables.pdf , page6 used on input line
 1566.
 (pdftex.def)             Requested size: 1106.82642pt x 782.60483pt.
  [342 <./image/transform_tables.pdf>]
-<image/transform_tables.pdf, id=5373, page=7, 845.0471pt x 597.50829pt>
+<image/transform_tables.pdf, id=5376, page=7, 845.0471pt x 597.50829pt>
 File: image/transform_tables.pdf Graphic file (type pdf)
 <use image/transform_tables.pdf, page 7>
 Package pdftex.def Info: image/transform_tables.pdf , page7 used on input line 
@@ -2935,7 +2948,7 @@ Package pdftex.def Info: image/transform_tables.pdf , page7 used on input line
 1566.
 (pdftex.def)             Requested size: 1106.82642pt x 782.60483pt.
  [343 <./image/transform_tables.pdf>]
-<image/complex_unit_circle.png, id=5379, 864.22874pt x 825.0825pt>
+<image/complex_unit_circle.png, id=5382, 864.22874pt x 825.0825pt>
 File: image/complex_unit_circle.png Graphic file (type png)
 <use image/complex_unit_circle.png>
 Package pdftex.def Info: image/complex_unit_circle.png  used on input line 1569
@@ -2947,7 +2960,7 @@ Chapter 15.
 [345
 
 ]
-<image/database-system.pdf, id=5393, 352.67758pt x 401.82121pt>
+<image/database-system.pdf, id=5396, 352.67758pt x 401.82121pt>
 File: image/database-system.pdf Graphic file (type pdf)
 <use image/database-system.pdf>
 Package pdftex.def Info: image/database-system.pdf  used on input line 26.
@@ -2958,20 +2971,20 @@ Overfull \hbox (8.77356pt too wide) in paragraph at lines 31--31
 del 
  []
 
-<image/notation-er-diagrams.pdf, id=5406, 258.72661pt x 407.60278pt>
+<image/notation-er-diagrams.pdf, id=5409, 258.72661pt x 407.60278pt>
 File: image/notation-er-diagrams.pdf Graphic file (type pdf)
 <use image/notation-er-diagrams.pdf>
 Package pdftex.def Info: image/notation-er-diagrams.pdf  used on input line 34.
 
 (pdftex.def)             Requested size: 284.52756pt x 448.2587pt.
 [347 <./image/notation-er-diagrams.pdf>] [348]
-<image/crow_foot.png, id=5423, 440.64626pt x 361.35pt>
+<image/crow_foot.png, id=5426, 440.64626pt x 361.35pt>
 File: image/crow_foot.png Graphic file (type png)
 <use image/crow_foot.png>
 Package pdftex.def Info: image/crow_foot.png  used on input line 78.
 (pdftex.def)             Requested size: 227.62204pt x 186.65697pt.
  [349 <./image/crow_foot.png>]
-<image/constraints_specialization-generalization.png, id=5431, 409.53pt x 342.2
+<image/constraints_specialization-generalization.png, id=5434, 409.53pt x 342.2
 7875pt>
 File: image/constraints_specialization-generalization.png Graphic file (type pn
 g)
@@ -2985,7 +2998,7 @@ sed on input line 102.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [356]
-<image/sql_joins.png, id=5476, 869.2475pt x 174.6525pt>
+<image/sql_joins.png, id=5479, 869.2475pt x 174.6525pt>
 File: image/sql_joins.png Graphic file (type png)
 <use image/sql_joins.png>
 Package pdftex.def Info: image/sql_joins.png  used on input line 400.
@@ -2996,13 +3009,13 @@ Package pdftex.def Info: image/sql_joins.png  used on input line 400.
 ] [361
 
 ] [362]
-<image/temporary_update_problem.png, id=5513, 338.26375pt x 244.915pt>
+<image/temporary_update_problem.png, id=5516, 338.26375pt x 244.915pt>
 File: image/temporary_update_problem.png Graphic file (type png)
 <use image/temporary_update_problem.png>
 Package pdftex.def Info: image/temporary_update_problem.png  used on input line
  520.
 (pdftex.def)             Requested size: 341.43306pt x 247.21643pt.
-<image/incorrect_summary_problem.png, id=5514, 308.15125pt x 376.40625pt>
+<image/incorrect_summary_problem.png, id=5517, 308.15125pt x 376.40625pt>
 File: image/incorrect_summary_problem.png Graphic file (type png)
 <use image/incorrect_summary_problem.png>
 Package pdftex.def Info: image/incorrect_summary_problem.png  used on input lin
@@ -3019,7 +3032,7 @@ Chapter 16.
 [365
 
 ]
-<image/företagsformer.png, id=5532, 1209.51875pt x 734.745pt>
+<image/företagsformer.png, id=5535, 1209.51875pt x 734.745pt>
 File: image/företagsformer.png Graphic file (type png)
 <use image/företagsformer.png>
 Package pdftex.def Info: image/företagsformer.png  used on input line 16.
@@ -3037,28 +3050,28 @@ Overfull \hbox (1.52492pt too wide) in paragraph at lines 75--80
  []
 
 [367] [368]
-<image/swot.png, id=5548, 1188.44pt x 554.07pt>
+<image/swot.png, id=5551, 1188.44pt x 554.07pt>
 File: image/swot.png Graphic file (type png)
 <use image/swot.png>
 Package pdftex.def Info: image/swot.png  used on input line 157.
 (pdftex.def)             Requested size: 341.43306pt x 159.17975pt.
-<image/bostonmatrisen.png, id=5549, 1104.125pt x 643.40375pt>
+<image/bostonmatrisen.png, id=5552, 1104.125pt x 643.40375pt>
 File: image/bostonmatrisen.png Graphic file (type png)
 <use image/bostonmatrisen.png>
 Package pdftex.def Info: image/bostonmatrisen.png  used on input line 164.
 (pdftex.def)             Requested size: 341.43306pt x 198.96222pt.
  [369 <./image/swot.png> <./image/bostonmatrisen.png>]
-<image/produktlivscykeln.png, id=5560, 1208.515pt x 442.65375pt>
+<image/produktlivscykeln.png, id=5563, 1208.515pt x 442.65375pt>
 File: image/produktlivscykeln.png Graphic file (type png)
 <use image/produktlivscykeln.png>
 Package pdftex.def Info: image/produktlivscykeln.png  used on input line 172.
 (pdftex.def)             Requested size: 341.43306pt x 125.05666pt.
-<image/intressentmodellen.png, id=5561, 606.265pt x 365.365pt>
+<image/intressentmodellen.png, id=5564, 606.265pt x 365.365pt>
 File: image/intressentmodellen.png Graphic file (type png)
 <use image/intressentmodellen.png>
 Package pdftex.def Info: image/intressentmodellen.png  used on input line 179.
 (pdftex.def)             Requested size: 341.43306pt x 205.76817pt.
-<image/balanserade_styrkort.png, id=5562, 955.57pt x 531.9875pt>
+<image/balanserade_styrkort.png, id=5565, 955.57pt x 531.9875pt>
 File: image/balanserade_styrkort.png Graphic file (type png)
 <use image/balanserade_styrkort.png>
 Package pdftex.def Info: image/balanserade_styrkort.png  used on input line 196
@@ -3070,21 +3083,21 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [370 <./image/produktlivscykeln.png> <./image/intressentmodellen.png>] [371 <./
 image/balanserade_styrkort.png>] [372]
-<image/tjänsteorientering.png, id=5592, 942.52126pt x 645.41125pt>
+<image/tjänsteorientering.png, id=5596, 942.52126pt x 645.41125pt>
 File: image/tjänsteorientering.png Graphic file (type png)
 <use image/tjänsteorientering.png>
 Package pdftex.def Info: image/tjänsteorientering.png  used on input line 334.
 
 (pdftex.def)             Requested size: 341.43306pt x 233.8054pt.
  [373 <./image/tjänsteorientering.png>]
-<image/matrix.png, id=5602, 876.27374pt x 700.6175pt>
+<image/matrix.png, id=5605, 876.27374pt x 700.6175pt>
 File: image/matrix.png Graphic file (type png)
 <use image/matrix.png>
 Package pdftex.def Info: image/matrix.png  used on input line 357.
 (pdftex.def)             Requested size: 341.43306pt x 272.99384pt.
 
 [374 <./image/matrix.png>]
-<image/lager_optimering.png, id=5609, 507.8975pt x 633.36626pt>
+<image/lager_optimering.png, id=5612, 507.8975pt x 633.36626pt>
 File: image/lager_optimering.png Graphic file (type png)
 <use image/lager_optimering.png>
 Package pdftex.def Info: image/lager_optimering.png  used on input line 424.
@@ -3094,12 +3107,12 @@ Package pdftex.def Info: image/lager_optimering.png  used on input line 424.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [375] [376 <./image/lager_optimering.png>]
-<image/begrepp_i_flödet.png, id=5622, 878.28125pt x 282.05376pt>
+<image/begrepp_i_flödet.png, id=5625, 878.28125pt x 282.05376pt>
 File: image/begrepp_i_flödet.png Graphic file (type png)
 <use image/begrepp_i_flödet.png>
 Package pdftex.def Info: image/begrepp_i_flödet.png  used on input line 509.
 (pdftex.def)             Requested size: 341.43306pt x 109.6519pt.
-<image/kalkylbegrepp.png, id=5623, 904.37875pt x 246.9225pt>
+<image/kalkylbegrepp.png, id=5626, 904.37875pt x 246.9225pt>
 File: image/kalkylbegrepp.png Graphic file (type png)
 <use image/kalkylbegrepp.png>
 Package pdftex.def Info: image/kalkylbegrepp.png  used on input line 525.
@@ -3109,30 +3122,30 @@ Package pdftex.def Info: image/kalkylbegrepp.png  used on input line 525.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [377 <./image/begrepp_i_flödet.png>]
-<image/kalkylmodeller.png, id=5632, 542.025pt x 480.79625pt>
+<image/kalkylmodeller.png, id=5635, 542.025pt x 480.79625pt>
 File: image/kalkylmodeller.png Graphic file (type png)
 <use image/kalkylmodeller.png>
 Package pdftex.def Info: image/kalkylmodeller.png  used on input line 542.
 (pdftex.def)             Requested size: 341.43306pt x 302.87389pt.
  [378 <./image/kalkylbegrepp.png> <./image/kalkylmodeller.png>]
-<image/påläggskalkyl.png, id=5641, 588.1975pt x 511.9125pt>
+<image/påläggskalkyl.png, id=5644, 588.1975pt x 511.9125pt>
 File: image/påläggskalkyl.png Graphic file (type png)
 <use image/påläggskalkyl.png>
 Package pdftex.def Info: image/påläggskalkyl.png  used on input line 551.
 (pdftex.def)             Requested size: 341.43306pt x 297.1516pt.
  [379 <./image/påläggskalkyl.png>]
-<image/abc.png, id=5649, 882.29625pt x 237.88875pt>
+<image/abc.png, id=5652, 882.29625pt x 237.88875pt>
 File: image/abc.png Graphic file (type png)
 <use image/abc.png>
 Package pdftex.def Info: image/abc.png  used on input line 585.
 (pdftex.def)             Requested size: 341.43306pt x 92.05751pt.
  [380 <./image/abc.png>]
-<image/bidragskalkyl.png, id=5656, 898.35625pt x 356.33125pt>
+<image/bidragskalkyl.png, id=5659, 898.35625pt x 356.33125pt>
 File: image/bidragskalkyl.png Graphic file (type png)
 <use image/bidragskalkyl.png>
 Package pdftex.def Info: image/bidragskalkyl.png  used on input line 619.
 (pdftex.def)             Requested size: 341.43306pt x 135.42902pt.
-<image/stegkalkyl.png, id=5657, 806.01125pt x 458.71375pt>
+<image/stegkalkyl.png, id=5660, 806.01125pt x 458.71375pt>
 File: image/stegkalkyl.png Graphic file (type png)
 <use image/stegkalkyl.png>
 Package pdftex.def Info: image/stegkalkyl.png  used on input line 649.
@@ -3141,14 +3154,14 @@ Package pdftex.def Info: image/stegkalkyl.png  used on input line 649.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<image/typer_av_investeringar.png, id=5658, 458.71375pt x 302.12875pt>
+<image/typer_av_investeringar.png, id=5661, 458.71375pt x 302.12875pt>
 File: image/typer_av_investeringar.png Graphic file (type png)
 <use image/typer_av_investeringar.png>
 Package pdftex.def Info: image/typer_av_investeringar.png  used on input line 6
 70.
 (pdftex.def)             Requested size: 341.43306pt x 224.89487pt.
 [381 <./image/bidragskalkyl.png>]
-<image/kalkylbegrepp_investering.png, id=5666, 646.415pt x 239.89626pt>
+<image/kalkylbegrepp_investering.png, id=5669, 646.415pt x 239.89626pt>
 File: image/kalkylbegrepp_investering.png Graphic file (type png)
 <use image/kalkylbegrepp_investering.png>
 Package pdftex.def Info: image/kalkylbegrepp_investering.png  used on input lin
@@ -3158,7 +3171,7 @@ e 677.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<image/kalkylrantan.png, id=5667, 547.04375pt x 287.0725pt>
+<image/kalkylrantan.png, id=5670, 547.04375pt x 287.0725pt>
 File: image/kalkylrantan.png Graphic file (type png)
 <use image/kalkylrantan.png>
 Package pdftex.def Info: image/kalkylrantan.png  used on input line 684.
@@ -3168,13 +3181,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [382 <./image/stegkalkyl.png> <./image/typer_av_investeringar.png>] [383 <./ima
 ge/kalkylbegrepp_investering.png> <./image/kalkylrantan.png>]
-<image/bokforing_med_t-konton.png, id=5684, 639.38875pt x 207.77625pt>
+<image/bokforing_med_t-konton.png, id=5687, 639.38875pt x 207.77625pt>
 File: image/bokforing_med_t-konton.png Graphic file (type png)
 <use image/bokforing_med_t-konton.png>
 Package pdftex.def Info: image/bokforing_med_t-konton.png  used on input line 7
 50.
 (pdftex.def)             Requested size: 341.43306pt x 110.95152pt.
-<image/arsredovisningens_innehall.png, id=5685, 614.295pt x 296.10625pt>
+<image/arsredovisningens_innehall.png, id=5688, 614.295pt x 296.10625pt>
 File: image/arsredovisningens_innehall.png Graphic file (type png)
 <use image/arsredovisningens_innehall.png>
 Package pdftex.def Info: image/arsredovisningens_innehall.png  used on input li
@@ -3184,7 +3197,7 @@ ne 769.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<image/resultatrakning_och_balansrakning.png, id=5686, 800.9925pt x 532.99126pt
+<image/resultatrakning_och_balansrakning.png, id=5689, 800.9925pt x 532.99126pt
 >
 File: image/resultatrakning_och_balansrakning.png Graphic file (type png)
 <use image/resultatrakning_och_balansrakning.png>
@@ -3196,30 +3209,30 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [384 <./image/bokforing_med_t-konton.png>] [385 <./image/arsredovisningens_inne
 hall.png> <./image/resultatrakning_och_balansrakning.png>]
-<image/DuPoint-formeln.png, id=5702, 726.715pt x 353.32pt>
+<image/DuPoint-formeln.png, id=5705, 726.715pt x 353.32pt>
 File: image/DuPoint-formeln.png Graphic file (type png)
 <use image/DuPoint-formeln.png>
 Package pdftex.def Info: image/DuPoint-formeln.png  used on input line 838.
 (pdftex.def)             Requested size: 341.43306pt x 166.00111pt.
  [386 <./image/DuPoint-formeln.png>]
-<image/volymanalys.png, id=5709, 559.08875pt x 452.69125pt>
+<image/volymanalys.png, id=5712, 559.08875pt x 452.69125pt>
 File: image/volymanalys.png Graphic file (type png)
 <use image/volymanalys.png>
 Package pdftex.def Info: image/volymanalys.png  used on input line 878.
 (pdftex.def)             Requested size: 341.43306pt x 276.46591pt.
  [387 <./image/volymanalys.png>]
-<image/total_kapital.png, id=5716, 783.92876pt x 227.85126pt>
+<image/total_kapital.png, id=5719, 783.92876pt x 227.85126pt>
 File: image/total_kapital.png Graphic file (type png)
 <use image/total_kapital.png>
 Package pdftex.def Info: image/total_kapital.png  used on input line 917.
 (pdftex.def)             Requested size: 341.43306pt x 99.23965pt.
  [388 <./image/total_kapital.png>]
-<image/resursmetoden.png, id=5723, 686.565pt x 246.9225pt>
+<image/resursmetoden.png, id=5726, 686.565pt x 246.9225pt>
 File: image/resursmetoden.png Graphic file (type png)
 <use image/resursmetoden.png>
 Package pdftex.def Info: image/resursmetoden.png  used on input line 968.
 (pdftex.def)             Requested size: 341.43306pt x 122.79404pt.
-<image/kassaflodesanalys.png, id=5724, 584.1825pt x 303.1325pt>
+<image/kassaflodesanalys.png, id=5727, 584.1825pt x 303.1325pt>
 File: image/kassaflodesanalys.png Graphic file (type png)
 <use image/kassaflodesanalys.png>
 Package pdftex.def Info: image/kassaflodesanalys.png  used on input line 995.
@@ -3228,7 +3241,7 @@ Package pdftex.def Info: image/kassaflodesanalys.png  used on input line 995.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<image/finnansiell_analys.png, id=5725, 712.6625pt x 349.305pt>
+<image/finnansiell_analys.png, id=5728, 712.6625pt x 349.305pt>
 File: image/finnansiell_analys.png Graphic file (type png)
 <use image/finnansiell_analys.png>
 Package pdftex.def Info: image/finnansiell_analys.png  used on input line 1002.
@@ -3244,18 +3257,18 @@ Chapter 17.
 [391
 
 ]
-<image/control_without_feedback.png, id=5747, 787.94376pt x 250.9375pt>
+<image/control_without_feedback.png, id=5750, 787.94376pt x 250.9375pt>
 File: image/control_without_feedback.png Graphic file (type png)
 <use image/control_without_feedback.png>
 Package pdftex.def Info: image/control_without_feedback.png  used on input line
  19.
 (pdftex.def)             Requested size: 341.43306pt x 108.73573pt.
-<image/feedback_walle.png, id=5748, 624.3325pt x 508.90125pt>
+<image/feedback_walle.png, id=5751, 624.3325pt x 508.90125pt>
 File: image/feedback_walle.png Graphic file (type png)
 <use image/feedback_walle.png>
 Package pdftex.def Info: image/feedback_walle.png  used on input line 32.
 (pdftex.def)             Requested size: 140.92793pt x 114.87056pt.
-<image/control_with_feedback.png, id=5749, 793.96625pt x 311.1625pt>
+<image/control_with_feedback.png, id=5752, 793.96625pt x 311.1625pt>
 File: image/control_with_feedback.png Graphic file (type png)
 <use image/control_with_feedback.png>
 Package pdftex.def Info: image/control_with_feedback.png  used on input line 39
@@ -3263,7 +3276,7 @@ Package pdftex.def Info: image/control_with_feedback.png  used on input line 39
 (pdftex.def)             Requested size: 281.85587pt x 110.46107pt.
  [392 <./image/control_without_feedback.png> <./image/feedback_walle.png> <./im
 age/control_with_feedback.png>]
-<image/pid-controller.png, id=5768, 892.33376pt x 398.48875pt>
+<image/pid-controller.png, id=5771, 892.33376pt x 398.48875pt>
 File: image/pid-controller.png Graphic file (type png)
 <use image/pid-controller.png>
 Package pdftex.def Info: image/pid-controller.png  used on input line 125.
@@ -3273,7 +3286,7 @@ Package pdftex.def Info: image/pid-controller.png  used on input line 125.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [393] [394 <./image/pid-controller.png>] [395]
-<image/root_locus_example.png, id=5786, 914.41624pt x 555.07375pt>
+<image/root_locus_example.png, id=5789, 914.41624pt x 555.07375pt>
 File: image/root_locus_example.png Graphic file (type png)
 <use image/root_locus_example.png>
 Package pdftex.def Info: image/root_locus_example.png  used on input line 334.
@@ -3286,7 +3299,7 @@ Overfull \vbox (23.3244pt too high) has occurred while \output is active []
 
 
 [397]
-<image/example_bode_plot.png, id=5799, 494.84875pt x 324.21124pt>
+<image/example_bode_plot.png, id=5802, 494.84875pt x 324.21124pt>
 File: image/example_bode_plot.png Graphic file (type png)
 <use image/example_bode_plot.png>
 Package pdftex.def Info: image/example_bode_plot.png  used on input line 403.
@@ -3295,7 +3308,7 @@ Package pdftex.def Info: image/example_bode_plot.png  used on input line 403.
 Underfull \vbox (badness 5802) has occurred while \output is active []
 
  [398 <./image/root_locus_example.png>] [399 <./image/example_bode_plot.png>]
-<image/nyquist_curve.png, id=5812, 592.2125pt x 561.09625pt>
+<image/nyquist_curve.png, id=5815, 592.2125pt x 561.09625pt>
 File: image/nyquist_curve.png Graphic file (type png)
 <use image/nyquist_curve.png>
 Package pdftex.def Info: image/nyquist_curve.png  used on input line 431.
@@ -3308,19 +3321,19 @@ Overfull \vbox (4.37653pt too high) has occurred while \output is active []
 
 
 [402]
-<image/nyquist_curve_example.png, id=5835, 861.2175pt x 558.085pt>
+<image/nyquist_curve_example.png, id=5838, 861.2175pt x 558.085pt>
 File: image/nyquist_curve_example.png Graphic file (type png)
 <use image/nyquist_curve_example.png>
 Package pdftex.def Info: image/nyquist_curve_example.png  used on input line 54
 0.
 (pdftex.def)             Requested size: 341.43306pt x 221.25441pt.
-<image/nyqvist_curve_example_solution.png, id=5836, 901.3675pt x 596.2275pt>
+<image/nyqvist_curve_example_solution.png, id=5839, 901.3675pt x 596.2275pt>
 File: image/nyqvist_curve_example_solution.png Graphic file (type png)
 <use image/nyqvist_curve_example_solution.png>
 Package pdftex.def Info: image/nyqvist_curve_example_solution.png  used on inpu
 t line 546.
 (pdftex.def)             Requested size: 341.43306pt x 225.85008pt.
-<image/general_linear_feedback_control.png, id=5837, 835.12pt x 345.29pt>
+<image/general_linear_feedback_control.png, id=5840, 835.12pt x 345.29pt>
 File: image/general_linear_feedback_control.png Graphic file (type png)
 <use image/general_linear_feedback_control.png>
 Package pdftex.def Info: image/general_linear_feedback_control.png  used on inp
@@ -3328,7 +3341,7 @@ ut line 565.
 (pdftex.def)             Requested size: 341.43306pt x 141.16939pt.
  [403 <./image/nyquist_curve_example.png> <./image/nyqvist_curve_example_soluti
 on.png>]
-<image/general_feedback_disturbance.png, id=5846, 528.97626pt x 364.36125pt>
+<image/general_feedback_disturbance.png, id=5849, 528.97626pt x 364.36125pt>
 File: image/general_feedback_disturbance.png Graphic file (type png)
 <use image/general_feedback_disturbance.png>
 Package pdftex.def Info: image/general_feedback_disturbance.png  used on input 
@@ -3336,13 +3349,13 @@ line 580.
 (pdftex.def)             Requested size: 341.43306pt x 235.18077pt.
  [404 <./image/general_linear_feedback_control.png> <./image/general_feedback_d
 isturbance.png>]
-<image/translate_lti_system_models.png, id=5857, 599.23875pt x 295.1025pt>
+<image/translate_lti_system_models.png, id=5860, 599.23875pt x 295.1025pt>
 File: image/translate_lti_system_models.png Graphic file (type png)
 <use image/translate_lti_system_models.png>
 Package pdftex.def Info: image/translate_lti_system_models.png  used on input l
 ine 624.
 (pdftex.def)             Requested size: 341.43306pt x 168.14711pt.
-<image/state-space_form_from_transfer_function.png, id=5858, 597.23125pt x 427.
+<image/state-space_form_from_transfer_function.png, id=5861, 597.23125pt x 427.
 5975pt>
 File: image/state-space_form_from_transfer_function.png Graphic file (type png)
 
@@ -3355,20 +3368,20 @@ d on input line 643.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [405 <./image/translate_lti_system_models.png>]
-<image/state-feedback_control.png, id=5868, 462.72874pt x 136.51pt>
+<image/state-feedback_control.png, id=5871, 462.72874pt x 136.51pt>
 File: image/state-feedback_control.png Graphic file (type png)
 <use image/state-feedback_control.png>
 Package pdftex.def Info: image/state-feedback_control.png  used on input line 6
 89.
 (pdftex.def)             Requested size: 341.43306pt x 100.72836pt.
  [406 <./image/state-space_form_from_transfer_function.png>]
-<image/state-feedback_control_2.png, id=5875, 482.80376pt x 162.6075pt>
+<image/state-feedback_control_2.png, id=5878, 482.80376pt x 162.6075pt>
 File: image/state-feedback_control_2.png Graphic file (type png)
 <use image/state-feedback_control_2.png>
 Package pdftex.def Info: image/state-feedback_control_2.png  used on input line
  703.
 (pdftex.def)             Requested size: 341.43306pt x 114.99806pt.
-<image/state-feedback_control_3.png, id=5876, 561.09625pt x 199.74625pt>
+<image/state-feedback_control_3.png, id=5879, 561.09625pt x 199.74625pt>
 File: image/state-feedback_control_3.png Graphic file (type png)
 <use image/state-feedback_control_3.png>
 Package pdftex.def Info: image/state-feedback_control_3.png  used on input line
@@ -3376,7 +3389,7 @@ Package pdftex.def Info: image/state-feedback_control_3.png  used on input line
 (pdftex.def)             Requested size: 341.43306pt x 121.54634pt.
  [407 <./image/state-feedback_control.png> <./image/state-feedback_control_2.pn
 g> <./image/state-feedback_control_3.png>] [408]
-<image/observer_etimating.png, id=5893, 462.72874pt x 160.6pt>
+<image/observer_etimating.png, id=5896, 462.72874pt x 160.6pt>
 File: image/observer_etimating.png Graphic file (type png)
 <use image/observer_etimating.png>
 Package pdftex.def Info: image/observer_etimating.png  used on input line 844.
@@ -3386,14 +3399,14 @@ Package pdftex.def Info: image/observer_etimating.png  used on input line 844.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [409]
-<image/controller_with_observer.png, id=5900, 534.99875pt x 152.57pt>
+<image/controller_with_observer.png, id=5903, 534.99875pt x 152.57pt>
 File: image/controller_with_observer.png Graphic file (type png)
 <use image/controller_with_observer.png>
 Package pdftex.def Info: image/controller_with_observer.png  used on input line
  873.
 (pdftex.def)             Requested size: 341.43306pt x 97.3744pt.
  [410 <./image/observer_etimating.png> <./image/controller_with_observer.png>]
-<image/control_system_with_disturbances_and_noise.png, id=5911, 556.0775pt x 22
+<image/control_system_with_disturbances_and_noise.png, id=5914, 556.0775pt x 22
 5.84375pt>
 File: image/control_system_with_disturbances_and_noise.png Graphic file (type p
 ng)
@@ -3402,7 +3415,7 @@ Package pdftex.def Info: image/control_system_with_disturbances_and_noise.png
 used on input line 930.
 (pdftex.def)             Requested size: 341.43306pt x 138.67079pt.
  [411 <./image/control_system_with_disturbances_and_noise.png>]
-<image/digital_systems_and_discrete-time_clocks.png, id=5921, 886.31125pt x 276
+<image/digital_systems_and_discrete-time_clocks.png, id=5924, 886.31125pt x 276
 .03125pt>
 File: image/digital_systems_and_discrete-time_clocks.png Graphic file (type png
 )
@@ -3410,7 +3423,7 @@ File: image/digital_systems_and_discrete-time_clocks.png Graphic file (type png
 Package pdftex.def Info: image/digital_systems_and_discrete-time_clocks.png  us
 ed on input line 974.
 (pdftex.def)             Requested size: 341.43306pt x 106.33763pt.
-<image/digital_systems_and_discrete-time_clocks_da.png, id=5922, 881.2925pt x 2
+<image/digital_systems_and_discrete-time_clocks_da.png, id=5925, 881.2925pt x 2
 75.0275pt>
 File: image/digital_systems_and_discrete-time_clocks_da.png Graphic file (type 
 png)
@@ -3420,7 +3433,7 @@ Package pdftex.def Info: image/digital_systems_and_discrete-time_clocks_da.png
 (pdftex.def)             Requested size: 341.43306pt x 106.55107pt.
  [412 <./image/digital_systems_and_discrete-time_clocks.png> <./image/digital_s
 ystems_and_discrete-time_clocks_da.png>]
-<image/zero-order_hold.png, id=5934, 487.8225pt x 305.14pt>
+<image/zero-order_hold.png, id=5937, 487.8225pt x 305.14pt>
 File: image/zero-order_hold.png Graphic file (type png)
 <use image/zero-order_hold.png>
 Package pdftex.def Info: image/zero-order_hold.png  used on input line 1003.
@@ -3436,20 +3449,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--31
  []
 
 [416] [417]
-<image/actual_prediction_matrix.png, id=5964, 606.265pt x 603.25375pt>
+<image/actual_prediction_matrix.png, id=5967, 606.265pt x 603.25375pt>
 File: image/actual_prediction_matrix.png Graphic file (type png)
 <use image/actual_prediction_matrix.png>
 Package pdftex.def Info: image/actual_prediction_matrix.png  used on input line
  148.
 (pdftex.def)             Requested size: 227.62204pt x 226.49574pt.
  [418 <./image/actual_prediction_matrix.png (PNG copy)>]
-<image/linear_regression.png, id=5971, 495.8525pt x 407.5225pt>
+<image/linear_regression.png, id=5974, 495.8525pt x 407.5225pt>
 File: image/linear_regression.png Graphic file (type png)
 <use image/linear_regression.png>
 Package pdftex.def Info: image/linear_regression.png  used on input line 172.
 (pdftex.def)             Requested size: 227.62204pt x 187.07086pt.
  [419 <./image/linear_regression.png (PNG copy)>]
-<image/bayes_theorem.png, id=5981, 1100.11pt x 609.27625pt>
+<image/bayes_theorem.png, id=5984, 1100.11pt x 609.27625pt>
 File: image/bayes_theorem.png Graphic file (type png)
 <use image/bayes_theorem.png>
 Package pdftex.def Info: image/bayes_theorem.png  used on input line 252.
@@ -3459,67 +3472,67 @@ Package pdftex.def Info: image/bayes_theorem.png  used on input line 252.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [420]
-<image/linear_vs_logistic.png, id=5986, 1204.5pt x 533.995pt>
+<image/linear_vs_logistic.png, id=5989, 1204.5pt x 533.995pt>
 File: image/linear_vs_logistic.png Graphic file (type png)
 <use image/linear_vs_logistic.png>
 Package pdftex.def Info: image/linear_vs_logistic.png  used on input line 278.
 (pdftex.def)             Requested size: 341.43306pt x 151.36719pt.
  [421 <./image/bayes_theorem.png> <./image/linear_vs_logistic.png (PNG copy)>] 
 [422]
-<image/svm_margins_in_2_dim.png, id=6004, 353.32pt x 333.245pt>
+<image/svm_margins_in_2_dim.png, id=6007, 353.32pt x 333.245pt>
 File: image/svm_margins_in_2_dim.png Graphic file (type png)
 <use image/svm_margins_in_2_dim.png>
 Package pdftex.def Info: image/svm_margins_in_2_dim.png  used on input line 387
 .
 (pdftex.def)             Requested size: 341.43306pt x 322.03703pt.
  [423 <./image/svm_margins_in_2_dim.png>] [424]
-<image/gaussian_kernels_1.png, id=6015, 387.4475pt x 256.96pt>
+<image/gaussian_kernels_1.png, id=6018, 387.4475pt x 256.96pt>
 File: image/gaussian_kernels_1.png Graphic file (type png)
 <use image/gaussian_kernels_1.png>
 Package pdftex.def Info: image/gaussian_kernels_1.png  used on input line 428.
 (pdftex.def)             Requested size: 187.89914pt x 124.6176pt.
-<image/gaussian_kernels_2.png, id=6016, 389.455pt x 258.9675pt>
+<image/gaussian_kernels_2.png, id=6019, 389.455pt x 258.9675pt>
 File: image/gaussian_kernels_2.png Graphic file (type png)
 <use image/gaussian_kernels_2.png>
 Package pdftex.def Info: image/gaussian_kernels_2.png  used on input line 433.
 (pdftex.def)             Requested size: 187.89914pt x 124.94312pt.
  [425 <./image/gaussian_kernels_1.png> <./image/gaussian_kernels_2.png>]
-<image/bias_variance_trade_off.png, id=6024, 545.03625pt x 338.26375pt>
+<image/bias_variance_trade_off.png, id=6027, 545.03625pt x 338.26375pt>
 File: image/bias_variance_trade_off.png Graphic file (type png)
 <use image/bias_variance_trade_off.png>
 Package pdftex.def Info: image/bias_variance_trade_off.png  used on input line 
 451.
 (pdftex.def)             Requested size: 341.43306pt x 211.89949pt.
  [426 <./image/bias_variance_trade_off.png>]
-<image/grid_search.png, id=6031, 243.91125pt x 147.55125pt>
+<image/grid_search.png, id=6034, 243.91125pt x 147.55125pt>
 File: image/grid_search.png Graphic file (type png)
 <use image/grid_search.png>
 Package pdftex.def Info: image/grid_search.png  used on input line 497.
 (pdftex.def)             Requested size: 341.43306pt x 206.5478pt.
  [427 <./image/grid_search.png>]
-<image/corr_matrix.png, id=6042, 390.70969pt x 340.27126pt>
+<image/corr_matrix.png, id=6045, 390.70969pt x 340.27126pt>
 File: image/corr_matrix.png Graphic file (type png)
 <use image/corr_matrix.png>
 Package pdftex.def Info: image/corr_matrix.png  used on input line 539.
 (pdftex.def)             Requested size: 164.41711pt x 143.19331pt.
-<image/correlation.png, id=6043, 1204.5pt x 550.055pt>
+<image/correlation.png, id=6046, 1204.5pt x 550.055pt>
 File: image/correlation.png Graphic file (type png)
 <use image/correlation.png>
 Package pdftex.def Info: image/correlation.png  used on input line 545.
 (pdftex.def)             Requested size: 258.36668pt x 117.98254pt.
-<image/heatmap.png, id=6044, 372.39125pt x 266.9975pt>
+<image/heatmap.png, id=6047, 372.39125pt x 266.9975pt>
 File: image/heatmap.png Graphic file (type png)
 <use image/heatmap.png>
 Package pdftex.def Info: image/heatmap.png  used on input line 556.
 (pdftex.def)             Requested size: 227.62204pt x 163.20636pt.
  [428 <./image/corr_matrix.png> <./image/correlation.png> <./image/heatmap.png 
 (PNG copy)>]
-<image/k-nn.png, id=6053, 589.20125pt x 297.11pt>
+<image/k-nn.png, id=6056, 589.20125pt x 297.11pt>
 File: image/k-nn.png Graphic file (type png)
 <use image/k-nn.png>
 Package pdftex.def Info: image/k-nn.png  used on input line 570.
 (pdftex.def)             Requested size: 341.43306pt x 172.16977pt.
-<image/hierarchical_clustering.png, id=6055, 594.22pt x 255.95625pt>
+<image/hierarchical_clustering.png, id=6058, 594.22pt x 255.95625pt>
 File: image/hierarchical_clustering.png Graphic file (type png)
 <use image/hierarchical_clustering.png>
 Package pdftex.def Info: image/hierarchical_clustering.png  used on input line 
@@ -3530,17 +3543,17 @@ Package pdftex.def Info: image/hierarchical_clustering.png  used on input line
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [429 <./image/k-nn.png (PNG copy)>]
-<image/k-means.png, id=6062, 1204.5pt x 501.875pt>
+<image/k-means.png, id=6065, 1204.5pt x 501.875pt>
 File: image/k-means.png Graphic file (type png)
 <use image/k-means.png>
 Package pdftex.def Info: image/k-means.png  used on input line 634.
 (pdftex.def)             Requested size: 341.43306pt x 142.26239pt.
-<image/DBSCAN_application.png, id=6064, 363.3575pt x 240.9pt>
+<image/DBSCAN_application.png, id=6067, 363.3575pt x 240.9pt>
 File: image/DBSCAN_application.png Graphic file (type png)
 <use image/DBSCAN_application.png>
 Package pdftex.def Info: image/DBSCAN_application.png  used on input line 663.
 (pdftex.def)             Requested size: 187.89914pt x 124.57765pt.
-<image/DBSCAN_model.png, id=6065, 608.2725pt x 450.68375pt>
+<image/DBSCAN_model.png, id=6068, 608.2725pt x 450.68375pt>
 File: image/DBSCAN_model.png Graphic file (type png)
 <use image/DBSCAN_model.png>
 Package pdftex.def Info: image/DBSCAN_model.png  used on input line 669.
@@ -3550,7 +3563,7 @@ Package pdftex.def Info: image/DBSCAN_model.png  used on input line 669.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [430 <./image/hierarchical_clustering.png> <./image/k-means.png (PNG copy)>]
-<image/decision_trees.png, id=6073, 511.9125pt x 285.065pt>
+<image/decision_trees.png, id=6076, 511.9125pt x 285.065pt>
 File: image/decision_trees.png Graphic file (type png)
 <use image/decision_trees.png>
 Package pdftex.def Info: image/decision_trees.png  used on input line 689.
@@ -3558,12 +3571,12 @@ Package pdftex.def Info: image/decision_trees.png  used on input line 689.
 
 [431 <./image/DBSCAN_application.png> <./image/DBSCAN_model.png> <./image/decis
 ion_trees.png>]
-<image/unfair_coin.png, id=6086, 289.08pt x 276.03125pt>
+<image/unfair_coin.png, id=6089, 289.08pt x 276.03125pt>
 File: image/unfair_coin.png Graphic file (type png)
 <use image/unfair_coin.png>
 Package pdftex.def Info: image/unfair_coin.png  used on input line 738.
 (pdftex.def)             Requested size: 170.71652pt x 163.00864pt.
-<image/information_gain.png, id=6087, 581.17125pt x 187.70125pt>
+<image/information_gain.png, id=6090, 581.17125pt x 187.70125pt>
 File: image/information_gain.png Graphic file (type png)
 <use image/information_gain.png>
 Package pdftex.def Info: image/information_gain.png  used on input line 751.
@@ -3573,14 +3586,14 @@ Package pdftex.def Info: image/information_gain.png  used on input line 751.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [432 <./image/unfair_coin.png>]
-<image/example_conditional_entropy.png, id=6095, 477.785pt x 101.37875pt>
+<image/example_conditional_entropy.png, id=6098, 477.785pt x 101.37875pt>
 File: image/example_conditional_entropy.png Graphic file (type png)
 <use image/example_conditional_entropy.png>
 Package pdftex.def Info: image/example_conditional_entropy.png  used on input l
 ine 768.
 (pdftex.def)             Requested size: 284.52756pt x 60.37137pt.
  [433 <./image/information_gain.png> <./image/example_conditional_entropy.png>]
-<image/pca_demo.png, id=6107, 1014.79124pt x 364.36125pt>
+<image/pca_demo.png, id=6110, 1014.79124pt x 364.36125pt>
 File: image/pca_demo.png Graphic file (type png)
 <use image/pca_demo.png>
 Package pdftex.def Info: image/pca_demo.png  used on input line 805.
@@ -3591,15 +3604,17 @@ Package pdftex.def Info: image/pca_demo.png  used on input line 805.
 
 ]
 Chapter 19.
-[437] [438]) [439] (./main.aux)
+[437] [438]) [439] (./main.bbl [440
+
+]) [441] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 2FABC97FE600200325C23CE4524EE793;91069.
  ) 
 Here is how much of TeX's memory you used:
- 46103 strings out of 478862
- 1012191 string characters out of 5858945
- 1686359 words of memory out of 6000000
- 60992 multiletter control sequences out of 15000+600000
+ 46122 strings out of 478862
+ 1012466 string characters out of 5858945
+ 1686405 words of memory out of 6000000
+ 61004 multiletter control sequences out of 15000+600000
  433393 words of font info for 119 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  114i,22n,117p,714b,1837s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3646,10 +3661,10 @@ texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/cm-super/sfti1000.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/cm-super/sftt1000.pfb>
-Output written on main.pdf (439 pages, 19349597 bytes).
+Output written on main.pdf (441 pages, 19350531 bytes).
 PDF statistics:
- 6631 PDF objects out of 7423 (max. 8388607)
- 5702 compressed objects within 58 object streams
- 1721 named destinations out of 1728 (max. 500000)
+ 6646 PDF objects out of 7423 (max. 8388607)
+ 5714 compressed objects within 58 object streams
+ 1725 named destinations out of 1728 (max. 500000)
  5706 words of extra memory for PDF output out of 10000 (max. 10000000)
 

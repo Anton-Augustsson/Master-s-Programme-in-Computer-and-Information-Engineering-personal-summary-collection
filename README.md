@@ -1,15 +1,18 @@
+# Master's Programme in Computer and Information Engineering personal summary collection
+A collection of summaries from the courses studied in the Master's Programme in Computer and 
+Information Engineering. 
 
-# Chapter 1  Basic course in mathematics
-git@github.com:Anton-Augustsson/basic-course-in-mathematics.git
+Most images are from Uppsala University, some I have created my self and a few are taken 
+from the internet.
 
-# Chapter 2 PKD
-git@github.com:Anton-Augustsson/PKD.git
+Most of the text is write by me. There are however a few that are from Uppsala University
+and some that are taken from the internet. 
 
-# Chapter 3 AlgebraI
-git@github.com:Anton-Augustsson/algebraI.git
+The chapters are ranked based on the order in which they were studied on the programme.
 
-# Chapter 4 single variable calculus
-git@github.com:Anton-Augustsson/single-variable-calculus.git
+Not all courses in the programme has been added, since I haven't studied them yet. 
+The expected examination date is June 2024.
 
-# Chapter 5 Computer Architecture
-git@github.com:Anton-Augustsson/computer-architecture.git
+The language is mixed between Swedish and English dependent on the course language.
+
+There might be some repartitions if information due to its relevance in the course.
