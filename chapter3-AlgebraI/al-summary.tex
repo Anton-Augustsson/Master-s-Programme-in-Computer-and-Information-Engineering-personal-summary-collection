@@ -159,12 +159,16 @@
 
 \section{Bevis}
 \subsection{Induktions bevis}
-steg 1: bevisa att det gäller för basfallet
+\begin{itemize}
+  \item steg 1: bevisa att det gäller för basfallet.
+  \item Steg 2: bevvisar att p => p.
+  \begin{itemize}
+    \item a. Antar att det stämmer för pp.
+    \item b. Vissar att med att stopa in antagandet i pp+1 så blir hl = vl.
+  \end{itemize}
+\end{itemize}
+Tips: Förenkla hl först och sedan vl på klad papper fram och tillbacka. \newline
 
-Steg 2: bevvisar att p => p
-a. Antar att det stämmer för pp
-b. Vissar att med att stopa in antagandet i pp+1 så blir hl = vl
-Tips: Förenkla hl först och sedan vl på klad papper fram och tillbacka
 \textbf{Exempel Recursion:}\par
 \begin{align*}
   &\quad  a_1 = 2, a_{n+1} = \frac{7a_n}{7-a_n}, n \in \mathbb{N} \\
@@ -184,9 +188,12 @@ Tips: Förenkla hl först och sedan vl på klad papper fram och tillbacka
 \end{align*}
 
 \subsection{Motsägelse bevis}
-Steg 1: Formulera utsagan och icke utsagan
-Steg 2: Hitta en motsägelse med utsagan
-Tips: Förenka båda led, tänk på teorin vi har, bättre att gå vaga moteveringar en inga alls
+\begin{itemize}
+  \item Steg 1: Formulera utsagan och icke utsagan
+  \item Steg 2: Hitta en motsägelse med utsagan
+\end{itemize}
+Tips: Förenka båda led, tänk på teorin vi har, bättre att gå vaga moteveringar en inga alls \newline
+
 \begin{align*}
   &\quad  \\
   &\quad  \text{Bevis med motsägelse } \\
@@ -297,7 +304,7 @@ För att bestäma om tal a är ett primtal
   &\quad  \text{Om 211 är ett primtal så finns det inte en äkta delare a} \\
   &\quad  2 \leq a \leq \sqrt{211}  \\
   &\quad  \sqrt{211} \approx 16 \\
-  &\quad  a: \{ \not 2, \not 3, \not 5, \not 7, \not 11, \not{13} \} \\
+  &\quad  a: \{ \cancel{2}, \cancel{3}, \cancel{5}, \cancel{7}, \cancel{11}, \cancel{13} \} \\
   &\quad  \text{a kan inte vara en äktadelare} \\
 \end{align*}
 
@@ -359,9 +366,9 @@ Motsägelsebevis
   &\quad  y = 74 \cdot (-1) + 3n = -74 + 3n \\
   &\quad  \text{steg5: hittar godtyckliga lösningar} \\
   &\quad  \text{Intervallet som n ligger i för x-termen:} \\
-  &\quad  n = {\not 29, 28, 27, \ldots }, x = 148 - 5 \cdot 28 = 148 - 140 = 8 \\ 
+  &\quad  n = {\cancel{29}, 28, 27, \ldots }, x = 148 - 5 \cdot 28 = 148 - 140 = 8 \\ 
   &\quad  \text{Intervallet som n ligger i för y-termen:} \\
-  &\quad  n = {\not 27, 28, 29, \ldots }, x = -74 + 3 \cdot 28 = 74 - 84 = 10 \\
+  &\quad  n = {\cancel{27}, 28, 29, \ldots }, x = -74 + 3 \cdot 28 = 74 - 84 = 10 \\
   &\quad  n = 28, x=8, y=10 \\
   &\quad  12 \cdot 8 + 20 \cdot 10 = 296 \\
 \end{align*}
@@ -414,7 +421,7 @@ eller så kan man andvända euklides algoritm
 \begin{align*}
   &\quad  A \times B = \{ (a,b): a \in A \land b \in B \} \\
   &\quad  \text{Låt } A = \{ 1,2,3 \} \land B = \{ x,y,z,w \} \\
-  &\quad  A x B : \\
+  &\quad  A \times B : \\
   &\quad  \{ (1,x), (1,y), (1,z), (1,w) \\
   &\quad  (2,x), (2,y), (2,z), (2,w) \\
   &\quad  (3,x), (3,y), (3,z), (3,w) \} \\
@@ -423,7 +430,7 @@ eller så kan man andvända euklides algoritm
 \subsection{Inversen}
 En funktions invers kan enda
 \begin{align*}
-  &\quad  f: A \to B \land Bijektiv \Rightarrow f^{-1}(x) \text{ Finns, där}  \\
+  &\quad  f: A \to B \land \text{Bijektiv} \Rightarrow f^{-1}(x) \text{ Finns, där}  \\
   &\quad \text{(1) }  x = f^{-1}(y) \Leftrightarrow y = f(x) \\
   &\quad \text{(2) }  D_{f^-1} = V_f \Leftrightarrow D_f = V_{f^-1} \\
   &\quad \text{(3) }  x = f^{-1}(f(x)), x \in D_f = V_{f^-1} \\ 
@@ -619,7 +626,7 @@ kardinalitet som reala tal trots att naturliga tal är en del mängd av reala ta
 \newpage
 \textbf{Exempel, SGD polynom:}\par
 \begin{align*}
-  &\quad  \text{Förenkla} \frac{x^4+x^3+2x-4}{x^4-x^3-2x-4} \\
+  &\quad  \text{Förenkla } \frac{x^4+x^3+2x-4}{x^4-x^3-2x-4} \\
   &\quad  SGD(x^4+x^3+2x-4, x^4-x^3-2x-4):  \\
   &\quad  x^4+x^3+2x-4 = 1 \cdot x^4-x^3-2x-4 + (2x^3 +4x) \\
   &\quad  x^4-x^3-2x-4 = \frac{x}{2}-\frac{1}{2} \cdot (2x^3 +4x) + (-2x^2-4) \text{ med polynom divition} \\
