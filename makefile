@@ -7,9 +7,9 @@ compile:
 	pdflatex main
 
 clean:
-	rm main.aux
-	rm main.bbl
-	rm main.blg
-	rm main.log
-	rm main.out
-	rm main.toc
+	rm -f main.aux
+	rm -f main.bbl
+	rm -f main.blg
+	rm -f main.log
+	rm -f main.out
+	rm -f main.toc
