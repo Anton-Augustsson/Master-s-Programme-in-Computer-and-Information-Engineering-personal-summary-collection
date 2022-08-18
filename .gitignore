@@ -5,6 +5,7 @@
 *.bbl
 *.blg
 *.log
+*.out
 
 # Emacs spesific
 *.~undo-tree~

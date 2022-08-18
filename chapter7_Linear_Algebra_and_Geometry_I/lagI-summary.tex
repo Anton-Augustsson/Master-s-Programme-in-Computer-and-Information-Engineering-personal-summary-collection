@@ -7,8 +7,8 @@
 \textbf{3 gundläggande operationer för att lösa linjära ekvationer}
 \begin{align*}
   &\quad (1) \text{ (Tvåpilar) Byt om på två ekvationer} \\
-  &\quad (2) \text{ (Labbda) Multiplicera båda sidorna av en ekvation med } \lambda \neq 0 \\
-  &\quad (3) \text{ (Labda pil) addera } \lambda
+  &\quad (2) \text{ (Lambda) Multiplicera båda sidorna av en ekvation med } \lambda \neq 0 \\
+  &\quad (3) \text{ (Lambda pil) addera } \lambda
   \text{ gånga en ekvation till en annan ekvation} \\  
 \end{align*}
 
@@ -43,16 +43,16 @@
   \end{array}\right. \\
   &\quad \\
   &\quad  \text{Andvänder rad operationer för att lösa ekv systemet} \\
-  &\quad  (-\frac{3}{2})\text{pil ned}\left\{\begin{array}{l}
+  &\quad  \left(-\frac{3}{2}\right) \text{pil ned} \left\{\begin{array}{l}
   2x+3y=4 \\
   3x-y=6
   \end{array}\right. \\
   &\quad
   (3x-y) -\frac{3}{2} (2x+3y)=6 -\frac{3}{2} \cdot 4 \Leftrightarrow{} \\
   &\quad
-  (3-\frac{3}{2}\cdot 2) x + (-1 -\frac{9}{2}) y = 6 -6
+  \left(3-\frac{3}{2}\cdot 2\right) x + \left(-1 -\frac{9}{2}\right) y = 6 -6
   \Leftrightarrow-\frac{11}{2}y = 0 \\
-  &\quad  (-\frac{2}{11})\text{ned}\left\{\begin{array}{l}
+  &\quad  \left(-\frac{2}{11}\right) \text{ned} \left\{\begin{array}{l}
   2x+3y=4 \\
   -\frac{11}{2}y = 0
   \end{array}\right. \\
@@ -60,7 +60,7 @@
   2x+3y=4 \\
   y=0
   \end{array}\right. \\
-  &\quad  (\frac{1}{2})\text{upp}\left\{\begin{array}{l}
+  &\quad  \left(\frac{1}{2}\right)\text{upp}\left\{\begin{array}{l}
   2x=4 \\
   y=0
   \end{array}\right. \\
@@ -75,18 +75,15 @@
 \end{align*}
 
 
-\newpage
-
 \subsection{Total Matris}
 \textbf{Termonologi}
 \begin{itemize}
-\item Rader och Kolonner: Rader är vågräta delen av matrisen (ekvationen)
-  Kolonner är lodräta delen (koificenterna)
-\item ledande ekvivalent: 
-\item trappstegs matris: När ledande ekvivalent är i trapp form går ned max ett steg
-\item rad kanonisk: När alla av de ledande ekvivalent inte har någon i samma kolonn
+  \item Rader och Kolonner: Rader är vågräta delen av matrisen (ekvationen)
+    Kolonner är lodräta delen (koificenterna)
+  \item ledande ekvivalent: 
+  \item trappstegs matris: När ledande ekvivalent är i trapp form går ned max ett steg
+  \item rad kanonisk: När alla av de ledande ekvivalent inte har någon i samma kolonn
 \end{itemize}
-
   
 \textbf{Exempel matriser}
 \begin{align*}
@@ -463,7 +460,7 @@ Parralell koposant skrivs $\vec{v}_{||{l}}$ och ortogonal skrivs $\vec{v}_{\perp
   &\quad \\
   &\quad  \text{(1.) beräknar vektorn från godtykliga punkten till den givna } \\
   &\quad  \overrightarrow{PQ}=
-  \begin{pmatrix} 0-(-2) \\ 1 -4 \\ 1-3 \end{pmatrix} =
+  \begin{pmatrix} 0- (-2) \\ 1 -4 \\ 1 -3 \end{pmatrix} =
   \begin{pmatrix} 2 \\ -3 \\ -2 \end{pmatrix} \\
   &\quad  \text{(2.) Beräknar ortogonala projectionen } \\
   &\quad  \overrightarrow{NQ}=\overrightarrow{PQ}_{||v}=
@@ -478,7 +475,7 @@ Parralell koposant skrivs $\vec{v}_{||{l}}$ och ortogonal skrivs $\vec{v}_{\perp
   \begin{pmatrix} -3 \\ 2 \\ 1 \end{pmatrix}=
   \begin{pmatrix} -3 \\ 3 \\ 2 \end{pmatrix} \\
   &\quad  \text{(4.) Beräknar längden }
-  |\begin{pmatrix} -2 \\ 4 \\ 3 \end{pmatrix}-\begin{pmatrix} -3 \\ 3 \\ 2 \end{pmatrix}|
+  \left|\begin{pmatrix} -2 \\ 4 \\ 3 \end{pmatrix}-\begin{pmatrix} -3 \\ 3 \\ 2 \end{pmatrix}\right|
   =\sqrt{1^2+1^2+1^2}=\sqrt{3} \\
   &\quad  \\
   &\quad  \text{Svar: avståndet är $\sqrt{3}$ och punten är $(-3,3,2)$} \\
@@ -549,8 +546,6 @@ Parralell koposant skrivs $\vec{v}_{||{l}}$ och ortogonal skrivs $\vec{v}_{\perp
 \end{align*}
 
 
-\newpage
-
 \subsection{Enhetsvektorer och ON-baser}
 \begin{align*} 
   &\quad  \text{En enhetsvektor är en vektor med längd 1.} \\
@@ -613,7 +608,7 @@ och långfingret är 3.
     \vspace{10mm}
     \centering
     \includegraphics[width=12cm, height=5cm]{image/vektorprodukt.png} 
-    \caption{Vektorprodukten}
+    \caption{Vektorprodukten. From \cite{}}
 \end{figure}
 
 \textbf{Exempel: Hitta basen}
