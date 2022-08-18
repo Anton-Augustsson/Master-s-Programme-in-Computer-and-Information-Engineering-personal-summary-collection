@@ -208,20 +208,18 @@ Ett underrum är en delmängd $u$ ej $0$ som är sluten under addition och skaln
 
 \textbf{Exempel: Underrum (Ex 1)}
 \begin{align*}
-  &\quad  \text{är } \Big\{ \begin{pmatrix} x \\ y \\ z \end{pmatrix} | x+y+z=5 \Big\}
+  &\quad  \text{är } \left\{ \begin{pmatrix} x \\ y \\ z \end{pmatrix} | x+y+z=5 \right\}
   \text{ ett underrum?} \\
   &\quad  \\
   &\quad  \text{Nej, då: } 0+0+0\neq5 \\
 \end{align*} %exotisa exempel x=x^2 är ej sant då 2(1 1)^t = (2 2)^t, 2^2\neq2
 
 
-\newpage
-
 \textbf{Definition: linjära höljet}
 \begin{align*}
   &\quad  \text{En delmängd $\mathbb{U}$ av ett vektorrum $\mathbb{V}$ kallas för } \\
   &\quad  \text{ett underrum eller delrum av $\mathbb{V}$ om $\mathbb{U}$ är ett vektorrum} \\
-  &\quad  \text{med den additionoch den multiplikation med reella tal som definierats i
+  &\quad  \text{med den addition och den multiplikation med reella tal som definierats i
     $\mathbb{V}$.} \\
 \end{align*}
 
@@ -235,8 +233,6 @@ Ett underrum är en delmängd $u$ ej $0$ som är sluten under addition och skaln
   &\quad  \text{Vi för kombinera det olika elementen i u med addition och multiplication} \\
 \end{align*}
 % exemepl 5.3.7
-
-\newpage
 
 \section{Linjärt \(o\)beroende}
 \textbf{Ide: linjärt beronde}
@@ -299,7 +295,7 @@ Ett underrum är en delmängd $u$ ej $0$ som är sluten under addition och skaln
   s/2\begin{pmatrix} 1 \\ 2 \\ 0 \end{pmatrix} +
   t/2\begin{pmatrix} -1 \\ 0 \\ 2 \end{pmatrix} \\
   &\quad  \text{Basen blir då }
-  \Big( \begin{pmatrix} 1 \\ 2 \\ 0 \end{pmatrix} \begin{pmatrix} -1 \\ 0 \\ 2 \end{pmatrix} \Big) \\
+  \left( \begin{pmatrix} 1 \\ 2 \\ 0 \end{pmatrix} \begin{pmatrix} -1 \\ 0 \\ 2 \end{pmatrix} \right) \\
 \end{align*}
 
 
@@ -319,7 +315,7 @@ matrisen som kan multipliseras med vektor för att få omvandlingen.
 \textbf{Exempel: Från standar till annan bas}
 \begin{align*}
   &\quad  \text{Låt } \underline{f}=(f_1 \, f_2) =
-  \Big( \begin{pmatrix} 2 \\ 1 \\ 1 \end{pmatrix} \begin{pmatrix} 1 \\ 2 \\ 1 \end{pmatrix} \Big), \,
+  \left( \begin{pmatrix} 2 \\ 1 \\ 1 \end{pmatrix} \begin{pmatrix} 1 \\ 2 \\ 1 \end{pmatrix} \right), \,
   \vec{v} = \begin{pmatrix} -2 \\ 5 \\ 1 \end{pmatrix} \\
   &\quad  \text{Utryck $\vec{v}$ i basen $\underline{f}$} \\
   &\quad  \\
@@ -347,7 +343,7 @@ matrisen som kan multipliseras med vektor för att få omvandlingen.
 \textbf{Exempel: Finn matrisen för bas byte vektorer} % polynom och vektorer
 \begin{align*}
   &\quad  \text{Låt } \underline{f} =
-  \Big( \begin{pmatrix} 1 \\ 1 \end{pmatrix} \begin{pmatrix} 2 \\ 1 \end{pmatrix} \Big)
+  \left( \begin{pmatrix} 1 \\ 1 \end{pmatrix} \begin{pmatrix} 2 \\ 1 \end{pmatrix} \right)
   \text{Bestäm bas omvandling matrisen }   \\
   &\quad  \\
   &\quad  \text{Lös } T^{\underline{e}}_{\underline{f}} = 
@@ -381,9 +377,9 @@ matrisen som kan multipliseras med vektor för att få omvandlingen.
 \textbf{Exempel: Finn matrisen för bas byte mellan olika matriser} 
 \begin{align*}
   &\quad  \text{Basbyte mellan } \underline{f} =
-  \Big( \begin{pmatrix} 1 \\ 1 \end{pmatrix} \begin{pmatrix} 2 \\ 1 \end{pmatrix} \Big)
+  \left( \begin{pmatrix} 1 \\ 1 \end{pmatrix} \begin{pmatrix} 2 \\ 1 \end{pmatrix} \right)
   \text{ och }
-  \Big( \begin{pmatrix} -1 \\ 1 \end{pmatrix} \begin{pmatrix} 3 \\ 2 \end{pmatrix} \Big)
+  \left( \begin{pmatrix} -1 \\ 1 \end{pmatrix} \begin{pmatrix} 3 \\ 2 \end{pmatrix} \right)
   &\quad  \\
   &\quad  \text{Lös } T^{\underline{g}}_{\underline{f}}: \,
   \left(\begin{array}{cc|cc}
@@ -405,7 +401,7 @@ matrisen som kan multipliseras med vektor för att få omvandlingen.
 \textbf{Definition: Nollrum, Kolonrum, radrum.} 
 \begin{align*}
   &\quad  \text{låt A vara en $m\times n-matris$} \\
-  &\quad  \text{1. dim(A:s kolonrum) = dim(A:s radrum) = rangA} \\
+  &\quad  \text{1. dim(A:s kolonrum) = dim(A:s radrum) = rang A} \\
   &\quad  \text{2. dim(A:s kolonrum) + dim(A:s nollrum) = n} \\
 \end{align*}
 
@@ -435,16 +431,14 @@ matrisen som kan multipliseras med vektor för att få omvandlingen.
   s\begin{pmatrix} -1 \\ -1 \\ 1 \\ 0 \end{pmatrix} +
   t\begin{pmatrix} 1 \\ -2 \\ 0 \\ 1 \end{pmatrix} \\
   &\quad  \text{Basen för nollrumet blir då }
-  \Big( \begin{pmatrix} -1 \\ -1 \\ 1 \\ 0 \end{pmatrix} \, \begin{pmatrix} 1 \\ -2 \\ 0 \\ 1 \end{pmatrix} \Big)  \\
+  \left( \begin{pmatrix} -1 \\ -1 \\ 1 \\ 0 \end{pmatrix} \, \begin{pmatrix} 1 \\ -2 \\ 0 \\ 1 \end{pmatrix} \right)  \\
   &\quad  \text{Basen för kolonrumet blir då det vektorer i A som har Pivot element dvs } v_1, v_2 \\
   &\quad
-  \Big( \begin{pmatrix} 1 \\ 1 \\ -1 \end{pmatrix} \begin{pmatrix} 2 \\ 3 \\ 0 \end{pmatrix} \Big) \\
+  \left( \begin{pmatrix} 1 \\ 1 \\ -1 \end{pmatrix} \begin{pmatrix} 2 \\ 3 \\ 0 \end{pmatrix} \right) \\
   &\quad  \text{Basen för radrumet blir }
-  \Big( \begin{pmatrix} 1 \\ 0 \\ 1 \\ -1 \end{pmatrix} \begin{pmatrix} 0 \\ 1 \\ 1 \\ 2 \end{pmatrix} \Big) \\
+  \left( \begin{pmatrix} 1 \\ 0 \\ 1 \\ -1 \end{pmatrix} \begin{pmatrix} 0 \\ 1 \\ 1 \\ 2 \end{pmatrix} \right) \\
 \end{align*}
 
-
-\newpage
 
 \section{Linjär avbildning}
 \textbf{Definition: Linjär avbilding}
@@ -466,14 +460,12 @@ matrisen som kan multipliseras med vektor för att få omvandlingen.
 \end{align*}
 
 
-\newpage
-
 \section{Matrisen av en linjär avbilding}
 \begin{figure}[h]
     \vspace{10mm}
     \centering
     \includegraphics[width=10cm, height=5cm]{image/matris_lin_avb.png} 
-    \caption{Matris av en linjär avbildning}
+    \caption{Matris av en linjär avbildning. From \cite{}}
 \end{figure}
 
 \textbf{Exempel: Rotations matrisen}
@@ -844,9 +836,6 @@ matrisen som kan multipliseras med vektor för att få omvandlingen.
 \end{align*}
 
 
-
-\newpage
-
 \section{Inre produkrum}
 % egenskaper för skalär produkt
 \textbf{Definition: Skalärprodukt}
@@ -872,7 +861,7 @@ matrisen som kan multipliseras med vektor för att få omvandlingen.
   &\quad  \text{3. Om $\vec{u}\neq{0}$ och $\vec{v}\neq{0}$ defineras vinkeln mellan
     $\vec{u}$ och $\vec{v}$ som}  \\
   &\quad  \cos^{-1}\frac{(\vec{u}|\vec{v})}{|\vec{u}||\vec{v}|} \\
-  &\quad  \text{4. Vi säger att $\vec{u}$ och $\vec{u}$ är ortogonala om } \\
+  &\quad  \text{4. Vi säger att $\vec{u}$ och $\vec{v}$ är ortogonala om } \\
   &\quad  (\vec{u}|\vec{v})=0 \\
 \end{align*}
 
@@ -1054,7 +1043,7 @@ matrisen som kan multipliseras med vektor för att få omvandlingen.
   &\quad  \text{Om $\lambda_1 > 0$ och $\lambda_2 < 0$ så berkriver $Q(x)=1$ en hyperbel} \\
 \end{align*}
 
-\textbf{Exempel: Bestäm fomren}
+\textbf{Exempel: Bestäm formen}
 \begin{align*}
   &\quad  Q(\vec{x})= \frac{14}{5}{x_1}^2 +  \frac{11}{5}{x_2}^2 + \frac{14}{5}x_1x_2  \\
   &\quad  \\
@@ -1077,8 +1066,6 @@ matrisen som kan multipliseras med vektor för att få omvandlingen.
 \end{align*}
 
 
-\newpage
-
 \section{System av linjära differentialekvationer}
 \begin{align*}
   &\quad  y'=Ay \\
@@ -1091,7 +1078,7 @@ matrisen som kan multipliseras med vektor för att få omvandlingen.
     \begin{pmatrix} c_1 \\.\\.\\.\\ c_n \end{pmatrix} 
 \end{align*}
 
-\textbf{Exempel: Bestäm fomren}
+\textbf{Exempel: Bestäm formen}
 \begin{align*}
   &\quad  \text{Lös följade system av differentialekvationer} \\
   &\quad
