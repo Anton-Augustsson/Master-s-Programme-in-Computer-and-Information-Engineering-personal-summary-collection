@@ -28,7 +28,7 @@
           \item Aretmetisk modelera: $ \overline{x} = \frac{\sum_{k=1}^{n} x_k}{n} $
           \item median: $(\not{1}, \not{1}, \not{2}, 4, \not{4}, \not{4}, \not{7}), (\not{1}, \not{1}, 2, 4 \not{4}, \not{4})$
         \end{itemize}
-        \item Kvartiler: Tre punkter, fyra i hjämna, som delar upp tal serie
+        \item Kvartiler: Tre punkter, fyra i quarters, som delar upp tal serie
         \begin{itemize}
           \item 1:a kvartilen (Nedre kvartil) mittpunkten av den nedre halvan
           \item 3:e kvartilen (Övre kvartil) mittpunken av den övre halvan
@@ -37,7 +37,7 @@
         \begin{itemize}
             \item Kvartal bred: 3:e kvartalen $-$ 1:a kvartalen
             \item Stickprovs standard divianse (standard diviaion): $s=\sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(x_i - \overline{x})^2}$
-            \item Savaraten (skatt plots): varge enkel två ???
+            %\item Savaraten (skatt plots): varge enkel två ???
             \item Spridnings diagram: Positiv korelation, negativ korelation, ingen korelation, perfect korelation
         \end{itemize}
     \end{itemize}
@@ -229,7 +229,7 @@
 
 \subsection{Normalfördelning-fördelningar}
 \begin{align*}
-  &\quad  \text{Tillämpning: Alltmöjligt.} \\
+  &\quad  \text{Tillämpning: Allt möjligt.} \\
   &\quad  \\
   &\quad  \text{Om $X$ är normalfördelad med paramter $\mu$ och $\sigma^2$. Då gäller} \\
   &\quad  f_X(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-(x-\mu)^2/2\sigma}, -\infty<x<\infty \\
@@ -581,7 +581,7 @@ Dator generede slump tal. Kommer att upredasig.
   &\quad  \text{Konstruera ett lämpligt konfidensintervall baserat på datan. Vilken algoritm borde andvändas} \\
   &\quad  \\
   &\quad  \text{Vi väljet ett konfidensintervall på $95\%$, } Z=A-B \\
-  &\quad  \overline{Z}=3/10=0.3, \; s^2_Z=\frac{1}{10-1}\sum_{i=1}^{10}(Z_i-\overline{Z}=13.08,
+  &\quad  \overline{Z}=3/10=0.3, \; s^2_Z=\frac{1}{10-1}\sum_{i=1}^{10}(Z_i-\overline{Z})=13.08,
   \; t_{0.025}(t)=2.26 \\
   &\quad  I_{\mu} = [\overline{Z}\pm t_{0.025}(t)\frac{s}{\sqrt{n}}] \\
   &\quad          = [-9.05, 9.65] \\
@@ -628,9 +628,9 @@ Dator generede slump tal. Kommer att upredasig.
   &\quad  \text{ vill se ett jämt utpridning utan mönster} \\
 \end{align*}
 
-\subsection{Användning ag modellen}
+\subsection{Användning av modellen}
 \begin{align*}
-  &\quad  \text{Knfidensintervallet för parametern k} \\
+  &\quad  \text{Konfidensintervallet för parametern k} \\
   &\quad  V[\hat{m}]=\frac{\sigma^2}{n}\frac{1}{S_{xx}} \sum_{i=1}^{n}x^2_i \\
   &\quad  V[\hat{k}]=\frac{\sigma^2}{S_{xx}} \\
 \end{align*}
