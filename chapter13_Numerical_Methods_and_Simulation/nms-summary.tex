@@ -60,7 +60,6 @@ gäller $1+\epsilon_M > 1$. Det är ett mått på tals systemetsprecision. $\eps
 Vid exempelet när man beräknar derivatan så är \textit{avrundningsfelet} den dominanta. Medans
 vid Störe h så dominerar \textit{Diskretiseringsfel}
 
-\newpage
 \section{ODE}
 Skillnaden mellan metod och modell är att moted är hur man gör, 
 medans modell är strukturen av företelsen.
@@ -90,7 +89,6 @@ Ovilkoliga stabilita.
 \textbf{Explicit metoder}
 Kan vara effectivara, fämst för icke styva ode'r
  
-\newpage
 \subsubsection{Euler framåt (explicit metod)}
 Tar lutningen vid punkten man är i och beräknar värdet för ett givet steg.
 
@@ -117,7 +115,6 @@ Tar lutningen vid punkten man är i och beräknar värdet för ett givet steg.
   &\quad  \text{Vi ser att felet är propotionelit mot steg ($h$). Fel } \alpha \; h \\
 \end{align*}
 
-\newpage
 \subsubsection{Euler bakåt (implicit metod)}
 Tar lutningen ett steg framåt.
 
@@ -144,7 +141,6 @@ Tar lutningen ett steg framåt.
   &\quad  \text{Vi ser att felet är propotionelit mot steg ($h$). Fel } \alpha \; h \\
 \end{align*}
 
-\newpage
 \subsubsection{Trapetsmetoden (implicit metod)}
 Trapetsmetoden uses the avrage value of the euler framåt and backåt.
 
@@ -163,7 +159,6 @@ Trapetsmetoden uses the avrage value of the euler framåt and backåt.
   &\quad  \text{Vi ser att felet är propotionelit mot steg ($h$). Fel } \alpha \; h^2 \\
 \end{align*}
 
-\newpage
 \subsubsection{Heuns metod (explicit metod)}
 Trapetsmetoden ger bra approximationer men är dock implicit vilket gör det svårt för icke linjära
 ODE. Det kan huens metod lösa genom att approximera implicita delen.
@@ -195,7 +190,6 @@ ODE. Det kan huens metod lösa genom att approximera implicita delen.
 \end{align*}
 
 
-\newpage
 \subsubsection{Runge-Kutta (explicit metod)}
 Runge-Kutta är noggran numrerisk approximering, betydligt bättre än 
 euler framåt/backåt. Man berärknar 4 lutningar och tar typ medelvärdet av dem.
@@ -377,12 +371,12 @@ y_{i+1} &= \frac{1}{1 - h\lambda} \cdot y_i
 Då ser vi att vårt stabilitetsvillkor är följande:
 
 \begin{align*}
-|\dfrac{1}{1-h\lambda} | \le 1
+\left| \dfrac{1}{1-h\lambda} \right| \le 1
 \end{align*}
 
 Vi antar (enligt uppgift) att $\lambda$ är reellt och att $Re(\lambda) \le 0$. Detta medför att följande alltid kommer vara mindre än 1. Nämnaren blir större än täljaren för alla värden på $\lambda$.
 \begin{align*}
-1 - h\lambda \ge 1 \Rightarrow |\dfrac{1}{1-h\lambda} | \le 1
+1 - h\lambda \ge 1 \Rightarrow \left| \dfrac{1}{1-h\lambda} \right| \le 1
 \end{align*}
 
 för alla våra värden på $\lambda$. På grund av detta vet vi att oavsett värde på $h$ så kommer den numeriska lösningen vara stabil, d.v.s ovillkorligt stabil.
