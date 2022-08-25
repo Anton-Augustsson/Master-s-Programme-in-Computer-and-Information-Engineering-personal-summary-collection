@@ -146,7 +146,7 @@ interested in the error/cost on this set.
 \begin{figure}[!h]
     \centering
     \includegraphics[width=8cm]{\imagesPath/actual_prediction_matrix.png}
-    \caption{Actual prediction matrix}
+    \caption{Actual prediction matrix. From \cite{}}
 \end{figure}
 
 Accuracy 
@@ -170,7 +170,7 @@ Precision
 \begin{figure}[!h]
     \centering
     \includegraphics[width=8cm]{\imagesPath/linear_regression.png}
-    \caption{Linear regression}
+    \caption{Linear regressionFrom \cite{}}
 \end{figure}
 \href{https://www.youtube.com/watch?v=nk2CQITm_eo}{Explenation}
 
@@ -250,7 +250,7 @@ for several cases one can express as followed:
 \begin{figure}[!h]
     \centering
     \includegraphics[width=12cm]{\imagesPath/bayes_theorem.png}
-    \caption{Bayes Theorem}
+    \caption{Bayes Theorem. From \cite{}}
 \end{figure}
 
 \begin{itemize}
@@ -276,7 +276,7 @@ be linear separable. Logistic regression is used for classification better than 
 \begin{figure}[!h]
     \centering
     \includegraphics[width=12cm]{\imagesPath/linear_vs_logistic.png}
-    \caption{Linear vs logistic regression}
+    \caption{Linear vs logistic regression. From \cite{}}
 \end{figure}
 \href{https://www.youtube.com/watch?v=-la3q9d7AKQ}{Logistic regression explanation}
 
@@ -385,7 +385,7 @@ We want to find weights $\bar{w} \in \mathbb{R}^d$ and a constant $b$ such that
 \begin{figure}[!h]
     \centering
     \includegraphics[width=12cm]{\imagesPath/svm_margins_in_2_dim.png}
-    \caption{Bayes Theorem}
+    \caption{Bayes Theorem. From \cite{}}
 \end{figure}
 
 
@@ -407,7 +407,6 @@ $\bar{x}_2$ where $\bar{w}\cdot\bar{x}_2 -b = 1$
 Maximisning the distance between the two hyperplanes $\bar{w}x-b=1$ and $\bar{w}x-b=-1$
 we want to maximize $t=\frac{2}{||\bar{w}||}$ so we minimize $\frac{1}{2}||\bar{w}||$
 
-\newpage
 \subsection{Quadratic programming}
 Graidient descent will not work for all cases if there are a lot of quadratic terms but 
 the problem is convex then we can use quadratic programming.
@@ -432,11 +431,10 @@ i.e. The kernel trick is a way to lower the demission to avoid componential expe
          \centering
          \includegraphics[width=\textwidth]{\imagesPath/gaussian_kernels_2.png}
      \end{subfigure}
-        \caption{Gaussian Kernels}
+        \caption{Gaussian Kernels. From \cite{}}
 \end{figure}
 
 
-\newpage
 \section{Some feature engineering and Cross validation}
 \begin{itemize}
     \item Model Bias \newline
@@ -449,7 +447,7 @@ Bias variance trade off
 \begin{figure}[!h]
     \centering
     \includegraphics[width=12cm]{\imagesPath/bias_variance_trade_off.png}
-    \caption{Bias variance trade off}
+    \caption{Bias variance trade off. From \cite{}}
 \end{figure}
 
 %TODO
@@ -495,7 +493,7 @@ Then we go through them all and find the parameters with minimize the error.
 \begin{figure}[!h]
     \centering
     \includegraphics[width=12cm]{\imagesPath/grid_search.png}
-    \caption{Grid search}
+    \caption{Grid search. From \cite{}}
 \end{figure}
 \href{https://www.youtube.com/watch?v=ttE0F7fghfk}{Explanation}
 
@@ -537,13 +535,13 @@ How two features are moving with one another. Note that the correlation matrix i
      \begin{subfigure}[b]{0.35\textwidth}
          \centering
          \includegraphics[width=\textwidth]{\imagesPath/corr_matrix.png}
-         \caption{Correlation matrix}
+         \caption{Correlation matrix. From \cite{}}
      \end{subfigure}
      \hfill
      \begin{subfigure}[b]{0.55\textwidth}
          \centering
          \includegraphics[width=\textwidth]{\imagesPath/correlation.png}
-         \caption{Correlation}
+         \caption{Correlation. From \cite{}}
      \end{subfigure}
     \caption{Correlation matrix, the two images are un related}
 \end{figure}
@@ -554,7 +552,7 @@ This can be done with hierarchical clustering.
 \begin{figure}[!h]
     \centering
     \includegraphics[width=8cm]{\imagesPath/heatmap.png}
-    \caption{Heatmap}
+    \caption{Heatmap. From \cite{}}
 \end{figure}
 
 
@@ -568,7 +566,7 @@ This can be done with hierarchical clustering.
 \begin{figure}[!h]
     \centering
     \includegraphics[width=12cm]{\imagesPath/k-nn.png}
-    \caption{K-nn}
+    \caption{K-nn. From \cite{}}
 \end{figure}
 
 
@@ -611,7 +609,7 @@ Basic idea:
 \begin{figure}[!h]
     \centering
     \includegraphics[width=12cm]{\imagesPath/hierarchical_clustering.png}
-    \caption{hierarchical clustering}
+    \caption{hierarchical clustering. From \cite{}}
 \end{figure}
 
 \subsubsection{Linkage Criteria}
@@ -632,7 +630,7 @@ The act where a point is associated with a specific class.
 \begin{figure}[!h]
     \centering
     \includegraphics[width=12cm]{\imagesPath/k-means.png}
-    \caption{K-means}
+    \caption{K-means. From \cite{}}
 \end{figure}
 
 \begin{equation*}
@@ -661,13 +659,13 @@ Then we repeat this step.
      \begin{subfigure}[b]{0.4\textwidth}
          \centering
          \includegraphics[width=\textwidth]{\imagesPath/DBSCAN_application.png}
-         \caption{DBSCAN example}
+         \caption{DBSCAN example. From \cite{}}
      \end{subfigure}
      \hfill
      \begin{subfigure}[b]{0.4\textwidth}
          \centering
          \includegraphics[width=\textwidth]{\imagesPath/DBSCAN_model.png}
-         \caption{DBSCAN algorithm}
+         \caption{DBSCAN algorithm. From \cite{}}
      \end{subfigure}
     \caption{DBSCAN}
     \label{fig:DBSCAN}
@@ -687,7 +685,7 @@ Then we repeat this step.
 \begin{figure}[!h]
     \centering
     \includegraphics[width=12cm]{\imagesPath/decision_trees.png}
-    \caption{Decision Trees}
+    \caption{Decision Trees. From \cite{}}
 \end{figure}
 It is NP-hard to find an ordering that gives the smallest tree.
 We can get exponential blow up in the size for different orders.
@@ -736,7 +734,7 @@ Given these properties the only mathematically sensible choice is
 \begin{figure}[!h]
     \centering
     \includegraphics[width=6cm]{\imagesPath/unfair_coin.png}
-    \caption{Decision Trees}
+    \caption{Decision Trees. From \cite{}}
 \end{figure}
 
 \textit{Conditional entropy}
@@ -749,7 +747,7 @@ where $P(X|Y) = \frac{P(X,Y)}{P(X)}$
 \begin{figure}[!h]
     \centering
     \includegraphics[width=10cm]{\imagesPath/information_gain.png}
-    \caption{Decision Trees}
+    \caption{Decision Trees. From \cite{}}
 \end{figure}
 
 \begin{equation*}
@@ -766,7 +764,7 @@ theory.
 \begin{figure}[!h]
     \centering
     \includegraphics[width=10cm]{\imagesPath/example_conditional_entropy.png}
-    \caption{Example Conditional Entropy}
+    \caption{Example Conditional Entropy. From \cite{}}
     \label{fig:example_conditional_entropy}
 \end{figure}
 \begin{exampleblock}{Example: Conditional entropy}
@@ -844,18 +842,18 @@ When the eigenvalues are relativly small we can remove those vectors since the d
 not contrebute much of the eigenvalue is in significant.
 
 
-\section{For the exam}
-To be added 
-\begin{itemize}
-    \item (l4, s28) Cross Entropy Cost?
-    \item What is smoothening? It is a preprosessing technique where the data were you average out the data 
-    \item Overfitting vs Bias? Bias can refer to multiple things one of witch is bias data like with volvos in sweden. Or with to much training data, in this case it could couse overfitting.
-    \item \url{https://www.sciencedirect.com/topics/computer-science/logistic-regression}
-\end{itemize}
-
-questions missing from exam 
-\begin{itemize}
-    \item what is gradient descent how does it work?
-    \item How does SVM work 
-    \item bias variance
-\end{itemize}
+%\section{For the exam}
+%To be added 
+%\begin{itemize}
+    %\item (l4, s28) Cross Entropy Cost?
+    %\item What is smoothening? It is a preprosessing technique where the data were you average out the data 
+    %\item Overfitting vs Bias? Bias can refer to multiple things one of witch is bias data like with volvos in sweden. Or with to much training data, in this case it could couse overfitting.
+    %\item \url{https://www.sciencedirect.com/topics/computer-science/logistic-regression}
+%\end{itemize}
+%
+%questions missing from exam 
+%\begin{itemize}
+    %\item what is gradient descent how does it work?
+    %\item How does SVM work 
+    %\item bias variance
+%\end{itemize}
