@@ -17,7 +17,7 @@ every posable input with may change the angle of the handle.
 \begin{figure}[!h]
     \centering
     \includegraphics[width=12cm]{\imagesPath/control_without_feedback.png}
-    \caption{Control without feedback}
+    \caption{Control without feedback. From \cite{}}
 \end{figure}
 
 \textbf{Control with feedback} is the most common. It is important to have feedback 
@@ -30,17 +30,17 @@ in reference with the current position.
      \begin{subfigure}[b]{0.3\textwidth}
          \centering
          \includegraphics[width=\textwidth]{\imagesPath/feedback_walle}
-         \caption{Walle ilustration}
+         \caption{Walle ilustration. From \cite{}}
          \label{fig:y equals x}
      \end{subfigure}
      \hfill
      \begin{subfigure}[b]{0.6\textwidth}
          \centering
          \includegraphics[width=\textwidth]{\imagesPath/control_with_feedback.png}
-         \caption{Block diagram}
+         \caption{Block diagram. From \cite{}}
          \label{fig:three sin x}
      \end{subfigure}
-        \caption{Control with feedback}
+        \caption{Control with feedback. From \cite{}}
         \label{fig:control_with_feedback}
 \end{figure}
 
@@ -108,7 +108,7 @@ the static gain tells us what value dose the it converges
 
    From figure \ref{fig:control_with_feedback} we determine the output as $y(t)=g(t)u(t)$
    \begin{equation*}
-        lim_{t\to\infty}y(t) = lim_{s\to0} sY(s) = lim_{s\to0} sG(s)U(s) = lim_{s\to0} s\frac{2}{s^2 + s + 1}\frac{1}{s} = \frac{2}{1} = 2
+        \lim_{t\to\infty}y(t) = \lim_{s\to0} sY(s) = \lim_{s\to0} sG(s)U(s) = \lim_{s\to0} s\frac{2}{s^2 + s + 1}\frac{1}{s} = \frac{2}{1} = 2
    \end{equation*}
 \end{exampleblock}
 
@@ -123,7 +123,7 @@ the static gain tells us what value dose the it converges
 \begin{figure}[!h]
     \centering
     \includegraphics[width=12cm]{\imagesPath/pid-controller.png}
-    \caption{PID-controller}
+    \caption{PID-controller. From \cite{}}
     \label{fig:pid-controller}
 \end{figure}
 
@@ -411,7 +411,7 @@ It is easier to design using Open-loop system instead of closed loop with we did
 \begin{align*}
     \text{Open-loop: }  &G_o(s) = F(s)G(s) \\
     \text{Closed-loop: }  &G_c(s) = \frac{G_o(s)}{1+G_o(s)} \\
-    G_c(s) \text{ stable } \Leftrightarrow 1+G_o(s) \text{ no roots in right half-plane}
+    G_c(s) \text{ stable } \Leftrightarrow 1+&G_o(s) \text{ no roots in right half-plane}
 \end{align*}
 
 \subsubsection{Nyquist curve}
@@ -429,7 +429,7 @@ It is easier to design using Open-loop system instead of closed loop with we did
 \begin{figure}[!h]
     \centering
     \includegraphics[width=12cm]{\imagesPath/nyquist_curve.png}
-    \caption{Nyquist curve}
+    \caption{Nyquist curve. From \cite{}}
     \label{fig:nyquist_curve}
 \end{figure}
 Note if the \" line is under $-1$ \" then it is stable.
@@ -563,7 +563,7 @@ right half-plane, and contains no time delays.
 \begin{figure}[!h]
     \centering
     \includegraphics[width=12cm]{\imagesPath/general_linear_feedback_control.png}
-    \caption{General linear feedback control}
+    \caption{General linear feedback control. From \cite{}}
     \label{fig:general_linear_feedback_control}
 \end{figure}
 
@@ -578,7 +578,7 @@ What if we added more sensors?
 \begin{figure}[!h]
     \centering
     \includegraphics[width=12cm]{\imagesPath/general_feedback_disturbance.png}
-    \caption{General feedback with measurable signals including disturbance}
+    \caption{General feedback with measurable signals including disturbance. From \cite{}}
     \label{fig:general_feedback_disturbance}
 \end{figure}
 
@@ -622,7 +622,7 @@ General feedback design methods include:
 \begin{figure}[!h]
     \centering
     \includegraphics[width=12cm]{\imagesPath/translate_lti_system_models.png}
-    \caption{Translate LTI system models}
+    \caption{Translate LTI system models. From \cite{}}
 \end{figure}
 
 \begin{equation*}
@@ -641,7 +641,7 @@ General feedback design methods include:
 \begin{figure}[!h]
     \centering
     \includegraphics[width=12cm]{\imagesPath/state-space_form_from_transfer_function.png}
-    \caption{State-space form $\leftarrow$ transfer function}
+    \caption{State-space form $\leftarrow$ transfer function. From \cite{}}
 \end{figure}
 
 Solution to state-space equation
@@ -687,7 +687,7 @@ Asymptotically stable if
 \begin{figure}[!h]
     \centering
     \includegraphics[width=12cm]{\imagesPath/state-feedback_control.png}
-    \caption{State-feedback control}
+    \caption{State-feedback control. From \cite{}}
 \end{figure}
 
 \textbf{State space description:}
@@ -701,7 +701,7 @@ Asymptotically stable if
 \begin{figure}[!h]
     \centering
     \includegraphics[width=12cm]{\imagesPath/state-feedback_control_2.png}
-    \caption{State-feedback control}
+    \caption{State-feedback control. From \cite{}}
 \end{figure}
 
 \begin{equation*}
@@ -710,7 +710,7 @@ Asymptotically stable if
 \begin{figure}[!h]
     \centering
     \includegraphics[width=12cm]{\imagesPath/state-feedback_control_3.png}
-    \caption{State-feedback control}
+    \caption{State-feedback control. From \cite{}}
 \end{figure}
 
 \textbf{state-space equation:}
@@ -842,7 +842,7 @@ where $K$ is a matrix
 \begin{figure}[!h]
     \centering
     \includegraphics[width=12cm]{\imagesPath/observer_etimating.png}
-    \caption{Estimating the states with observer}
+    \caption{Estimating the states with observer. From \cite{}}
 \end{figure}
 
 \subsubsection{Estimation error}
@@ -871,7 +871,7 @@ $K$ is solved by polynomial $\det(sI-A+KC)=0$ with desired roots in left halfpla
 \begin{figure}[!h]
     \centering
     \includegraphics[width=12cm]{\imagesPath/controller_with_observer.png}
-    \caption{Estimating the states with observer}
+    \caption{Estimating the states with observer. From \cite{}}
 \end{figure}
 
 \begin{equation*}
@@ -928,7 +928,7 @@ Complementary sensitivity function:
 \begin{figure}[!h]
     \centering
     \includegraphics[width=12cm]{\imagesPath/control_system_with_disturbances_and_noise.png}
-    \caption{Control system with disturbances and noise}
+    \caption{Control system with disturbances and noise. From \cite{}}
 \end{figure}
 
 \begin{equation*}
@@ -972,13 +972,13 @@ $\Rightarrow$ the real closed-loop system $G^0_c(s)$ is also stable!
 \begin{figure}[!h]
     \centering
     \includegraphics[width=12cm]{\imagesPath/digital_systems_and_discrete-time_clocks.png}
-    \caption{Digital systems and discrete-time clocks}
+    \caption{Digital systems and discrete-time clocks. From \cite{}}
 \end{figure}
 
 \begin{figure}[!h]
     \centering
     \includegraphics[width=12cm]{\imagesPath/digital_systems_and_discrete-time_clocks_da.png}
-    \caption{Digital systems and discrete-time clocks}
+    \caption{Digital systems and discrete-time clocks. From \cite{}}
 \end{figure}
 
 \subsection{Sampling continuos-time output}
@@ -1001,7 +1001,7 @@ Zero-order hold: continuos-time input is piecewise constant for $k=0,1,2,\ldots$
 \begin{figure}[!h]
     \centering
     \includegraphics[width=12cm]{\imagesPath/zero-order_hold.png}
-    \caption{zero-order hold}
+    \caption{zero-order hold. From \cite{}}
 \end{figure}
 
 \textbf{State evolution when using zero-order hold input} \newline
