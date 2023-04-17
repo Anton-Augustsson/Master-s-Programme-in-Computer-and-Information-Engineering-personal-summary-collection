@@ -2,6 +2,7 @@
 
 \newpage
 
+\begin{multicols}{2}
 \section{M1}
 \subsection{CPU}
 The central processing unit (CPU) is the electronic circuitry within a
@@ -539,12 +540,18 @@ it is unlikely that a solution will appear soon. \newline
 
 \subsection{Public key exchange}
 \begin{center}
-\begin{tabular}{ c c }
- Alice & Bob \\
- Create secret key $S_A$ & Create secret key $S_B$ \\
- Compute $T_A=g^{S_A} \: mod \: p$ & Compute $T_B=g^{S_B} \: mod \: p$ \\
- Send $T_A$ to Bob & Send $T_B$ to Alice \\
- Compute $K_1=T_B^{S_A} \: mod \: p$ & Compute $K_2=T_A^{S_B} \: mod \: p$ \\
+\begin{tabular}{ c }
+  Alice \\
+  Create secret key $S_A$  \\
+  Compute $T_A=g^{S_A} \: mod \: p$  \\
+  Send $T_A$ to Bob  \\
+  Compute $K_1=T_B^{S_A} \: mod \: p$  \\
+  \\
+  Bob \\
+  Create secret key $S_B$ \\
+  Compute $T_B=g^{S_B} \: mod \: p$ \\
+  Send $T_B$ to Alice \\
+  Compute $K_2=T_A^{S_B} \: mod \: p$
 \end{tabular}
 \end{center}
 
@@ -609,3 +616,5 @@ valid data transmission is maliciously or fraudulently repeated or delayed. This
     \includegraphics[width=16cm, height=10cm]{image/firewall.png}
     \caption{firewall. From \cite{}}
 \end{figure}
+
+\end{multicols}
