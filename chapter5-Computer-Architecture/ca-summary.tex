@@ -2,6 +2,10 @@
 
 \newpage
 
+%\begin{multicols}{2}
+%\end{multicols}
+%\raggedcolumns
+
 \section{ISA1}
 %\noindent\textbf{MIPS instructions} \newline
 \subsection{MIPS instructions}
@@ -21,13 +25,10 @@ The instructions that a assembly languge use for the MIPS proses.
 \item  Data Register: Retries and directs value from memory to register file.
 \end{itemize}
 
-\newpage
-
 \noindent\textbf{The operations most used} \newline
-\begin{figure}[h]
-    \vspace{10mm}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=16cm, height=13cm]{image/mips-tabel.png} 
+    \includegraphics[width=12cm]{image/mips-tabel.png} 
     \caption{MIPS oporation tabel. From \cite{computer_architecture_book}.}
     \label{mips-tabel}
 \end{figure}
@@ -35,25 +36,21 @@ The instructions that a assembly languge use for the MIPS proses.
 \emph{note:} memory operations like (sw R1, 0(R2)) stores the word in poison R2+0 where 0 is the increment
 since if it is a loop it is needed. The value at that position is R1. 
 
-\newpage
 
 \subsection{Sequencing}
-\begin{figure}[h]
-    \vspace{10mm}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=16cm, height=10cm]{image/sequencing.png} 
+    \includegraphics[width=16cm]{image/sequencing.png} 
     \caption{Sequencing. From \cite{isa_sequencing}}
     \label{sequencing}
 \end{figure}
-\newpage
 
 \subsection{Converge to Assambly code}
 \noindent\textbf{If Else example} \newline
-\begin{figure}[h]
-    \vspace{10mm}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=10cm, height=5cm]{image/assambly-exampel.png} 
-    \caption{Assambly exampel. From \cite{}}
+    \includegraphics[width=9cm]{image/assambly-exampel.png} 
+    \caption{Assambly exampel. From \cite{ca}}
     \label{Assambly-exampel}
 \end{figure}
 
@@ -66,11 +63,10 @@ since if it is a loop it is needed. The value at that position is R1.
 \item  J-format, Jump (j skipelse) 
 \end{itemize}
 
-\begin{figure}[h]
-    \vspace{10mm}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=17cm, height=6cm]{image/mips-types.png} 
-    \caption{MIPS Types. From \cite{}}
+    \includegraphics[width=14cm]{image/mips-types.png} 
+    \caption{MIPS Types. From \cite{ca}}
     \label{MIPS-Types}
 \end{figure}
 
@@ -87,7 +83,6 @@ Where (ra = register address (updates automatically))
 (R31 = value).
 jr \$ra returns the value.
 
-\newpage
 \subsubsection{Stacking}
 To avoid conflicts with writing over the callers register files, one uses staking in predefined
 ranges to allow store data independent from the callers. 
@@ -96,43 +91,34 @@ When a register file is added the stock pointer is moved and when it is done it 
 reset the previously used register files.
 when it has used what it needs it removes them when leaded one value at a time
 
-
-\begin{figure}[h]
-    \vspace{10mm}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=16cm, height=12cm]{image/code-ex.png} 
-    \caption{code ex}
-\end{figure}
-
-\begin{figure}[h]
-    \vspace{10mm}
-    \centering
-    \includegraphics[width=16cm, height=8cm]{image/mips-register.png} 
-    \caption{MIPS register. From \cite{}}
+    \includegraphics[width=14cm]{image/mips-register.png} 
+    \caption{MIPS register. From \cite{ca}}
 \end{figure}
 
 Notice that the register files for the callee save is \$sx and for the caller \$tx.
 
-\newpage
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=16cm]{image/code-ex.png} 
+    \caption{code ex. From \cite{ca}}
+\end{figure}
+
+
 \subsection{Other ISA}
-\begin{figure}[h]
-    \vspace{10mm}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=16cm, height=6cm]{image/other-isa.png} 
-    \caption{Other ISA. From \cite{}}
+    \includegraphics[width=16cm]{image/other-isa.png} 
+    \caption{Other ISA. From \cite{ca}}
 \end{figure}
 
-\newpage
-
-\begin{figure}[h]
-    \vspace{10mm}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=16cm, height=6cm]{image/other-isa-instructions.png} 
-    \caption{Other ISA instructions. From \cite{}}
+    \includegraphics[width=16cm]{image/other-isa-instructions.png} 
+    \caption{Other ISA instructions. From \cite{ca}}
 \end{figure}
 
-
-\newpage
 
 
 \section{Arithetic}
@@ -174,11 +160,10 @@ Notice that the register files for the callee save is \$sx and for the caller \$
 \item  Standard floting point is in binary so FFFF is at most 1111 and with two's complement  0111
 \end{itemize}
 
-\begin{figure}[h]
-    \vspace{10mm}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=16cm, height=5cm]{image/floating-point.png} 
-    \caption{Floating Point. From \cite{}}
+    \includegraphics[width=16cm]{image/floating-point.png} 
+    \caption{Floating Point. From \cite{ca}}
     \label{floating-point}
 \end{figure}
 
@@ -192,16 +177,13 @@ Notice that the register files for the callee save is \$sx and for the caller \$
 \end{itemize}
 
 
-\newpage
-
 \section{Logic}
 % https://aur.archlinux.org/packages/logisim/
 
-\begin{figure}[h]
-    \vspace{10mm}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=16cm, height=8cm]{image/logic-gates.jpeg} 
-    \caption{Floating Point. From \cite{}}
+    \includegraphics[width=16cm]{image/logic-gates.jpeg} 
+    \caption{Floating Point. From \cite{ca}}
     \label{logic-gates}
 \end{figure}
 
@@ -236,11 +218,10 @@ Notice that the register files for the callee save is \$sx and for the caller \$
 \item  Adders: adds carrys on extra bit to handel overflow
 \end{itemize}
 
-\begin{figure}[h]
-    \vspace{10mm}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=16cm, height=8cm]{image/important-logic-blocks.png} 
-    \caption{Floating Point. From \cite{}}
+    \includegraphics[width=16cm]{image/important-logic-blocks.png} 
+    \caption{Floating Point. From \cite{ca}}
 \end{figure}
 
 \textbf{Latches}
@@ -251,11 +232,10 @@ Notice that the register files for the callee save is \$sx and for the caller \$
 \item flip flop: is a edge trigerd latche has a clock trigger to open or close lathce and then can save it to SRAM cell
 \end{itemize}
 
-\begin{figure}[h]
-    \vspace{10mm}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=16cm, height=8cm]{image/latche.png} 
-    \caption{latche. From \cite{}}
+    \includegraphics[width=6cm]{image/latche.png} 
+    \caption{latche. From \cite{ca}}
 \end{figure}
 
 \textbf{Memory}
@@ -268,33 +248,26 @@ Notice that the register files for the callee save is \$sx and for the caller \$
 \end{itemize}
 
 
-\newpage
-
 
 \section{processor control and datapath}
 There is 3 main part of the mips datapath as seen in the following image:
-\begin{figure}[h]
-    \vspace{10mm}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=12cm, height=14cm]{image/mips-datapath-3parts.png} 
+    \includegraphics[width=8cm]{image/mips-datapath-3parts.png} 
     \caption{mips datapath 3 parts}
     \label{mips-datapath-3parts}
 \end{figure}
 
-\newpage
-
 An overview of the mips datapath with j-format instruction:
-\begin{figure}[h]
-    \vspace{10mm}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=16cm, height=12cm]{image/mips-datapath.png} 
-    \caption{mips datapath. From \cite{}}
+    \includegraphics[width=16cm]{image/mips-datapath.png} 
+    \caption{mips datapath. From \cite{ca}}
     \label{mips-datapath}
 \end{figure}
 
 Think about the controller like a decoder that decodes the opt code from the different formats.
 
-\newpage
 
 \subsection{Clock}
 A clock is used to update the state and continue with the other instructions. Every state element uses
@@ -306,9 +279,6 @@ The longest path of the datapath is the critical path. Often PC is the fastest s
 amount of time it takes for the instruction has travel the data path and reternd to know what the
 critical path is. The longest part is data memory size it is big and slow. One often say read and write
 takes constant time regardless of the amount of different read and write.
-
-
-\newpage
 
 
 \section{pipline}
@@ -328,15 +298,13 @@ Not all stages are needed for eatch operation or instruction
 \item  WB= RF Write back
 \end{itemize}
 
-\begin{figure}[h]
-    \vspace{10mm}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=16cm, height=8cm]{image/pipline.png} 
-    \caption{Pipline. From \cite{}}
+    \includegraphics[width=16cm]{image/pipline.png} 
+    \caption{Pipline. From \cite{ca}}
     \label{pipline}
 \end{figure}
 
-\newpage
 
 \textbf{Terminology}
 \begin{itemize}
@@ -357,8 +325,6 @@ Not all stages are needed for eatch operation or instruction
 \end{itemize}
 
 
-\newpage
-
 
 \section{Pipline hazards}
 
@@ -375,11 +341,10 @@ Not all stages are needed for eatch operation or instruction
 \item  Stall if data is not ready yet (NOPs or Bubbles).
 \end{itemize}
 
-\begin{figure}[h]
-    \vspace{10mm}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=16cm, height=8cm]{image/dubble-pump.png} 
-    \caption{Bubble pump. From \cite{}}
+    \includegraphics[width=16cm]{image/dubble-pump.png} 
+    \caption{Bubble pump. From \cite{ca}}
 \end{figure}
 
 
@@ -419,9 +384,11 @@ Not all stages are needed for eatch operation or instruction
 
 \section{Predicting Branches and Exceptions}
 When the prediction is wrong, clean up is needed.
-– “Kill” or “Squash” so they don’t execute (they were wrong)
-– Prevent them from writing: disable RegWrite, MemWrite in the pipeline
-– Turn them into NOPs: change opcode to add R0, R0, R0 in the pipeline
+\begin{itemize}
+  \item “Kill” or “Squash” so they don't execute (they were wrong)
+  \item Prevent them from writing: disable RegWrite, MemWrite in the pipeline
+  \item Turn them into NOPs: change opcode to add R0, R0, R0 in the pipeline
+\end{itemize}
 
 
 \subsection{Static pridictors}
@@ -435,19 +402,17 @@ When the prediction is wrong, clean up is needed.
 \subsection{Dynamic pridictors}
 
 The implementation of branch predictors look something like this:
-\begin{figure}[h]
-    \vspace{10mm}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=16cm, height=5cm]{image/branch-predictor.png} 
-    \caption{branch-predictor. From \cite{}}
+    \includegraphics[width=14cm]{image/branch-predictor.png} 
+    \caption{branch-predictor. From \cite{ca}}
 \end{figure}
 
 
-\begin{figure}[h]
-    \vspace{10mm}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=16cm, height=10cm]{image/2-bit-predict.png} 
-    \caption{2-bit predict. From \cite{}}
+    \includegraphics[width=14cm]{image/2-bit-predict.png} 
+    \caption{2-bit predict. From \cite{ca}}
 \end{figure}
 
 
@@ -457,11 +422,10 @@ The implementation of branch predictors look something like this:
 \item  Save a table with PC in order to have history that we can predict on
 \end{itemize}
 
-\begin{figure}[h]
-    \vspace{10mm}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=16cm, height=5cm]{image/btb.png} 
-    \caption{btb. From \cite{}}
+    \includegraphics[width=16cm]{image/btb.png} 
+    \caption{btb. From \cite{ca}}
 \end{figure}
 
 
@@ -476,16 +440,14 @@ Exceptions are non-normal events that interrupt the normal flow of instructions
 
 Interrupts are external events that interrupt the normal flow of 
 
-\begin{figure}[h]
-    \vspace{10mm}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=16cm, height=9cm]{image/exceptions.png} 
-    \caption{exceptions. From \cite{}}
+    \includegraphics[width=16cm]{image/exceptions.png} 
+    \caption{exceptions. From \cite{ca}}
 \end{figure}
 
 
 
-\newpage
 \section{Input/Output}
 
 \textbf{Terminology}
@@ -551,17 +513,13 @@ done:
 \end{lstlisting}
 
 
-\newpage
-
-
 \section{Cache}
 \subsection{Memory hierarchy}
 
-\begin{figure}[h]
-    \vspace{10mm}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=16cm, height=7cm]{image/memory-hierarchy.png}
-    \caption{memory-hierarchy. From \cite{}}
+    \includegraphics[width=16cm]{image/memory-hierarchy.png}
+    \caption{memory-hierarchy. From \cite{ca}}
 \end{figure}
 
 \textbf{3-types of cache types}
@@ -629,11 +587,10 @@ done:
   Tags= 32(bit processor)- (Offset)
 \end{itemize}
 
-\begin{figure}[h]
-    \vspace{10mm}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=16cm, height=7cm]{image/cache-format.png}
-    \caption{cache-format. From \cite{}}
+    \includegraphics[width=16cm]{image/cache-format.png}
+    \caption{cache-format. From \cite{ca}}
 \end{figure}
 
 
@@ -650,8 +607,6 @@ done:
 \item  capacity miss: map's at the same block an then overwrite unnecessarily 
 \end{itemize}
 
-
-\newpage
 
 
 \section{Virtual Memory}
@@ -677,7 +632,6 @@ done:
 \item  Multilevel page table translation= page table point to other page tables (inseption)
 \end{itemize}
 
-\newpage
 
 \textbf{Combining TLB and cache}
 \begin{itemize}
@@ -693,8 +647,7 @@ done:
 \end{itemize}
 
 \textbf{TLB}
-\begin{figure}[h]
-    \vspace{10mm}
+\begin{figure}[H]
     \centering
     \includegraphics[width=16cm, height=7cm]{image/tlb.png}
     \caption{tlb}
@@ -702,11 +655,10 @@ done:
 
 
 \textbf{usful conversion: $2^n=xB$}
-\begin{figure}[h]
-    \vspace{10mm}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=16cm, height=7cm]{image/conversion.png}
-    \caption{conversion. From \cite{}}
+    \includegraphics[width=16cm]{image/conversion.png}
+    \caption{conversion. From \cite{ca}}
 \end{figure}
 
 
@@ -722,8 +674,6 @@ done:
 \item  TLB-size=Entries*Pages
 \end{itemize}
 
-
-\newpage
 
 
 \section{Parallism}
@@ -778,13 +728,11 @@ done:
 \item  We can use atomic swap to first set lock to 1 then check the data.
 \end{itemize}
 
-\newpage
 
 \textbf{locks}
-\begin{figure}[h]
-    \vspace{10mm}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=16cm, height=7cm]{image/locks.png}
+    \includegraphics[width=16cm]{image/locks.png}
     \caption{locks}
 \end{figure}
 
@@ -798,11 +746,10 @@ done:
   
 
 \textbf{snooping}
-\begin{figure}[h]
-    \vspace{10mm}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=16cm, height=5cm]{image/snooping.png}
-    \caption{locks. From \cite{}}
+    \includegraphics[width=16cm]{image/snooping.png}
+    \caption{locks. From \cite{ca}}
 \end{figure}
 
 \subsection{ILP}
@@ -817,9 +764,8 @@ done:
 
 
 \textbf{dual issue pipeline}
-\begin{figure}[h]
-    \vspace{10mm}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=16cm, height=7cm]{image/dual-issue-pipline.png}
-    \caption{dual-issue-pipline. From \cite{}}
+    \includegraphics[width=16cm]{image/dual-issue-pipline.png}
+    \caption{dual-issue-pipline. From \cite{ca}}
 \end{figure}
