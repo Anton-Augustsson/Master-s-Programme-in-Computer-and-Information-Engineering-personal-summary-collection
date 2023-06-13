@@ -2,6 +2,7 @@
 
 \newpage
 
+\begin{multicols}{2}
 \section{Statistisk mått och begreppet sannolikhet}
 \subsection{Begrepp}
 \begin{itemize}
@@ -92,18 +93,20 @@
 \end{tabular}
 \end{center}
 \begin{align*}
-  &\quad A = \text{ ``Slumpmässigt vald produkt är dyglig'' } \\
-  &\quad B = \text{ ``Slumpmässigt vald produkt är tillverkad vid äldre maskin'' } \\
-  &\quad P(A) = \frac{285}{300} = 0.95 \\
-  &\quad C = \text{ Slumpmässigt vald produkt är dyglig givet att den är tillvärkad } \\
-  &\quad \text{ vid äldre maskinger } \\
-  &\quad \\
-  &\quad P(C) = P(A|B) = \frac{P(A\cap{B})}{P(B)} = \frac{170}{180} \approx 0.94 \\
+  &A = \text{ ``Slumpmässigt vald produkt är dyglig'' } \\
+  &B = \text{ ``Slumpmässigt vald produkt är tillverkad} \\
+  &\text{vid äldre maskin.''} \\
+  &P(A) = \frac{285}{300} = 0.95 \\
+  &C = \text{ Slumpmässigt vald produkt är dyglig givet} \\
+  &\text{att den är tillvärkad vid äldre maskinger } \\
+  &\\
+  &P(C) = P(A|B) = \frac{P(A\cap{B})}{P(B)} = \frac{170}{180} \approx 0.94 \\
 \end{align*}
 
 \subsection{Kedjer av händelse}
 \begin{align*}
-  &\quad  P(A\cap{B}\cap{C}) = P(C|A\cap{B})P(A\cap{B}) = P(C|A\cap{B})P(B|A)P(A)  \\
+  &P(A\cap{B}\cap{C}) = P(C|A\cap{B})P(A\cap{B}) \\
+  &= P(C|A\cap{B})P(B|A)P(A)  \\
 \end{align*}
 
 \textbf{Bayes sats}
@@ -118,11 +121,12 @@
 
 \subsection{Oberonde händelser}
 \begin{align*}
-  &\quad  P(A|B)=P(A) \\
-  &\quad   \\
-  &\quad  \text{Betingad sannolikhet: } P(A\cap{B})=P(A|B)P(B) \text{ om A och B är oberonder } \Rightarrow \\
-  &\quad  \Rightarrow P(A\cap{b}) = P(A)P(B) \\
-  &\quad   \\
+  &P(A|B)=P(A) \\
+  & \\
+  &\text{Betingad sannolikhet: } P(A\cap{B})=P(A|B)P(B) \\
+  &\text{ om A och B är oberonder } \\
+  &\Rightarrow P(A\cap{b}) = P(A)P(B) \\
+  & \\
 \end{align*}
 
 \textbf{Födelsedagsparadoksen}
@@ -132,12 +136,14 @@
 
 \textbf{Slumpvariablel}
 \begin{align*}
-  &\quad  \text{Är en function från utfalsrumet $\Omega$ till någon mängd $E$ } X:\Omega\to{E} \\
-  &\quad   \\ % more details
-  &\quad  X\in\{0,1,2,3\} \\
-  &\quad  P(X=0)+P(X=1)+P(X=2)+P(X=3)=1 \text{ Kolmogorovis axiom } \\
-  &\quad   \\
-  &\quad  \text{ Sannolikhetsfaktor? är $P_X(x)$ } P_X(x)=P(X=x) \\
+  &\text{Är en function från utfalsrumet $\Omega$ till någon mängd} \\
+  & E,\; X:\Omega\to{E} \\
+  & \\ % more details
+  &X\in\{0,1,2,3\} \\
+  &P(X=0)+P(X=1)+P(X=2)+P(X=3)=1 \\
+  &\text{ Kolmogorovis axiom } \\
+  & \\
+  &\text{ Sannolikhetsfaktor? är $P_X(x)$ } P_X(x)=P(X=x) \\
 \end{align*}
 
 \section{Fördelningar}
@@ -166,35 +172,38 @@
 
 \subsection{Binomial-fördelningar}
 \begin{align*}
-  &\quad  \text{Tillämpning: man utför något n anatal gånger med sannolheten p att det lyckas.} \\
-  &\quad  \\
-  &\quad  \text{Om $X$ är binomialfördelad med paramter $n$ och $p$. Då gäller} \\
-  &\quad  P(X=x) = \begin{pmatrix} n \\ x \end{pmatrix} p^x(1-p)^{n-x}, \, x=0,1,2,..,n  \\
-  &\quad  X \sim Bin(n,p) \\
+  &\text{Tillämpning: man utför något n anatal gånger med} \\
+  &\text{sannolheten p att det lyckas.} \\
+  &\\
+  &\text{Om $X$ är binomialfördelad med paramter $n$ och $p$.} \\
+  &\text{Då gäller:} \\
+  &P(X=x) = \begin{pmatrix} n \\ x \end{pmatrix} p^x(1-p)^{n-x}, \, x=0,1,2,..,n  \\
+  &X \sim Bin(n,p) \\
   %&\quad  P_X(x) = P(X\leq{x}) = \sum_{i=x} P_X(i) \\
   %&\quad  \text{Spesialfall om $n=1$: Bernorlii-fördelning} Be(p)= Bin(1,p) \\
-  &\quad  \\
-  &\quad  E[X]=np \\
-  &\quad  V[X]=np(1-p) \\
-  &\quad  \\
-  &\quad  dbinom(x, n, p) \\
-  &\quad  pbinom(x, n, p, lower.tail = FALSE) \\
+  &\\
+  &E[X]=np \\
+  &V[X]=np(1-p) \\
+  &\\
+  &dbinom(x, n, p) \\
+  &pbinom(x, n, p, lower.tail = FALSE) \\
 \end{align*}
 
 
 \subsection{Possion-fördelningar}
 \begin{align*}
-  &\quad  \text{Tillämpning: För att modelera sällsynta händelser.} \\
-  &\quad  \\
-  &\quad  \text{Om $X$ är possionsfördelad med paramter $m$. Då gäller} \\
-  &\quad  P(X=x) = \frac{m^x}{x!}e^{-m}, \, x=0,1,2,..,n  \\
-  &\quad  X \sim Po(\mu) \\
-  &\quad  \\
-  &\quad  E[X]=\mu \\
-  &\quad  V[X]=\mu \\
-  &\quad  \\
-  &\quad  dpois(x, \mu) \\
-  &\quad  ppois(x, \mu, lower.tail = FALSE) \\
+  &\text{Tillämpning: För att modelera sällsynta händelser.} \\
+  &\\
+  &\text{Om $X$ är possionsfördelad med paramter $m$.} \\
+  &\text{Då gäller} \\
+  &P(X=x) = \frac{m^x}{x!}e^{-m}, \, x=0,1,2,..,n  \\
+  &X \sim Po(\mu) \\
+  &\\
+  &E[X]=\mu \\
+  &V[X]=\mu \\
+  &\\
+  &dpois(x, \mu) \\
+  &ppois(x, \mu, lower.tail = FALSE) \\
 \end{align*}
 
 \subsection{Likformig/rektangulär-fördelningar}
@@ -214,32 +223,36 @@
 
 \subsection{Exponential-fördelningar}
 \begin{align*}
-  &\quad  \text{Tillämpning: Livslängd/väntetid.} \\
-  &\quad  \\
-  &\quad  \text{Om $X$ är exponetialfördelad med paramter $ a > 0 $. Då gäller} \\
-  &\quad  f_X(x) = \frac{1}{\lambda} e^{-x/\lambda}, \, x\leq{lambda} \\
-  &\quad  X \sim Exp(\lambda) \\
-  &\quad  \\
-  &\quad  E[X]= 1/\lambda \\
-  &\quad  V[X]= 1/\lambda \\
-  &\quad  \\
-  &\quad  dexp(x, \lambda) \\
-  &\quad  pexp(x, \lambda) \\
+  &\text{Tillämpning: Livslängd/väntetid.} \\
+  &\\
+  &\text{Om $X$ är exponetialfördelad med paramter $ a > 0 $.} \\
+  &\text{Då gäller} \\
+  &f_X(x) = \frac{1}{\lambda} e^{-x/\lambda}, \, x\leq{lambda} \\
+  &X \sim Exp(\lambda) \\
+  &\\
+  &E[X]= 1/\lambda \\
+  &V[X]= 1/\lambda \\
+  &\\
+  &dexp(x, \lambda) \\
+  &pexp(x, \lambda) \\
 \end{align*}
 
 \subsection{Normalfördelning-fördelningar}
 \begin{align*}
-  &\quad  \text{Tillämpning: Allt möjligt.} \\
-  &\quad  \\
-  &\quad  \text{Om $X$ är normalfördelad med paramter $\mu$ och $\sigma^2$. Då gäller} \\
-  &\quad  f_X(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-(x-\mu)^2/2\sigma}, -\infty<x<\infty \\
-  &\quad  X \sim N(\mu,\sigma^2) \\
-  &\quad  \\
-  &\quad  E[X]= \mu \\
-  &\quad  V[X]= \sigma^2 \\
-  &\quad  \\
-  &\quad  dnorm(x, \mu, \sigma) \text{ täthetsfunktionen (behövs inte för kontinuerliga)} \\
-  &\quad  pnorm(x, \mu, \sigma) \text{ fördelningsfunktion (behövs inte för kontinuerliga)} \\
+  &\text{Tillämpning: Allt möjligt.} \\
+  &\\
+  &\text{Om $X$ är normalfördelad med paramter $\mu$ och $\sigma^2$.} \\
+  &\text{Då gäller} \\
+  &f_X(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-(x-\mu)^2/2\sigma}, -\infty<x<\infty \\
+  &X \sim N(\mu,\sigma^2) \\
+  &\\
+  &E[X]= \mu \\
+  &V[X]= \sigma^2 \\
+  &\\
+  &dnorm(x, \mu, \sigma) \text{ täthetsfunktionen} \\
+  &\text{(behövs inte för kontinuerliga)} \\
+  &pnorm(x, \mu, \sigma) \text{ fördelningsfunktion} \\
+  &\text{(behövs inte för kontinuerliga)} \\
 \end{align*}
 
 
@@ -252,9 +265,10 @@
 
 \subsubsection{varians}
 \begin{align*}
-  &\quad  \text{Om $X$ är slumpvariabler med väntevärde $\mu$. Då gäller} \\
-  &\quad  \text{(Diskret) }      V[x] = \sum_{x\in\Omega} (x-\mu)^2  \\
-  &\quad  \text{(Kontinuerlig) } V[X] = \int_{\Omega} (x-\mu)^2 f_X(x)dx \\
+  &\text{Om $X$ är slumpvariabler med väntevärde $\mu$.} \\
+  &\text{Då gäller} \\
+  &\text{(Diskret) }      V[x] = \sum_{x\in\Omega} (x-\mu)^2  \\
+  &\text{(Kontinuerlig) } V[X] = \int_{\Omega} (x-\mu)^2 f_X(x)dx \\
 \end{align*}
 
 \subsubsection{Alternativ form}
@@ -273,8 +287,9 @@
 
 \subsection{Thebysjovs olikhet (chebyshev)}
 \begin{align*}
-  &\quad  \text{Om $X$ är en slumpvariabel med $E[X]=\mu$ och $V[X]=\sigma^2$. Då gäller} \\
-  &\quad  p(|x-\mu| \geq{k\sigma}) \leq \frac{1}{k^2} \\
+  &\text{Om $X$ är en slumpvariabel med $E[X]=\mu$ och} \\
+  &V[X]=\sigma^2. \text{ Då gäller:} \\
+  &p(|x-\mu| \geq{k\sigma}) \leq \frac{1}{k^2} \\
 \end{align*}
 
 \subsection{Fördelnings functioner}
@@ -285,9 +300,10 @@
 
 \subsubsection{Normalfördelning}
 \begin{align*}
-  &\quad  \text{Vi kan inte integrera täthetsfunctionen -ingen stängd form för fördelings funktionen} \\
-  &\quad  \text{special fall: } X\sim{N(0,1)} \text{(standard normalfördelning)} \\
-  &\quad  \text{Vi betecknar fördelnings funktionen } \Phi(x) = P(X\leq{x}) \\
+  &\text{Vi kan inte integrera täthetsfunctionen} \\
+  &\text{-ingen stängd form för fördelings funktionen} \\
+  &\text{special fall: } X\sim{N(0,1)} \text{(standard normalfördelning)} \\
+  &\text{Vi betecknar fördelnings funktionen } \Phi(x) = P(X\leq{x}) \\
 \end{align*}
 
 \subsubsection{kvartier}
@@ -311,20 +327,25 @@
 
 \subsubsection{räkneregler}
 \begin{align*}
-  &\quad  Y = a_1x_1 + a_2x_2 + \ldots+ a_n x_n \text{ slupvaribler $x_i$ konstanter $a_i$} \\
-  &\quad  E[Y] =  a_1 E[x_1] + a_2 E[x_2] + \ldots + a_n E[x_n] \\
+  &Y = a_1x_1 + a_2x_2 + \ldots+ a_n x_n \text{ slupvaribler} \\
+  &x_i \text{ konstanter } a_i \\
+  &E[Y] =  a_1 E[x_1] + a_2 E[x_2] + \ldots + a_n E[x_n] \\
 \end{align*}
 
 \noindent\textbf{Exempel (505): räkneregler}
 \begin{align*}
-  &\quad  \text{Låt $X\sim N(10,4), Y\sim N(3,1)$ vara oberonde slumpvariabler.} \\
-  &\quad  \text{Beräkna sannolikheten att $X>3Y$} \\
-  &\quad  \\
-  &\quad  \text{Låt } Z=X-3Y \Rightarrow E[Z]=E[X]-3E[Y]=10-3*3=1 \\
-  &\quad  V[Z]=E[X]+(-3)^2E[Y]=10=(-3)^2*3=13 \\
-  &\quad  \text{Enligt normalfördelingien så får vi } Z\sim N(1,13) \\
-  &\quad  \text{Därmed kan vi beräkna följande sannolikhet} P(X-3Y>0)=P(Z>0)=1-P(z\leq0) \\
-  &\quad  1-\Phi(-1/\sqrt{13})=1-\Phi(1-\Phi(1/\sqrt{13})) = \Phi(0.28) = 0.61 \\
+  &\text{Låt $X\sim N(10,4), Y\sim N(3,1)$ vara oberonde} \\
+  &\text{slumpvariabler.} \\
+  &\text{Beräkna sannolikheten att $X>3Y$} \\
+  &\\
+  &\text{Låt } Z=X-3Y \Rightarrow E[Z]=E[X]-3E[Y] \\
+  &=10-3*3=1 \\
+  &V[Z]=E[X]+(-3)^2E[Y]=10=(-3)^2*3=13 \\
+  &\text{Enligt normalfördelingien så får vi } Z\sim N(1,13) \\
+  &\text{Därmed kan vi beräkna följande sannolikhet} \\
+  &P(X-3Y>0)=P(Z>0)=1-P(z\leq0) \\
+  &1-\Phi(-1/\sqrt{13})=1-\Phi(1-\Phi(1/\sqrt{13})) = \Phi(0.28) \\
+  &= 0.61 \\
 \end{align*}
 
 \subsubsection{väntevärde av produkter}
@@ -385,76 +406,83 @@ Dator generede slump tal. Kommer att upredasig.
 \end{itemize}
 
 \subsubsection{Von Neumann}
-\begin{align*}
-  &\quad  \text{1. Väljer seed: } u_0=0.1111 \\
-  &\quad  \text{2. Skapar } y_0=1111 \\
-  &\quad  \text{3. Beräknar } y_0^2=1234321 \\
-  &\quad  \text{4. Fyller på från venster med noll för att få 8 siffror} 01234321 \\
-  &\quad  \text{5. Skapar genom att ta det fyra mitersta siffrorna } y_1=2343 \\
-  &\quad  \text{6. } 0.2343 \Rightarrow y_1^2=5489649 \Rightarrow y_2=4896 \Rightarrow u_2=0.4896 \\
-\end{align*}
+\begin{enumerate}
+  \item Väljer seed: $u_0=0.1111$ \\
+  \item Skapar $y_0=1111$ \\
+  \item Beräknar $y_0^2=1234321$ \\
+  \item Fyller på från venster med noll för att få $8$ siffror $01234321$ \\
+  \item Skapar genom att ta det fyra mitersta siffrorna $y_1=2343$ \\
+  \item $0.2343 \Rightarrow y_1^2=5489649 \Rightarrow y_2=4896 \Rightarrow u_2=0.4896$ \\
+\end{enumerate}
 
 \subsubsection{Kongruens}
 \begin{align*}
-  &\quad  V_{n+1}=aV_n+b (\mod c) \\
-  &\quad  \text{Vi är ett heltal mellan $0$ och $c-1$ och $u_1=\frac{V_i}{c}$ }\\
-  &\quad  \text{a,b,c måste väljas noggrant (talteori, c måste vara ett primtal)} \\
-  &\quad  \text{vanliga val är } a=7^7=16807, \, b=0, \, c=2^{31}-1= 2 147 483 647 \\
-  &\quad  \text{hat svagheter, andvänds inte längre} \\
-  &\quad   \\
+  &V_{n+1}=aV_n+b (\mod c) \\
+  &\text{Vi är ett heltal mellan $0$ och $c-1$ och $u_1=\frac{V_i}{c}$ }\\
+  &\text{a,b,c måste väljas noggrant} \\ 
+  &\text{(talteori, c måste vara ett primtal)} \\
+  &\text{vanliga val är } a=7^7=16807, \, b=0, \, \\
+  &c=2^{31}-1= 2 147 483 647 \\
+  &\text{hat svagheter, andvänds inte längre} \\
 \end{align*}
 
 \subsubsection{XOR-generator}
-\begin{align*}
-  &\quad  \text{Extrem snabb, lätt att förstå} \\
-  &\quad  \text{1. Väljer seed: $m$ binära bits (heltal mellan $0$ och $2^m-1$)} \\
-  &\quad  \text{2. Skifta alla bits $l$ steg åt vänster och fyll i från höger med nollor} \\
-  &\quad  \text{3. XOR med seed och det skiftade talet (seed update)} \\
-  &\quad  \text{4. Skifta seed update $m-l=r$ steg åt höger och fyll i nollor från vänster} \\
-  &\quad  \text{5. XOR med seed update och högerskiftet} \\
-  &\quad  \text{6. Konvertera till ett tal mellan $0$ och $1$} \\
-\end{align*}
+Extrem snabb, lätt att förstå.
+\begin{enumerate}
+  \item Väljer seed: $m$ binära bits (heltal mellan $0$ och $2^m-1$).
+  \item Skifta alla bits $l$ steg åt vänster och fyll i från höger med nollor.
+  \item XOR med seed och det skiftade talet (seed update).
+  \item Skifta seed update $m-l=r$ steg åt höger och fyll i nollor från vänster.
+  \item XOR med seed update och högerskiftet.
+  \item Konvertera till ett tal mellan $0$ och $1$.
+\end{enumerate}
 
 \subsubsection{Mersenne Twister}
 \noindent\textbf{Exempel (505): räkneregler}
 \begin{align*}
-  &\quad  \text{Givet $5$ psudoslumpmässiga tal från $Re[0,1]$} \\
-  &\quad  u_1=0.8147, \, u_2=0.9058, \, u_3=0.1270, \, u_4=0.9134, \, u_5=0.634 \\
-  &\quad  \text{Simulera $5$ ?dosernar? från slumpvariablen $X$ med }\\
-  &\quad  f_X(x)=\frac{x}{2}, \, 0 \leq x \leq 2 \\
-  &\quad  \text{Beräna $E[x]$ och jämför med medvärder av de simmulerade dosetaner}\\
-  &\quad  \\
-  &\quad  \text{Tar fram primitiva functionen } F_X(x)=\int_0^x \frac{t}{2}dt = {{[t^2/4]}_0}^x=\frac{x^2}{4} \\
-  &\quad  \text(Tar fram inversen ) y=\frac{x^2}{4} \Rightarrow x=2\sqrt{y} \\
-  &\quad  x_1=F_x^{-1}(u_1) = 2\sqrt{x} = 1.8052 \\
-  &\quad  x_2=F_x^{-1}(u_2) = 2\sqrt{x} = 1.9035 \\
-  &\quad  x_3=F_x^{-1}(u_3) = 2\sqrt{x} = 0.7127 \\
-  &\quad  x_4=F_x^{-1}(u_4) = 2\sqrt{x} = 1.9114 \\
-  &\quad  x_5=F_x^{-1}(u_5) = 2\sqrt{x} = 1.5905 \\
-  &\quad  \text{Beräknar väntevärdet } E[x] \int_0^2x\frac{x}{2}dx=[\frac{x^3}{6}]_0^2 =
-  \frac{8}{6} = \frac{4}{3} \approx 1.33 \\
+  &\text{Givet $5$ psudoslumpmässiga tal från $Re[0,1]$} \\
+  &u_1=0.8147, \, u_2=0.9058, \, u_3=0.1270, \, u_4=0.9134, \\
+  &u_5=0.634 \\
+  &\text{Simulera $5$ ?dosernar? från slumpvariablen $X$ med }\\
+  &f_X(x)=\frac{x}{2}, \, 0 \leq x \leq 2 \\
+  &\text{Beräna $E[x]$ och jämför med medvärder av de} \\
+  &\text{simmulerade dosetaner} \\
+  &\\
+  &\text{Tar fram primitiva functionen } F_X(x)=\int_0^x \frac{t}{2}dt \\
+  &= {{[t^2/4]}_0}^x=\frac{x^2}{4} \\
+  &\text(Tar fram inversen ) y=\frac{x^2}{4} \Rightarrow x=2\sqrt{y} \\
+  &x_1=F_x^{-1}(u_1) = 2\sqrt{x} = 1.8052 \\
+  &x_2=F_x^{-1}(u_2) = 2\sqrt{x} = 1.9035 \\
+  &x_3=F_x^{-1}(u_3) = 2\sqrt{x} = 0.7127 \\
+  &x_4=F_x^{-1}(u_4) = 2\sqrt{x} = 1.9114 \\
+  &x_5=F_x^{-1}(u_5) = 2\sqrt{x} = 1.5905 \\
+  &\text{Beräknar väntevärdet } E[x] \int_0^2x\frac{x}{2}dx=[\frac{x^3}{6}]_0^2 \\
+  &= \frac{8}{6} = \frac{4}{3} \approx 1.33 \\
 \end{align*}
 
 \section{Statistikens grunder}
 \subsection{Allmänt}
 \begin{align*}
-  &\quad  \text{Skattning av en okänd parameter $\theta$ från en familj  $F_X(\theta)$ är en funktion}  \\
-  &\quad  \hat{\theta} = t = g(x_1,x_2,...,x_n) \\
+  &\text{Skattning av en okänd parameter $\theta$ från en familj} \\
+  &F_X(\theta) \text{ är en funktion}  \\
+  &\hat{\theta} = t = g(x_1,x_2,...,x_n) \\
 \end{align*}
 
 \subsection{Medelfel}
 \begin{align*}
-  &\quad  \sigma^2 \land p \text{ kan vara okända}\\
-  &\quad  \text{Vi kan definera medel felet genom att andvända skattningen} \\
-  &\quad  s=\hat{\sigma} \land \hat{p} \\
-  &\quad  V[\hat{\mu}]=\frac{\sigma^2}{n}  \\
-  &\quad  V[\hat{p}]  =  \frac{\hat{p}(1-\hat{p})}{n} \\
-  &\quad  d[T_{\mu}]   = \frac{s}{\sqrt{n}} \\
-  &\quad  d[T_{p}]     = \sqrt{\frac{\hat{p}(1-\hat{p})}{n}} \\
-  &\quad  \text{Utifrån medelfelet definerar vi konsistens och effektivitet} \\
-  &\quad  \text{\textbf{Konsistans} $V[T]\to0$ då $n\to\infty$} \\
-  &\quad  \text{\textbf{Effektivitet} Givet estimatorn $T_1,T_2$ så är $T_1$} \\
-  &\quad  \text{effekten att $T_2$ om $V[T_1]<V[T_2]$ ($D[T_1]<D[T_2]$)} \\
+  &\sigma^2 \land p \text{ kan vara okända}\\
+  &\text{Vi kan definera medel felet genom att} \\
+  &\text{andvända skattningen.} \\
+  &s=\hat{\sigma} \land \hat{p} \\
+  &V[\hat{\mu}]=\frac{\sigma^2}{n}  \\
+  &V[\hat{p}]  =  \frac{\hat{p}(1-\hat{p})}{n} \\
+  &d[T_{\mu}]   = \frac{s}{\sqrt{n}} \\
+  &d[T_{p}]     = \sqrt{\frac{\hat{p}(1-\hat{p})}{n}} \\
+  &\text{Utifrån medelfelet definerar vi konsistens och} \\
+  &\text{effektivitet.} \\
+  &\text{\textbf{Konsistans} $V[T]\to0$ då $n\to\infty$} \\
+  &\text{\textbf{Effektivitet} Givet estimatorn $T_1,T_2$ så är $T_1$} \\
+  &\text{effekten att $T_2$ om $V[T_1]<V[T_2]$ ($D[T_1]<D[T_2]$)} \\
 \end{align*}
 
 \textbf{Exempel}
@@ -490,14 +518,16 @@ Dator generede slump tal. Kommer att upredasig.
 \subsection{Väntevärdsriktig}
 \textbf{Exempel}
 \begin{align*}
-  &\quad  X\sim{N(m_1-m_2, 4)}, \; Y\sim{N(m_1+m_2,5)} \\
-  &\quad  \text{a. Visa att $\hat{m}_1=(X+Y)/2$ är väntevärdesriktig skattning av $m_1$} \\
-  &\quad  E(\hat{m}_1) = E[(X+Y)/2] = 1/2(E[X]+E[Y]) = 1/2(m_1-m_2 + m_1+m_2)= \frac{1}{2}2m_1=m_1 \\
-  &\quad  \text{därmed så är den väntevärds riktig} \\
-  &\quad  \\
-  &\quad  \text{b. Beräkna standardavvikelsen för $\hat{m}_1$} \\
-  &\quad  D(\hat{m}_1) = \sqrt{V(\hat{m}_1)} = \sqrt{V(\frac{x+y}{2})} = \sqrt{\frac{1}{4}(V[X]+V[Y])} = \frac{\sqrt{9}}{2} = \frac{3}{2} \\
-  &\quad  \\
+  &X\sim{N(m_1-m_2, 4)}, \; Y\sim{N(m_1+m_2,5)} \\
+  &\text{a. Visa att $\hat{m}_1=(X+Y)/2$ är väntevärdesriktig} \\
+  &\text{skattning av $m_1$} \\
+  &E(\hat{m}_1) = E[(X+Y)/2] = 1/2(E[X]+E[Y]) \\
+  &= 1/2(m_1-m_2 + m_1+m_2)= \frac{1}{2}2m_1=m_1 \\
+  &\text{därmed så är den väntevärds riktig} \\
+  &\\
+  &\text{b. Beräkna standardavvikelsen för $\hat{m}_1$} \\
+  &D(\hat{m}_1) = \sqrt{V(\hat{m}_1)} = \sqrt{V(\frac{x+y}{2})} = \sqrt{\frac{1}{4}(V[X]+V[Y])} \\
+  &= \frac{\sqrt{9}}{2} = \frac{3}{2} \\
 \end{align*}
 
 
@@ -513,16 +543,19 @@ Dator generede slump tal. Kommer att upredasig.
 
 \subsection{Example}
 \begin{align*}
-  &\quad  \text{vid tillverkningsproncessen av axlar av rundstål kontrollers diametern.} \\
-  &\quad  \text{Följande diametrar (mm) uppmättes:} \\
-  &\quad  30.02, \, 30.12, \, 30.07, \, 29.95, \, 30.05, \, 29.90, \, 30.01 \\
-  &\quad  \text{Konstruera ett konfidensintervall, med konfidensgrad $0.95$, för den förväntade} \\
-  &\quad  \text{diametern.} \\
-  &\quad  \\
-  &\quad  n=7, \, \alpha=0.05 \\
-  &\quad  \overline{X}=\frac{30.02+30.12+30.07+29.95+30.05+29.90+30.01}{n}=\frac{210.12}{7} \\
-  &\quad  s=\frac{1}{n-1}\sum_{i=1}^n(x_i-\overline{x})^2 = \frac{1}{6}((30.02-\overline{x})^2 + (30.02-\overline{x})^2) \\
-  &\quad  \\
+  &\text{Vid tillverkningsproncessen av axlar av rundstål} \\
+  &\text{kontrollers diametern.} \\
+  &\text{Följande diametrar (mm) uppmättes:} \\
+  &30.02, \, 30.12, \, 30.07, \, 29.95, \, 30.05, \, 29.90, \, 30.01 \\
+  &\text{Konstruera ett konfidensintervall, med} \\
+  &\text{konfidensgrad $0.95$, för den förväntade} \\
+  &\text{diametern.} \\
+  &\\
+  &n=7, \, \alpha=0.05 \\
+  &\overline{X}=\frac{30.02+30.12+30.07+29.95}{n} \\
+  &\cdot \frac{30.05+29.90+30.01}{n}=\frac{210.12}{7} \\
+  &s=\frac{1}{n-1}\sum_{i=1}^n(x_i-\overline{x})^2 \\
+  &= \frac{1}{6}((30.02-\overline{x})^2 + (30.02-\overline{x})^2) \\
 \end{align*}
 
 \subsection{Konfidensintervall för $p$ från binomialfördelad}
@@ -576,26 +609,28 @@ Dator generede slump tal. Kommer att upredasig.
      9      & 31  & 29 \\
     10      & 53  & 57 \\
 \end{tabular}
+Tiden det tar för A respektive B att upptäcka
+Pforgängaren baserat står i tabellen.
+Konstruera ett lämpligt konfidensintervall baserat på datan. Vilken algoritm borde andvändas.
 \begin{align*}
-  &\quad  \text{Tiden det tar för A respektive B att upptäcka forgängaren baserat står i tabellen}\\
-  &\quad  \text{Konstruera ett lämpligt konfidensintervall baserat på datan. Vilken algoritm borde andvändas} \\
-  &\quad  \\
-  &\quad  \text{Vi väljet ett konfidensintervall på $95\%$, } Z=A-B \\
-  &\quad  \overline{Z}=3/10=0.3, \; s^2_Z=\frac{1}{10-1}\sum_{i=1}^{10}(Z_i-\overline{Z})=13.08,
-  \; t_{0.025}(t)=2.26 \\
-  &\quad  I_{\mu} = [\overline{Z}\pm t_{0.025}(t)\frac{s}{\sqrt{n}}] \\
-  &\quad          = [-9.05, 9.65] \\
-  &\quad  0 \text{ finns i intervallet, med konfidensgrad $0.95$ kan ingen skillnad påvissas} \\
-  &\quad  \text{mellan algoritmerna samla in mer data, allternativ andvänd vilken algoritm som helst} \\
+  &\text{Vi väljet ett konfidensintervall på $95\%$, } Z=A-B \\
+  &\overline{Z}=3/10=0.3, \; s^2_Z=\frac{1}{10-1}\sum_{i=1}^{10}(Z_i-\overline{Z})=13.08, \\
+  &t_{0.025}(t)=2.26 \\
+  &I_{\mu} = [\overline{Z}\pm t_{0.025}(t)\frac{s}{\sqrt{n}}] \\
+  &        = [-9.05, 9.65]
 \end{align*}
+$0$ finns i intervallet, med konfidensgrad $0.95$ kan ingen
+skillnad påvissas mellan algoritmerna samla in mer data,
+allternativ andvänd vilken algoritm som helst.
 
 %exemple
 
 \section{Regrission}
 \subsection{Modell}
 \begin{align*}
-  &\quad  \text{Givet observationsparen $x_1,...,x_n$ och $y_1,...,y_n$ ansätter man följade modell} \\
-  &\quad  Y_i = m+kx_i+\epsilon_i \text{ Där } \epsilon_i\sim{N(0,\sigma^2)} \\
+  &\text{Givet observationsparen $x_1,...,x_n$ och $y_1,...,y_n$} \\
+  &\text{ansätter man följade modell.} \\
+  &Y_i = m+kx_i+\epsilon_i \text{ Där } \epsilon_i\sim{N(0,\sigma^2)} \\
 \end{align*}
 
 \subsection{Modellens giltighet}
@@ -610,62 +645,69 @@ Dator generede slump tal. Kommer att upredasig.
 
 \subsubsection{Residualer}
 \begin{align*}
-  &\quad  e_i=y_i-(\hat{m}+\hat{k}x_i) \\
-  &\quad  \\
-  &\quad  \text{Residualer bör uppfylla visa krav}\\
-  &\quad  \text{(1) konstat varians, oberonde av x} \\
-  &\quad  \text{(2) Residualerna bör vara oberonde av varandra} \\
-  &\quad  \text{(3) Residualerna bör vara normalfördelade} \\
-  &\quad  \\
-  &\quad  \text{Vi bedömmer dessa visuelt} \\
-  &\quad  \text{(i) Plottar residualerna i ett histogram, där vi kan se om det kan vara normal fördelat} \\
-  &\quad  \text{(ii) Plottar residualerna i q-q plot} \\
-  &\quad  \text{  På x-axeln kvatiler från en s..fördelning} \\
-  &\quad  \text{  På y-axeln kvatiler från residualerna} \\
-  &\quad  \text{(iii) Ritar ett spridnings diagram över x-värderna mot residualerna} \\
-  &\quad  \text{  ej ett mönster $\Rightarrow$ från $X$} \\
-  &\quad  \text{(iiii) Ritar ett spridnings diagram över residualerna mot det förutspodda y-värdet} \\
-  &\quad  \text{ vill se ett jämt utpridning utan mönster} \\
+  &e_i=y_i-(\hat{m}+\hat{k}x_i) \\
+  &\\
+  &\text{Residualer bör uppfylla visa krav}\\
+  &\text{(1) konstat varians, oberonde av x} \\
+  &\text{(2) Residualerna bör vara oberonde av varandra} \\
+  &\text{(3) Residualerna bör vara normalfördelade} \\
+  &\\
+  &\text{Vi bedömmer dessa visuelt} \\
+  &\text{(i) Plottar residualerna i ett histogram, där vi} \\
+  &\text{  kan se om det kan vara normal fördelat} \\
+  &\text{(ii) Plottar residualerna i q-q plot} \\
+  &\text{  På x-axeln kvatiler från en s..fördelning} \\
+  &\text{  På y-axeln kvatiler från residualerna} \\
+  &\text{(iii) Ritar ett spridnings diagram över x-värderna} \\
+  &\text{ mot residualerna ej ett mönster $\Rightarrow$ från $X$} \\
+  &\text{(iiii) Ritar ett spridnings diagram över} \\
+  &\text{ residualerna mot det förutspodda y-värdet} \\
+  &\text{ vill se ett jämt utpridning utan mönster} \\
 \end{align*}
 
 \subsection{Användning av modellen}
 \begin{align*}
-  &\quad  \text{Konfidensintervallet för parametern k} \\
-  &\quad  V[\hat{m}]=\frac{\sigma^2}{n}\frac{1}{S_{xx}} \sum_{i=1}^{n}x^2_i \\
-  &\quad  V[\hat{k}]=\frac{\sigma^2}{S_{xx}} \\
+  &\text{Konfidensintervallet för parametern k} \\
+  &V[\hat{m}]=\frac{\sigma^2}{n}\frac{1}{S_{xx}} \sum_{i=1}^{n}x^2_i \\
+  &V[\hat{k}]=\frac{\sigma^2}{S_{xx}} \\
 \end{align*}
 
 \section{Stokastiska processer}
 \subsection{Bornulli processer}
 \begin{align*}
-  &\quad  \text{Kommunikationskanal, överföring av slumpmäsiga data. Tiden} \\
-  &\quad  \text{är uppdelad i luckor (slots) $k=1,2,3,...,n$ varje lucka kan} \\
-  &\quad  \text{hantera ett paket} \\
+  &\text{Kommunikationskanal, överföring av slumpmäsiga} \\
+  &\text{data. Tiden är uppdelad i luckor (slots)} k=1,2,3,...,n \\
+  &\text{varje lucka kan hantera ett paket} \\
 \end{align*}
 
 \subsection{Poisson processer}
 \textbf{Proposition:}
 \begin{align*}
-  &\quad  \text{För en poissonprocess $N(t), t \geq 0$ gäller att } \\
-  &\quad  \text{(a) inkreten $N(t_1),N(t_2)-N(t_1),...,N(t_k)-N(t_{k-1})$ är oberonde} \\
-  &\quad  \text{slumpvariabel för alla $0\leq t_1 \leq ... \leq t_k$ och } \\
-  &\quad  \text{(b) } N(t) - N(s) \sim Po(\lambda(t-s)) \\
+  &\text{För en poissonprocess $N(t), t \geq 0$ gäller att } \\
+  &\text{(a) inkreten} \\
+  &N(t_1),N(t_2)-N(t_1),...,N(t_k)-N(t_{k-1}) \\
+  &\text{är oberonde slumpvariabel för alla} \\
+  &0\leq t_1 \leq ... \leq t_k \text{ och} \\
+  &\text{(b) } N(t) - N(s) \sim Po(\lambda(t-s)) \\
 \end{align*}
 
 \textbf{Ex:}
 \begin{align*}
-  &\quad  \text{Man att aantal fel på en kommunikationskabel är $1.7$. Total antal fel beskrivs av en} \\
-  &\quad  \text{poisson process med parameter $\lambda=1.7$ Vad är sannolikheten att det finns mer än } \\
-  &\quad  \text{två fel på $0.5$ kilometer?} \\
-  &\quad  \\
-  &\quad  N(0.5)\sim Po(\lambda(0.5-0))=Po(0.85) \Rightarrow P(N(0.5)>2) = 1-P(N(0.5)\leq2) \\
-  &\quad  = 1-ppois(2, 0.85) \approx 0.0549 \\
+  &\text{Man att aantal fel på en kommunikationskabel.} \\
+  &\text{är $1.7$. Total antal fel beskrivs av en} \\
+  &\text{poisson process med parameter $\lambda=1.7$ Vad är} \\
+  &\text{sannolikheten att det finns mer än två fel på} \\
+  &\text{$0.5$ kilometer?} \\
+  &\\
+  &N(0.5)\sim Po(\lambda(0.5-0))=Po(0.85) \\
+  &\Rightarrow P(N(0.5)>2) = 1-P(N(0.5)\leq2) \\
+  &= 1-ppois(2, 0.85) \approx 0.0549 \\
 \end{align*}
 
 \subsubsection{Förtunning}
 \begin{align*}
-  &\quad  \text{Låt $N(t)$ vara en poisson process med parameter $\lambda$ } \\
-  &\quad  \text{Låt ${J_n, n\in\mathbb{N}}$ vara en följ av i.i.d. $Be(p)$ } \\
+  &\quad  \text{Låt $N(t)$ vara en poisson process med parameter} \\
+  &\quad  \text{$\lambda$, Låt ${J_n, n\in\mathbb{N}}$ vara en följ av i.i.d. $Be(p)$ } \\
   &\quad  P(J_i=1)=p, P(J_i=0)=1-p \\
   &\quad  M(t) = \sum_{k=1}^{\infty} \mathbbm{1}_{T_k\leq t}J_k \\
   &\quad  \\
@@ -674,30 +716,36 @@ Dator generede slump tal. Kommer att upredasig.
 
 \subsubsection{Superposition}
 \begin{align*}
-  &\quad  \text{Låt ${N(t)}$ och ${N_2(t)}$ vara en poisson process med parameter $\lambda_1$ och $\lambda_2$} \\
-  &\quad  \text{Vi vill visa att $M(t)=N_1(t)+N_2(t)$ är en possion process med parameter $\lambda_1$ och $\lambda_2$} \\
+  &\text{Låt ${N(t)}$ och ${N_2(t)}$ vara en poisson process} \\
+  &\text{med parameter $\lambda_1$ och $\lambda_2$} \\
+  &\text{Vi vill visa att $M(t)=N_1(t)+N_2(t)$ är en} \\
+  &\text{possion process med parameter $\lambda_1$ och $\lambda_2$} \\
 \end{align*}
 
 \textbf{Ex:}
 \begin{align*}
-  &\quad  \text{Antal inkomade samtal till en mobil kan beskrivas som en poissonprocess med} \\
-  &\quad  \text{paramter $0.5$ per time och antal sms som en poissonprocess medparamter 2} \\
-  &\quad  \text{två fel på $0.5$ kilometer?} \\
-  &\quad  \\
-  &\quad  \text{(a) sannoliket att ingen kommunikationskabel inkomer på en time} \\
-  &\quad  N_1(t) \text{ med parameter $\lambda_1=2$, -antal sms} \\
-  &\quad  N_2(t) \text{ med parameter $\lambda_2=0.5$, -antal samtal} \\
-  &\quad  M(t)=N_1(t)+N_2(t) \text{ med parameter $2.5$, -antal kommunicationer} \\
-  &\quad  = 1-ppois(2, 0.85) \approx 0.0549 \\
+  &\text{Antal inkomade samtal till en mobil kan beskrivas} \\
+  &\text{som en poissonprocess med paramter $0.5$ per time} \\
+  &\text{och antal sms som en poissonprocess medparamter 2} \\
+  &\text{två fel på $0.5$ kilometer?} \\
+  &\\
+  &\text{(a) sannoliket att ingen kommunikationskabel} \\
+  &\text{inkomer på en time} N_1(t) \text{ med parameter} \\
+  &\lambda_1=2, \text{ -antal sms} \\
+  &N_2(t) \text{ med parameter $\lambda_2=0.5$, -antal samtal} \\
+  &M(t)=N_1(t)+N_2(t) \text{ med parameter $2.5$,} \\
+  &\text{-antal kommunicationer} \\
+  &= 1-ppois(2, 0.85) \approx 0.0549 \\
 \end{align*}
 
 \subsubsection{Spatial process}
 \begin{align*}
-  &\quad  \text{En samling punkter i en region $S\leq\mathbb{R}^2$} \\
-  &\quad  \text{Om $N(A)$ räknar antal punkter i en mängd $A$ (där $A$ är mätbar)} \\
-  &\quad  \text{då gäller att} \\
-  &\quad  \text{*} N(A)\sim Po(\lambda|A|) \\
-  &\quad  \text{* Om $A\cap{B}=\not{0}$ är $N(A)$ och $N(B)$ oberonde} \\
+  &\text{En samling punkter i en region $S\leq\mathbb{R}^2$} \\
+  &\text{Om $N(A)$ räknar antal punkter i en mängd $A$} \\
+  &\text{(där $A$ är mätbar)} \\
+  &\text{då gäller att} \\
+  &\text{*} N(A)\sim Po(\lambda|A|) \\
+  &\text{* Om $A\cap{B}=\not{0}$ är $N(A)$ och $N(B)$ oberonde} \\
 \end{align*}
 
 \subsubsection{M/M/$\infty$-modellen}
@@ -711,27 +759,29 @@ Dator generede slump tal. Kommer att upredasig.
 
 \section{Markovkedjor}
 \begin{align*}
-  &\quad  \text{En Stokastisk process ${X_n}$ i diskret tid med diskret tillståndsrum $E$ kallas en} \\
-  &\quad  \text{Markovkedja om den har Markovegenskapen} \\
-  &\quad  P(X_n=x_n|X=x_0,X_1=x_1,...,X_{n-1}=x_{n-1}) = P(X_n=x_n|X_{n-1}=x_n-1), \,
-  \forall x_1\in{E} \land n\geq1 \\
-  &\quad  \text{och övergångssanolikheten } p_{xy}=P(X_n=y|X_{n-1}=x) \text{ är oberonde från $n$} \\
-  &\quad  \text{Vi fokuserar på } E={0,1,...,r} \text{ och } E=\mathbb{Z}_{\geq0} \\
-  &\quad   \\
-  &\quad  \text{Övergångsmatris:} \\
-  &\quad
-  \left(\begin{array}{cccc}
+  &\text{En Stokastisk process ${X_n}$ i diskret tid med diskret} \\
+  &\text{tillståndsrum $E$ kallas en Markovkedja om den har} \\
+  &\text{Markovegenskapen} \\
+  &P(X_n=x_n|X=x_0,X_1=x_1,...,X_{n-1}=x_{n-1}) \\
+  &= P(X_n=x_n|X_{n-1}=x_n-1), \, \forall x_1\in{E} \land n\geq1 \\
+  &\text{och övergångssanolikheten } p_{xy} \\
+  &=P(X_n=y|X_{n-1}=x) \\
+  &\text{ är oberonde från $n$} \\
+  &\text{Vi fokuserar på } E={0,1,...,r} \text{ och } E=\mathbb{Z}_{\geq0} \\
+  & \\
+  &\text{Övergångsmatris:} \\
+  &\left(\begin{array}{cccc}
     p_{00} & p_{01} & ... & p_{0r} \\
     p_{10} & p_{11} & ... & p_{1r} \\
     : & : & ... & : \\
     p_{r0} & p_{r1} & ... & p_{rr} \\
-  \end{array}\right) \\
+  \end{array}\right)
 \end{align*}
 
 \subsection{Ehrenfestmodellen}
 \begin{align*}
-  &\quad  \text{Oavsett startpunkt tenderar kedjan mot ett ekvilibrium} \\
-  &\quad  \text{Övergångsmatris:} \\
+  &\quad  \text{Oavsett startpunkt tenderar kedjan mot ett} \\
+  &\quad  \text{ekvilibrium. Övergångsmatris:} \\
   &\quad  P=
   \left(\begin{array}{ccccccc}
     0 & 1 & 0 & 0 & ... & 0 & 0 \\
@@ -744,88 +794,96 @@ Dator generede slump tal. Kommer att upredasig.
 
 \textbf{Def: stationär}
 \begin{align*}
-  &\quad  \text{En fördelning $\pi$ kallas stationär för en Markovkedja} \\
-  &\quad  \text{med övergångsmatris $P$ om den löser ekvationssystemt} \\
-  &\quad  \pi=\pi P \\
-  &\quad  \text{- $\pi$ är en egenvektor för $P$ med egenvärde $1$} \\
-  &\quad  \text{- Om $\pi$ är ursprungsfördelningen $p^0=\pi \Rightarrow p^n=\pi, \, \forall{n}\geq0$} \\
+  &\text{En fördelning $\pi$ kallas stationär för en} \\
+  &\text{Markovkedja med övergångsmatris $P$ om den} \\
+  &\text{löser ekvationssystemt} \\
+  &\pi=\pi P \\
+  &\text{- $\pi$ är en egenvektor för $P$ med egenvärde $1$} \\
+  &\text{- Om $\pi$ är ursprungsfördelningen } p^0=\pi \\
+  &\Rightarrow p^n=\pi, \, \forall{n}\geq0 \\
 \end{align*}
 
 \textbf{Def: asymptotisk}
 \begin{align*}
-  &\quad  \text{En fördelning $\pi$ är en asymptotisk fördelning för} \\
-  &\quad  \text{Markovkedjan ${X_n}$ om } \lim_{0\to\infty}P(X_n=k)=\pi_k, \, \forall{k}\geq0 \\
-  &\quad  \text{oberonde avursprungsfördelningen } p^0 \\
-  &\quad  \\
-  &\quad  \text{Asymptotiska fördelningar är alltid stationära, dock inte tvärt om} \\
+  &\text{En fördelning $\pi$ är en asymptotisk fördelning för} \\
+  &\text{Markovkedjan ${X_n}$ om } \lim_{0\to\infty}P(X_n=k)=\pi_k, \, \\
+  & \forall{k}\geq0 \text{ oberonde avursprungsfördelningen } p^0 \\
+  &\\
+  &\text{Asymptotiska fördelningar är alltid stationära,} 
+  &\text{dock inte tvärt om} \\
 \end{align*}
 
 \textbf{Def: Irreducibel, Aperiodisk}
 \begin{align*}
-  &\quad  \text{En markovkedja ${X_n}$ kallas } \\
-  &\quad  \text{-Irreducibel om $P(X_n=j|X_0=i)>0$ för något n och} \\
-  &\quad  \text{alla $i,j\in{E}$ } \\
-  &\quad  \text{-Aperiodisk om största gemensamma delaren av mängden} \\
-  &\quad  {n: P(X_n=i|X_0=1)>0} \\
-  &\quad  \text{är 1 för alla i } \\
-  &\quad  \\
-  &\quad  \text{Om en kedja är irreducibel och något $p_{ii}>0$ är kedjan aperiodisk} \\
+  &\text{En markovkedja ${X_n}$ kallas } \\
+  &\text{-Irreducibel om $P(X_n=j|X_0=i)>0$ för något n och} \\
+  &\text{alla $i,j\in{E}$ } \\
+  &\text{-Aperiodisk om största gemensamma delaren av mängden} \\
+  &{n: P(X_n=i|X_0=1)>0} \\
+  &\text{är 1 för alla i } \\
+  &\\
+  &\text{Om en kedja är irreducibel och något $p_{ii}>0$ är kedjan} \\
+  &\text{aperiodisk.} \\
 \end{align*}
 
 \textbf{Def: Tillståndsrummet}
 \begin{align*}
-  &\quad  \text{Låt ${X_n}$ vara aperiodisk och irreducibel} \\
-  &\quad  \text{(1) Om tillsåndsrummet är ändligt finns en unik stationär fördelning} \\
-  &\quad  \text{som också är asymptotisk} \\
-  &\quad  \text{(2) Om tillsåndsrummet är oändligt, då om en stationär fördelning existerar} \\
-  &\quad  \text{är den unik och asymptotisk} \\
+  &\text{Låt ${X_n}$ vara aperiodisk och irreducibel} \\
+  &\text{(1) Om tillsåndsrummet är ändligt finns en unik} \\
+  &\text{stationär fördelning som också är asymptotisk} \\
+  &\text{(2) Om tillsåndsrummet är oändligt, då om en} \\
+  &\text{stationär fördelning existerar är den unik och asymptotisk} \\
 \end{align*}
 
 \textbf{Exempel: Markovkedjor}
 \begin{align*}
-  &\quad  P=
+  &P=
    \left(\begin{array}{ccc}
     3/4 & 0 & 1/4 \\
     * & 1/3 & 0 \\
     1/4 & 1/2 & ** \\
   \end{array}\right) \\
-  &\quad  \text{(a) Ange $*$ och $**$} \\
-  &\quad  \text{(b) Rita övergångsgrafen} \\
-  &\quad  \text{(c) argumentera för att kedjan är aperiodisk och irreducibel} \\
-  &\quad  \text{(d) Bestäm den stationära fördelningen} \\
-  &\quad  \\
-  &\quad  \text{(a) } *=1 -(1/3+0) = 2/3, \, **= 1-(1/4+1/2)=1/4 \\
-  &\quad  \text{(b) Rita övergångsgrafen} \\
-  &\quad  \text{(c) Som man ser på övergångsgrafen att den man kan ta sig till alla posistioner} \\
-  &\quad  \text{därmed så är den irreducibel vilket också medföljer aperiodisk} \\
-  &\quad  \text{(d) } (\pi_0 \pi_1 \pi_2) = (\pi_0 \pi_1 \pi_2)\cdot{p}
+  &\text{(a) Ange $*$ och $**$} \\
+  &\text{(b) Rita övergångsgrafen} \\
+  &\text{(c) argumentera för att kedjan är aperiodisk och} \\
+  &\text{irreducibel} \\
+  &\text{(d) Bestäm den stationära fördelningen} \\
+  &\\
+  &\text{(a) } *=1 -(1/3+0) = 2/3, \, **= 1-(1/4+1/2)=1/4 \\
+  &\text{(b) Rita övergångsgrafen} \\
+  &\text{(c) Som man ser på övergångsgrafen att den man kan} \\
+  &\text{ta sig till alla posistioner därmed så är den} \\
+  &\text{irreducibel vilket också medföljer aperiodisk} \\
+  &\text{(d) } (\pi_0 \pi_1 \pi_2) = (\pi_0 \pi_1 \pi_2)\cdot{p}
    \left(\begin{array}{ccc}
     3/4 & 0 & 1/4 \\
     2/3 & 1/3 & 0 \\
     1/4 & 1/2 & 1/4 \\
   \end{array}\right) \\
-  &\quad \left\{\begin{array}{rr}
+  &\left\{\begin{array}{rr}
   \pi_0 = 3/4\pi_0 + 2/3\pi_1 + 1/4\pi_2 \\
   \pi_1 = 0\pi_0 + 1/3\pi_1 + 1/2\pi_2 \\
   \pi_2 = 1/4\pi_0 + 0\pi_1 + 1/4\pi_2 \\
   \end{array}\right. \\
-  &\quad  \pi_2=\pi_0/3, \, \pi_1=\pi_0/4 \\
-  &\quad  \pi = (12 \; 3 \; 4) \text{ Normalisering: } \pi = (12/19 \; 3/19 \; 4/19) \\
+  &\pi_2=\pi_0/3, \, \pi_1=\pi_0/4 \\
+  &\pi = (12 \; 3 \; 4) \text{ Normalisering: } \pi = (12/19 \; 3/19 \; 4/19) \\
 \end{align*}
 
 \subsection{Google-kedjan}
 \begin{align*}
-  &\quad  \text{Google skapar en graph av alla sidor} \\
-  &\quad  \text{Tillståndet efter n steg beskrivs av en Markovkedja} \\
-  &\quad  \text{med denna övergångsmatrisen} \\
-  &\quad  \text{Google letar efter den asymptotiska fördelningen på } \\
-  &\quad  \text{kedjan och rankar sidorna i sökresultatet enligt sannolikheterna} \\
-  &\quad  \text{i den asymptotiska fördelningen} \\
+  &\text{Google skapar en graph av alla sidor} \\
+  &\text{Tillståndet efter n steg beskrivs av en} \\
+  &\text{Markovkedja med denna övergångsmatrisen} \\
+  &\text{Google letar efter den asymptotiska fördelningen} \\
+  &\text{på kedjan och rankar sidorna i sökresultatet} \\
+  &\text{enligt sannolikheterna i den asymptotiska} \\
+  &\text{fördelningen} \\
 \end{align*}
 
 \subsection{Hashfunktioner}
 \begin{align*}
-  &\quad  \text{En funktion $h$ som tar $n$ visare och sparar som någon av $m$ möjliga hasvärden $(m<n)$} \\
+  &\text{En funktion $h$ som tar $n$ visare och sparar som} \\
+  &\text{någon av $m$ möjliga hasvärden $(m<n)$} \\
 \end{align*}
 
 \subsection{Kollisionmodoll}
@@ -838,3 +896,5 @@ Dator generede slump tal. Kommer att upredasig.
   &\quad  \text{$X_n$ -anatal packet som anländer under slot $n$} \\
   &\quad  \text{$Q_n$ -anatal packet i kö slutet av slot $n$} \\
 \end{align*}
+\end{multicols}
+\raggedcolumns
