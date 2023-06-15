@@ -2,26 +2,44 @@
 
 \newpage
 
+\begin{multicols}{2}
 \section{Matlab}
 \url{https://www.egr.msu.edu/aesc210/systems/MatlabCheatSheet.pdf} \newline
 \textbf{Viktiga syntax/comandons}
 \begin{verbatim}
-  zeros(1,N);  % creates a vector of N lenght
-  zeros(N); % creates a matrix of N*N size
-  mean([1 2 2 3]); % avrage value with is 2 in this cases
+  % creates a vector of N lenght
+  zeros(1,N);  
+  % creates a matrix of N*N size
+  zeros(N); 
+  % avrage value with is 2 in this cases
+  mean([1 2 2 3]); 
   vector(line,row); 
-  hold on % holes the current plot and plots new over old
-  xlable("some x lable") % naming the plot x axis
-  ylable("some y lable") % naming the plot y axis
+  % holes the current plot and plots 
+  % new over old
+  hold on 
+  % naming the plot x axis
+  xlable("some x lable") 
+  % naming the plot y axis
+  ylable("some y lable") 
   title("some title for the plot")
   ode45(@(t,y) 2*t, tspan, y0);
-  [t,y] = ode15s(@(t,y) myode(t,y,A,B), tspan, y0);
-  linespace(StartPoint, EndPoint); % gemerates a row of vector
-  fzero(func, currentValueOfFunction, optimeset('Tolx', 1e-02)); 
-  [0; 1; 2]; % Vector not array
-  numel(x0); % the number of dimension of vector
-  repmat(x0(i), N, 1); % generate values 
-  cumsum(rand) % the cumulative sum of Noise starting at the beginning of the first array dimension in Noise whose size does not equal 1.
+  [t,y] = ode15s(@(t,y) myode(t,y,A,B), 
+                 tspan, y0);
+  % gemerates a row of vector
+  linespace(StartPoint, EndPoint); 
+  fzero(func, currentValueOfFunction, 
+        optimeset('Tolx', 1e-02)); 
+  % Vector not array
+  [0; 1; 2]; 
+  % the number of dimension of vector
+  numel(x0); 
+  % generate values 
+  repmat(x0(i), N, 1); 
+  % the cumulative sum of Noise starting
+  % at the beginning of the first array
+  % dimension in.
+  % Noise whose size does not equal 1.
+  cumsum(rand) 
 \end{verbatim}
 
 
@@ -94,25 +112,29 @@ Tar lutningen vid punkten man är i och beräknar värdet för ett givet steg.
 
 \textbf{Ex:}
 \begin{align*}
-  &\quad  \frac{y'(x)}{x} - y\sin{(x)} = 0, \; y(0)=1 \\
-  &\quad  \text{Euler framåt: } y_{k+1} = y_k h_kf(t_k,y_k) \\
-  &\quad  \\
-  &\quad  y'(x) = xy\sin{(x)}, \; f(x,y) = xy\sin{(x)} \\
-  &\quad  y_{i+1} = y_i + hf(x_i,y_i) = y_i+hx_i\cdot{y_i\sin{(x_i)}} \\
-  &\quad  \text{Väljer $h=0.1$ (h är steget mellan det approximerade linjerna)} \\
-  &\quad  y_0 = 1 \\
-  &\quad  y_1 = y_0+hx_0y_0\sin{(x_0)} = 1+0.1\cdot0\cdot1\sin{0} = 1 \\
-  &\quad  y_2 = y_1+hx_1y_1\sin{(x_1)} = 1+0.1\cdot0.1\cdot1\sin{0.1} = 1.001 \\
-  &\quad  y_3 = y_2+hx_2y_2\sin{(x_2)} = 1.001+0.1\cdot0.2\cdot1.001\sin{0.2} = 1.005 \\
-  &\quad  * \\
-  &\quad  y_{10} = 1.2895 \\
-  &\quad  \\
-  &\quad  \text{Aritmetiska lösnig (Räknat ut exakta värdet) }
-  y(1)=e^{\sin{(1)-1-\cos{(1)}}} = 1.3514 \\
-  &\quad  \text{Fel} = 1.2895-1.3514 = -0.0619 \\
-  &\quad  \text{Väljer } h=0.01, \; y_{100} = 1.3448 \text{ Fel} = -0.00669 \\
-  &\quad  \text{Väljer } h=0.01, \; y_{1000} = 1.35076 \text{ Fel} = -6.74\cdot10^{-4} \\
-  &\quad  \text{Vi ser att felet är propotionelit mot steg ($h$). Fel } \alpha \; h \\
+  &\frac{y'(x)}{x} - y\sin{(x)} = 0, \; y(0)=1 \\
+  &\text{Euler framåt: } y_{k+1} = y_k h_kf(t_k,y_k) \\
+  &\\
+  &y'(x) = xy\sin{(x)}, \; f(x,y) = xy\sin{(x)} \\
+  &y_{i+1} = y_i + hf(x_i,y_i) = y_i+hx_i\cdot{y_i\sin{(x_i)}} \\
+  &\text{Väljer $h=0.1$} 
+  &\text{(h är steget mellan det approximerade linjerna)} \\
+  &y_0 = 1 \\
+  &y_1 = y_0+hx_0y_0\sin{(x_0)} = 1+0.1\cdot0\cdot1\sin{0} = 1 \\
+  &y_2 = y_1+hx_1y_1\sin{(x_1)} = 1+0.1\cdot0.1\cdot1\sin{0.1} \\
+  &= 1.001 \\
+  &y_3 = y_2+hx_2y_2\sin{(x_2)} \\
+  &= 1.001+0.1\cdot0.2\cdot1.001\sin{0.2} = 1.005 \\
+  &* \\
+  &y_{10} = 1.2895 \\
+  &\\
+  &\text{Aritmetiska lösnig (Räknat ut exakta värdet) } \\
+  &y(1)=e^{\sin{(1)-1-\cos{(1)}}} = 1.3514 \\
+  &\text{Fel} = 1.2895-1.3514 = -0.0619 \\
+  &\text{Väljer } h=0.01, \; y_{100} = 1.3448 \text{ Fel} = -0.00669 \\
+  &\text{Väljer } h=0.01, \; y_{1000} = 1.35076 \text{ Fel} = -6.74\cdot10^{-4} \\
+  &\text{Vi ser att felet är propotionelit mot steg ($h$).} \\
+  &\text{Fel } \alpha \; h \\
 \end{align*}
 
 \subsubsection{Euler bakåt (implicit metod)}
@@ -120,25 +142,26 @@ Tar lutningen ett steg framåt.
 
 \textbf{Ex:}
 \begin{align*}
-  &\quad  \text{Euler bakåt: } y_{k+1} = y_k h_kf(t_{k+1},y_{k+1}) \\
-  &\quad  \\
-  &\quad  y'(x) = xy\sin{(x)}, \; y(0)=1 \\
-  &\quad  y_{i+1} = y_i + hx_{i+1}y_{i+1}\sin{(x_{i+1})} \\
-  &\quad  \Rightarrow y_{i+1} -hx_{i+1}\cdot{y_{i+1}}\sin{(x_{i+1})} = y_i \\
-  &\quad  \Rightarrow y_{i+1} = \frac{y_i}{1 -hx_{i+1}\sin{(x_{i+1})}} \\
-  &\quad  \text{Väljer $h=0.1$} \\
-  &\quad  y_0 = 1 \\
-  &\quad  y_1 = \frac{y_0}{1 -hx_{1}\sin{(x_{1})}} = \frac{1}{1 -0.1\cdot0.1\cdot\sin{0.1}}
+  &\text{Euler bakåt: } \\
+  &y_{k+1} = y_k h_kf(t_{k+1},y_{k+1}) \\
+  &\\
+  &y'(x) = xy\sin{(x)}, \; y(0)=1 \\
+  &y_{i+1} = y_i + hx_{i+1}y_{i+1}\sin{(x_{i+1})} \\
+  &\Rightarrow y_{i+1} -hx_{i+1}\cdot{y_{i+1}}\sin{(x_{i+1})} = y_i \\
+  &\Rightarrow y_{i+1} = \frac{y_i}{1 -hx_{i+1}\sin{(x_{i+1})}} \\
+  &\text{Väljer $h=0.1$} \\
+  &y_0 = 1 \\
+  &y_1 = \frac{y_0}{1 -hx_{1}\sin{(x_{1})}} = \frac{1}{1 -0.1\cdot0.1\cdot\sin{0.1}}
         = 1.000999 \\
-  &\quad  y_2 = \frac{y_1}{1 -hx_{1}\sin{(x_{1})}} = 1.00499 \\
-  &\quad  * \\
-  &\quad  y_{10} = 1.42556 \\
-  &\quad  \\
-  &\quad  \text{Aritmetiska lösnig: } y(1)=e^{\sin{(1)-1-\cos{(1)}}} = 1.3514 \\
-  &\quad  \text{Fel} = 1.42556-1.3514 = +0.07412 \\
-  &\quad  \text{Väljer } h=0.01, \; y_{100} = 1.35825 \text{ Fel} = +0.00681 \\
-  &\quad  \text{Väljer } h=0.001, \; y_{1000} = 1.35211 \text{ Fel} = +6.75\cdot10^{-4} \\
-  &\quad  \text{Vi ser att felet är propotionelit mot steg ($h$). Fel } \alpha \; h \\
+  &y_2 = \frac{y_1}{1 -hx_{1}\sin{(x_{1})}} = 1.00499 \\
+  &* \\
+  &y_{10} = 1.42556 \\
+  &\\
+  &\text{Aritmetiska lösnig: } y(1)=e^{\sin{(1)-1-\cos{(1)}}} = 1.3514 \\
+  &\text{Fel} = 1.42556-1.3514 = +0.07412 \\
+  &\text{Väljer } h=0.01, \; y_{100} = 1.35825 \text{ Fel} = +0.00681 \\
+  &\text{Väljer } h=0.001, \; y_{1000} = 1.35211 \text{ Fel} = +6.75\cdot10^{-4} \\
+  &\text{Vi ser att felet är propotionelit mot steg ($h$). Fel } \alpha \; h \\
 \end{align*}
 
 \subsubsection{Trapetsmetoden (implicit metod)}
@@ -146,17 +169,18 @@ Trapetsmetoden uses the avrage value of the euler framåt and backåt.
 
 \textbf{Ex:}
 \begin{align*}
-  &\quad  \text{Trapetsmetoden } y_{i+1}=y_i + 0.5h_i(f(t_i,y_i) + f(t_{i+1},y_{i+1}))
-  &\quad  y'=xy\sin(x) \\
-  &\quad  y_{i+1} = y_i+h/2(x_i\cdot{y_i}\sin(x_i)+x_{i+1}y_{i+1}\sin{(x_{i+1})}) \\
-  &\quad  \Rightarrow y_{i+1} = \frac{y_i+h/2(x_i\cdot{y_i}\sin(x_i))}{1-h/2(x_i)+\sin{x_{i+1}}}
-  &\quad  y_0=1 \; h=0.1 \\
-  &\quad  y_1=0.00499 \\
-  &\quad  * \\
-  &\quad  y_{10}=1.3343, \text{ Fel} = 0.00286 \\
-  &\quad  \text{Väljer } h=0.01, \; y_{100} = 1.35147 \text{ Fel} = +2.86\cdot10^{-5} \\
-  &\quad  \text{Väljer } h=0.001, \; y_{1000} = 1.3514275 \text{ Fel} = +2.86\cdot10^{-7} \\
-  &\quad  \text{Vi ser att felet är propotionelit mot steg ($h$). Fel } \alpha \; h^2 \\
+  &\text{Trapetsmetoden } \\
+  &y_{i+1}=y_i + 0.5h_i(f(t_i,y_i) + f(t_{i+1},y_{i+1})) \\
+  &y'=xy\sin(x) \\
+  &y_{i+1} = y_i+h/2(x_i\cdot{y_i}\sin(x_i)+x_{i+1}y_{i+1}\sin{(x_{i+1})}) \\
+  &\Rightarrow y_{i+1} = \frac{y_i+h/2(x_i\cdot{y_i}\sin(x_i))}{1-h/2(x_i)+\sin{x_{i+1}}} \\
+  &y_0=1 \; h=0.1 \\
+  &y_1=0.00499 \\
+  &* \\
+  &y_{10}=1.3343, \text{ Fel} = 0.00286 \\
+  &\text{Väljer } h=0.01, \; y_{100} = 1.35147 \text{ Fel} = +2.86\cdot10^{-5} \\
+  &\text{Väljer } h=0.001, \; y_{1000} = 1.3514275 \text{ Fel} = +2.86\cdot10^{-7} \\
+  &\text{Vi ser att felet är propotionelit mot steg ($h$). Fel } \alpha \; h^2 \\
 \end{align*}
 
 \subsubsection{Heuns metod (explicit metod)}
@@ -165,58 +189,63 @@ ODE. Det kan huens metod lösa genom att approximera implicita delen.
 
 \textbf{Metod:}
 \begin{align*}
-  &\quad  \text{Huens metod } y_{i+1} = y_n + h_n/2[f(t_n,y_n) + f(t_{n+1},hf(t_n,y_n))] \\
-  &\quad  \\
-  &\quad  k_1=f(x_i,y_i) \\
-  &\quad  k_2=f(x_i,y_i) \\
-  &\quad  y_{i+1} = y_i+h(k_1+k_2) \\
-  &\quad  \text{Vi ser att felet är propotionelit mot steg ($h$). Fel } \alpha \; h^2 \\
+  &\text{Huens metod } \\
+  &y_{i+1} = y_n + h_n/2[f(t_n,y_n) + f(t_{n+1},hf(t_n,y_n))] \\
+  &\\
+  &k_1=f(x_i,y_i) \\
+  &k_2=f(x_i,y_i) \\
+  &y_{i+1} = y_i+h(k_1+k_2) \\
+  &\text{Vi ser att felet är propotionelit mot steg ($h$).}  
+  &\text{Fel } \alpha \; h^2 \\
 \end{align*}
 
 \textbf{Ex:}
 \begin{align*}
-    &\quad  y'=10\cdot{y}(1-\frac{y}{1000}), \; y(0)=1, \; h=0.1 \\
-    &\quad  \\
-    &\quad  \text{i. löser ut } y'(t) \\
-    &\quad  y'(t) = 10\cdot{y}(1-y/1000) \\
-    &\quad  \\
-    &\quad  \text{ii. Heuns metod, utryck för } y_{i+1} \\
-    &\quad  y_{n+1} = y_n+h_n/2(k_1+k_2) \\
-    &\quad  \\
-    &\quad  \text{iii. Beräknar } \\
-    &\quad  k_1 = f(t_0,y_0) = 10\cdot{1}(1-\frac{1}{1000}) = 9.99 \\
-    &\quad  k_2 = f(t_1,y_0+hk_1) = f(t_1,1.999)= 10\cdot{1.999}(1-\frac{1.999}{1000}) = 19.99(0.998001) \approx 19.95 \\
-    &\quad  \Rightarrow y_1 = y_0 + h_0/2(k_1+k_2) = 1+0.05(k_1+k_2) \approx 2.497 \\
+    &y'=10\cdot{y}(1-\frac{y}{1000}), \; y(0)=1, \; h=0.1 \\
+    &\\
+    &\text{i. löser ut } y'(t) \\
+    &y'(t) = 10\cdot{y}(1-y/1000) \\
+    &\\
+    &\text{ii. Heuns metod, utryck för } y_{i+1} \\
+    &y_{n+1} = y_n+h_n/2(k_1+k_2) \\
+    &\\
+    &\text{iii. Beräknar } \\
+    &k_1 = f(t_0,y_0) = 10\cdot{1}(1-\frac{1}{1000}) = 9.99 \\
+    &k_2 = f(t_1,y_0+hk_1) = f(t_1,1.999) \\
+    &= 10\cdot{1.999}(1-\frac{1.999}{1000}) = 19.99(0.998001) \approx 19.95 \\
+    &\Rightarrow y_1 = y_0 + h_0/2(k_1+k_2) = 1+0.05(k_1+k_2) \\
+    &\approx 2.497 \\
 \end{align*}
 
 
 \subsubsection{Runge-Kutta (explicit metod)}
 Runge-Kutta är noggran numrerisk approximering, betydligt bättre än 
 euler framåt/backåt. Man berärknar 4 lutningar och tar typ medelvärdet av dem.
-\begin{figure}[h]
-    \vspace{10mm}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=8cm, height=6cm]{image/Runge-Kutta_slopes.png}
+    \includegraphics[width=8cm]{image/Runge-Kutta_slopes.png}
     \caption{Runge-Kutta}
 \end{figure}
 
 \textbf{Ex:}
 \begin{align*}
-    &\quad  y'(t)-y(t)-t=0, \; y(0)=0, \; h=0.1, \; \text{RK 1-steg} \\
-    &\quad  \\
-    &\quad  \text{i. löser ut } y'(t) \\
-    &\quad  y'(t)=y(t)+t \Rightarrow f(t,y) = y+t \\
-    &\quad  \\
-    &\quad  \text{ii. Runge-Kuttas, utryck för } y_{i+1} \\
-    &\quad  y_{n+1} = y_n+\frac{1}{6}h(k_1+2k_2+2k_3+k_4) \\
-    &\quad  \\
-    &\quad  \text{iii. Beräknar } \\
-    &\quad  k_1 = f(t_0,y_0) = y_0 + t_0 = 0 \\
-    &\quad  k_2 = f(t_0+h/2,y_0+hk_1/2) = f(0.05,0) = 0.05 \\
-    &\quad  k_3 = f(t_0+h/2,y_0+hk_2/2) = f(0.05,0.0025) = 0.0525 \\
-    &\quad  k_4 = f(t_0+h,y_0+hk_3) = f(0.1,0.00525) = 0.10525 \\
-    &\quad  k = (k_1+2k_2+2k_3+k_4)/6 = (0+2*0.05+2*0.0525+0.10525)/6=0.31025/6 \\
-    &\quad  y_1 = y_0 + h\cdot(0.31025/6) = 0.1\cdot(0.31025/6) \approx 0.00517 \\
+    &y'(t)-y(t)-t=0, \; y(0)=0, \; h=0.1, \; \text{RK 1-steg} \\
+    &\\
+    &\text{i. löser ut } y'(t) \\
+    &y'(t)=y(t)+t \Rightarrow f(t,y) = y+t \\
+    &\\
+    &\text{ii. Runge-Kuttas, utryck för } y_{i+1} \\
+    &y_{n+1} = y_n+\frac{1}{6}h(k_1+2k_2+2k_3+k_4) \\
+    &\\
+    &\text{iii. Beräknar } \\
+    &k_1 = f(t_0,y_0) = y_0 + t_0 = 0 \\
+    &k_2 = f(t_0+h/2,y_0+hk_1/2) \\ 
+    &= f(0.05,0) = 0.05 \\
+    &k_3 = f(t_0+h/2,y_0+hk_2/2) = f(0.05,0.0025) = 0.0525 \\
+    &k_4 = f(t_0+h,y_0+hk_3) = f(0.1,0.00525) = 0.10525 \\
+    &k = (k_1+2k_2+2k_3+k_4)/6 \\
+    &= (0+2*0.05+2*0.0525+0.10525)/6=0.31025/6 \\
+    &y_1 = y_0 + h\cdot(0.31025/6) = 0.1\cdot(0.31025/6) \approx 0.00517 \\
 \end{align*}
 
 \newpage
@@ -246,9 +275,9 @@ Ställer upp ODE i separat fil
     function u_out = satellitODE(t,u)
 
     u_out = [ u(2);
-              -( u(1)/( sqrt( u(1)^2 + u(2)^2 )^3 ) );
-              u(4);
-              -( u(3)/( sqrt( u(1)^2 + u(2)^2 )^3 ) )];
+      -( u(1)/( sqrt( u(1)^2 + u(2)^2 )^3 ) );
+      u(4);
+      -( u(3)/( sqrt( u(1)^2 + u(2)^2 )^3 ) )];
 \end{lstlisting}
 
 Sedan kan man kalla med följande script
@@ -259,14 +288,14 @@ Sedan kan man kalla med följande script
     % satelitens hastighet (x'(0), y'(0))
     u0 = [0; 22223; 17000; 100];
 
-    [t, u] = ode45(@satellitODE, tidsintervall, u0, odeset)
+    [t, u] = ode45(@satellitODE, 
+                   tidsintervall, u0, odeset)
 
     plot(t,u)
 \end{lstlisting}
 
 
 
-\newpage
 \section{Analys}
 \textit{Styv} mångra ädringar under kort tid.
 \textit{Adaptivt steglängdsval} som ode15s och ode45. Anpassar steglängd efter styvhet.
@@ -299,7 +328,8 @@ och taylorutveckla kring $t_i$ och låt $h\to0$.
 Om $\Psi\to{C\cdot{h^{P+1}}}$ (dominerande term)
 Så har metoden noggranhetsordning P
 \begin{align*}
-  &\quad \tau_h\to{C\cdot{h^{P+1}}} \Leftrightarrow \frac{\phi(t_{i+1})-\phi(t_i)}{h}+\Psi_h(t_i,\phi(t_{i+1}),\phi(t_i))\to{Ch^P} \\
+  &\tau_h\to{C\cdot{h^{P+1}}} \Leftrightarrow \frac{\phi(t_{i+1})-\phi(t_i)}{h} \\
+  &+\Psi_h(t_i,\phi(t_{i+1}),\phi(t_i))\to{Ch^P} \\
 \end{align*}
 
 
@@ -326,7 +356,6 @@ Där av så är $t_{k+1}=t_k+h$
 Därmed så är det lockala trunkteringsfelet $O(h^2)$ och nogranhets ordningen
 $p$ i $\tau_{h}=Ch^{p+1}\Rightarrow p=1$. V:S:V 
 
-\newpage
 
 \subsection{Stabilitet}
 Vi undersöker Stabilitet på testekvationen
@@ -382,7 +411,6 @@ Vi antar (enligt uppgift) att $\lambda$ är reellt och att $Re(\lambda) \le 0$. 
 för alla våra värden på $\lambda$. På grund av detta vet vi att oavsett värde på $h$ så kommer den numeriska lösningen vara stabil, d.v.s ovillkorligt stabil.
 
 
-\newpage
 \subsection{Stabilitet generella ekvationer}
 Betrakta små rörelser av $y$ (momentant)
 \begin{align*}
@@ -445,7 +473,6 @@ $\Rightarrow$ Utanför stabilitetsanalysen på testekvation $y'=\lambda y$ men m
 % aplikations faktorn
 % man kan numeriskt annylisera stabiliteten hos RK
 
-\newpage
 \section{Stokastiska metoden}
 \begin{itemize}
   \item Deterministisk metoder: Det vi tidigare kållat på. Får samma svar för sama input
@@ -482,8 +509,6 @@ osäkerhet är prognosen. \newline
 \end{align*}
 
 
-\newpage
-
 \subsection{Invers Transform Sampling (ITS)}
 ITS är en algorithm för att generera slumptal ut ifrån 
 en given fördelning.
@@ -495,14 +520,14 @@ Man kan då bestäma $\tau$ som är tiden för reaktion ska ske.
 \textbf{Exempel: ITS}
 \begin{align*}
   &f_{\lambda}(x)=\frac{1}{\lambda}e^{-x/\lambda} \\
-  &\\
-  \text{1. Hitta primitiva funktionen }&   \\
-  & F_{\lambda(x)} = {\int^x}_0 \frac{1}{\lambda}e^{-t/\lambda}dt 
+  &\text{1. Hitta primitiva funktionen }  \\
+  &F_{\lambda(x)} = {\int^x}_0 \frac{1}{\lambda}e^{-t/\lambda}dt 
   = {[-e^{-t/\lambda}]^x}_0
   = 1-e^{-x/\lambda} \\
-  \text{2. Hitta inversen }& \\
-  & F^{-1}: \text{Löser } y=1-e^{-x/\lambda} \\
-  & y-1 = -e^{-x/\lambda} \Rightarrow ln(1-y)=-x/\lambda \Rightarrow x=-\lambda ln(1-y) \\
+  &\text{2. Hitta inversen } \\
+  &F^{-1}: \text{Löser } y=1-e^{-x/\lambda} \\
+  &y-1 = -e^{-x/\lambda} \Rightarrow ln(1-y)=-x/\lambda \\
+  &\Rightarrow x=-\lambda ln(1-y) \\
   &\text{Vilket är exponentialfördelad}
 \end{align*}
 
@@ -510,17 +535,17 @@ Man kan då bestäma $\tau$ som är tiden för reaktion ska ske.
 
 \textbf{Exempel: ITS Diskret slumptalsfördelning}
 \begin{align*}
-  \text{1: Röd; } P_1 &= 0.45 \\
-  \text{2: Gul; } P_2 &= 0.10 \\
-  \text{3: Grön; } P_3 &= 0.45 \\
-  u&=0.61 \\
+  &\text{1: Röd; } P_1 = 0.45 \\
+  &\text{2: Gul; } P_2 = 0.10 \\
+  &\text{3: Grön; } P_3 = 0.45 \\
+  &u=0.61 \\
   \\
   &\text{ITS innebär i den diskreta versionen att $r$,} \\
-  &\text{numret på nästa utfall, ska väljas som det minsta tal $x$} \\
-  &\text{så att } F(x)\leq u \text{, där $F(x)$ är den kumulativa fördelningsfunktionen.} \\
-  &\text{Med de givna värdena kan $F(x)$ representeras av vektorn} \\
-  \\
-  F &= 
+  &\text{numret på nästa utfall, ska väljas som det minsta} \\
+  &\text{tal $x$ så att } F(x)\leq u \text{, där $F(x)$ är den} \\
+  &\text{kumulativa fördelningsfunktionen. Med de givna värdena} \\
+  &\text{kan $F(x)$ representeras av vektorn} \\
+  &F = 
   \begin{bmatrix}
     0.45 \\
     0.45 + 0.10 \\
@@ -532,11 +557,10 @@ Man kan då bestäma $\tau$ som är tiden för reaktion ska ske.
     1.00 
   \end{bmatrix} \\
   &\text{Vi ser att $F(3)$ är den första som är störe än $0.61$.} \\
-  &\text{Slutsatsen är att det kommer då vara $r=3$, färgen grön som slumpas fram.}
+  &\text{Slutsatsen är att det kommer då vara $r=3$,} \\
+  &\text{färgen grön som slumpas fram.}
 \end{align*}
 
-
-\newpage
 
 \subsection{Gillespie algorithm/Stochastic Simulation Algorithm (SSA)}
 Simulering av reaktioner oftast i kemiska kontext.
@@ -640,3 +664,5 @@ lutbelopp är mindre än det till beloppet minsta normaliserade
 flyttalet.
   \item \textit{jacobianen}
 \end{itemize}
+\end{multicols}
+\raggedcolumns
