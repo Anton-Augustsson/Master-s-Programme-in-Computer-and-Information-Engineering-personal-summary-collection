@@ -62,12 +62,13 @@
 We only look at \underline{LTI only}.
 
 
-\begin{figure}[!ht]
+\begin{figure}[H]
     \centering
     \includegraphics[width=12cm]{image/caractaristic-signal-plots.pdf}
     \caption{Signal plots}
 \end{figure}
 
+\begin{multicols}{2}
 Anny signal can be expressed by its even and odd componetnt
 \begin{equation}
     x(t) = x_e(t) + x_o(t)
@@ -108,9 +109,11 @@ Is $\frac{dy(t)}{dt}+3ty(t)=t^2x(t)$ linear? Assume zero initial conditions.
 
 \textbf{Solution:}
 \begin{align*}
-    \frac{dy(t)}{dt}+3ty(t) &= t^2x(t) \\
-    \frac{d(\alpha y_1(t) + \beta y_2(t))}{dt} + 3t(\alpha y_1(t) + \alpha y_2(t)) &= t^2(\alpha x_1(t) + \beta x_2(t)) \\
-    \alpha\frac{dy_1(t)}{dt} + \beta\frac{dy_2(t)}{dt} + \alpha 3ty_1(t) \beta 3ty_2(t) &= \alpha t^2 x_1(t) + \beta t^2 x_2(t) \\
+    &\frac{dy(t)}{dt}+3ty(t) = t^2x(t) \\
+    &\frac{d(\alpha y_1(t) + \beta y_2(t))}{dt} + 3t(\alpha y_1(t) + \alpha y_2(t)) \\ 
+    &= t^2(\alpha x_1(t) + \beta x_2(t)) \\
+    &\alpha\frac{dy_1(t)}{dt} + \beta\frac{dy_2(t)}{dt} + \alpha 3ty_1(t) \beta 3ty_2(t) \\
+    &= \alpha t^2 x_1(t) + \beta t^2 x_2(t)
 \end{align*}
 therefore is the system linear.
 \end{exampleblock}
@@ -147,7 +150,6 @@ upcoming values. If we were to restrict that $t\geq0$ then it would be casual.
 $f_0=\frac{1}{T_0}$, $w=2\pi f_0$
 $w_0=\frac{2\pi}{T_0}$
 
-\newpage
 
 \section{Continuous-time signals and time-domain analysis}
 
@@ -204,8 +206,8 @@ $w_0=\frac{2\pi}{T_0}$
     &\delta(at+b) = \frac{1}{|a|}\delta(t+\frac{b}{a}) \\
     &\phi(t)\delta(t-\tau) = \phi(\tau)\delta(t-\tau) \\
     &\int_{-\infty}^{\infty}\phi(\tau)\delta(\tau-t)dt = \phi(t) \\
-    &\text{Convolution: } (x*h)(t) = \int_{-\infty}^{\infty}x(\tau)h(t-\tau)dt 
-    \Rightarrow x(t)*\delta(t-T)=x(t-T) \\
+    &\text{Convolution: } (x*h)(t) = \int_{-\infty}^{\infty}x(\tau)h(t-\tau)dt \\
+    &\Rightarrow x(t)*\delta(t-T)=x(t-T)
 \end{align*}
 
 \subsubsection{Impulse responce}
@@ -252,11 +254,13 @@ For any input $x(t)$, the output of an LTI system is (\textit{convolution}):
 \begin{exampleblock}{Example: Convolution 2}
 \begin{align*}
     Y(\omega) &= \frac{1}{2\pi}X(\omega) * \pi [\delta(\omega-25)+\delta(\omega+25)] \\
-    &= \frac{1}{2}[X(\omega)*\delta(\omega-25) + X(\omega)*\delta(\omega+25)] \;\;\; \text{ -(Constants can be moved out)} \\
-    &= \frac{1}{2}[X(\omega-25) + X(\omega+25)] \;\;\; \text{ -(Convolution of direct delta is just time shift)} \\
+    &= \frac{1}{2}[X(\omega)*\delta(\omega-25) + X(\omega)*\delta(\omega+25)] \\
+    &\text{ -(Constants can be moved out)} \\
+    &= \frac{1}{2}[X(\omega-25) + X(\omega+25)] \\
+    &\text{ -(Convolution of direct delta is just} \\
+    &\text{time shift)}
 \end{align*}    
 \end{exampleblock}
-
 
 
 \subsubsection{Sin In, Sine Out Principle}
@@ -283,7 +287,7 @@ Any periodic continius time signal can be expressed as
 \begin{align*}
     a_0 &= \frac{1}{T_0}\int_{(T_0)} x(t) dt \\
     a_n &= \frac{2}{T_0}\int_{(T_0)} x(t)\cos(n\omega_0t) dt \\
-    b_n &= \frac{2}{T_0}\int_{(T_0)} x(t)\sin(n\omega_0t) dt \\
+    b_n &= \frac{2}{T_0}\int_{(T_0)} x(t)\sin(n\omega_0t) dt
 \end{align*}
 
 \textbf{Exponential continuos time Fourier series}
@@ -309,7 +313,7 @@ Any periodic continius time signal can be expressed as
     \text{ for } n\geq 1 \\
     a_0=c_0, \;\; a_n&= 2Re\{c_n\}, \;\; b_{n}= -2Im\{c_n\}, \;\; 
     \text{ for } n\geq 1 \\
-    &\text{Complex conjugate pair } c_n = c^*_{-n} \\
+    &\text{Complex conjugate pair } c_n = c^*_{-n}
 \end{align*}
 
 \begin{itemize}
@@ -325,19 +329,17 @@ For Aperiodic we use Fourier transform
 \begin{align*}
     X(\omega) &= \mathcal{F}\{x(t)\} = \int_{-\infty}^{\infty} x(t) e^{-j\omega t} dt \\
     x(t) &= \mathcal{F}^{-1}\{X(\omega)\} = \frac{1}{2\pi} \int_{-\infty}^{\infty} X(\omega) 
-    e^{j\omega t} d\omega \\
+    e^{j\omega t} d\omega
 \end{align*}
 
 \subsubsection{Spectral Analysis}
 Analysing figure of magnitude $|X(\omega)|$ and the phase $\phase X(\omega)$.
-Phase plot is very important. \newpage
+Phase plot is very important. 
 
 The magnitude plot shows us what frequencies is dominant and not. It is even. 
 One can also determin the output from an input signal from the spectrum since from the 
 magnitude you can do times that of the input signal. 
 The phase plot determines the phase shift for a frequency of the input signal $w_0$.
-
-
 
 
 \textbf{Phasor operations}
@@ -348,26 +350,25 @@ The phase plot determines the phase shift for a frequency of the input signal $w
     \text{division: }& \frac{z_1}{z_2} = \frac{r_1}{r_2}\phase{(\phi_1-\phi_2)} \\
     \text{inverse: }& \frac{1}{z} = \frac{1}{r}\phase{-\phi} \\
     \text{square root: }& \sqrt{z} = \sqrt{r}\phase{(\phi/2)} \\
-    \text{complex conjugate: }& z^* = x-jy \\
+    \text{complex conjugate: }& z^* = x-jy
 \end{align*}
-
 
 
 \subsubsection{Properties}
 \begin{itemize}
-    \item \textbf{Linjarity}: $x_1(t) \TransformHoriz X_1(\omega)$, and
+    \item \textbf{Linjarity}:\newline $x_1(t) \TransformHoriz X_1(\omega)$, and
      $x_1(t) \TransformHoriz X_1(\omega)$ $\Rightarrow$
      $\alpha x_1(t) + \beta x_2(t) \TransformHoriz \alpha X_1(\omega) + \beta X_2(\omega)$
-    \item \textbf{Duality}: $X(t) \TransformHoriz 2\pi x(-\omega)$
-    \item \textbf{Time and frequency scaling}: $x(at) \TransformHoriz \frac{1}{|a|}X\big(\frac{\omega}{a})$ for $a\neq0$
-    \item \textbf{Time and frequency shifting}: $x(t-\Delta t) \TransformHoriz X(\omega)e^{-j\omega\Delta t}$
+    \item \textbf{Duality}:\newline $X(t) \TransformHoriz 2\pi x(-\omega)$
+    \item \textbf{Time and frequency scaling}:\newline $x(at) \TransformHoriz \frac{1}{|a|}X\big(\frac{\omega}{a})$ for $a\neq0$
+    \item \textbf{Time and frequency shifting}:\newline $x(t-\Delta t) \TransformHoriz X(\omega)e^{-j\omega\Delta t}$
     $\Rightarrow$ $x(t)e^{j\omega_0 t} \TransformHoriz X(\omega-\omega_0)$
-    \item \textbf{Convolution and multiplication}: $x_1(t)*x_2(t) \TransformHoriz X_1(\omega)X_2(\omega)$ 
+    \item \textbf{Convolution and multiplication}:\newline $x_1(t)*x_2(t) \TransformHoriz X_1(\omega)X_2(\omega)$ 
     $\Rightarrow$ $x_1(t)*x_2(t) \TransformHoriz X_1(\omega)X_2(\omega)$
-    \item \textbf{Differentiation and integration}: $\frac{d^nx(t)}{dt^n} \TransformHoriz (j\omega)^n X(\omega)$ 
+    \item \textbf{Differentiation and integration}:\newline $\frac{d^nx(t)}{dt^n} \TransformHoriz (j\omega)^n X(\omega)$ 
     where $n$ is for derivatives \newline
     $\Rightarrow$ $\int_{-\infty}^t x(\tau)d\tau \TransformHoriz \frac{1}{j\omega} X(\omega) + \pi X(0)\delta(\omega)$
-    \item \textbf{Symmetries}: $X^*(\omega) = X(-\omega)$
+    \item \textbf{Symmetries}:\newline $X^*(\omega) = X(-\omega)$
     \begin{itemize}
         \item $|X(\omega)|$ is even
         \item $\phase X(\omega)$ is odd
@@ -420,9 +421,11 @@ The phase plot determines the phase shift for a frequency of the input signal $w
 %Convolutioin of fourier, Frequency responce. Definition
 \textbf{Frequency domain input-output relationship}
 \begin{align*}
-    Y(\omega) &= H(\omega)X(\omega) \;\;\; \text{ -(Since in the time domain $y(t)=x(t)*h(t)$)} \\
-    &\text{Where $Y(\omega)$ is the fourier transform LTI systems output signal,} \\
-    &\text{$H(\omega)$ is the \textit{frequency response} and $X(\omega)$ is the input signals Fourier transform} \\
+    Y(\omega) &= H(\omega)X(\omega) \\ 
+    &\text{ -(Since in the time domain $y(t)=x(t)*h(t)$)} \\
+    &\text{Where $Y(\omega)$ is the fourier transform LTI systems} \\
+    &\text{output signal, $H(\omega)$ is the \textit{frequency response}} \\
+    &\text{and $X(\omega)$ is the input signals Fourier transform} \\
     H(\omega) &= \int_{-\infty}^{\infty} h(t)e^{-j\omega t} dt
 \end{align*}
 
@@ -438,9 +441,10 @@ The phase plot determines the phase shift for a frequency of the input signal $w
   and the impulse response is $h(t)=rect\left(\frac{t-1}{2}\right)$?
 
     \textbf{Solution:}
-    \begin{equation*}
-        x(t)=2\cos\left(\frac{\pi}{2}t\right) \mapsto y(t)=2|H\left(\frac{\pi}{2}\right)|\cos\left(\frac{\pi}{2}+\angle H\left(\frac{\pi}{2}\right)\right)
-    \end{equation*}
+    \begin{align*}
+        &x(t)=2\cos\left(\frac{\pi}{2}t\right) \mapsto y(t) \\
+        &=2|H\left(\frac{\pi}{2}\right)|\cos\left(\frac{\pi}{2}+\angle H\left(\frac{\pi}{2}\right)\right)
+    \end{align*}
 
     \begin{align*}
         H(\omega) &= \mathcal{F}\{ h(t) \} = \mathcal{F}\{ rect\left(\frac{t-1}{2}\right) \} \\
@@ -502,11 +506,12 @@ Hence, the constants are $c_1=1$ and $c_2=-1$.
    h(t) &= e^{-2t}u(t) - e^{-3t}u(t) \;\;\; \text{ -(transfer table)}
 \end{align*}
 \end{exampleblock}
+\end{multicols}
+\raggedcolumns
 
 
-\newpage
 \textbf{Transform pairs}
-\begin{figure}[!ht]
+\begin{figure}[H]
     \centering
     \includegraphics[width=12cm]{image/unilateral-Laplace-transform-pairs.pdf}
     \caption{Unilateral Laplace transform pairs. From \cite{}}
@@ -576,7 +581,7 @@ $H(j\omega)$ of a continues time LTI system is given by
 \begin{align*}
     H(s) &= K\frac{(s-z_1)(s-z_s)\ldots(s-z_M)}{(s-p_1)(s-p_2)\ldots(s-p_N)} \\
     &\text{where $z_M$ is zeros} \\
-    &\text{and $p_N$ is poles} \\
+    &\text{and $p_N$ is poles}
 \end{align*}
 
 The system is proper if $N\geq M$ and strictly proper if $N>M$. 
@@ -607,21 +612,21 @@ Determine the transfer function $H(s)$
 \begin{align*}
     &s^2Y(s) +6sY(s) + 13Y(s) = sX(s) + 2X(s) \\
     &Y(s)(s^2+6s+13) = X(s)(s+2) \\
-    &\frac{Y(s)}{X(s)} = \frac{s+2}{s^2+6s+13} = H(s) \\
+    &\frac{Y(s)}{X(s)} = \frac{s+2}{s^2+6s+13} = H(s)
 \end{align*}
 we se that the system is proper since the degree of the enumerated is less the denominator
 
 Zeros:
 \begin{align*}
     &s+2=0 \\
-    &s=-2 \Rightarrow z_1=-2 \\
+    &s=-2 \Rightarrow z_1=-2
 \end{align*}
 
 Poles:
 \begin{align*}
     &s^2+6s+13 = 0 \\
     &s=-\frac{6}{2}\pm\sqrt{3^2-13}=-3\pm\sqrt{-4}=-3\pm 2j \\
-    &\Rightarrow p_{1,2} = -3\pm 2j \\
+    &\Rightarrow p_{1,2} = -3\pm 2j
 \end{align*}
 
 There of do we see that both poles are negative, there fore is the system stable.
@@ -629,12 +634,11 @@ There of do we see that both poles are negative, there fore is the system stable
 
 \textit{qualitative} impulse response.
 
-\newpage
 \subsection{Bod plot}
 Bode plots can relatively easily be constructed by hand, which was
 paramount before the computer era for analyzing complex dynamic systems. \newline
 
-Bode plots are a standardized way of plotting a system’s frequency response function
+Bode plots are a standardized way of plotting a system's frequency response function
 and a Bode plot actually consists of two plots: A Bode magnitude plot (or simply
 magnitude plot ) and a Bode phase plot (or simply a phase plot). \newline
 
@@ -649,11 +653,11 @@ Asymptote is the line where define the direction of the line.
 \begin{align*}
     H(s) &= K \frac{(s-z_1)\ldots(s-z_M)}{s^l(s-p_1)\ldots(s-p_{N-l})} \\
     H(s) &= K_0 \frac{ (\frac{s}{z_1}+1)\ldots((\frac{s}{\omega_{n,i}})^2+2s\frac{\zeta_i}{\omega_{n,i}}+1)\ldots }{ s^l( \frac{s}{p_1}+1) \ldots ((\frac{s}{\omega_{n,j}})^2+2s\frac{\zeta_j}{\omega_{n,j}}+1)\ldots } \\
-    K_0 &= K \frac{ \prod_i(-z_i) }{ \prod_i(-p_i) } \\
+    K_0 &= K \frac{ \prod_i(-z_i) }{ \prod_i(-p_i) }
 \end{align*}
 There are $l$ poles in the origin (the term $s^{-l}$). 
 
-\newpage
+
 \subsubsection{Sketching Bode Plots}
 \begin{exampleblock}{Example: ODE solving with transfer functions}
 Sketch Bode plots for the following transfer functions.
@@ -667,23 +671,21 @@ First we write the transfer function as in bode normal Form
     H(s) &= \frac{s(s+100)}{(s+2)(s+20)} 
      = \frac{100 s(\frac{s}{100}+1)}{2\cdot20(\frac{s}{2}+1)(\frac{s}{20}+1)} \\
     H(j\omega) &= \frac{100 j\omega(\frac{j\omega}{100}+1)}{2\cdot 20(\frac{j\omega}{2}+1)(\frac{j\omega}{20}+1)}
-     = \frac{100 j\omega(1+j\frac{\omega}{100})}{2\cdot 20(1+j\frac{\omega}{2})(1+j\frac{\omega}{20})} \\
+     = \frac{100 j\omega(1+j\frac{\omega}{100})}{2\cdot 20(1+j\frac{\omega}{2})(1+j\frac{\omega}{20})}
 \end{align*}
 
-\vspace{-1cm}
 \begin{align*}
     &\lim_{\omega\to 0} H(j\omega) = 0, (-\infty dB) \\
-    &\lim_{\omega\to \infty} H(j\omega) = 1, (0 dB) \\
+    &\lim_{\omega\to \infty} H(j\omega) = 1, (0 dB)
 \end{align*}
 
-\vspace{-0.3cm}
 We can write the magnitude by adding the factor together
 \begin{align*}
     |H(j\omega)|_{dB} &= 20\log_{10}(\frac{100}{2\cdot 20})
     +20\log_{10}(|j\omega|) 
     -20\log_{10}(\big| 1+j\frac{\omega}{2}\big|) \\
     &\;\;\; -20\log_{10}(\big| 1+j\frac{\omega}{20}\big|)
-    +20\log_{10}(\big| 1+j\frac{\omega}{100}\big|) \\
+    +20\log_{10}(\big| 1+j\frac{\omega}{100}\big|)
 \end{align*}
 
 The phase shift can be done similarly.
@@ -713,8 +715,7 @@ The phase shift can be done similarly.
 Now we can draw the bode plot see figure \ref{fig:bodePlotExample}.
 \end{exampleblock}
 
-\newpage
-\begin{figure}[!ht]
+\begin{figure}[H]
     \centering
     \includegraphics[width=12cm]{image/bode-plot-example.pdf}
     \caption{Bode plot example}
@@ -743,7 +744,6 @@ Now we can draw the bode plot see figure \ref{fig:bodePlotExample}.
 %bod plot
 %tent plot, determent the frequency response
 
-\newpage
 \section{Filtering theory}
 \subsection{Filtering Theory and Ideal Filters}
 An ideal filter only contains a \textit{passband} (the frequency range that the signal is not filterd out) 
@@ -761,14 +761,14 @@ and the \textit{stopband} (the frequency witch is filtered out)
 \end{itemize}
 Where $\omega_c$ is the cut-off frequency.
 
-\begin{figure}[!ht]
+\begin{figure}[H]
     \centering
     \includegraphics[width=12cm]{image/filter-lp-hp.pdf}
     \caption{Lowpass and Highpass filter. From \cite{}}
     \label{fig:filter-lp-hp}
 \end{figure}
 
-\begin{figure}[!ht]
+\begin{figure}[H]
     \centering
     \includegraphics[width=12cm]{image/filter-bp-bs.pdf}
     \caption{Bandpass and Bandstop filter. From \cite{}}
@@ -782,13 +782,14 @@ Where $\omega_c$ is the cut-off frequency.
 Ideal filters can not be implemented there for we use approximations. 
 
 % good images
-\begin{figure}[!ht]
+\begin{figure}[H]
     \centering
     \includegraphics[width=12cm]{image/approximation-spectrum.pdf}
     \caption{approximation-spectrum. From \cite{}}
     \label{fig:approximation-spectrum}
 \end{figure}
 
+\begin{multicols}{2}
 \begin{itemize}
     \item \textit{passband ripple}: maximum amount of attenuation allowed in the passband.
     \item \textit{passband edge frequency}: the frequency that markes the end of the requirment on the passband ripple
@@ -807,7 +808,7 @@ Ideal filters can not be implemented there for we use approximations.
     R=\frac{d}{d\omega}\log_10(|H(\omega|^2)\Big|_{\omega=\omega_c} = 2\frac{d}{d\omega}\log_10(|H(\omega)|)\Big|_{\omega=\omega_c}
 \end{equation*}
 
-\newpage
+
 \subsubsection{Approximation Types}
 \begin{itemize}
     \item \textbf{Butterworth filter}:
@@ -896,18 +897,15 @@ $N$ is the order.
 %low pass to band pass, low pass to band stop.
 
 
-
-
 Realed valued
 how to convert from dB to non dB
 what is sinc cosh arccosh
 
 
-\newpage
 \section{Sampling and Reconstruction}
-\begin{figure}[!ht]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=12cm]{image/sampling_and_reconstruction.pdf}
+    \includegraphics[width=8cm]{image/sampling_and_reconstruction.pdf}
     \caption{Sampling and Reconstruction}
     \label{fig:sampling_and_reconstruction}
 \end{figure}
@@ -917,13 +915,12 @@ what is sinc cosh arccosh
 \end{equation*}
 Where $T_s$ is the time delta for samplening and $k$ is a integer. \newline
 
-\noindent We can do sampling in the time domain and in the frequncy domain. 
+We can do sampling in the time domain and in the frequncy domain. 
 We us a sampling signal with is a diract delta function with is multiplied with 
-the input signal in the time domain. \newline
+the input signal in the time domain.
 
 \noindent\textit{Bandlimiting} is the limiting of signal's frequency domaian representation.
 
-\newpage
 \subsection{Sampling}
 The sampling frequncy $\omega_s$ is equal to the higest frerquency $\omega_b$ (b stands for bandwidth)
 time two.
@@ -931,7 +928,7 @@ time two.
     \omega_s > 2\omega_b    
 \end{equation*}
 
-\subsubsection{Nyquist–Shannon Sampling Theorem}
+\subsubsection{Nyquist-Shannon Sampling Theorem}
 The creteria for sampling to work as inteded.
 \begin{align*}
     &\omega_s =\frac{2\pi}{T_s} \\
@@ -963,26 +960,24 @@ And the output then becomes:
 \textit{Oversampling} is the result of choosing a sampling frequency $\omega_s$ larger then the Nyquist frequncy $\omega_N$,
 but still smaller then the maximum frequency $\omega_b$.
 
-\newpage
-\begin{figure}[!ht]
+\begin{figure}[H]
    \centering
-   \includegraphics[width=12cm]{image/sampling_graphs.png} 
-   \caption{Sampling Graphs. From \cite{}}
+   \includegraphics[width=8cm]{image/sampling_graphs.png} 
+   \caption{Sampling Graphs. From \cite{st}}
    \label{fig:sampling_graphs}
 \end{figure}
 
 
-\newpage
 \subsubsection{Aliasing and Anti-Aliasing}
 Aliasing accures when 
 \begin{equation*}
     \omega_s < 2\omega_b
 \end{equation*}
 
-\begin{figure}[!ht]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=6cm]{image/aliasing.pdf}
-    \caption{Aliasing. From \cite{}}
+    \includegraphics[width=8cm]{image/aliasing.pdf}
+    \caption{Aliasing. From \cite{st}}
     \label{fig:aliasing}
 \end{figure}
 If there is overlap, one can not recover the signal and are therfore useless.
@@ -996,10 +991,10 @@ there be a small amount of aliasing leaking through.
 \subsection{Reconstruction}
 A ideal low pass filter can be used for reconstruction, since one can get the signals frequencies.
 The filter is a rect in the frequency domain and there for a sinc in the time domain.
-\begin{figure}[!ht]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=6cm]{image/ideal_reconstruction.pdf}
-    \caption{Ideal reconstruction. From \cite{}}
+    \includegraphics[width=8cm]{image/ideal_reconstruction.pdf}
+    \caption{Ideal reconstruction. From \cite{st}}
     \label{fig:ideal_reconstcion}
 \end{figure}
 
@@ -1008,20 +1003,21 @@ After ZOH a smothing filter is used.
 
 \begin{align*}
     x_{zoh}(t) &= x_s(t)*rect\Big(\frac{t-T_s/2}{T_s}\Big) \\
-    X_{zoh}(\omega) &= X_s(\omega)T_s sinc\Big(\frac{\omega T}{2\pi}\Big)e^{j\omega\frac{T_s}{2}} \\
+    X_{zoh}(\omega) &= X_s(\omega)T_s sinc\Big(\frac{\omega T}{2\pi}\Big)e^{j\omega\frac{T_s}{2}}
 \end{align*}
+\end{multicols}
+\raggedcolumns
+
 
 \subsection{Quantization}
 The amount of lavels witch the digital signal can hold.
 
-\newpage
-\begin{figure}[!ht]
+\begin{figure}[H]
     \centering
     \includegraphics[width=12cm]{image/quantization.png}
     \caption{Two 3 bit quantizers ($L=2^3=8$). (a) uniform quantizer (b) non-uniform quantizer. From \cite{}}
     \label{fig:quantization}
 \end{figure}
-
 
 
 \section{Discrete time signals and systems}
@@ -1049,10 +1045,9 @@ also, the continus time period can be derived
 
     \begin{align*}    
         &\Delta\Omega = \frac{2\pi}{K}, \;\; \Delta\Omega = 3\frac{2\pi}{10} - 2\frac{2\pi}{10} = \frac{2\pi}{10}  \\
-        &\frac{2\pi}{K} = \frac{2\pi}{10} \Rightarrow K = 10 \\
+        &\frac{2\pi}{K} = \frac{2\pi}{10} \Rightarrow K = 10
     \end{align*}
     Hence the we need 10 samples.
-
 \end{exampleblock}
 
 
@@ -1108,10 +1103,10 @@ $\Omega_0 = \frac{2\pi}{K_0}$
 input output relationship for descrite time (definition)
 \begin{align*}
     y[k] &= \sum_{m=-\infty}^{\infty} h[k]x[k-m] = h[k]*x[k] \\
-    y[k] &= \sum_{m=0}^{\infty} h[k]x[k-m] \text{ for casual systems} \\
+    y[k] &= \sum_{m=0}^{\infty} h[k]x[k-m] \text{ for casual systems}
 \end{align*}
 
-\begin{figure}[!ht]
+\begin{figure}[H]
     \centering
     \includegraphics[width=12cm]{image/properties_of_the_discreate_time_convolution_sum.pdf}
     \caption{Properties of the discrete time convolution sum. From \cite{}}
@@ -1148,7 +1143,7 @@ The frequency can be expression:
 Mapping frequencies:
 \begin{align*}
     \Omega &= 2\pi \Leftrightarrow \omega = \omega_s \\
-    \Omega &= \pi \Leftrightarrow \omega = \frac{\omega_s}{2} = \omega_N \\
+    \Omega &= \pi \Leftrightarrow \omega = \frac{\omega_s}{2} = \omega_N
 \end{align*}
 
 Sampling feqeuency.
@@ -1156,7 +1151,6 @@ Sampling feqeuency.
     X(\Omega) = \sum_{k=-\infty}^{\infty} x[k]e^{-j\Omega k}
 \end{equation*}
 
-\newpage
 \textbf{Definition of Discrete time Fourier transform}
 \begin{align*}
     X(\Omega) &= \sum_{k=-\infty}^{\infty} x[k]e^{-j\Omega k} \\
@@ -1167,10 +1161,10 @@ Transfor pair and the important property that the fourier transform is alwase
 $2\pi$ for discrete time.
 \begin{align*}
     x[k] &\TransformHoriz X(\Omega) \\
-    X(\Omega) &= X(\Omega + 2\pi) \\
+    X(\Omega) &= X(\Omega + 2\pi)
 \end{align*}
 
-\begin{figure}[!ht]
+\begin{figure}[H]
     \centering
     \includegraphics[width=12cm]{image/properties_discrete_time_fourier_transform.png}
     \caption{Properties of the discrete time fourier transform. From \cite{}}
@@ -1196,7 +1190,6 @@ $2\pi$ for discrete time.
 
 % we have desscused four 4 tools for fourier analasys, ctfs, ctft, dtfs, dtfs
 
-\newpage
 \subsection{Discrete Fourier Transform}
 With DFT we can determine the spectrum without nowing the signal type
 of input signals $x[k]$.
@@ -1209,10 +1202,10 @@ of input signals $x[k]$.
 
 Where $L$ is the \textit{Frequency bins}
 
-\begin{figure}[!ht]
+\begin{figure}[H]
     \centering
     \includegraphics[width=12cm]{image/properties_of_the_dft.png}
-    \caption{Properties of the discrete time Fourier transform. From \cite{}}
+    \caption{Properties of the discrete time Fourier transform. From \cite{st}}
     \label{fig:properties_of_the_dft}
 \end{figure}
 
@@ -1241,7 +1234,7 @@ same, however there are similar and there realation is
 \begin{equation*}
     X(\Omega)|_{\Omega=l\frac{2\pi}{L}}=X[l]
 \end{equation*}
-Also DFT is non-zero. \newline
+Also DFT is non-zero.
 
 For aperiodic CTFT can be approximated as 
 \begin{equation*}
@@ -1288,7 +1281,7 @@ The \textit{twiddle factor}
 
 \begin{align*}
     X[l] &= \sum_{k=0}^{\frac{K}{2}-1}x_1[2k]W_K^{lk} + W_K^{l} \sum_{k=0}^{\frac{K}{2}-1}x[2k+1]W_K^{lk}  \\
-    &= X_1[l] + W_k^l X_2[l] \\
+    &= X_1[l] + W_k^l X_2[l]
 \end{align*}
 
 
@@ -1306,23 +1299,23 @@ The z-transform can then be derived for $z=re^{j\Omega}$.
 \begin{align*}
     x[k] &\TransformHoriz X(z) \\
     X(z) &= \sum_{k=0}^{\infty} x[k]z^{-k} \\
-    x[k] &= \frac{1}{2\pi j} \oint X(z)z^{k-1}dz \\
+    x[k] &= \frac{1}{2\pi j} \oint X(z)z^{k-1}dz
 \end{align*}
 
-\begin{figure}[!ht]
+\begin{figure}[H]
     \centering
     \includegraphics[width=11cm]{image/z-transform_pairs.png}
-    \caption{z-transform pairs. From \cite{}}
+    \caption{z-transform pairs. From \cite{st}}
     \label{fig:z-transform_pairs}
 \end{figure}
 
 
 \subsubsection{Properties}
 % table 9.2
-\begin{figure}[!ht]
+\begin{figure}[H]
     \centering
     \includegraphics[width=12cm]{image/properties_z-transform.png}
-    \caption{properties z-transform. From \cite{}}
+    \caption{properties z-transform. From \cite{st}}
     \label{fig:properties_z-transform}
 \end{figure}
 
@@ -1351,7 +1344,7 @@ the future, in that case the easies approtch is to shifting of diference equatio
 \textbf{Definition: Relationship between the discrete time impulse response and transfrer function}
 \begin{align*}
     h[k] &\TransformHoriz H(z) \\
-    H(z) &= \sum_{k=0}^{\infty} h[k]z^{-k} \\
+    H(z) &= \sum_{k=0}^{\infty} h[k]z^{-k}
 \end{align*}
 
 \subsubsection{Transfer Function and Frequency Response}
@@ -1379,10 +1372,10 @@ Zeros will have the oposite affect, creating a dip. The closer the the
 circle the futher down the dip will reach.
 
 \textbf{Stabiltity}
-\begin{figure}[!ht]
+\begin{figure}[H]
    \centering
    \includegraphics[width=12cm]{image/stability_z-transform.png} 
-   \caption{Stability for z-transforms. From \cite{}}
+   \caption{Stability for z-transforms. From \cite{st}}
    \label{fig:stability_z-transform}
 \end{figure}
 
@@ -1400,7 +1393,7 @@ circle the futher down the dip will reach.
     \begin{align*}
         &z^2Y(z)+5zY(z)+0.1 = zX(z) \;\; \text{ -(Time shifting property)} \\
         &Y(z)(z^2+5z+0.1) = zX(z) \\
-        &\frac{Y(z)}{X(z)} = \frac{z}{z^2+5z+0.1} = H(z) \;\; \text{ -(Witch is the tranfer function)} \\
+        &\frac{Y(z)}{X(z)} = \frac{z}{z^2+5z+0.1} = H(z) \;\; \text{ -(Witch is the tranfer function)}
     \end{align*}
 
     Next we determin the the poles to se if there are inside the complex unit circle, 
@@ -1408,7 +1401,7 @@ circle the futher down the dip will reach.
     \begin{align*}
         &z^2+5z+0.1 = 0 \\
         &z=\frac{-5}{2}\pm\sqrt{\frac{5^2}{2^2}-0.1}=\frac{-5}{2}\pm\frac{\sqrt{24.6}}{2} \;\; \text{ -(pq-formula)}\\
-        &p_1\approx-0.0201, \; p_2\approx-5 \\ 
+        &p_1\approx-0.0201, \; p_2\approx-5
     \end{align*}
     Since $|p_2|>1$ is the system not stable.
 
@@ -1421,10 +1414,10 @@ circle the futher down the dip will reach.
     \begin{align*}
         &|H(\Omega)|_{\Omega=2\pi}| = |H(\Omega)|_{\Omega=0}| = |\frac{e^0}{e^0+5e^0+0.1}| \approx 0.16 \;\; \text{ -($2\pi$-periodic)}\\
         &|H(\Omega)|_{\Omega=3\pi/2}| = |H(\Omega)|_{\Omega=\pi/2}| = |\frac{e^{\pi/2}}{e^{\pi}+5e^{\pi/2}+0.1}| = |\frac{-j}{-1+5(-j)+0.1}| \approx 2 \\
-        &|H(\Omega)|_{\Omega=\pi}| = |\frac{e^{\pi}}{e^{2\pi}+5e^{\pi}+0.1}| = |\frac{-1}{1+5(-1)+0.1}| \approx 0.26 \\
+        &|H(\Omega)|_{\Omega=\pi}| = |\frac{e^{\pi}}{e^{2\pi}+5e^{\pi}+0.1}| = |\frac{-1}{1+5(-1)+0.1}| \approx 0.26
     \end{align*}
-
 \end{exampleblock}
+
 
 \section{Digital Filters}
 \subsection{Introduction}
@@ -1448,7 +1441,7 @@ has $N+1$ filter taps (starts from $0$ and ends at $N$)
 FIR Filters are allwase stable since it dose not have any poles only zeros.
 \subsubsection{FIR Filter Design}
 % windowing and Parks-McClellan (de-facto standard for FIR filter design)
-\begin{figure}[!ht]
+\begin{figure}[H]
    \centering
    \includegraphics[width=8cm]{image/descrete_time_filter_frequncy_impulse_respons.png} 
    \caption{Descrete time filter frequency responce and their impulse responses}
@@ -1494,7 +1487,6 @@ round the number in a way witch makes the system unstable.
 % second order section is a way of spliting a complex filter in to second order filters
 
 
-\newpage
 \section{How it is connected}
 \begin{tabular}{|m{2cm}|m{3cm}|m{4cm}|m{6cm}|}
     \hline
@@ -1517,7 +1509,7 @@ round the number in a way witch makes the system unstable.
 \textbf{Note:} The fourier tranforms are $X(\omega)$ for Continous tme, $X(\Omega)$ for discreate time and 
 $X[l]$ for discreate (NO TIME).  
 
-\begin{figure}[!ht]
+\begin{figure}[H]
    \centering
    \includegraphics[width=8cm]{image/connection_mind-map.pdf} 
    \caption{Connection mind map.}
@@ -1525,7 +1517,6 @@ $X[l]$ for discreate (NO TIME).
 \end{figure}
 
 
-\newpage
 \begin{exampleblock}{Example: sine in sine out for discrete time signal}
     The sampling time is $T_s = 0.05$ 
     \begin{equation*}
@@ -1538,7 +1529,7 @@ $X[l]$ for discreate (NO TIME).
 
     \begin{align*}
         |H(e^{j\pi/4})| &= 1.7  \\
-        \angle H(e^{j\pi/4}) &= 0.14 \;\;\; (7.8^{\circ}) \\
+        \angle H(e^{j\pi/4}) &= 0.14 \;\;\; (7.8^{\circ})
     \end{align*}
 
     \begin{equation*}
@@ -1547,14 +1538,12 @@ $X[l]$ for discreate (NO TIME).
 \end{exampleblock}
     
 
-
-\newpage
 \begin{appendices}
 \includepdf[pages=-,pagecommand={},width=\textwidth]{image/transform_tables.pdf}
-\begin{figure}[!ht]
+\begin{figure}[H]
    \centering
    \includegraphics[width=12cm]{image/complex_unit_circle.png} 
-   \caption{Complex unit circle. From \cite{}}
+   \caption{Complex unit circle. From \cite{st}}
    \label{fig:complex_unit_circle}
 \end{figure}
 \end{appendices}

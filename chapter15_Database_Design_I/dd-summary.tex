@@ -9,6 +9,7 @@
 
 
 \newpage
+\begin{multicols}{2}
 \section{Ch1. Databases and Database Users}
 \begin{itemize}
     \item \textit{Database}: A collection of related data.
@@ -21,21 +22,19 @@
     Sometimes, the applications are also included.
 \end{itemize}
 
-\begin{figure}[!h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=12cm]{image/database-system.pdf}
-    \caption{Database system. From \cite{}}
+    \includegraphics[width=8cm]{image/database-system.pdf}
+    \caption{Database system. From \cite{dd}}
 \end{figure}
 
-\newpage
 \section{Ch3. Data Modeling Using the Entity-Relationship (ER) Model}
-\begin{figure}[!h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=10cm]{image/notation-er-diagrams.pdf}
-    \caption{NOTATION ER Diagram. From \cite{}}
+    \includegraphics[width=8cm]{image/notation-er-diagrams.pdf}
+    \caption{NOTATION ER Diagram. From \cite{dd}}
 \end{figure}
 
-\newpage
 \noindent\textbf{Definitions of ..}
 \begin{itemize}
     \item \textit{Entity}: Entities are specific things or objects in the 
@@ -59,7 +58,6 @@
 %Foreign keys
 %constraints (key)
 
-\newpage
 \noindent\textbf{Relationship caractaristics}
 \begin{itemize}
     \item Dubble line: Needs to have the relationship
@@ -73,17 +71,16 @@
     \item Doted key attribute: Is in combinations with the previus key
 \end{itemize}
 
-\begin{figure}[!h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=8cm]{image/crow_foot.png}
-    \caption{Crow foot notation. From \cite{}}
+    \caption{Crow foot notation. From \cite{dd}}
 \end{figure}
 
 
 %When stating relationship one reads from left to right (EMMPLOYEE WORKS_FOR DEPARTMENT).
 %crow feet. UML class diagrams
 % weak entity the author matters
-\newpage
 \section{Ch4. Enhanced Entity-Relationship (EER) Modeling}
 EER includes all modeling consents of basic ER, but also have additional concepts witch are:
 \begin{itemize}
@@ -97,14 +94,13 @@ EER includes all modeling consents of basic ER, but also have additional concept
     %\item \textit{Attribute and relationship inheritance}:
 \end{itemize} 
 
-\begin{figure}[!h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=8cm]{image/constraints_specialization-generalization.png}
     \caption{Overlapping, can be a member of multiple subclasses. Disjoint, can only be a member of at most one of the subclasses (Disjointness Constraint),  Total, it must be a member of at least one (Completeness constraint). Partial, don't need to belong to any of the subclasses. From \cite{}}
 \end{figure}
 
 
-\newpage
 \section{Ch5. The Relational Data Model and Relational Database Constraints}
 \noindent\textbf{Definitions}
 \begin{itemize}
@@ -133,7 +129,6 @@ constraints that can be expressed in the relational model:
     \item \textit{Entity integrity}: \newline if the primary key value is null in the new tuple
 \end{itemize}
 
-\newpage
 \section{Ch.13 Normalization}
 \href{https://www.youtube.com/watch?v=xoTyrdT9SZI}{Youtube tutorial}
 The process of decomposing unsatisfactory "bad"
@@ -153,7 +148,8 @@ Having redudent information creates some
 \begin{itemize}
     \item Consider the relation:
     \begin{itemize}
-        \item  \begin{verbatim} EMP_PROJ(Emp#, Proj#, Ename, Pname, No_hours) \end{verbatim}
+        \item  \begin{verbatim} EMP_PROJ(Emp#, Proj#, Ename,
+                                        Pname, No_hours) \end{verbatim}
     \end{itemize}
     \item Insert Anomaly:
     \begin{itemize}
@@ -167,7 +163,8 @@ Having redudent information creates some
 \begin{itemize}
     \item Consider the relation:
     \begin{itemize}
-        \item  \begin{verbatim} EMP_PROJ(Emp#, Proj#, Ename, Pname, No_hours) \end{verbatim}
+        \item  \begin{verbatim} EMP_PROJ(Emp#, Proj#, Ename, Pname,
+                                        No_hours) \end{verbatim}
     \end{itemize}
     \item Delete Anomaly:
     \begin{itemize}
@@ -185,7 +182,8 @@ Having redudent information creates some
     \item Consider the relation:
     \begin{itemize}
     \item
-\begin{verbatim} EMP_PROJ(Emp#, Proj#, Ename, Pname, No_hours) \end{verbatim}
+\begin{verbatim} EMP_PROJ(Emp#, Proj#, Ename,
+                          Pname, No_hours) \end{verbatim}
     \end{itemize}
     \item Update Anomaly:
     \begin{itemize}
@@ -263,7 +261,6 @@ Functional Dependencies FD
 Transmit dependencies FD1 FD2 FD3 ..
 
 %step 7  wont look at
-\newpage
 \section{Ch.9}
 \textbf{ER-to-Relational Mapping Algorithm}
 \begin{itemize}
@@ -282,7 +279,7 @@ Transmit dependencies FD1 FD2 FD3 ..
     \item Step 9: Mapping of Union Types (Categories).
 \end{itemize}
 
-\newpage
+
 \section{Ch.6 SQL}
 \subsection{Terminology}
 \begin{itemize}
@@ -334,7 +331,11 @@ constructs
     \end{itemize}
     \item INTERVAL
 \end{itemize}
+\end{multicols}
+\raggedcolumns
 
+
+\newpage
 \subsection{SQL examples}
 \begin{verbatim}
     -- Creating tables
@@ -516,16 +517,16 @@ simultaneously in the diagnostic area
 
 \newpage
 \begin{appendices}
-\begin{figure}[!h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=12cm]{image/temporary_update_problem.png}
-    \caption{Temporary update problem. From \cite{}}
+    \includegraphics[width=8cm]{image/temporary_update_problem.png}
+    \caption{Temporary update problem. From \cite{dd}}
     \label{fig:temporary_update_problem}
 \end{figure}
-\begin{figure}[!h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=12cm]{image/incorrect_summary_problem.png}
-    \caption{Incorrect summary problem. From \cite{}}
+    \includegraphics[width=8cm]{image/incorrect_summary_problem.png}
+    \caption{Incorrect summary problem. From \cite{dd}}
     \label{fig:incorrect_summary_problem}
 \end{figure}
 \end{appendices}
