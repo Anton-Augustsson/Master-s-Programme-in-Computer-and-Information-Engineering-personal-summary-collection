@@ -11,6 +11,7 @@
 
 \newpage
 
+\begin{multicols}{2}
 \section{Introduction}
 Overfitting is the property of a model such that the model
 predicts very well labels of the examples used during training but frequently makes errors
@@ -143,10 +144,10 @@ the data under some error/cost or loss function.
 interested in the error/cost on this set.
 
 \textbf{Confusion matrices}
-\begin{figure}[!h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=8cm]{\imagesPath/actual_prediction_matrix.png}
-    \caption{Actual prediction matrix. From \cite{}}
+    \caption{Actual prediction matrix. From \cite{iml}}
 \end{figure}
 
 Accuracy 
@@ -159,7 +160,7 @@ Precision
     \frac{TP}{TP+FP}
 \end{equation*}
 
-\newpage
+
 \section{Linear Regression as Machine Learning}
 \textbf{Properties}
 \begin{itemize}
@@ -167,10 +168,10 @@ Precision
     \item Numerical variables 
     \item Regression problem
 \end{itemize}
-\begin{figure}[!h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=8cm]{\imagesPath/linear_regression.png}
-    \caption{Linear regressionFrom \cite{}}
+    \caption{Linear regressionFrom \cite{iml}}
 \end{figure}
 \href{https://www.youtube.com/watch?v=nk2CQITm_eo}{Explenation}
 
@@ -234,9 +235,10 @@ By calculating the probability we can decide witch class it belongs to by seeing
 has the biggest probability.
 
 \begin{definitionblock}{Bayes theorem}
-    \begin{equation*}
-        P(H|E) = \frac{P(H)P(E|H)}{P(E)} = \frac{P(H)P(E|H)}{P(H)P(E|H) + P(\neg H)P(E|\neg H)}
-    \end{equation*}
+    \begin{align*}
+        P(H|E) &= \frac{P(H)P(E|H)}{P(E)} \\
+        &= \frac{P(H)P(E|H)}{P(H)P(E|H) + P(\neg H)P(E|\neg H)}
+    \end{align*}
     where $H$ is the hypothesis and $E$ is the evidence. $P(H)$ is called the prior, $P(E|H)$ is called the likelihood
     and $P(H|E)$ is the posterior.
 
@@ -247,10 +249,10 @@ for several cases one can express as followed:
     P(A|b_1,b_2,...,b_n) = \frac{P(b_1|A)P(b_2|A)...P(b_n|A)P(A)}{P(b_1)P(b_2)...P(b_n)}
 \end{equation*}
 
-\begin{figure}[!h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=12cm]{\imagesPath/bayes_theorem.png}
-    \caption{Bayes Theorem. From \cite{}}
+    \includegraphics[width=8cm]{\imagesPath/bayes_theorem.png}
+    \caption{Bayes Theorem. From \cite{iml}}
 \end{figure}
 
 \begin{itemize}
@@ -261,7 +263,6 @@ for several cases one can express as followed:
 
 %smoothing
 
-\newpage
 \section{Logistic Regression}
 \textbf{Properties}
 \begin{itemize}
@@ -273,10 +274,10 @@ for several cases one can express as followed:
 
 Linear regression is not good at classification problems, since not all classes can 
 be linear separable. Logistic regression is used for classification better than linear regression.
-\begin{figure}[!h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=12cm]{\imagesPath/linear_vs_logistic.png}
-    \caption{Linear vs logistic regression. From \cite{}}
+    \includegraphics[width=8cm]{\imagesPath/linear_vs_logistic.png}
+    \caption{Linear vs logistic regression. From \cite{iml}}
 \end{figure}
 \href{https://www.youtube.com/watch?v=-la3q9d7AKQ}{Logistic regression explanation}
 
@@ -303,8 +304,9 @@ for binary classifications. Sigmoid function is the same as logistic function.
 
 \subsection{Cost function}
 \begin{align*}
-    J(\theta) &= \frac{1}{m}\sum_{i=1}^m Cost(h_{\theta}x^{(i)},y^{(i)}) \\
-    &= -\frac{1}{m}\left[\sum_{i=1}^m y^{(i)}\log{h_{\theta}(x^{(i)}) + (1-y^{(i)})\log(1-h_{\theta}(x^{(i)}))}\right] \\
+    &J(\theta) = \frac{1}{m}\sum_{i=1}^m Cost(h_{\theta}x^{(i)},y^{(i)}) \\
+    &= -\frac{1}{m} \\
+    &\cdot\left[\sum_{i=1}^m y^{(i)}\log{h_{\theta}(x^{(i)}) + (1-y^{(i)})\log(1-h_{\theta}(x^{(i)}))}\right] \\
 \end{align*}
 
 \subsection{Gradient dissent}
@@ -359,7 +361,6 @@ The legalization parameter $\lambda$ can automatically be determine \newline
 %\end{equation*}
 
 
-\newpage
 \section{Support Vector Machines}
 \textbf{Properties}
 \begin{itemize}
@@ -382,10 +383,10 @@ We want to find weights $\bar{w} \in \mathbb{R}^d$ and a constant $b$ such that
 \end{equation*}
 
 
-\begin{figure}[!h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=12cm]{\imagesPath/svm_margins_in_2_dim.png}
-    \caption{Bayes Theorem. From \cite{}}
+    \includegraphics[width=8cm]{\imagesPath/svm_margins_in_2_dim.png}
+    \caption{Bayes Theorem. From \cite{iml}}
 \end{figure}
 
 
@@ -422,16 +423,16 @@ i.e. The kernel trick is a way to lower the demission to avoid componential expe
 \subsection{Gaussian Kernels}
 \begin{figure}
      \centering
-     \begin{subfigure}[b]{0.4\textwidth}
+     \begin{subfigure}[b]{8cm}
          \centering
          \includegraphics[width=\textwidth]{\imagesPath/gaussian_kernels_1.png}
      \end{subfigure}
      \hfill
-     \begin{subfigure}[b]{0.4\textwidth}
+     \begin{subfigure}[b]{8cm}
          \centering
          \includegraphics[width=\textwidth]{\imagesPath/gaussian_kernels_2.png}
      \end{subfigure}
-        \caption{Gaussian Kernels. From \cite{}}
+        \caption{Gaussian Kernels. From \cite{iml}}
 \end{figure}
 
 
@@ -444,10 +445,10 @@ i.e. The kernel trick is a way to lower the demission to avoid componential expe
 \end{itemize}
 
 Bias variance trade off
-\begin{figure}[!h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=12cm]{\imagesPath/bias_variance_trade_off.png}
-    \caption{Bias variance trade off. From \cite{}}
+    \includegraphics[width=8cm]{\imagesPath/bias_variance_trade_off.png}
+    \caption{Bias variance trade off. From \cite{iml}}
 \end{figure}
 
 %TODO
@@ -490,10 +491,10 @@ They are often continuos values such as the regularization parameter, but not al
 \subsection{Estimating Hyper parameters - Grid search}
 We make divide our search space of the hyper parameters into a grid (evenly distributed possible values).
 Then we go through them all and find the parameters with minimize the error.
-\begin{figure}[!h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=12cm]{\imagesPath/grid_search.png}
-    \caption{Grid search. From \cite{}}
+    \includegraphics[width=8cm]{\imagesPath/grid_search.png}
+    \caption{Grid search. From \cite{iml}}
 \end{figure}
 \href{https://www.youtube.com/watch?v=ttE0F7fghfk}{Explanation}
 
@@ -530,18 +531,18 @@ maximize the variance in that dimension.
 
 \subsection{Correlation matrix}
 How two features are moving with one another. Note that the correlation matrix is diagonally symmetric.
-\begin{figure}[!h]
+\begin{figure}[H]
      \centering
-     \begin{subfigure}[b]{0.35\textwidth}
+     \begin{subfigure}[b]{8cm}
          \centering
          \includegraphics[width=\textwidth]{\imagesPath/corr_matrix.png}
-         \caption{Correlation matrix. From \cite{}}
+         \caption{Correlation matrix. From \cite{iml}}
      \end{subfigure}
      \hfill
-     \begin{subfigure}[b]{0.55\textwidth}
+     \begin{subfigure}[b]{8cm}
          \centering
          \includegraphics[width=\textwidth]{\imagesPath/correlation.png}
-         \caption{Correlation. From \cite{}}
+         \caption{Correlation. From \cite{iml}}
      \end{subfigure}
     \caption{Correlation matrix, the two images are un related}
 \end{figure}
@@ -549,10 +550,10 @@ How two features are moving with one another. Note that the correlation matrix i
 
 \subsection{Heatmap}
 This can be done with hierarchical clustering.
-\begin{figure}[!h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=8cm]{\imagesPath/heatmap.png}
-    \caption{Heatmap. From \cite{}}
+    \caption{Heatmap. From \cite{iml}}
 \end{figure}
 
 
@@ -563,10 +564,10 @@ This can be done with hierarchical clustering.
     \item Un-supervised learning algorithm
     \item Numerical variables 
 \end{itemize}
-\begin{figure}[!h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=12cm]{\imagesPath/k-nn.png}
-    \caption{K-nn. From \cite{}}
+    \includegraphics[width=8cm]{\imagesPath/k-nn.png}
+    \caption{K-nn. From \cite{iml}}
 \end{figure}
 
 
@@ -606,10 +607,10 @@ Basic idea:
     \item Stop when you have enough clusters or everything is clustered together.
 \end{itemize}
 
-\begin{figure}[!h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=12cm]{\imagesPath/hierarchical_clustering.png}
-    \caption{hierarchical clustering. From \cite{}}
+    \includegraphics[width=8cm]{\imagesPath/hierarchical_clustering.png}
+    \caption{hierarchical clustering. From \cite{iml}}
 \end{figure}
 
 \subsubsection{Linkage Criteria}
@@ -627,10 +628,10 @@ The act where a point is associated with a specific class.
     \item Un-supervised learning algorithm
     \item Numerical variables 
 \end{itemize}
-\begin{figure}[!h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=12cm]{\imagesPath/k-means.png}
-    \caption{K-means. From \cite{}}
+    \includegraphics[width=8cm]{\imagesPath/k-means.png}
+    \caption{K-means. From \cite{iml}}
 \end{figure}
 
 \begin{equation*}
@@ -654,18 +655,18 @@ Then we repeat this step.
 \end{itemize}
 
 
-\begin{figure}[!h]
+\begin{figure}[H]
      \centering
-     \begin{subfigure}[b]{0.4\textwidth}
+     \begin{subfigure}[b]{6cm}
          \centering
          \includegraphics[width=\textwidth]{\imagesPath/DBSCAN_application.png}
-         \caption{DBSCAN example. From \cite{}}
+         \caption{DBSCAN example. From \cite{iml}}
      \end{subfigure}
      \hfill
-     \begin{subfigure}[b]{0.4\textwidth}
+     \begin{subfigure}[b]{6cm}
          \centering
          \includegraphics[width=\textwidth]{\imagesPath/DBSCAN_model.png}
-         \caption{DBSCAN algorithm. From \cite{}}
+         \caption{DBSCAN algorithm. From \cite{iml}}
      \end{subfigure}
     \caption{DBSCAN}
     \label{fig:DBSCAN}
@@ -682,10 +683,10 @@ Then we repeat this step.
     \item Classification and regression
 \end{itemize}
 
-\begin{figure}[!h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=12cm]{\imagesPath/decision_trees.png}
-    \caption{Decision Trees. From \cite{}}
+    \includegraphics[width=8cm]{\imagesPath/decision_trees.png}
+    \caption{Decision Trees. From \cite{iml}}
 \end{figure}
 It is NP-hard to find an ordering that gives the smallest tree.
 We can get exponential blow up in the size for different orders.
@@ -731,10 +732,10 @@ Given these properties the only mathematically sensible choice is
 
    If you plot the graph it will look something like figure 
 \end{exampleblock}
-\begin{figure}[!h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=6cm]{\imagesPath/unfair_coin.png}
-    \caption{Decision Trees. From \cite{}}
+    \includegraphics[width=8cm]{\imagesPath/unfair_coin.png}
+    \caption{Decision Trees. From \cite{iml}}
 \end{figure}
 
 \textit{Conditional entropy}
@@ -744,16 +745,20 @@ Given these properties the only mathematically sensible choice is
 where $P(X|Y) = \frac{P(X,Y)}{P(X)}$
 
 \textit{Information Gain}
-\begin{figure}[!h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=10cm]{\imagesPath/information_gain.png}
-    \caption{Decision Trees. From \cite{}}
+    \includegraphics[width=8cm]{\imagesPath/information_gain.png}
+    \caption{Decision Trees. From \cite{iml}}
 \end{figure}
 
-\begin{equation*}
+\begin{align*}
     H(Y) - \left( \underbrace{P(X=a_1)H(Y|X=a_1) + P(X=a_2)H(Y|X=a_2)}_{\text{average information when split}} \right)
-\end{equation*}
+\end{align*}
+\end{multicols}
+\raggedcolumns
 
+
+\begin{multicols}{2}
 \textbf{ID3 algorithm} the algorithm to construct a tree using information
 theory.
 \begin{itemize}
@@ -761,10 +766,10 @@ theory.
     \item ID3 will not construct the smallest tree.
 \end{itemize}
 
-\begin{figure}[!h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=10cm]{\imagesPath/example_conditional_entropy.png}
-    \caption{Example Conditional Entropy. From \cite{}}
+    \includegraphics[width=8cm]{\imagesPath/example_conditional_entropy.png}
+    \caption{Example Conditional Entropy. From \cite{iml}}
     \label{fig:example_conditional_entropy}
 \end{figure}
 \begin{exampleblock}{Example: Conditional entropy}
@@ -798,9 +803,9 @@ Disadvantages of Decision trees
 \section{Principle component analysis (PCA)}
 Is dimensionality reduction method, i.e. reducing the number of dimension of a training set.
 We try to compress the data, i.e. remove the redundant data.
-\begin{figure}[!h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=10cm]{\imagesPath/pca_demo.png}
+    \includegraphics[width=8cm]{\imagesPath/pca_demo.png}
     \caption{Example Conditional Entropy}
     \label{fig:pca_demo}
 \end{figure}
@@ -857,3 +862,5 @@ not contrebute much of the eigenvalue is in significant.
     %\item How does SVM work 
     %\item bias variance
 %\end{itemize}
+\end{multicols}
+\raggedcolumns
