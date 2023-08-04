@@ -1,4 +1,5 @@
 \chapter{Linear Algebra II}
+\newcommand{\imagesLaII}{image/chap8_laII}
 
 \newpage
 
@@ -450,8 +451,8 @@ matrisen som kan multipliseras med vektor för att få omvandlingen.
   &\quad  \text{Är följande en linjär avbildning } \\
   &\quad  F:C^1(a,b)\to{C}(a,b) \text{ definerad genom } F(f)=\frac{df}{dx}  \\
   &\quad  \\
-  &\quad  \big( \frac{d}{dx}(af(x) + bg(x)) \big) = a\frac{df}{dx} + b\frac{dg}{dx} \\
-  &\quad  ( \frac{d}{dx}(\lambda af(x)) ) = \lambda  ( \frac{d}{dx}(af(x)) ) \\
+  &\quad  \left( \frac{d}{dx}(af(x) + bg(x)) \right) = a\frac{df}{dx} + b\frac{dg}{dx} \\
+  &\quad  \left( \frac{d}{dx}(\lambda af(x)) \right) = \lambda  \left( \frac{d}{dx}(af(x)) \right) \\
   &\quad  \text{Svar: ja $F$ är en linjär avbilding} \\
 \end{align*}
 
@@ -459,8 +460,8 @@ matrisen som kan multipliseras med vektor för att få omvandlingen.
 \section{Matrisen av en linjär avbilding}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=8cm]{image/matris_lin_avb.png} 
-    \caption{Matris av en linjär avbildning. From \cite{laII}}
+    \includesvg[width=0.5\textwidth]{\imagesLaII/matrix-of-linear-map.svg}
+    \caption{Matris av en linjär avbildning.}
 \end{figure}
 
 \textbf{Exempel: Rotations matrisen}
