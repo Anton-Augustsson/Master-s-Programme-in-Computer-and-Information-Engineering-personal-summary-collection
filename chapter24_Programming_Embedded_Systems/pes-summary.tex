@@ -1,6 +1,6 @@
 \chapter{Programming Embedded Systems}
 
-\section{Intro, SDK}
+\section{Introduction}
 \adef{Embedded system} is a system in which the computer (generally a microcontroller or microprocessor) is included as an integral part of the system.
 \textbf{Constraints}
 \begin{itemize}
@@ -22,6 +22,53 @@ A clear and precise description of the problem that a function solves is called 
 
 \textit{Zephyr} is a small real-time operating system (RTOS)[6] for connected, resource-constrained and embedded devices (with an emphasis on microcontrollers) supporting multiple architectures and released under the Apache License 2.0.
 \url{https://en.wikipedia.org/wiki/Zephyr_(operating_system)}
+
+
+\section{From Hardware to operating system}
+This section describes the terminology and what is needed to run 
+a full operating system like debian.
+
+
+\subsection{Hardware}
+The main component of the hardware is the microcontroller.
+ARM Cortex is a popular family CPU architecture.
+These include a three CPU architecture profiles: A-profile (Application);
+R-profile (Real-Time); M-profile (Microcontroller);
+Some popular manufactures are STMicroelectronics and Microchip.
+The microcontroller is soldered on to a PCB, which has the required 
+electronic components, peripherals, and connectors.
+%https://www.arm.com/architecture/cpu?utm_source=google&utm_medium=cpc&utm_content=text_txt_na_cpu&utm_campaign=mk30_brand-paid_architecture_2023_awareness_keyword_na&utm_term=arm%20cpu%20architecture&gad_source=1&gclid=CjwKCAiAloavBhBOEiwAbtAJO1rUN-gGmSbR6WJQtGEBNwXjmRD4gjYYc7Or6Ciu3wYLcLp-dot9WxoC-IUQAvD_BwE
+
+
+\subsection{Firmware}
+Firmware is software embedded on the hardware, e.g., ROM, and is responsible 
+for initializing device drivers and configuration. BIOS is part of the firmware 
+and let the user low-level control for hardware devices.
+
+It is also responsible to load the boot loader into memory during 
+the handoff procedure.
+
+% TODO: what firmware is available
+
+
+\subsection{Boot loader}
+The boot loader is responsible to load the operating system with the kernel
+into memory.
+
+An example of loader is GRUB, which is common for linux.
+
+
+\subsection{Kernel and Operating System}
+The kernel is a part of the operating system. It is responsible for 
+manages system resources, such as memory, processes, and hardware devices
+
+Linux is a popular kernel, especial for servers, but is also used 
+in embedded system.
+
+There are many linux distributions that runs the linux kernel.
+A popular is debian, which raspberry pi OS is based on.
+
+%drivers, peripherals
 
 
 \section{States Machines}
