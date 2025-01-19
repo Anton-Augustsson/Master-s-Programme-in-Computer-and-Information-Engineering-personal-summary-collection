@@ -13,7 +13,7 @@
 \usepackage[parfill]{parskip}
 \usepackage{array}
 \usepackage{mathtools}
-\usepackage{natbib}
+%\usepackage{natbib}
 \usepackage{graphicx}
 \usepackage{amsfonts}
 \usepackage{amsmath}
@@ -46,6 +46,8 @@
 \usepackage{fancyvrb} % ipp
 \usepackage{rtsched} % for rts schedule drawing
 \usepackage{svg} % for \includesvg
+\usepackage{centernot} % line cross arrow
+\usepackage{todonotes} % for missing figure
 
 \pgfplotsset{width=10cm,compat=1.9}
 \DeclareMathOperator{\Ima}{Im}
@@ -78,3 +80,9 @@
 %    colbacklower=LimeGreen!75!LightGreen,%
 %    title=#1]}%
 %    {endtcolorbox}
+
+% For boxes
+\usepackage{empheq}
+\newcommand{\boxedeq}[2]{\begin{empheq}[box={\fboxsep=6pt\fbox}]{align}\label{#1}#2\end{empheq}}
+
+\definecolor{burgundy}{rgb}{0.5, 0.0, 0.13}
